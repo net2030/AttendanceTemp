@@ -1,0 +1,197 @@
+﻿Imports System.Data.SqlClient
+
+Partial Class TimeTable
+    Inherits System.Web.UI.Page
+
+
+    Dim dt As DataTable
+    Dim tableString As String = ""
+    Dim tablesString As String = ""
+    Dim Days() As String = {"Sunday", "Monday", "Tusday", "Wedensday", "Thursday", "Friday", "Saturday"}
+    Dim oCon As New SqlConnection(ConfigurationManager.ConnectionStrings("TimeTableConnectionString").ConnectionString)
+
+    Protected Sub Page_Load(sender As Object, e As EventArgs) Handles Me.Load
+        oCon.Open()
+        DisplyClasses()
+        DisplyTeachers()
+
+
+    End Sub
+
+    Private Sub DisplyTeachers()
+        tablesString = ""
+        For teach As Integer = 1 To 14
+            tableString = ""
+            Dim TimeTable(100) As String
+            dt = GetDataByTeacher(teach)
+
+            If dt.Rows.Count = 0 Then
+                GoTo nxt
+            End If
+            For k As Integer = 0 To dt.Rows.Count - 1
+                Dim ts As Integer = dt.Rows(k)("TsNo")
+                TimeTable(ts - 1) = dt.Rows(k)("CourseName") + "</br>" + dt.Rows(k)("EPName")
+
+            Next
+            Dim c As Integer = 0
+
+            tableString = tableString + "<h1>" + dt.Rows(0)("Teacher") + "</h1>"
+
+            'tableString = tableString + "<table border=""1""><tr>"
+
+            'tableString = tableString + "</tr></table>"
+
+
+            tableString = tableString + "<table  style ='text-align:center' border=""1""><tr>"
+
+            For day As Integer = 0 To 4
+
+                tableString = tableString + "<tr>"
+                If day = 0 Then
+                    tableString = tableString + "<td width=""100"" style ='text-align:left;font-weight:bold' height=""50"">Day/Period</td>"
+                    For period As Integer = 0 To 5
+                        tableString = tableString + "<td width=""100"" style ='font-weight:bold' height=""50"" >" + (period + 1).ToString + "</td>"
+                    Next
+                End If
+                tableString = tableString + "</tr>"
+
+
+                tableString = tableString + "<td width=""100"" style ='text-align:left;font-weight:bold' height=""50"" >" + Days(day) + "</td>"
+                For period As Integer = 0 To 5
+
+                    tableString = tableString + "<td width=""100"" height=""50"" >"
+                    If TimeTable(c) Is Nothing Then
+
+                        tableString = tableString + "  "
+                    Else
+                        tableString = tableString + TimeTable(c)
+                    End If
+
+                    tableString = tableString + "</td>"
+                    c = c + 1
+                Next
+
+                tableString = tableString + "</tr>"
+            Next
+
+            tableString = tableString + "<br><br>"
+
+            tableString = tableString + "</table>"
+            tablesString = tablesString + tableString
+nxt:
+        Next
+        divTable.InnerHtml = tablesString
+    End Sub
+
+    Public Function GetDataByTeacher(ByVal TeacherId As Integer) As System.Data.DataTable
+        Dim ds As DataSet = New DataSet
+        Dim dt As DataTable = New DataTable
+
+        Try
+            'Dim oCon As New SqlConnection(ConfigurationManager.ConnectionStrings("TimeTableConnectionString").ConnectionString)
+            'Using oCon
+            'oCon.Open()
+            Dim cmd As New SqlCommand("dbo.GetTimeTableForTeacher")
+            Using cmd
+                cmd.CommandType = CommandType.StoredProcedure
+                cmd.Connection = oCon
+
+                cmd.Parameters.Add("@TeacherId", SqlDbType.Int).Value = TeacherId
+                Dim Adapter As New SqlDataAdapter
+
+                Adapter.SelectCommand = cmd
+                Adapter.Fill(ds)
+
+            End Using
+            'End Using
+        Catch ex As Exception
+            Dim strEx As String = ex.Message
+        End Try
+        Return ds.Tables(0)
+    End Function
+
+
+    Private Sub DisplyClasses()
+        tablesString = ""
+        For teach As Integer = 1 To 14
+            tableString = ""
+            Dim TimeTable(100) As String
+            dt = GetDataByClass(teach)
+
+            If dt.Rows.Count = 0 Then
+                GoTo nxt
+            End If
+            For k As Integer = 0 To dt.Rows.Count - 1
+                Dim ts As Integer = dt.Rows(k)("TsNo")
+                TimeTable(ts - 1) = dt.Rows(k)("CourseName") + "</br>" + dt.Rows(k)("Teacher")
+
+            Next
+            Dim c As Integer = 0
+
+            tableString = tableString + "<h1>" + dt.Rows(0)("EPName") + "</h1>"
+            tableString = tableString + "<table style ='text-align:center' border=""1"">"
+
+            For day As Integer = 0 To 4
+
+                tableString = tableString + "<tr>"
+                If day = 0 Then
+                    tableString = tableString + "<td width=""100"" style ='text-align:left;font-weight:bold' height=""50"">Day/Period</td>"
+                    For period As Integer = 0 To 5
+                        tableString = tableString + "<td width=""100"" style ='font-weight:bold' height=""50"" >" + (period + 1).ToString + "</td>"
+                    Next
+                End If
+                tableString = tableString + "</tr>"
+
+                tableString = tableString + "<td width=""100"" style ='text-align:left;font-weight:bold' height=""50"" >" + Days(day) + "</td>"
+                For period As Integer = 0 To 5
+                    tableString = tableString + "<td width=""100"" height=""50"" >"
+                    If TimeTable(c) Is Nothing Then
+
+                        tableString = tableString + "  "
+                    Else
+                        tableString = tableString + TimeTable(c)
+                    End If
+
+                    tableString = tableString + "</td>"
+                    c = c + 1
+                Next
+
+                tableString = tableString + "</tr>"
+            Next
+
+            tableString = tableString + "<br><br>"
+
+            tableString = tableString + "</table>"
+            tablesString = tablesString + "</br>" + tableString
+nxt:
+        Next
+        divTable1.InnerHtml = tablesString
+    End Sub
+
+    Public Function GetDataByClass(ByVal ClassId As Integer) As System.Data.DataTable
+        Dim ds As DataSet = New DataSet
+        Dim dt As DataTable = New DataTable
+
+        Try
+            'Dim oCon As New SqlConnection(ConfigurationManager.ConnectionStrings("TimeTableConnectionString").ConnectionString)
+            'Using oCon
+            'oCon.Open()
+            Dim cmd As New SqlCommand("dbo.GetTimeTableForClass")
+            Using cmd
+                cmd.CommandType = CommandType.StoredProcedure
+                cmd.Connection = oCon
+
+                cmd.Parameters.Add("@ClassId", SqlDbType.Int).Value = ClassId
+                Dim Adapter As New SqlDataAdapter
+
+                Adapter.SelectCommand = cmd
+                Adapter.Fill(ds)
+
+            End Using
+            'End Using
+        Catch ex As Exception
+            Dim strEx As String = ex.Message
+        End Try
+        Return ds.Tables(0)
+    End Function
+End Class

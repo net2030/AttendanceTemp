@@ -1,0 +1,148 @@
+<%@ Control Language="VB" AutoEventWireup="false" CodeFile="ctlNotification.ascx.vb" Inherits="Employee_Controls_ctlctlNotification" %>
+
+<%@ Register Assembly="Telerik.Web.UI" Namespace="Telerik.Web.UI" TagPrefix="telerik" %>
+<%@ Register Assembly="Microsoft.ReportViewer.WebForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" Namespace="Microsoft.Reporting.WebForms" TagPrefix="rsweb" %>
+<script lang="c#">
+    $('#ReportViewer1_fixedTable tbody tr').attr("align", "center");
+</script>
+<div id="Div1" runat="server" style="border-style: solid; border-color: inherit; border-width: medium; width: 700px; height: 113px;">
+    <table class="xAdminOption" width="700px" style="">
+
+
+        <tr>
+
+            <td>ÿ—Ìﬁ… «·›—“ :
+        
+            </td>
+            <td>
+                <asp:RadioButton ID="rdAll" runat="server" GroupName="Opti" Text="«·ﬂ·" Checked="true" />
+            </td>
+            <td>
+                <asp:RadioButton ID="rdRegistered" runat="server" GroupName="Opti" Text="  „ «’œ«—Â«" />
+            </td>
+            <td>
+                <asp:RadioButton ID="rdNotRegistered" runat="server" GroupName="Opti" Text="·„ Ì „ ≈’œ«—Â«" />
+            </td>
+        </tr>
+        <tr>
+            <td>«·„ŒÊ· »«· ÊﬁÌ⁄:
+            </td>
+            <td>
+                <asp:DropDownList ID="ddlManagers" runat="server" DataSourceID="dsManagers" DataTextField="EmployeeName" DataValueField="JobTitle">
+                </asp:DropDownList>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <asp:Button ID="btnAdd" runat="server" OnClick="btnView"
+                    Text="⁄—÷"
+                    UseSubmitBehavior="False" />
+
+            </td>
+        </tr>
+    </table>
+</div>
+<br />
+
+<x:GridView ID="gvTreeNodes" runat="server" Width="90%" GridLines="None"
+    DataKeyNames="EmployeeNo,EmployeeName,DepartmentName,Title,AbsenceType,Days,StartDate,EndDate"
+    AutoGenerateColumns="False"
+    SkinID="xgridviewSkinEmployee" CssClass="TableView"
+    Caption="ﬁ«∆„… «·«‰–«—« " Font-Names="Arial" Font-Size="Medium"
+    OnPageIndexChanging="gvTreeNodes_PageIndexChanging"
+    AllowSorting="True">
+    <Columns>
+        <asp:BoundField DataField="EmployeeNo" HeaderText="—ﬁ„ «·„ÊŸ›">
+            <HeaderStyle HorizontalAlign="Center" />
+            <ItemStyle HorizontalAlign="Center" />
+        </asp:BoundField>
+
+
+        <asp:BoundField DataField="EmployeeName" HeaderText="≈”„ «·„ÊŸ›">
+            <HeaderStyle HorizontalAlign="Center" />
+            <ItemStyle HorizontalAlign="Center" />
+        </asp:BoundField>
+
+
+        <asp:BoundField DataField="DepartmentName" HeaderText="«·ﬁ”„">
+            <HeaderStyle HorizontalAlign="Center" />
+            <ItemStyle HorizontalAlign="Center" />
+        </asp:BoundField>
+
+
+        <asp:BoundField DataField="Title" HeaderText="«·ÊŸÌ›…">
+            <HeaderStyle HorizontalAlign="Center" />
+            <ItemStyle HorizontalAlign="Center" />
+        </asp:BoundField>
+
+
+        <asp:BoundField DataField="AbsenceType" HeaderText="‰Ê⁄ «·€Ì«»">
+            <HeaderStyle HorizontalAlign="Center" />
+            <ItemStyle HorizontalAlign="Center" />
+        </asp:BoundField>
+
+
+        <asp:BoundField DataField="Days" HeaderText="⁄œœ √Ì«„">
+            <HeaderStyle HorizontalAlign="Center" />
+            <ItemStyle HorizontalAlign="Center" />
+        </asp:BoundField>
+
+
+        <asp:BoundField DataField="StartDate" HeaderText=" «—ÌŒ «·»œ«Ì…">
+            <HeaderStyle HorizontalAlign="Center" />
+            <ItemStyle HorizontalAlign="Center" />
+        </asp:BoundField>
+
+
+        <asp:BoundField DataField="EndDate" HeaderText=" «—ÌŒ «·‰Â«Ì…">
+            <HeaderStyle HorizontalAlign="Center" />
+            <ItemStyle HorizontalAlign="Center" />
+        </asp:BoundField>
+
+        <asp:TemplateField>
+            <ItemTemplate>
+                <asp:Button ID="ViewButton" runat="server"
+                    CommandName="View"
+                    CommandArgument="<%# CType(Container,GridViewRow).RowIndex %>"
+                    Text="⁄—÷" />
+            </ItemTemplate>
+        </asp:TemplateField>
+
+        <asp:TemplateField>
+            <ItemTemplate>
+                <asp:Button ID="IssueButton" runat="server"
+                    CommandName="Issue"
+                    CommandArgument="<%# CType(Container,GridViewRow).RowIndex %>"
+                    Text="≈’œ«—" />
+            </ItemTemplate>
+        </asp:TemplateField>
+
+
+    </Columns>
+
+</x:GridView>
+
+
+
+<div align="center">
+    <rsweb:ReportViewer ID="ReportViewer1" runat="server" DocumentMapWidth="100%" Font-Names="Arial" Font-Size="8pt" Height="1100px" Visible="False" WaitMessageFont-Names="Verdana" WaitMessageFont-Size="14pt" Width="755px" ShowToolBar="False">
+        <LocalReport ReportPath="Reports\RDLC\Notification.rdlc" EnableExternalImages="True">
+        </LocalReport>
+    </rsweb:ReportViewer>
+
+</div>
+
+
+
+
+
+
+
+
+<asp:SqlDataSource ID="dsManagers" runat="server" ConnectionString="<%$ ConnectionStrings:ATSConnectionString %>" SelectCommand="[Managements].[SpGetManagersForSignature]" SelectCommandType="StoredProcedure"></asp:SqlDataSource>
+
+
+
+
+
+

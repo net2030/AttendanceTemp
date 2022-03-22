@@ -1,0 +1,39 @@
+<%@ Master Language="VB" CodeFile="MasterPageMobileEmployee.master.vb" Inherits="Masters_MasterPageMobileEmployee" %>
+<%@ Register Src="~/Authenticate/Controls/ctlLoginStatus.ascx" TagName="ctlLoginStatus"
+    TagPrefix="uc1" %>
+<%@ Register Src="~/Mobile/Controls/ctlTopMenu1.ascx" TagPrefix="uc1" TagName="ctlTopMenu1" %>
+<%@ Register Src="~/Mobile/User Control/AutoRedirect1.ascx" TagPrefix="uc1" TagName="AutoRedirect1" %>
+
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml"   >
+<head >
+    <script src="../GeneralControls/CompareDatesValidation.js"></script>
+    <link rel="stylesheet"  href="../Resources/jquery.mobile-1.0a4.1.min.css" />
+	<script type="text/javascript" src="../Resources/jquery-1.5.2.min.js"></script>
+	<script type="text/javascript" src="../Resources/jquery.mobile-1.0a4.1.min.js"></script>
+<%--    <link href="../../css1/jquery.mobile-1.3.2.min.css" rel="stylesheet" />--%>
+  
+   
+</head >
+<body style="font-family:Arial" >
+ 
+<div data-role="page" class="page-home" data-theme="d" >
+
+<form id="form1" runat="server">
+
+<uc1:ctlTopMenu1 runat="server" ID="ctlTopMenu1" />      
+<asp:ScriptManager ID="ScriptManager2" runat="server">
+</asp:ScriptManager>
+    <uc1:AutoRedirect1 runat="server" ID="AutoRedirect1" />
+<asp:contentplaceholder id="ContentPlaceHolder1" runat="server" >
+</asp:contentplaceholder>
+</form>
+</div>
+   
+  
+</body>
+</html>
+

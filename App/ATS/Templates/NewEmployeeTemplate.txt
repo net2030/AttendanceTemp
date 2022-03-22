@@ -1,0 +1,44 @@
+Welcome to TimeLive!
+
+Your new OnDemand TimeLive account has been created. 
+
+TimeLive Login Information
+----------------------
+
+Login EMail    : [emailaddress]
+Password       : [password]
+Login URL      : [url]
+
+What to do next?
+----------------
+1. TimeLive is a TimeManagement system with support of managing
+   a. Projects
+   b. Tasks
+   c. TimeSheet
+   d. Employees
+   e. Employees Attendance
+
+2. Login to Your Account by using the login link.
+   Your login data is given above.
+
+3. TimeLive support multi-Location organization.  Location represents branches / sites of 
+   an organization.  You can create new Locations under "Administrations", "Locations".  
+
+4. Create new members under "Administration", "Employees" in Your TimeLive Administration menu.
+   TimeLive will create an Employee account and will send New TimeLive account notification 
+   automatically.
+   
+5. Want to be informed without login on TimeLive.  Just subscribe yourself for different 
+   scheduled reports which will be send to your email address automatically.
+
+We wish You a lot of success with Your new TimeLive account.
+If You have any remarks or questions feel free to contact us via e-mail anytime.
+
+Best regards,
+TimeLive Support team
+
+e-mail support@livetecs.com
+
+Let's work together !
+______________________________________________________________________
+TimeLive is a service of LiveTecs.com (www.LiveTecs.com)

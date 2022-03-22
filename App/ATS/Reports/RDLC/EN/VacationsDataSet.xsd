@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="VacationsDataSet" targetNamespace="http://tempuri.org/VacationsDataSet.xsd" xmlns:mstns="http://tempuri.org/VacationsDataSet.xsd" xmlns="http://tempuri.org/VacationsDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="1" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="AttendanceConnectionString" IsAppSettingsProperty="true" Modifier="Assembly" Name="AttendanceConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.ATS.My.MySettings.GlobalReference.Default.AttendanceConnectionString" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="ATSConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ATSConnectionString (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.ATSConnectionString.ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="vwVacationsTableAdapter" Name="vwVacations">
+            <MainSource>
+              <DbSource ConnectionRef="ATSConnectionString (Web.config)" DbObjectName="Attendance.Managements.vwVacations" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT VacationId, EmployeeId, TypeId, EffectiveDate, DateExpire, DateOfReturn, VersionNo, TypeName, EmployeeName, DepartmentName, UmEffectiveDate, 
+                  UmExpireDate, UmDateOfReturn, VacationDays
+FROM     Managements.vwVacations</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="VacationId" DataSetColumn="VacationId" />
+              <Mapping SourceColumn="EmployeeId" DataSetColumn="EmployeeId" />
+              <Mapping SourceColumn="TypeId" DataSetColumn="TypeId" />
+              <Mapping SourceColumn="EffectiveDate" DataSetColumn="EffectiveDate" />
+              <Mapping SourceColumn="DateExpire" DataSetColumn="DateExpire" />
+              <Mapping SourceColumn="DateOfReturn" DataSetColumn="DateOfReturn" />
+              <Mapping SourceColumn="VersionNo" DataSetColumn="VersionNo" />
+              <Mapping SourceColumn="TypeName" DataSetColumn="TypeName" />
+              <Mapping SourceColumn="EmployeeName" DataSetColumn="EmployeeName" />
+              <Mapping SourceColumn="DepartmentName" DataSetColumn="DepartmentName" />
+              <Mapping SourceColumn="UmEffectiveDate" DataSetColumn="UmEffectiveDate" />
+              <Mapping SourceColumn="UmExpireDate" DataSetColumn="UmExpireDate" />
+              <Mapping SourceColumn="UmDateOfReturn" DataSetColumn="UmDateOfReturn" />
+              <Mapping SourceColumn="VacationDays" DataSetColumn="VacationDays" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="VacationsDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="VacationsDataSet" msprop:Generator_UserDSName="VacationsDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="vwVacations">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="VacationId" type="xs:int" />
+              <xs:element name="EmployeeId" type="xs:int" />
+              <xs:element name="TypeId" type="xs:int" />
+              <xs:element name="EffectiveDate" type="xs:dateTime" />
+              <xs:element name="DateExpire" type="xs:dateTime" />
+              <xs:element name="DateOfReturn" type="xs:dateTime" />
+              <xs:element name="VersionNo" msdata:ReadOnly="true" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="TypeName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EmployeeName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DepartmentName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="UmEffectiveDate" msdata:ReadOnly="true" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="UmExpireDate" msdata:ReadOnly="true" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="UmDateOfReturn" msdata:ReadOnly="true" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="VacationDays" msdata:ReadOnly="true" type="xs:int" minOccurs="0" />
+              <xs:element name="AltEmployeename" type="xs:string" minOccurs="0" />
+              <xs:element name="RowSerailID" type="xs:string" minOccurs="0" />
+              <xs:element name="EmployeeCode" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:vwVacations" />
+      <xs:field xpath="mstns:VacationId" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

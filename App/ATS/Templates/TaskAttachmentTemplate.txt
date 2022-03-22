@@ -1,0 +1,10 @@
+[employeename] has added an attachment to tracker item #[accountprojecttaskid] in the [projectname] project, assigned to [assignee].
+
+This tracker item is published at:
+[url]
+
+The information follows below:
+
+Attachment Name : [attachmentname]
+File Name : [filename]
+  

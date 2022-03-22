@@ -1,0 +1,20 @@
+
+[employeename] has added tracker item #[projecttaskid] in the [projectname], assigned to [assignedto].
+
+This tracker item is published at:
+[url]
+
+Tracker item information is below:
+   [tasknamecolumn]: [taskname]
+ 	         Status: [taskstatus]
+   [tasktypecolumn]: [tasktype]
+ 	      Milestone: [milestonedescription]
+ 	       Priority: [priority]
+         Project Code: [projectcode]
+         Project Name: [projectname]
+	       Duration: [duration] [durationunit]
+	    Completed %: [completedpercent]%
+	       Deadline: [deadline]
+             Reporter: [reporter]
+           Created On: [createdon]
+          Description: [taskdescription] 

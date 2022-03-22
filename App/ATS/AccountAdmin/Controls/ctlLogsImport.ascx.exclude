@@ -1,0 +1,64 @@
+<%@ Control Language="VB" AutoEventWireup="false" CodeFile="ctlLogsImport.ascx.vb" Inherits="AccountAdmin_Controls_ctlLogsImport" %>
+<%@ Register assembly="Telerik.Web.UI" namespace="Telerik.Web.UI" tagprefix="telerik" %>
+<%@ Register Src="~/GeneralControls/MyDate.ascx" TagPrefix="uc1" TagName="MyDate" %>
+
+
+
+
+   <%--  <asp:Timer ID="Timer1" runat="server" Interval="20000">
+      </asp:Timer>--%>
+
+    <div>
+    
+        <table  class="xAdminOption" style="font-size:large;">
+                
+
+                            <tr>
+
+                                 <td  style="vertical-align:bottom">
+                                     <asp:Label ID="Label1" runat="server" Text="ÇáÊÇÑíÎ:   " AssociatedControlID="LogDate" meta:resourcekey="Label1Resource1"></asp:Label>
+                                     </td>
+                                <td style="vertical-align:top">
+                                    <uc1:MyDate runat="server" ID="LogDate"  />
+                                 </td>
+
+                              
+                               
+                                </tr>
+            <tr>
+                <td>
+                    
+                    &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;</td>
+            </tr>
+            </table>
+                    <asp:UpdatePanel ID="UpdatePanel1" runat="server" >
+    <ContentTemplate>
+              <asp:Button ID="Button1" runat="server" Text=" ÅÓÊíÑÇÏ ÇáÓÌáÇÊ" OnClick="GetLogs" meta:resourcekey="Button1Resource1"/>
+        <br />
+        <br />
+                  <x:GridView ID="GridView2" runat="server" AutoGenerateColumns="False" 
+                           Caption ="ÞÇÆãÉ ÇáÓÌáÇÊ ÇáÊí Êã ÇÓÊíÑÇÏåÇ  " 
+                                SkinID="xgridviewSkinEmployee"  CssClass="TableView" OnPageIndexChanging="GridView2_PageIndexChanging" ShowHeaderWhenEmpty="True" PageSize="50" Width="70%" meta:resourcekey="GridView2Resource1">
+                        <Columns>
+
+                            <asp:BoundField DataField="UserId" HeaderText="ÑÞã ÇáãæÙÝ" meta:resourcekey="BoundFieldResource1" />
+
+                            <asp:BoundField DataField="LogDateTime" HeaderText="ÇáæÞÊ" meta:resourcekey="BoundFieldResource2" />
+
+                            <asp:BoundField DataField="LogType" HeaderText="äæÚ ÇáÍÑßÉ" meta:resourcekey="BoundFieldResource3" />
+
+                            <asp:BoundField DataField="EventType" HeaderText="äæÚ ÇáÓÌá" meta:resourcekey="BoundFieldResource4" />
+
+                            <asp:BoundField DataField="MachineName" HeaderText="ÇáÌåÇÒ" meta:resourcekey="BoundFieldResource5" />
+
+                      </Columns>
+                </x:GridView>
+
+
+  </div>
+
+    </ContentTemplate>
+</asp:UpdatePanel>
+
+
+

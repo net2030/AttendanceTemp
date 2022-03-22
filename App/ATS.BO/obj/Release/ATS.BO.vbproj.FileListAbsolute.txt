@@ -1,0 +1,84 @@
+C:\Projects\ATSQassimUniversity\MASTAM\ATS\ATS.BO\bin\Release\ATS.BO.dll
+C:\Projects\ATSQassimUniversity\MASTAM\ATS\ATS.BO\bin\Release\ATS.BO.pdb
+C:\Projects\ATSQassimUniversity\MASTAM\ATS\ATS.BO\bin\Release\ATS.BO.xml
+C:\Projects\ATSQassimUniversity\MASTAM\ATS\ATS.BO\bin\Release\ATS.DA.dll
+C:\Projects\ATSQassimUniversity\MASTAM\ATS\ATS.BO\bin\Release\ATS.DA.pdb
+C:\Projects\ATSQassimUniversity\MASTAM\ATS\ATS.BO\bin\Release\ATS.DA.xml
+C:\Projects\ATSQassimUniversity\MASTAM\ATS\ATS.BO\obj\Release\ATS.BO.vbprojResolveAssemblyReference.cache
+C:\Projects\ATSQassimUniversity\MASTAM\ATS\ATS.BO\obj\Release\ATS.BO.Resources.resources
+C:\Projects\ATSQassimUniversity\MASTAM\ATS\ATS.BO\obj\Release\ATS.BO.vbproj.GenerateResource.Cache
+C:\Projects\ATSQassimUniversity\MASTAM\ATS\ATS.BO\obj\Release\ATS.BO.dll
+C:\Projects\ATSQassimUniversity\MASTAM\ATS\ATS.BO\obj\Release\ATS.BO.xml
+C:\Projects\ATSQassimUniversity\MASTAM\ATS\ATS.BO\obj\Release\ATS.BO.pdb
+C:\Projects\Deployment\Al-Nahda\MASTAM\ATS\ATS.BO\bin\Release\ATS.BO.dll
+C:\Projects\Deployment\Al-Nahda\MASTAM\ATS\ATS.BO\bin\Release\ATS.BO.pdb
+C:\Projects\Deployment\Al-Nahda\MASTAM\ATS\ATS.BO\bin\Release\ATS.BO.xml
+C:\Projects\Deployment\Al-Nahda\MASTAM\ATS\ATS.BO\bin\Release\ATS.DA.dll
+C:\Projects\Deployment\Al-Nahda\MASTAM\ATS\ATS.BO\bin\Release\ATS.DA.pdb
+C:\Projects\Deployment\Al-Nahda\MASTAM\ATS\ATS.BO\bin\Release\ATS.DA.xml
+C:\Projects\Deployment\Al-Nahda\MASTAM\ATS\ATS.BO\obj\Release\ATS.BO.vbprojResolveAssemblyReference.cache
+C:\Projects\Deployment\Al-Nahda\MASTAM\ATS\ATS.BO\obj\Release\ATS.BO.Resources.resources
+C:\Projects\Deployment\Al-Nahda\MASTAM\ATS\ATS.BO\obj\Release\ATS.BO.vbproj.GenerateResource.Cache
+C:\Projects\Deployment\Al-Nahda\MASTAM\ATS\ATS.BO\obj\Release\ATS.BO.dll
+C:\Projects\Deployment\Al-Nahda\MASTAM\ATS\ATS.BO\obj\Release\ATS.BO.xml
+C:\Projects\Deployment\Al-Nahda\MASTAM\ATS\ATS.BO\obj\Release\ATS.BO.pdb
+C:\Projects\Attendance\ATS\ATS.BO\bin\Release\ATS.BO.dll
+C:\Projects\Attendance\ATS\ATS.BO\bin\Release\ATS.BO.pdb
+C:\Projects\Attendance\ATS\ATS.BO\bin\Release\ATS.BO.xml
+C:\Projects\Attendance\ATS\ATS.BO\bin\Release\ATS.DA.dll
+C:\Projects\Attendance\ATS\ATS.BO\bin\Release\ATS.DA.pdb
+C:\Projects\Attendance\ATS\ATS.BO\bin\Release\ATS.DA.xml
+C:\Projects\Attendance\ATS\ATS.BO\obj\Release\ATS.BO.vbprojResolveAssemblyReference.cache
+C:\Projects\Attendance\ATS\ATS.BO\obj\Release\ATS.BO.Resources.resources
+C:\Projects\Attendance\ATS\ATS.BO\obj\Release\ATS.BO.vbproj.GenerateResource.Cache
+C:\Projects\Attendance\ATS\ATS.BO\obj\Release\ATS.BO.dll
+C:\Projects\Attendance\ATS\ATS.BO\obj\Release\ATS.BO.xml
+C:\Projects\Attendance\ATS\ATS.BO\obj\Release\ATS.BO.pdb
+C:\Projects\Attendance -MOH  FULL\ATS\ATS.BO\bin\Release\ATS.BO.dll
+C:\Projects\Attendance -MOH  FULL\ATS\ATS.BO\bin\Release\ATS.BO.pdb
+C:\Projects\Attendance -MOH  FULL\ATS\ATS.BO\bin\Release\ATS.BO.xml
+C:\Projects\Attendance -MOH  FULL\ATS\ATS.BO\bin\Release\ATS.DA.dll
+C:\Projects\Attendance -MOH  FULL\ATS\ATS.BO\bin\Release\ATS.DA.pdb
+C:\Projects\Attendance -MOH  FULL\ATS\ATS.BO\bin\Release\ATS.DA.xml
+C:\Projects\Attendance -MOH  FULL\ATS\ATS.BO\obj\Release\ATS.BO.vbprojResolveAssemblyReference.cache
+C:\Projects\Attendance -MOH  FULL\ATS\ATS.BO\obj\Release\ATS.BO.Resources.resources
+C:\Projects\Attendance -MOH  FULL\ATS\ATS.BO\obj\Release\ATS.BO.vbproj.GenerateResource.Cache
+C:\Projects\Attendance -MOH  FULL\ATS\ATS.BO\obj\Release\ATS.BO.dll
+C:\Projects\Attendance -MOH  FULL\ATS\ATS.BO\obj\Release\ATS.BO.xml
+C:\Projects\Attendance -MOH  FULL\ATS\ATS.BO\obj\Release\ATS.BO.pdb
+C:\Projects\Attendance MOH FULL Multi-Lang\MASTAM\ATS\ATS.BO\bin\Release\ATS.BO.dll
+C:\Projects\Attendance MOH FULL Multi-Lang\MASTAM\ATS\ATS.BO\bin\Release\ATS.BO.pdb
+C:\Projects\Attendance MOH FULL Multi-Lang\MASTAM\ATS\ATS.BO\bin\Release\ATS.BO.xml
+C:\Projects\Attendance MOH FULL Multi-Lang\MASTAM\ATS\ATS.BO\bin\Release\ATS.DA.dll
+C:\Projects\Attendance MOH FULL Multi-Lang\MASTAM\ATS\ATS.BO\bin\Release\ATS.DA.pdb
+C:\Projects\Attendance MOH FULL Multi-Lang\MASTAM\ATS\ATS.BO\bin\Release\ATS.DA.xml
+C:\Projects\Attendance MOH FULL Multi-Lang\MASTAM\ATS\ATS.BO\obj\Release\ATS.BO.vbprojResolveAssemblyReference.cache
+C:\Projects\Attendance MOH FULL Multi-Lang\MASTAM\ATS\ATS.BO\obj\Release\ATS.BO.Resources.resources
+C:\Projects\Attendance MOH FULL Multi-Lang\MASTAM\ATS\ATS.BO\obj\Release\ATS.BO.vbproj.GenerateResource.Cache
+C:\Projects\Attendance MOH FULL Multi-Lang\MASTAM\ATS\ATS.BO\obj\Release\ATS.BO.dll
+C:\Projects\Attendance MOH FULL Multi-Lang\MASTAM\ATS\ATS.BO\obj\Release\ATS.BO.xml
+C:\Projects\Attendance MOH FULL Multi-Lang\MASTAM\ATS\ATS.BO\obj\Release\ATS.BO.pdb
+C:\Projects\Attendance MOH Tender Copy\MASTAM\ATS\ATS.BO\bin\Release\ATS.BO.dll
+C:\Projects\Attendance MOH Tender Copy\MASTAM\ATS\ATS.BO\bin\Release\ATS.BO.pdb
+C:\Projects\Attendance MOH Tender Copy\MASTAM\ATS\ATS.BO\bin\Release\ATS.BO.xml
+C:\Projects\Attendance MOH Tender Copy\MASTAM\ATS\ATS.BO\bin\Release\ATS.DA.dll
+C:\Projects\Attendance MOH Tender Copy\MASTAM\ATS\ATS.BO\bin\Release\ATS.DA.pdb
+C:\Projects\Attendance MOH Tender Copy\MASTAM\ATS\ATS.BO\bin\Release\ATS.DA.xml
+C:\Projects\Attendance MOH Tender Copy\MASTAM\ATS\ATS.BO\obj\Release\ATS.BO.vbprojResolveAssemblyReference.cache
+C:\Projects\Attendance MOH Tender Copy\MASTAM\ATS\ATS.BO\obj\Release\ATS.BO.Resources.resources
+C:\Projects\Attendance MOH Tender Copy\MASTAM\ATS\ATS.BO\obj\Release\ATS.BO.vbproj.GenerateResource.Cache
+C:\Projects\Attendance MOH Tender Copy\MASTAM\ATS\ATS.BO\obj\Release\ATS.BO.dll
+C:\Projects\Attendance MOH Tender Copy\MASTAM\ATS\ATS.BO\obj\Release\ATS.BO.xml
+C:\Projects\Attendance MOH Tender Copy\MASTAM\ATS\ATS.BO\obj\Release\ATS.BO.pdb
+C:\Projects\Attendance MOH FULL Copy\MASTAM\ATS\ATS.BO\bin\Release\ATS.BO.dll
+C:\Projects\Attendance MOH FULL Copy\MASTAM\ATS\ATS.BO\bin\Release\ATS.BO.pdb
+C:\Projects\Attendance MOH FULL Copy\MASTAM\ATS\ATS.BO\bin\Release\ATS.BO.xml
+C:\Projects\Attendance MOH FULL Copy\MASTAM\ATS\ATS.BO\bin\Release\ATS.DA.dll
+C:\Projects\Attendance MOH FULL Copy\MASTAM\ATS\ATS.BO\bin\Release\ATS.DA.pdb
+C:\Projects\Attendance MOH FULL Copy\MASTAM\ATS\ATS.BO\bin\Release\ATS.DA.xml
+C:\Projects\Attendance MOH FULL Copy\MASTAM\ATS\ATS.BO\obj\Release\ATS.BO.vbprojResolveAssemblyReference.cache
+C:\Projects\Attendance MOH FULL Copy\MASTAM\ATS\ATS.BO\obj\Release\ATS.BO.Resources.resources
+C:\Projects\Attendance MOH FULL Copy\MASTAM\ATS\ATS.BO\obj\Release\ATS.BO.vbproj.GenerateResource.Cache
+C:\Projects\Attendance MOH FULL Copy\MASTAM\ATS\ATS.BO\obj\Release\ATS.BO.dll
+C:\Projects\Attendance MOH FULL Copy\MASTAM\ATS\ATS.BO\obj\Release\ATS.BO.xml
+C:\Projects\Attendance MOH FULL Copy\MASTAM\ATS\ATS.BO\obj\Release\ATS.BO.pdb

@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="VacationsDataSet" targetNamespace="http://tempuri.org/VacationsDataSet.xsd" xmlns:mstns="http://tempuri.org/VacationsDataSet.xsd" xmlns="http://tempuri.org/VacationsDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="AttendanceConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="AttendanceConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.ATS.My.MySettings.GlobalReference.Default.AttendanceConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="vwVacationsTableAdapter" GeneratorDataComponentClassName="vwVacationsTableAdapter" Name="vwVacations" UserDataComponentName="vwVacationsTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="AttendanceConnectionString (MySettings)" DbObjectName="Attendance.Managements.vwVacations" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT VacationId, EmployeeId, TypeId, EffectiveDate, DateExpire, DateOfReturn, VersionNo, TypeName, EmployeeName, DepartmentName, UmEffectiveDate, UmExpireDate, UmDateOfReturn, VacationDays FROM Managements.vwVacations</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="VacationId" DataSetColumn="VacationId" />
+              <Mapping SourceColumn="EmployeeId" DataSetColumn="EmployeeId" />
+              <Mapping SourceColumn="TypeId" DataSetColumn="TypeId" />
+              <Mapping SourceColumn="EffectiveDate" DataSetColumn="EffectiveDate" />
+              <Mapping SourceColumn="DateExpire" DataSetColumn="DateExpire" />
+              <Mapping SourceColumn="DateOfReturn" DataSetColumn="DateOfReturn" />
+              <Mapping SourceColumn="VersionNo" DataSetColumn="VersionNo" />
+              <Mapping SourceColumn="TypeName" DataSetColumn="TypeName" />
+              <Mapping SourceColumn="EmployeeName" DataSetColumn="EmployeeName" />
+              <Mapping SourceColumn="DepartmentName" DataSetColumn="DepartmentName" />
+              <Mapping SourceColumn="UmEffectiveDate" DataSetColumn="UmEffectiveDate" />
+              <Mapping SourceColumn="UmExpireDate" DataSetColumn="UmExpireDate" />
+              <Mapping SourceColumn="UmDateOfReturn" DataSetColumn="UmDateOfReturn" />
+              <Mapping SourceColumn="VacationDays" DataSetColumn="VacationDays" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="VacationsDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="VacationsDataSet" msprop:Generator_UserDSName="VacationsDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="vwVacations" msprop:Generator_TableClassName="vwVacationsDataTable" msprop:Generator_TableVarName="tablevwVacations" msprop:Generator_TablePropName="vwVacations" msprop:Generator_RowDeletingName="vwVacationsRowDeleting" msprop:Generator_UserTableName="vwVacations" msprop:Generator_RowChangingName="vwVacationsRowChanging" msprop:Generator_RowEvHandlerName="vwVacationsRowChangeEventHandler" msprop:Generator_RowDeletedName="vwVacationsRowDeleted" msprop:Generator_RowEvArgName="vwVacationsRowChangeEvent" msprop:Generator_RowChangedName="vwVacationsRowChanged" msprop:Generator_RowClassName="vwVacationsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="VacationId" msprop:Generator_ColumnVarNameInTable="columnVacationId" msprop:Generator_ColumnPropNameInRow="VacationId" msprop:Generator_ColumnPropNameInTable="VacationIdColumn" msprop:Generator_UserColumnName="VacationId" type="xs:int" />
+              <xs:element name="EmployeeId" msprop:Generator_ColumnVarNameInTable="columnEmployeeId" msprop:Generator_ColumnPropNameInRow="EmployeeId" msprop:Generator_ColumnPropNameInTable="EmployeeIdColumn" msprop:Generator_UserColumnName="EmployeeId" type="xs:int" />
+              <xs:element name="TypeId" msprop:Generator_ColumnVarNameInTable="columnTypeId" msprop:Generator_ColumnPropNameInRow="TypeId" msprop:Generator_ColumnPropNameInTable="TypeIdColumn" msprop:Generator_UserColumnName="TypeId" type="xs:int" />
+              <xs:element name="EffectiveDate" msprop:Generator_ColumnVarNameInTable="columnEffectiveDate" msprop:Generator_ColumnPropNameInRow="EffectiveDate" msprop:Generator_ColumnPropNameInTable="EffectiveDateColumn" msprop:Generator_UserColumnName="EffectiveDate" type="xs:dateTime" />
+              <xs:element name="DateExpire" msprop:Generator_ColumnVarNameInTable="columnDateExpire" msprop:Generator_ColumnPropNameInRow="DateExpire" msprop:Generator_ColumnPropNameInTable="DateExpireColumn" msprop:Generator_UserColumnName="DateExpire" type="xs:dateTime" />
+              <xs:element name="DateOfReturn" msprop:Generator_ColumnVarNameInTable="columnDateOfReturn" msprop:Generator_ColumnPropNameInRow="DateOfReturn" msprop:Generator_ColumnPropNameInTable="DateOfReturnColumn" msprop:Generator_UserColumnName="DateOfReturn" type="xs:dateTime" />
+              <xs:element name="VersionNo" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnVersionNo" msprop:Generator_ColumnPropNameInRow="VersionNo" msprop:Generator_ColumnPropNameInTable="VersionNoColumn" msprop:Generator_UserColumnName="VersionNo" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="TypeName" msprop:Generator_ColumnVarNameInTable="columnTypeName" msprop:Generator_ColumnPropNameInRow="TypeName" msprop:Generator_ColumnPropNameInTable="TypeNameColumn" msprop:Generator_UserColumnName="TypeName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EmployeeName" msprop:Generator_ColumnVarNameInTable="columnEmployeeName" msprop:Generator_ColumnPropNameInRow="EmployeeName" msprop:Generator_ColumnPropNameInTable="EmployeeNameColumn" msprop:Generator_UserColumnName="EmployeeName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DepartmentName" msprop:Generator_ColumnVarNameInTable="columnDepartmentName" msprop:Generator_ColumnPropNameInRow="DepartmentName" msprop:Generator_ColumnPropNameInTable="DepartmentNameColumn" msprop:Generator_UserColumnName="DepartmentName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="UmEffectiveDate" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnUmEffectiveDate" msprop:Generator_ColumnPropNameInRow="UmEffectiveDate" msprop:Generator_ColumnPropNameInTable="UmEffectiveDateColumn" msprop:Generator_UserColumnName="UmEffectiveDate" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="UmExpireDate" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnUmExpireDate" msprop:Generator_ColumnPropNameInRow="UmExpireDate" msprop:Generator_ColumnPropNameInTable="UmExpireDateColumn" msprop:Generator_UserColumnName="UmExpireDate" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="UmDateOfReturn" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnUmDateOfReturn" msprop:Generator_ColumnPropNameInRow="UmDateOfReturn" msprop:Generator_ColumnPropNameInTable="UmDateOfReturnColumn" msprop:Generator_UserColumnName="UmDateOfReturn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="VacationDays" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnVacationDays" msprop:Generator_ColumnPropNameInRow="VacationDays" msprop:Generator_ColumnPropNameInTable="VacationDaysColumn" msprop:Generator_UserColumnName="VacationDays" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:vwVacations" />
+      <xs:field xpath="mstns:VacationId" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

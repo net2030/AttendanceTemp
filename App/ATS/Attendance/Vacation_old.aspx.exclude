@@ -1,0 +1,11 @@
+﻿<%@ Page Title="الاجازات" Language="VB" MasterPageFile="~/Masters/MasterPageEmployee.master" AutoEventWireup="false" CodeFile="Vacation_old.aspx.vb" Inherits="AccountAdmin_WorkException" %>
+<%@ Register assembly="Telerik.Web.UI" namespace="Telerik.Web.UI" tagprefix="telerik" %>
+<%@ Register Src="Controls/ctlMyVacation.ascx" TagName="ctlMyVacation" TagPrefix="uc1" %>
+<%@ Register Src="Controls/ctlVacation.ascx" TagName="ctlVacation" TagPrefix="uc1" %>
+
+<asp:Content ContentID="C" ContentPlaceHolderID="C" Runat="Server">
+
+    <uc1:ctlMyVacation ID="ctlMyVacation1" runat="server" Visible="false"/>
+    <uc1:ctlVacation ID="ctlVacation" runat="server" Visible="false"/>
+
+</asp:Content>

@@ -1,0 +1,19 @@
+﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="TimeTable.aspx.vb" Inherits="TimeTable" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+</head>
+<body>
+   
+    <div style="width: 100%; overflow: hidden;">
+            <div id="divTable" runat="server" style="width: 50%; float: left;"> Left </div>
+            <div id="divTable1" runat="server" style="margin-left: 52%;"> Right </div>
+    </div>
+
+   
+    
+</body>
+</html>

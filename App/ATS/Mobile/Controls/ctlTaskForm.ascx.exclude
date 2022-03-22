@@ -1,0 +1,101 @@
+<%@ Control Language="VB" AutoEventWireup="false" CodeFile="ctlTaskForm.ascx.vb" Inherits="Task_Controls_ctlTaskForm" %>
+<%@ Register assembly="Telerik.Web.UI" namespace="Telerik.Web.UI" tagprefix="telerik" %>
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="cc2" %>
+<%@ Register Assembly="eWorld.UI, Version=2.0.6.2393, Culture=neutral, PublicKeyToken=24D65337282035F2"Namespace="eWorld.UI" TagPrefix="ew" %>
+
+<div data-role="header" data-theme="a" >
+       <h1 style="text-align:left;margin-left:15px;" >My Task</h1>
+</div>
+
+<div data-role="content" data-theme="d"> 
+     
+      <ul data-role="listview" > 
+          <li data-role="fieldcontain">
+              Task Id:
+              <asp:TextBox ID="TaskId" runat="server" ReadOnly="true" ></asp:TextBox>
+
+          </li>
+
+           <li data-role="fieldcontain">
+           Project Id:
+           <asp:DropDownList ID="ddlProjects" runat="server" AutoPostBack="true"
+               DataSourceID="dsProjects"
+               DataTextField="ProjectName"
+               DataValueField="ProjectId">
+               <asp:ListItem Value="0">.....Choose.....</asp:ListItem>
+           </asp:DropDownList>
+          </li>
+
+         <li data-role="fieldcontain">
+           Parent Task:
+           <asp:DropDownList ID="ddlparents" runat="server" AutoPostBack="True"
+               
+               DataTextField="Descr"
+               DataValueField="TaskId">
+           </asp:DropDownList>
+          </li>
+
+         <li data-role="fieldcontain">
+            Task Description:
+           <asp:TextBox id="Description" runat="server" Width="100%"  Height="80px" TextMode="MultiLine" MaxLength="200"></asp:TextBox>
+          </li>
+          <li data-role="fieldcontain">
+              <asp:CheckBox ID="CheckBox1" runat="server" Text="Is Parent Task" />
+          </li>
+
+          <li data-role="fieldcontain">
+              Due date:
+              <telerik:RadDatePicker ID="DueDate" Runat="server">
+              </telerik:RadDatePicker>
+
+          </li>
+
+          <li data-role="fieldcontain">
+              Assigned To:
+              <telerik:RadListBox ID="listAssignedTo" runat="server" cssclass="ListBox"
+                  AllowTransferOnDoubleClick="True" 
+               
+                  DataTextField="EmployeeName" 
+                  DataValueField="AccountEmployeeId"  
+                  Font-Names="Arial" Font-Size="Large" Height="200px" 
+                  SelectionMode="Multiple" Width="100%" AutoPostBack="True" Font-Italic="False">
+              </telerik:RadListBox>
+          </li>
+          <li data-role="fieldcontain">
+              Status:
+              <asp:DropDownList ID="ddlStatus" runat="server" style="margin-right: 0px">
+                                <asp:ListItem Value="1">Started</asp:ListItem>
+                                <asp:ListItem Value="2">In Progress</asp:ListItem>
+                                <asp:ListItem Value="3">Completed</asp:ListItem>
+                            </asp:DropDownList>
+          </li>
+
+           <li data-role="fieldcontain">
+              
+               Completed Percentage:
+               <telerik:RadNumericTextBox ID="CompletedPercentage" Runat="server" MaxValue="100" MinValue="0" Width="50px" Value="0">
+                <NumberFormat ZeroPattern="n" decimaldigits="0"></NumberFormat>
+               </telerik:RadNumericTextBox>
+              
+              
+            </Li>
+      </ul>
+      
+     
+ </div>
+
+<asp:ObjectDataSource ID="dsEmployees" runat="server" OldValuesParameterFormatString="original_{0}" SelectMethod="GetEmployeesList" TypeName="LookUp">
+</asp:ObjectDataSource>
+
+
+
+<asp:ObjectDataSource ID="dsProjects" runat="server" OldValuesParameterFormatString="original_{0}" SelectMethod="GetProjectsList" TypeName="ProjectDAL">
+</asp:ObjectDataSource>
+
+<asp:Button ID="btnAdd" runat="server" data-inline="true" Text="Save" UseSubmitBehavior="False" />
+
+
+
+
+
+

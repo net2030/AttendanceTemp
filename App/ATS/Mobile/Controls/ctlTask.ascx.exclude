@@ -1,0 +1,32 @@
+<%@ Control Language="VB" AutoEventWireup="false" CodeFile="ctlTask.ascx.vb" Inherits="Task_Controls_ctlTask" %>
+<%@ Register assembly="Telerik.Web.UI" namespace="Telerik.Web.UI" tagprefix="telerik" %>
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="cc2" %>
+<%@ Register Assembly="eWorld.UI, Version=2.0.6.2393, Culture=neutral, PublicKeyToken=24D65337282035F2"Namespace="eWorld.UI" TagPrefix="ew" %>
+
+<div data-role="header" data-theme="a" >
+       <h1 style="text-align:left;margin-left:15px;" >My Task</h1>
+</div>
+
+<div data-role="content" data-theme="d" >  
+     
+
+  <asp:Repeater ID="R" runat="server" DataSourceID="dsTask"   >
+     <HeaderTemplate>
+        <ul data-filter="true" data-inset="True" data-role="listview"  data-split-theme="d" data-split-icon="delete" data-theme="d" >
+     </HeaderTemplate>
+     <ItemTemplate  >
+         <li dir="rtl">
+             <asp:LinkButton ID="lnkDayView" style="font-size:8pt " postbackurl='<%# String.Format("~/Mobile/TaskForm.aspx?TaskId={0}&ProjectId={1}", Eval("TaskId"), Eval("ProjectId"))%>' Text='<%# Eval("Descr") & " - " & Eval("EmployeeName")%>' tooltip='<%# Eval("Descr") & " - " & Eval("EmployeeName")%>' runat="server" > </asp:LinkButton>
+             <asp:LinkButton ID="lnkDelete" OnClientClick="<%# ResourceHelper.GetDeleteMessageJavascript()%>" postbackurl='<%# Eval("TaskId", "~/Mobile/TaskForm.aspx?IsDelete=True&TaskId={0}")%>' Text="Delete" runat="server" > </asp:LinkButton>                
+         </li>
+     </ItemTemplate>
+     <FooterTemplate>
+        </ul>
+     </FooterTemplate>
+  </asp:Repeater>
+     <asp:Button ID="btnAdd" runat="server" Text="Add" UseSubmitBehavior="False" data-inline="true"/>
+     
+ </div>
+
+<asp:ObjectDataSource ID="dsTask" runat="server" OldValuesParameterFormatString="original_{0}" SelectMethod="GetTasks" TypeName="TaskDAL">
+</asp:ObjectDataSource>

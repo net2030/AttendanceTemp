@@ -1,0 +1,87 @@
+﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="ResponsiveRadHtmlChart.aspx.vb" Inherits="Mobile_ResponsiveRadHtmlChart" %>
+<%@ Register assembly="Telerik.Web.UI" namespace="Telerik.Web.UI" tagprefix="telerik" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+	<title></title>
+	<style type="text/css">
+		.myChart {
+			width: 100% !important;
+			height: 50% !important;
+		}
+		/*Child elements can have a height in percentage only if their parent element has a predefined height*/
+		/*html, body, form {
+			margin: 0;
+			height: 100%;
+			overflow: hidden;
+		}*/
+	</style>
+</head>
+<body>
+	<form id="form1" runat="server">
+		<telerik:RadScriptManager ID="RadScriptManager1" runat="server"></telerik:RadScriptManager>
+		<script type="text/javascript">
+		    function resizeChart() {
+		        $find("<%=Chart1.ClientID%>")._chartObject.resize();
+			}
+			//Timeout is needed to handle the multiple resize event triggering in older browsers like IE7/IE8
+			var TO = false;
+			$(window).resize(function () {
+			    if (TO !== false)
+			        clearTimeout(TO);
+			    TO = setTimeout(resizeChart, 200);
+			});
+		</script>
+		    <div style="width: 100%; height: 90%; border: 1px solid green;">
+            
+        <asp:Chart ID="Chart1" runat="server" Width="1000px" Height="700px" BackColor="Transparent" CssClass="myChart">
+            <Series>
+                <asp:Series Name="Education" XValueMember="key1" YValueMembers="value" IsVisibleInLegend="true"
+                    ChartType="Pie" Color="255, 255, 128" CustomProperties="PieLabelStyle=Disabled" IsValueShownAsLabel="True">
+                </asp:Series>
+            </Series>
+            <ChartAreas>
+                <asp:ChartArea Name="ChartArea1" Area3DStyle-Enable3D="false">
+                    <AxisX LineColor="DarkGray">
+                        <MajorGrid LineColor="LightGray" />
+                    </AxisX>
+                    <AxisY LineColor="DarkGray">
+                        <MajorGrid LineColor="LightGray" />
+                    </AxisY>
+                    <Area3DStyle Enable3D="True" WallWidth="5" LightStyle="Realistic"></Area3DStyle>
+                </asp:ChartArea>
+            </ChartAreas>
+            <Legends>
+                <asp:Legend BackImageAlignment="TopRight" Docking="Bottom" Font="Arial, 20pt" IsTextAutoFit="False" IsDockedInsideChartArea="False">
+                </asp:Legend>
+            </Legends>
+        </asp:Chart>
+</div>
+            
+        <%--<div style="width: 100%; height: 90%; border: 1px solid green;">
+			<telerik:RadHtmlChart runat="server" ID="RadHtmlChart1" CssClass="myChart">
+				<PlotArea>
+					 <Series>
+                        <telerik:PieSeries DataFieldY="Value" NameField="Key1" >
+                            
+                            <TooltipsAppearance Color="White" DataFormatString="{0}%"></TooltipsAppearance>
+                        </telerik:PieSeries>
+                    </Series>
+                    <YAxis>
+                    </YAxis>
+				</PlotArea>
+				<ChartTitle Text="Product sales for 2011">
+				</ChartTitle>
+				<Legend>
+					<Appearance Position="Bottom" />
+				</Legend>
+			</telerik:RadHtmlChart>
+		</div>--%>
+		
+		
+	
+	</form>
+</body>
+</html>

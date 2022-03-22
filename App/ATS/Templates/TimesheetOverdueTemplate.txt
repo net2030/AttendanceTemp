@@ -1,0 +1,6 @@
+[strheader]
+<br/>
+<br/>
+[strtable]
+<br/>
+Employee reminders can be turned on or off in the [My Preferences] area. By default, the reminders system is activated when you created your TimeLive account.

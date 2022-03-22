@@ -1,0 +1,15 @@
+<%@ Master Language="VB" CodeFile="MasterPageEmployeeBase.master.vb"  Inherits="MasterPageEmployeeBase" MasterPageFile="~/Masters/MasterPageBase.master" %>
+<%@ Register Src="../Menus/Controls/ctlAccountAdminSiteMenu.ascx" TagName="ctlAccountAdminSiteMenu"
+    TagPrefix="uc1" %>
+    <%@ Register Src="../Authenticate/Controls/ctlLoginStatus.ascx" TagName="ctlLoginStatus"
+    TagPrefix="uc3" %>
+
+<asp:Content ID="C" ContentPlaceHolderID="C" Runat="Server" >
+    <tr>
+        <td>
+            <asp:ContentPlaceHolder ID="C" runat="server">
+                                      </asp:ContentPlaceHolder>
+        </td>
+    </tr>
+</asp:Content>
+

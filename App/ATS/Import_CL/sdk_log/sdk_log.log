@@ -1,0 +1,1634 @@
+Begin Time:2016-05-25 10:15:09.981
+[2016-05-25 10:15:09.981][P:19724/T:13272][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=00D7F9E0.]
+[2016-05-25 10:15:10.038][P:19724/T:13272][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-25 10:15:10.038][P:19724/T:13272][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-25 10:15:10.038][P:19724/T:13272][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-25 10:15:10.313][P:19724/T:13272][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=29119608.]
+[2016-05-25 10:15:10.313][P:19724/T:13272][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=29119608, pInParam=00D7F9D0, pOutParam=00D7F9C0, waittime=1000.]
+[2016-05-25 10:15:10.358][P:19724/T:13272][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-25 10:15:10.907][P:19724/T:13272][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=29119608.]
+[2016-05-25 10:15:10.959][P:19724/T:13272][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-25 10:15:50.448
+[2016-05-25 10:15:50.448][P:12868/T:11044][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=0086FD28.]
+[2016-05-25 10:15:50.513][P:12868/T:11044][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-25 10:15:50.513][P:12868/T:11044][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-25 10:15:50.513][P:12868/T:11044][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-25 10:15:50.800][P:12868/T:11044][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=221900888.]
+[2016-05-25 10:15:50.800][P:12868/T:11044][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=221900888, pInParam=0086FD18, pOutParam=0086FD08, waittime=1000.]
+[2016-05-25 10:15:50.843][P:12868/T:11044][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-25 10:15:51.360][P:12868/T:11044][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=221900888.]
+[2016-05-25 10:15:51.411][P:12868/T:11044][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-25 10:16:10.011
+[2016-05-25 10:16:10.011][P:20368/T:14840][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=007AFE80.]
+[2016-05-25 10:16:10.076][P:20368/T:14840][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-25 10:16:10.076][P:20368/T:14840][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-25 10:16:10.076][P:20368/T:14840][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-25 10:16:10.343][P:20368/T:14840][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=220590168.]
+[2016-05-25 10:16:10.343][P:20368/T:14840][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=220590168, pInParam=007AFE70, pOutParam=007AFE60, waittime=1000.]
+[2016-05-25 10:16:10.394][P:20368/T:14840][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-25 10:16:10.955][P:20368/T:14840][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=220590168.]
+[2016-05-25 10:16:11.006][P:20368/T:14840][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-25 10:22:15.516
+[2016-05-25 10:22:15.516][P:6480/T:19892][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=00C5FE28.]
+[2016-05-25 10:22:15.576][P:6480/T:19892][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-25 10:22:15.576][P:6480/T:19892][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-25 10:22:15.576][P:6480/T:19892][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-25 10:22:15.859][P:6480/T:19892][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=221442136.]
+[2016-05-25 10:22:15.859][P:6480/T:19892][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=221442136, pInParam=00C5FE18, pOutParam=00C5FE08, waittime=1000.]
+[2016-05-25 10:22:15.911][P:6480/T:19892][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-25 10:22:16.451][P:6480/T:19892][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=221442136.]
+[2016-05-25 10:22:16.502][P:6480/T:19892][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-25 10:22:26.364
+[2016-05-25 10:22:26.364][P:12824/T:9892][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=0068FBD8.]
+[2016-05-25 10:22:26.420][P:12824/T:9892][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-25 10:22:26.420][P:12824/T:9892][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-25 10:22:26.420][P:12824/T:9892][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-25 10:22:26.696][P:12824/T:9892][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=18895992.]
+[2016-05-25 10:22:26.696][P:12824/T:9892][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=18895992, pInParam=0068FBC8, pOutParam=0068FBB8, waittime=1000.]
+[2016-05-25 10:22:26.739][P:12824/T:9892][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-25 10:22:27.279][P:12824/T:9892][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=18895992.]
+[2016-05-25 10:22:27.330][P:12824/T:9892][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-25 10:22:41.374
+[2016-05-25 10:22:41.374][P:18252/T:16092][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=00B5FD40.]
+[2016-05-25 10:22:41.443][P:18252/T:16092][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-25 10:22:41.443][P:18252/T:16092][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-25 10:22:41.443][P:18252/T:16092][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-25 10:22:41.718][P:18252/T:16092][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=23155832.]
+[2016-05-25 10:22:41.718][P:18252/T:16092][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=23155832, pInParam=00B5FD30, pOutParam=00B5FD20, waittime=1000.]
+[2016-05-25 10:22:41.772][P:18252/T:16092][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-25 10:22:42.278][P:18252/T:16092][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=23155832.]
+[2016-05-25 10:22:42.331][P:18252/T:16092][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-25 10:23:34.547
+[2016-05-25 10:23:34.547][P:17848/T:14792][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=00FFF9B0.]
+[2016-05-25 10:23:34.613][P:17848/T:14792][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-25 10:23:34.613][P:17848/T:14792][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-25 10:23:34.613][P:17848/T:14792][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-25 10:23:34.890][P:17848/T:14792][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=32003192.]
+[2016-05-25 10:23:34.890][P:17848/T:14792][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=32003192, pInParam=00FFF994, pOutParam=00FFF9A8, waittime=1000.]
+[2016-05-25 10:23:34.944][P:17848/T:14792][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-25 10:23:35.627][P:17848/T:14792][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=32003192.]
+[2016-05-25 10:23:35.679][P:17848/T:14792][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-25 10:25:01.653
+[2016-05-25 10:25:01.653][P:12372/T:14128][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=006BF8B4.]
+[2016-05-25 10:25:01.717][P:12372/T:14128][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-25 10:25:01.717][P:12372/T:14128][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-25 10:25:01.717][P:12372/T:14128][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-25 10:25:01.993][P:12372/T:14128][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=23680120.]
+[2016-05-25 10:25:01.993][P:12372/T:14128][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=23680120, pInParam=006BF898, pOutParam=006BF8AC, waittime=1000.]
+[2016-05-25 10:25:02.035][P:12372/T:14128][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-25 10:25:02.607][P:12372/T:14128][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=23680120.]
+[2016-05-25 10:25:02.659][P:12372/T:14128][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-25 10:35:41.282
+[2016-05-25 10:35:41.282][P:20472/T:19724][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=0044F878.]
+[2016-05-25 10:35:41.360][P:20472/T:19724][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-25 10:35:41.360][P:20472/T:19724][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-25 10:35:41.360][P:20472/T:19724][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-25 10:35:41.645][P:20472/T:19724][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=17060984.]
+[2016-05-25 10:35:41.645][P:20472/T:19724][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=17060984, pInParam=0044F868, pOutParam=0044F858, waittime=1000.]
+[2016-05-25 10:35:41.688][P:20472/T:19724][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-25 10:35:42.218][P:20472/T:19724][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=17060984.]
+[2016-05-25 10:35:42.271][P:20472/T:19724][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-25 10:36:16.830
+[2016-05-25 10:36:16.830][P:5980/T:6820][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=00DFFD70.]
+[2016-05-25 10:36:16.888][P:5980/T:6820][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-25 10:36:16.888][P:5980/T:6820][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-25 10:36:16.888][P:5980/T:6820][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-25 10:36:17.171][P:5980/T:6820][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=210366552.]
+[2016-05-25 10:36:17.171][P:5980/T:6820][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=210366552, pInParam=00DFFD60, pOutParam=00DFFD50, waittime=1000.]
+[2016-05-25 10:36:17.216][P:5980/T:6820][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-25 10:36:17.765][P:5980/T:6820][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=210366552.]
+[2016-05-25 10:36:17.816][P:5980/T:6820][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-25 10:38:36.930
+[2016-05-25 10:38:36.930][P:9148/T:18768][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=008EF7A8.]
+[2016-05-25 10:38:36.986][P:9148/T:18768][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-25 10:38:36.986][P:9148/T:18768][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-25 10:38:36.986][P:9148/T:18768][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-25 10:38:37.275][P:9148/T:18768][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=9720952.]
+[2016-05-25 10:38:37.275][P:9148/T:18768][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=9720952, pInParam=008EF798, pOutParam=008EF788, waittime=1000.]
+[2016-05-25 10:38:37.318][P:9148/T:18768][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-25 10:38:37.846][P:9148/T:18768][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=9720952.]
+[2016-05-25 10:38:37.897][P:9148/T:18768][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-25 10:39:01.143
+[2016-05-25 10:39:01.143][P:11500/T:12260][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=00F0FDE0.]
+[2016-05-25 10:39:01.207][P:11500/T:12260][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-25 10:39:01.207][P:11500/T:12260][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-25 10:39:01.207][P:11500/T:12260][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-25 10:39:01.483][P:11500/T:12260][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=31544440.]
+[2016-05-25 10:39:01.483][P:11500/T:12260][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=31544440, pInParam=00F0FDD0, pOutParam=00F0FDC0, waittime=1000.]
+[2016-05-25 10:39:01.536][P:11500/T:12260][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-25 10:39:02.077][P:11500/T:12260][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=31544440.]
+[2016-05-25 10:39:02.129][P:11500/T:12260][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-25 10:39:47.156
+[2016-05-25 10:39:47.156][P:7864/T:16220][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=0040FC18.]
+[2016-05-25 10:39:47.216][P:7864/T:16220][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-25 10:39:47.216][P:7864/T:16220][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-25 10:39:47.216][P:7864/T:16220][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-25 10:39:47.499][P:7864/T:16220][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=210169944.]
+[2016-05-25 10:39:47.499][P:7864/T:16220][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=210169944, pInParam=0040FC08, pOutParam=0040FBF8, waittime=1000.]
+[2016-05-25 10:39:47.551][P:7864/T:16220][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-25 10:39:48.091][P:7864/T:16220][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=210169944.]
+[2016-05-25 10:39:48.142][P:7864/T:16220][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-25 10:41:59.715
+[2016-05-25 10:41:59.715][P:12216/T:13804][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=010DFA78.]
+[2016-05-25 10:41:59.785][P:12216/T:13804][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-25 10:41:59.785][P:12216/T:13804][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-25 10:41:59.785][P:12216/T:13804][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-25 10:42:00.068][P:12216/T:13804][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=226160728.]
+[2016-05-25 10:42:00.068][P:12216/T:13804][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=226160728, pInParam=010DFA68, pOutParam=010DFA58, waittime=1000.]
+[2016-05-25 10:42:00.110][P:12216/T:13804][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-25 10:42:00.595][P:12216/T:13804][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=226160728.]
+[2016-05-25 10:42:00.646][P:12216/T:13804][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-25 10:46:51.630
+[2016-05-25 10:46:51.630][P:16452/T:10132][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=00D2FDF8.]
+[2016-05-25 10:46:51.687][P:16452/T:10132][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-25 10:46:51.687][P:16452/T:10132][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-25 10:46:51.687][P:16452/T:10132][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-25 10:46:51.952][P:16452/T:10132][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=25252984.]
+[2016-05-25 10:46:51.952][P:16452/T:10132][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=25252984, pInParam=00D2FDE8, pOutParam=00D2FDD8, waittime=1000.]
+[2016-05-25 10:46:52.006][P:16452/T:10132][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-25 10:46:52.579][P:16452/T:10132][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=25252984.]
+[2016-05-25 10:46:52.632][P:16452/T:10132][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-25 11:11:53.184
+[2016-05-25 11:11:53.184][P:10472/T:18156][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=00BAF920.]
+[2016-05-25 11:11:53.251][P:10472/T:18156][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-25 11:11:53.251][P:10472/T:18156][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-25 11:11:53.251][P:10472/T:18156][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-25 11:11:53.516][P:10472/T:18156][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=21714040.]
+[2016-05-25 11:11:53.516][P:10472/T:18156][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=21714040, pInParam=00BAF910, pOutParam=00BAF900, waittime=1000.]
+[2016-05-25 11:11:53.570][P:10472/T:18156][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-25 11:11:54.110][P:10472/T:18156][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=21714040.]
+[2016-05-25 11:11:54.161][P:10472/T:18156][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-25 11:12:47.579
+[2016-05-25 11:12:47.580][P:14708/T:18596][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=003CF780.]
+[2016-05-25 11:12:47.647][P:14708/T:18596][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-25 11:12:47.647][P:14708/T:18596][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-25 11:12:47.647][P:14708/T:18596][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-25 11:12:47.923][P:14708/T:18596][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=18764920.]
+[2016-05-25 11:12:47.923][P:14708/T:18596][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=18764920, pInParam=003CF770, pOutParam=003CF760, waittime=1000.]
+[2016-05-25 11:12:47.966][P:14708/T:18596][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-25 11:12:48.670][P:14708/T:18596][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=18764920.]
+[2016-05-25 11:12:48.723][P:14708/T:18596][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-25 11:13:30.809
+[2016-05-25 11:13:30.809][P:20500/T:14836][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=0025FDD0.]
+[2016-05-25 11:13:30.896][P:20500/T:14836][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-25 11:13:30.896][P:20500/T:14836][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-25 11:13:30.896][P:20500/T:14836][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-25 11:13:31.162][P:20500/T:14836][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=17650808.]
+[2016-05-25 11:13:31.162][P:20500/T:14836][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=17650808, pInParam=0025FDC0, pOutParam=0025FDB0, waittime=1000.]
+[2016-05-25 11:13:31.204][P:20500/T:14836][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-25 11:13:31.721][P:20500/T:14836][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=17650808.]
+[2016-05-25 11:13:31.773][P:20500/T:14836][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-25 11:17:29.981
+[2016-05-25 11:17:29.981][P:19252/T:9612][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=00CFF7F0.]
+[2016-05-25 11:17:30.047][P:19252/T:9612][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-25 11:17:30.047][P:19252/T:9612][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-25 11:17:30.047][P:19252/T:9612][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-25 11:17:30.335][P:19252/T:9612][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=28464248.]
+[2016-05-25 11:17:30.335][P:19252/T:9612][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=28464248, pInParam=00CFF7E0, pOutParam=00CFF7D0, waittime=1000.]
+[2016-05-25 11:17:30.378][P:19252/T:9612][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-25 11:17:30.982][P:19252/T:9612][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=28464248.]
+[2016-05-25 11:17:31.034][P:19252/T:9612][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-25 11:24:52.593
+[2016-05-25 11:24:52.593][P:10496/T:13336][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=007CFE38.]
+[2016-05-25 11:24:52.659][P:10496/T:13336][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-25 11:24:52.659][P:10496/T:13336][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-25 11:24:52.659][P:10496/T:13336][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-25 11:24:52.924][P:10496/T:13336][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=19485816.]
+[2016-05-25 11:24:52.924][P:10496/T:13336][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=19485816, pInParam=007CFE28, pOutParam=007CFE18, waittime=1000.]
+[2016-05-25 11:24:52.967][P:10496/T:13336][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-25 11:24:53.561][P:10496/T:13336][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=19485816.]
+[2016-05-25 11:24:53.612][P:10496/T:13336][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-25 11:26:16.479
+[2016-05-25 11:26:16.479][P:12488/T:9260][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=004BFB28.]
+[2016-05-25 11:26:16.553][P:12488/T:9260][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-25 11:26:16.553][P:12488/T:9260][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-25 11:26:16.553][P:12488/T:9260][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-25 11:26:16.829][P:12488/T:9260][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=9065592.]
+[2016-05-25 11:26:16.829][P:12488/T:9260][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=9065592, pInParam=004BFB18, pOutParam=004BFB08, waittime=1000.]
+[2016-05-25 11:26:16.883][P:12488/T:9260][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-25 11:26:17.454][P:12488/T:9260][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=9065592.]
+[2016-05-25 11:26:17.507][P:12488/T:9260][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-25 11:30:48.067
+[2016-05-25 11:30:48.067][P:20908/T:8656][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=0077FDC0.]
+[2016-05-25 11:30:48.125][P:20908/T:8656][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-25 11:30:48.125][P:20908/T:8656][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-25 11:30:48.125][P:20908/T:8656][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-25 11:30:48.390][P:20908/T:8656][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=24925304.]
+[2016-05-25 11:30:48.390][P:20908/T:8656][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=24925304, pInParam=0077FDB0, pOutParam=0077FDA0, waittime=1000.]
+[2016-05-25 11:30:48.444][P:20908/T:8656][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-25 11:30:48.983][P:20908/T:8656][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=24925304.]
+[2016-05-25 11:30:49.034][P:20908/T:8656][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-25 11:33:01.437
+[2016-05-25 11:33:01.437][P:8608/T:10556][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=0115FB00.]
+[2016-05-25 11:33:01.504][P:8608/T:10556][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-25 11:33:01.504][P:8608/T:10556][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-25 11:33:01.504][P:8608/T:10556][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-25 11:33:01.780][P:8608/T:10556][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=56513656.]
+[2016-05-25 11:33:01.780][P:8608/T:10556][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=56513656, pInParam=0115FAEC, pOutParam=0115FADC, waittime=1000.]
+[2016-05-25 11:33:01.834][P:8608/T:10556][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-25 11:33:02.420][P:8608/T:10556][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=56513656.]
+[2016-05-25 11:33:02.471][P:8608/T:10556][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-25 13:11:11.158
+[2016-05-25 13:11:11.158][P:14636/T:10880][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=003AF6E0.]
+[2016-05-25 13:11:11.225][P:14636/T:10880][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-25 13:11:11.225][P:14636/T:10880][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-25 13:11:11.225][P:14636/T:10880][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-25 13:11:11.490][P:14636/T:10880][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=19092600.]
+[2016-05-25 13:11:11.490][P:14636/T:10880][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=19092600, pInParam=003AF628, pOutParam=003AF618, waittime=1000.]
+[2016-05-25 13:11:11.533][P:14636/T:10880][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-25 13:11:12.094][P:14636/T:10880][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=19092600.]
+[2016-05-25 13:11:12.145][P:14636/T:10880][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-25 13:11:50.889
+[2016-05-25 13:11:50.889][P:12844/T:15252][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=0102FD78.]
+[2016-05-25 13:11:50.954][P:12844/T:15252][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-25 13:11:50.954][P:12844/T:15252][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-25 13:11:50.954][P:12844/T:15252][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-25 13:11:51.219][P:12844/T:15252][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=27153528.]
+[2016-05-25 13:11:51.219][P:12844/T:15252][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=27153528, pInParam=0102FCC0, pOutParam=0102FCB0, waittime=1000.]
+[2016-05-25 13:11:51.273][P:12844/T:15252][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-25 13:11:51.879][P:12844/T:15252][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=27153528.]
+[2016-05-25 13:11:51.932][P:12844/T:15252][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-25 13:12:45.751
+[2016-05-25 13:12:45.751][P:6008/T:13692][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=00D1FE30.]
+[2016-05-25 13:12:45.819][P:6008/T:13692][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-25 13:12:45.819][P:6008/T:13692][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-25 13:12:45.819][P:6008/T:13692][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-25 13:12:46.095][P:6008/T:13692][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=22566008.]
+[2016-05-25 13:12:46.095][P:6008/T:13692][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=22566008, pInParam=00D1FD78, pOutParam=00D1FD68, waittime=1000.]
+[2016-05-25 13:12:46.139][P:6008/T:13692][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-25 13:12:46.721][P:6008/T:13692][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=22566008.]
+[2016-05-25 13:12:46.774][P:6008/T:13692][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-25 13:13:19.731
+[2016-05-25 13:13:19.731][P:14760/T:17432][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=0053FC68.]
+[2016-05-25 13:13:19.796][P:14760/T:17432][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-25 13:13:19.796][P:14760/T:17432][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-25 13:13:19.796][P:14760/T:17432][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-25 13:13:20.061][P:14760/T:17432][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=12670072.]
+[2016-05-25 13:13:20.061][P:14760/T:17432][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=12670072, pInParam=0053FBB0, pOutParam=0053FBA0, waittime=1000.]
+[2016-05-25 13:13:20.115][P:14760/T:17432][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-25 13:13:20.720][P:14760/T:17432][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=12670072.]
+[2016-05-25 13:13:20.772][P:14760/T:17432][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-25 13:28:50.485
+[2016-05-25 13:28:50.485][P:16600/T:13376][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=001AF990.]
+[2016-05-25 13:28:50.551][P:16600/T:13376][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-25 13:28:50.551][P:16600/T:13376][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-25 13:28:50.551][P:16600/T:13376][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-25 13:28:50.837][P:16600/T:13376][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=6902904.]
+[2016-05-25 13:28:50.837][P:16600/T:13376][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=6902904, pInParam=001AF8C0, pOutParam=001AF8DC, waittime=1000.]
+[2016-05-25 13:28:50.880][P:16600/T:13376][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-25 13:28:51.453][P:16600/T:13376][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=6902904.]
+[2016-05-25 13:28:51.505][P:16600/T:13376][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-25 13:29:56.675
+[2016-05-25 13:29:56.675][P:14220/T:10188][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=001BFBB0.]
+[2016-05-25 13:29:56.742][P:14220/T:10188][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-25 13:29:56.742][P:14220/T:10188][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-25 13:29:56.742][P:14220/T:10188][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-25 13:29:57.017][P:14220/T:10188][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=39081080.]
+[2016-05-25 13:29:57.017][P:14220/T:10188][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=39081080, pInParam=001BFAE0, pOutParam=001BFAFC, waittime=1000.]
+[2016-05-25 13:29:57.060][P:14220/T:10188][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-25 13:29:57.610][P:14220/T:10188][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=39081080.]
+[2016-05-25 13:29:57.663][P:14220/T:10188][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-25 13:39:36.175
+[2016-05-25 13:39:36.175][P:8324/T:15244][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=0020FD20.]
+[2016-05-25 13:39:36.255][P:8324/T:15244][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-25 13:39:36.255][P:8324/T:15244][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-25 13:39:36.255][P:8324/T:15244][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-25 13:39:36.531][P:8324/T:15244][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=38622328.]
+[2016-05-25 13:39:36.531][P:8324/T:15244][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=38622328, pInParam=0020FCF8, pOutParam=0020FD18, waittime=1000.]
+[2016-05-25 13:39:36.585][P:8324/T:15244][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-25 13:39:37.080][P:8324/T:15244][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=38622328.]
+[2016-05-25 13:39:37.131][P:8324/T:15244][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-25 13:42:53.823
+[2016-05-25 13:42:53.823][P:16784/T:5712][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=005FFE88.]
+[2016-05-25 13:42:53.879][P:16784/T:5712][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-25 13:42:53.879][P:16784/T:5712][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-25 13:42:53.879][P:16784/T:5712][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-25 13:42:54.155][P:16784/T:5712][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=18699384.]
+[2016-05-25 13:42:54.155][P:16784/T:5712][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=18699384, pInParam=005FFE60, pOutParam=005FFE80, waittime=1000.]
+[2016-05-25 13:42:54.210][P:16784/T:5712][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-25 13:42:54.717][P:16784/T:5712][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=18699384.]
+[2016-05-25 13:42:54.769][P:16784/T:5712][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-25 13:43:59.386
+[2016-05-25 13:43:59.386][P:18248/T:12120][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=007BF818.]
+[2016-05-25 13:43:59.454][P:18248/T:12120][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-25 13:43:59.454][P:18248/T:12120][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-25 13:43:59.454][P:18248/T:12120][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-25 13:43:59.719][P:18248/T:12120][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=17978488.]
+[2016-05-25 13:43:59.719][P:18248/T:12120][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=17978488, pInParam=007BF7F0, pOutParam=007BF810, waittime=1000.]
+[2016-05-25 13:43:59.773][P:18248/T:12120][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-25 13:44:00.280][P:18248/T:12120][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=17978488.]
+[2016-05-25 13:44:00.332][P:18248/T:12120][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-25 13:52:08.080
+[2016-05-25 13:52:08.080][P:15464/T:15264][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=00CBFBE0.]
+[2016-05-25 13:52:08.146][P:15464/T:15264][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-25 13:52:08.146][P:15464/T:15264][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-25 13:52:08.146][P:15464/T:15264][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-25 13:52:08.422][P:15464/T:15264][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=16012408.]
+[2016-05-25 13:52:08.422][P:15464/T:15264][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=16012408, pInParam=00CBFBB8, pOutParam=00CBFBD8, waittime=1000.]
+[2016-05-25 13:52:08.477][P:15464/T:15264][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-25 13:52:08.951][P:15464/T:15264][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=16012408.]
+[2016-05-25 13:52:09.002][P:15464/T:15264][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-25 13:53:27.715
+[2016-05-25 13:53:27.715][P:20544/T:18744][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=00A4FB70.]
+[2016-05-25 13:53:27.781][P:20544/T:18744][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-25 13:53:27.781][P:20544/T:18744][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-25 13:53:27.781][P:20544/T:18744][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-25 13:53:28.046][P:20544/T:18744][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=19485816.]
+[2016-05-25 13:53:28.046][P:20544/T:18744][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=19485816, pInParam=00A4FB48, pOutParam=00A4FB68, waittime=1000.]
+[2016-05-25 13:53:28.099][P:20544/T:18744][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-25 13:53:28.575][P:20544/T:18744][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=19485816.]
+[2016-05-25 13:53:28.627][P:20544/T:18744][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-25 13:53:53.775
+[2016-05-25 13:53:53.775][P:18396/T:18192][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=001AF818.]
+[2016-05-25 13:53:53.842][P:18396/T:18192][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-25 13:53:53.842][P:18396/T:18192][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-25 13:53:53.842][P:18396/T:18192][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-25 13:53:54.129][P:18396/T:18192][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=37704824.]
+[2016-05-25 13:53:54.129][P:18396/T:18192][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=37704824, pInParam=001AF7F0, pOutParam=001AF810, waittime=1000.]
+[2016-05-25 13:53:54.193][P:18396/T:18192][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-25 13:53:54.810][P:18396/T:18192][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=37704824.]
+[2016-05-25 13:53:54.862][P:18396/T:18192][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-25 13:54:15.351
+[2016-05-25 13:54:15.351][P:5020/T:11100][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=0087FB28.]
+[2016-05-25 13:54:15.409][P:5020/T:11100][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-25 13:54:15.409][P:5020/T:11100][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-25 13:54:15.409][P:5020/T:11100][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-25 13:54:15.686][P:5020/T:11100][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=23483512.]
+[2016-05-25 13:54:15.686][P:5020/T:11100][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=23483512, pInParam=0087FB00, pOutParam=0087FB20, waittime=1000.]
+[2016-05-25 13:54:15.737][P:5020/T:11100][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-25 13:54:16.234][P:5020/T:11100][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=23483512.]
+[2016-05-25 13:54:16.286][P:5020/T:11100][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-25 13:54:42.145
+[2016-05-25 13:54:42.145][P:3992/T:20168][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=0062FBC0.]
+[2016-05-25 13:54:42.209][P:3992/T:20168][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-25 13:54:42.209][P:3992/T:20168][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-25 13:54:42.209][P:3992/T:20168][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-25 13:54:42.473][P:3992/T:20168][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=23090296.]
+[2016-05-25 13:54:42.473][P:3992/T:20168][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=23090296, pInParam=0062FB98, pOutParam=0062FBB8, waittime=1000.]
+[2016-05-25 13:54:42.516][P:3992/T:20168][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-25 13:54:43.045][P:3992/T:20168][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=23090296.]
+[2016-05-25 13:54:43.098][P:3992/T:20168][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-25 13:59:38.663
+[2016-05-25 13:59:38.663][P:18132/T:16692][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=002FF850.]
+[2016-05-25 13:59:38.741][P:18132/T:16692][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-25 13:59:38.741][P:18132/T:16692][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-25 13:59:38.741][P:18132/T:16692][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-25 13:59:39.017][P:18132/T:16692][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=36525176.]
+[2016-05-25 13:59:39.017][P:18132/T:16692][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=36525176, pInParam=002FF828, pOutParam=002FF848, waittime=1000.]
+[2016-05-25 13:59:39.060][P:18132/T:16692][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-25 13:59:39.623][P:18132/T:16692][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=36525176.]
+[2016-05-25 13:59:39.675][P:18132/T:16692][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-25 14:00:24.210
+[2016-05-25 14:00:24.210][P:17712/T:13772][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=003DFDC0.]
+[2016-05-25 14:00:24.287][P:17712/T:13772][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-25 14:00:24.287][P:17712/T:13772][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-25 14:00:24.287][P:17712/T:13772][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-25 14:00:24.563][P:17712/T:13772][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=19879032.]
+[2016-05-25 14:00:24.563][P:17712/T:13772][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=19879032, pInParam=003DFD98, pOutParam=003DFDB8, waittime=1000.]
+[2016-05-25 14:00:24.615][P:17712/T:13772][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-25 14:00:25.123][P:17712/T:13772][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=19879032.]
+[2016-05-25 14:00:25.174][P:17712/T:13772][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-25 14:11:56.013
+[2016-05-25 14:11:56.021][P:5992/T:19508][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=002EFAA0.]
+[2016-05-25 14:11:56.092][P:5992/T:19508][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-25 14:11:56.092][P:5992/T:19508][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-25 14:11:56.092][P:5992/T:19508][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-25 14:11:56.380][P:5992/T:19508][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=40260728.]
+[2016-05-25 14:11:56.380][P:5992/T:19508][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=40260728, pInParam=002EFA78, pOutParam=002EFA98, waittime=1000.]
+[2016-05-25 14:11:56.423][P:5992/T:19508][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-25 14:11:56.907][P:5992/T:19508][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=40260728.]
+[2016-05-25 14:11:56.959][P:5992/T:19508][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-25 14:12:37.098
+[2016-05-25 14:12:37.098][P:17604/T:18128][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=004BFE88.]
+[2016-05-25 14:12:37.158][P:17604/T:18128][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-25 14:12:37.158][P:17604/T:18128][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-25 14:12:37.158][P:17604/T:18128][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-25 14:12:37.430][P:17604/T:18128][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=37639288.]
+[2016-05-25 14:12:37.430][P:17604/T:18128][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=37639288, pInParam=004BFE60, pOutParam=004BFE80, waittime=1000.]
+[2016-05-25 14:12:37.472][P:17604/T:18128][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-25 14:12:37.968][P:17604/T:18128][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=37639288.]
+[2016-05-25 14:12:38.019][P:17604/T:18128][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-25 15:05:32.338
+[2016-05-25 15:05:32.338][P:15508/T:19700][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=C:\Projects\DAHWA SDK\Demo\Category Application\AccessControl\ConsoleApplication1\.\Bin\ConsoleApplication1.exe, port=37777, SpeCap=0, lpDeviceInfo=00A3FD70.]
+[2016-05-25 15:05:33.873][P:15508/T:19700][TPTCPClient.cpp:550][Error][90010007] Connect host failed, ip:C:\Projects\DAHWA SDK\Demo\Category Application\AccessControl\ConsoleApplication1\.\Bin\ConsoleApplication1.exe
+[2016-05-25 15:05:33.873][P:15508/T:19700][dhdevprob.cpp:1986][Error][9001000d] Failed to create main connection
+[2016-05-25 15:05:33.873][P:15508/T:19700][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:9!
+[2016-05-25 15:05:33.873][P:15508/T:19700][dhnetsdk.cpp:420][Error][90010002] Login failed, ip:C:\Projects\DAHWA SDK\Demo\Category Application\AccessControl\ConsoleApplication1\.\Bin\ConsoleApplication1.exe, port:37777, specCap:0!
+[2016-05-25 15:05:33.873][P:15508/T:19700][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=9, login ID=0.]
+[2016-05-25 15:05:33.873][P:15508/T:19700][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=0.]
+[2016-05-25 15:05:33.873][P:15508/T:19700][dhnetsdk.cpp:609][Error][90010004] Failed to logout, id:0
+[2016-05-25 15:05:33.873][P:15508/T:19700][dhnetsdk.cpp:612][Info][0] Leave CLIENT_Logout. [ret=0]
+Begin Time:2016-05-25 15:08:44.608
+[2016-05-25 15:08:44.608][P:18612/T:14204][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=C:\Projects\DAHWA SDK\Demo\Category Application\AccessControl\ConsoleApplication1\.\Bin\ConsoleApplication1.exe, port=37777, SpeCap=0, lpDeviceInfo=00B8F930.]
+[2016-05-25 15:08:46.146][P:18612/T:14204][TPTCPClient.cpp:550][Error][90010007] Connect host failed, ip:C:\Projects\DAHWA SDK\Demo\Category Application\AccessControl\ConsoleApplication1\.\Bin\ConsoleApplication1.exe
+[2016-05-25 15:08:46.146][P:18612/T:14204][dhdevprob.cpp:1986][Error][9001000d] Failed to create main connection
+[2016-05-25 15:08:46.146][P:18612/T:14204][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:9!
+[2016-05-25 15:08:46.146][P:18612/T:14204][dhnetsdk.cpp:420][Error][90010002] Login failed, ip:C:\Projects\DAHWA SDK\Demo\Category Application\AccessControl\ConsoleApplication1\.\Bin\ConsoleApplication1.exe, port:37777, specCap:0!
+[2016-05-25 15:08:46.146][P:18612/T:14204][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=9, login ID=0.]
+[2016-05-25 15:08:46.146][P:18612/T:14204][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=0.]
+[2016-05-25 15:08:46.146][P:18612/T:14204][dhnetsdk.cpp:609][Error][90010004] Failed to logout, id:0
+[2016-05-25 15:08:46.147][P:18612/T:14204][dhnetsdk.cpp:612][Info][0] Leave CLIENT_Logout. [ret=0]
+Begin Time:2016-05-25 15:15:01.991
+[2016-05-25 15:15:01.991][P:15784/T:10060][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=0095F978.]
+[2016-05-25 15:15:02.070][P:15784/T:10060][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-25 15:15:02.070][P:15784/T:10060][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-25 15:15:02.070][P:15784/T:10060][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-25 15:15:02.345][P:15784/T:10060][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=26760312.]
+[2016-05-25 15:15:02.345][P:15784/T:10060][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=26760312, pInParam=0095F950, pOutParam=0095F970, waittime=1000.]
+[2016-05-25 15:15:02.388][P:15784/T:10060][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-25 15:15:02.863][P:15784/T:10060][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=26760312.]
+[2016-05-25 15:15:02.915][P:15784/T:10060][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-25 15:17:27.392
+[2016-05-25 15:17:27.392][P:11460/T:13412][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=0053F848.]
+[2016-05-25 15:17:27.451][P:11460/T:13412][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-25 15:17:27.451][P:11460/T:13412][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-25 15:17:27.451][P:11460/T:13412][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-25 15:17:27.726][P:11460/T:13412][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=21189752.]
+[2016-05-25 15:17:27.726][P:11460/T:13412][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=21189752, pInParam=0053F820, pOutParam=0053F83C, waittime=1000.]
+[2016-05-25 15:17:27.769][P:11460/T:13412][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-25 15:17:28.297][P:11460/T:13412][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=21189752.]
+[2016-05-25 15:17:28.349][P:11460/T:13412][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-25 15:17:40.296
+[2016-05-25 15:17:40.296][P:11252/T:10920][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=0075F750.]
+[2016-05-25 15:17:40.365][P:11252/T:10920][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-25 15:17:40.365][P:11252/T:10920][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-25 15:17:40.365][P:11252/T:10920][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-25 15:17:40.631][P:11252/T:10920][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=24925304.]
+[2016-05-25 15:17:40.631][P:11252/T:10920][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=24925304, pInParam=0075F728, pOutParam=0075F748, waittime=1000.]
+[2016-05-25 15:17:40.674][P:11252/T:10920][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-25 15:17:41.191][P:11252/T:10920][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=24925304.]
+[2016-05-25 15:17:41.243][P:11252/T:10920][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-25 15:37:14.256
+[2016-05-25 15:37:14.256][P:17480/T:9980][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=010EFA98.]
+[2016-05-25 15:37:14.329][P:17480/T:9980][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-25 15:37:14.329][P:17480/T:9980][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-25 15:37:14.329][P:17480/T:9980][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-25 15:37:14.599][P:17480/T:9980][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=210235480.]
+[2016-05-25 15:37:14.599][P:17480/T:9980][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=210235480, pInParam=010EFA70, pOutParam=010EFA90, waittime=1000.]
+[2016-05-25 15:37:14.642][P:17480/T:9980][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+Begin Time:2016-05-25 15:39:02.088
+[2016-05-25 15:39:02.088][P:19412/T:21356][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=002AF6D0.]
+[2016-05-25 15:39:02.160][P:19412/T:21356][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-25 15:39:02.160][P:19412/T:21356][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-25 15:39:02.160][P:19412/T:21356][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-25 15:39:02.420][P:19412/T:21356][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=211218520.]
+[2016-05-25 15:39:02.420][P:19412/T:21356][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=211218520, pInParam=002AF6A8, pOutParam=002AF6C8, waittime=1000.]
+[2016-05-25 15:39:02.466][P:19412/T:21356][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+Begin Time:2016-05-25 15:39:22.970
+[2016-05-25 15:39:22.970][P:11284/T:8236][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=ss, port=37777, SpeCap=0, lpDeviceInfo=0059FC58.]
+[2016-05-25 15:39:26.816][P:11284/T:8236][TPTCPClient.cpp:550][Error][90010007] Connect host failed, ip:ss
+[2016-05-25 15:39:26.816][P:11284/T:8236][dhdevprob.cpp:1986][Error][9001000d] Failed to create main connection
+[2016-05-25 15:39:26.816][P:11284/T:8236][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:9!
+[2016-05-25 15:39:26.816][P:11284/T:8236][dhnetsdk.cpp:420][Error][90010002] Login failed, ip:ss, port:37777, specCap:0!
+[2016-05-25 15:39:26.816][P:11284/T:8236][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=9, login ID=0.]
+[2016-05-25 15:39:26.817][P:11284/T:8236][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=0.]
+[2016-05-25 15:39:26.817][P:11284/T:8236][dhnetsdk.cpp:609][Error][90010004] Failed to logout, id:0
+[2016-05-25 15:39:26.817][P:11284/T:8236][dhnetsdk.cpp:612][Info][0] Leave CLIENT_Logout. [ret=0]
+Begin Time:2016-05-25 15:40:41.442
+[2016-05-25 15:40:41.442][P:9304/T:18456][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=ss, port=37777, SpeCap=0, lpDeviceInfo=008AFAB8.]
+[2016-05-25 15:40:45.197][P:9304/T:18456][TPTCPClient.cpp:550][Error][90010007] Connect host failed, ip:ss
+[2016-05-25 15:40:45.197][P:9304/T:18456][dhdevprob.cpp:1986][Error][9001000d] Failed to create main connection
+[2016-05-25 15:40:45.197][P:9304/T:18456][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:9!
+[2016-05-25 15:40:45.197][P:9304/T:18456][dhnetsdk.cpp:420][Error][90010002] Login failed, ip:ss, port:37777, specCap:0!
+[2016-05-25 15:40:45.197][P:9304/T:18456][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=9, login ID=0.]
+[2016-05-25 15:40:45.198][P:9304/T:18456][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=0.]
+[2016-05-25 15:40:45.198][P:9304/T:18456][dhnetsdk.cpp:609][Error][90010004] Failed to logout, id:0
+[2016-05-25 15:40:45.198][P:9304/T:18456][dhnetsdk.cpp:612][Info][0] Leave CLIENT_Logout. [ret=0]
+Begin Time:2016-05-25 15:41:11.906
+[2016-05-25 15:41:11.906][P:16336/T:12736][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=0043F9F0.]
+[2016-05-25 15:41:11.966][P:16336/T:12736][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-25 15:41:11.966][P:16336/T:12736][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-25 15:41:11.966][P:16336/T:12736][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-25 15:41:12.248][P:16336/T:12736][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=211087448.]
+[2016-05-25 15:41:12.248][P:16336/T:12736][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=211087448, pInParam=0043F9C8, pOutParam=0043F9E8, waittime=1000.]
+[2016-05-25 15:41:12.295][P:16336/T:12736][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+Begin Time:2016-05-25 15:42:03.253
+[2016-05-25 15:42:03.253][P:20208/T:18516][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=0040F848.]
+[2016-05-25 15:42:03.313][P:20208/T:18516][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-25 15:42:03.313][P:20208/T:18516][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-25 15:42:03.313][P:20208/T:18516][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-25 15:42:03.577][P:20208/T:18516][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=210301016.]
+[2016-05-25 15:42:03.577][P:20208/T:18516][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=210301016, pInParam=0040F820, pOutParam=0040F840, waittime=1000.]
+[2016-05-25 15:42:03.627][P:20208/T:18516][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+Begin Time:2016-05-25 15:43:21.716
+[2016-05-25 15:43:21.716][P:9868/T:8928][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=00EDFB08.]
+[2016-05-25 15:43:21.779][P:9868/T:8928][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-25 15:43:21.779][P:9868/T:8928][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-25 15:43:21.779][P:9868/T:8928][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-25 15:43:22.062][P:9868/T:8928][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=218951768.]
+[2016-05-25 15:43:22.062][P:9868/T:8928][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=218951768, pInParam=00EDFAE0, pOutParam=00EDFB00, waittime=1000.]
+[2016-05-25 15:43:22.113][P:9868/T:8928][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+Begin Time:2016-05-25 15:43:50.268
+[2016-05-25 15:43:50.268][P:17556/T:13932][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=00F6F768.]
+[2016-05-25 15:43:50.326][P:17556/T:13932][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-25 15:43:50.326][P:17556/T:13932][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-25 15:43:50.326][P:17556/T:13932][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-25 15:43:50.599][P:17556/T:13932][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=211611736.]
+[2016-05-25 15:43:50.599][P:17556/T:13932][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=211611736, pInParam=00F6F740, pOutParam=00F6F760, waittime=1000.]
+[2016-05-25 15:43:50.642][P:17556/T:13932][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+Begin Time:2016-05-25 15:45:25.896
+[2016-05-25 15:45:25.896][P:5896/T:9696][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=0112FAF8.]
+[2016-05-25 15:45:25.954][P:5896/T:9696][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-25 15:45:25.954][P:5896/T:9696][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-25 15:45:25.954][P:5896/T:9696][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-25 15:45:26.238][P:5896/T:9696][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=210432088.]
+[2016-05-25 15:45:26.238][P:5896/T:9696][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=210432088, pInParam=0112FAD0, pOutParam=0112FAF0, waittime=1000.]
+[2016-05-25 15:45:26.294][P:5896/T:9696][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+Begin Time:2016-05-25 15:46:18.778
+[2016-05-25 15:46:18.778][P:10220/T:17788][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=0101F978.]
+[2016-05-25 15:46:18.846][P:10220/T:17788][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-25 15:46:18.846][P:10220/T:17788][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-25 15:46:18.846][P:10220/T:17788][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-25 15:46:19.134][P:10220/T:17788][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=56251512.]
+[2016-05-25 15:46:19.134][P:10220/T:17788][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=56251512, pInParam=0101F950, pOutParam=0101F970, waittime=1000.]
+[2016-05-25 15:46:19.188][P:10220/T:17788][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-25 15:46:19.705][P:10220/T:17788][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=56251512.]
+[2016-05-25 15:46:19.757][P:10220/T:17788][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-25 15:50:49.111
+[2016-05-25 15:50:49.111][P:8496/T:19792][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=010AF768.]
+[2016-05-25 15:50:49.169][P:8496/T:19792][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-25 15:50:49.169][P:8496/T:19792][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-25 15:50:49.169][P:8496/T:19792][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-25 15:50:49.446][P:8496/T:19792][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=32396408.]
+[2016-05-25 15:50:49.446][P:8496/T:19792][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=32396408, pInParam=010AF740, pOutParam=010AF760, waittime=1000.]
+[2016-05-25 15:50:49.489][P:8496/T:19792][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-25 15:50:50.061][P:8496/T:19792][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=32396408.]
+[2016-05-25 15:50:50.113][P:8496/T:19792][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-25 15:52:10.052
+[2016-05-25 15:52:10.053][P:20680/T:16948][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=003DFDF0.]
+[2016-05-25 15:52:10.109][P:20680/T:16948][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-25 15:52:10.109][P:20680/T:16948][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-25 15:52:10.109][P:20680/T:16948][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-25 15:52:10.374][P:20680/T:16948][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=17716344.]
+[2016-05-25 15:52:10.374][P:20680/T:16948][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=17716344, pInParam=003DFDC8, pOutParam=003DFDE8, waittime=1000.]
+[2016-05-25 15:52:10.428][P:20680/T:16948][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-25 15:52:11.014][P:20680/T:16948][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=17716344.]
+[2016-05-25 15:52:11.067][P:20680/T:16948][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-25 15:52:14.691
+[2016-05-25 15:52:14.691][P:20740/T:11208][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=0068F898.]
+[2016-05-25 15:52:14.752][P:20740/T:11208][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-25 15:52:14.752][P:20740/T:11208][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-25 15:52:14.752][P:20740/T:11208][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-25 15:52:15.014][P:20740/T:11208][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=215347288.]
+[2016-05-25 15:52:15.014][P:20740/T:11208][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=215347288, pInParam=0068F870, pOutParam=0068F890, waittime=1000.]
+[2016-05-25 15:52:15.066][P:20740/T:11208][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-25 15:52:15.628][P:20740/T:11208][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=215347288.]
+[2016-05-25 15:52:15.679][P:20740/T:11208][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-25 15:53:26.324
+[2016-05-25 15:53:26.324][P:16908/T:9316][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=0055FC88.]
+[2016-05-25 15:53:26.391][P:16908/T:9316][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-25 15:53:26.391][P:16908/T:9316][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-25 15:53:26.391][P:16908/T:9316][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-25 15:53:26.676][P:16908/T:9316][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=24663160.]
+[2016-05-25 15:53:26.676][P:16908/T:9316][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=24663160, pInParam=0055FC60, pOutParam=0055FC80, waittime=1000.]
+[2016-05-25 15:53:26.719][P:16908/T:9316][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-25 15:53:27.238][P:16908/T:9316][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=24663160.]
+[2016-05-25 15:53:27.290][P:16908/T:9316][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-25 15:53:32.789
+[2016-05-25 15:53:32.789][P:21120/T:20304][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=00A2FAF8.]
+[2016-05-25 15:53:32.849][P:21120/T:20304][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-25 15:53:32.849][P:21120/T:20304][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-25 15:53:32.849][P:21120/T:20304][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-25 15:53:33.110][P:21120/T:20304][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=210825304.]
+[2016-05-25 15:53:33.110][P:21120/T:20304][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=210825304, pInParam=00A2FAD0, pOutParam=00A2FAF0, waittime=1000.]
+[2016-05-25 15:53:33.154][P:21120/T:20304][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-25 15:53:33.703][P:21120/T:20304][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=210825304.]
+[2016-05-25 15:53:33.754][P:21120/T:20304][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-25 15:55:09.202
+[2016-05-25 15:55:09.202][P:17812/T:21428][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=0110F770.]
+[2016-05-25 15:55:09.267][P:17812/T:21428][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-25 15:55:09.267][P:17812/T:21428][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-25 15:55:09.267][P:17812/T:21428][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-25 15:55:09.562][P:17812/T:21428][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=226160728.]
+[2016-05-25 15:55:09.562][P:17812/T:21428][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=226160728, pInParam=0110F748, pOutParam=0110F768, waittime=1000.]
+[2016-05-25 15:55:09.607][P:17812/T:21428][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-25 15:55:10.112][P:17812/T:21428][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=226160728.]
+[2016-05-25 15:55:10.163][P:17812/T:21428][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-26 09:44:55.855
+[2016-05-26 09:44:55.855][P:8860/T:17224][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=00FFFCA0.]
+[2016-05-26 09:44:55.926][P:8860/T:17224][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-26 09:44:55.926][P:8860/T:17224][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-26 09:44:55.926][P:8860/T:17224][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-26 09:44:56.209][P:8860/T:17224][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=211873880.]
+[2016-05-26 09:44:56.209][P:8860/T:17224][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=211873880, pInParam=00FFFC78, pOutParam=00FFFC98, waittime=1000.]
+[2016-05-26 09:44:56.252][P:8860/T:17224][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-26 09:44:57.034][P:8860/T:17224][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=211873880.]
+[2016-05-26 09:44:57.086][P:8860/T:17224][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-26 09:46:13.848
+[2016-05-26 09:46:13.848][P:14836/T:15712][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=00B5F7C8.]
+[2016-05-26 09:46:13.909][P:14836/T:15712][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-26 09:46:13.909][P:14836/T:15712][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-26 09:46:13.909][P:14836/T:15712][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-26 09:46:14.171][P:14836/T:15712][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=220524632.]
+[2016-05-26 09:46:14.171][P:14836/T:15712][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=220524632, pInParam=00B5F7A0, pOutParam=00B5F7C0, waittime=1000.]
+[2016-05-26 09:46:14.224][P:14836/T:15712][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-26 09:46:14.831][P:14836/T:15712][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=220524632.]
+[2016-05-26 09:46:14.882][P:14836/T:15712][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-26 09:49:51.495
+[2016-05-26 09:49:51.495][P:12812/T:7316][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=00DEFAB8.]
+[2016-05-26 09:49:51.568][P:12812/T:7316][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-26 09:49:51.568][P:12812/T:7316][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-26 09:49:51.568][P:12812/T:7316][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-26 09:49:51.851][P:12812/T:7316][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=212004952.]
+[2016-05-26 09:49:51.851][P:12812/T:7316][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=212004952, pInParam=00DEFA90, pOutParam=00DEFAAC, waittime=1000.]
+[2016-05-26 09:49:51.893][P:12812/T:7316][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-26 09:49:52.466][P:12812/T:7316][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=212004952.]
+[2016-05-26 09:49:52.517][P:12812/T:7316][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-26 10:02:15.751
+[2016-05-26 10:02:15.751][P:10360/T:2384][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=0069F708.]
+[2016-05-26 10:02:15.811][P:10360/T:2384][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-26 10:02:15.811][P:10360/T:2384][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-26 10:02:15.811][P:10360/T:2384][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-26 10:02:16.081][P:10360/T:2384][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=217116760.]
+[2016-05-26 10:02:16.081][P:10360/T:2384][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=217116760, pInParam=0069F630, pOutParam=0069F64C, waittime=1000.]
+[2016-05-26 10:02:16.124][P:10360/T:2384][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-26 10:02:16.670][P:10360/T:2384][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=217116760.]
+[2016-05-26 10:02:16.721][P:10360/T:2384][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-26 10:02:38.205
+[2016-05-26 10:02:38.205][P:13040/T:21004][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=006FFBB0.]
+[2016-05-26 10:02:38.264][P:13040/T:21004][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-26 10:02:38.264][P:13040/T:21004][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-26 10:02:38.264][P:13040/T:21004][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-26 10:02:38.549][P:13040/T:21004][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=212398168.]
+[2016-05-26 10:02:38.549][P:13040/T:21004][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=212398168, pInParam=006FFAD8, pOutParam=006FFAF4, waittime=1000.]
+[2016-05-26 10:02:38.592][P:13040/T:21004][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-26 10:02:39.328][P:13040/T:21004][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=212398168.]
+[2016-05-26 10:02:39.379][P:13040/T:21004][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-26 10:06:18.761
+[2016-05-26 10:06:18.761][P:14712/T:16896][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=0036F9E8.]
+[2016-05-26 10:06:18.832][P:14712/T:16896][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-26 10:06:18.832][P:14712/T:16896][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-26 10:06:18.832][P:14712/T:16896][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-26 10:06:19.116][P:14712/T:16896][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=211873880.]
+[2016-05-26 10:06:19.116][P:14712/T:16896][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=211873880, pInParam=0036F910, pOutParam=0036F92C, waittime=1000.]
+[2016-05-26 10:06:19.159][P:14712/T:16896][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-26 10:06:19.875][P:14712/T:16896][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=211873880.]
+[2016-05-26 10:06:19.926][P:14712/T:16896][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-26 10:22:18.009
+[2016-05-26 10:22:18.009][P:18440/T:14656][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=0032F800.]
+[2016-05-26 10:22:18.077][P:18440/T:14656][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-26 10:22:18.077][P:18440/T:14656][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-26 10:22:18.077][P:18440/T:14656][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-26 10:22:18.342][P:18440/T:14656][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=212922456.]
+[2016-05-26 10:22:18.342][P:18440/T:14656][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=212922456, pInParam=0032F728, pOutParam=0032F744, waittime=1000.]
+[2016-05-26 10:22:18.395][P:18440/T:14656][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-26 10:22:19.331][P:18440/T:14656][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=212922456.]
+[2016-05-26 10:22:19.382][P:18440/T:14656][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-26 10:30:18.618
+[2016-05-26 10:30:18.618][P:11852/T:12760][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=00F5FC08.]
+[2016-05-26 10:30:18.689][P:11852/T:12760][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-26 10:30:18.689][P:11852/T:12760][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-26 10:30:18.689][P:11852/T:12760][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-26 10:30:18.952][P:11852/T:12760][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=220852312.]
+[2016-05-26 10:30:18.952][P:11852/T:12760][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=220852312, pInParam=00F5FBC8, pOutParam=00F5FBE4, waittime=1000.]
+[2016-05-26 10:30:19.005][P:11852/T:12760][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-26 10:30:19.500][P:11852/T:12760][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=220852312.]
+[2016-05-26 10:30:19.551][P:11852/T:12760][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-26 10:32:00.633
+[2016-05-26 10:32:00.633][P:8520/T:5060][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=00A5F770.]
+[2016-05-26 10:32:00.704][P:8520/T:5060][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-26 10:32:00.704][P:8520/T:5060][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-26 10:32:00.704][P:8520/T:5060][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-26 10:32:00.967][P:8520/T:5060][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=212660312.]
+[2016-05-26 10:32:00.967][P:8520/T:5060][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=212660312, pInParam=00A5F730, pOutParam=00A5F74C, waittime=1000.]
+[2016-05-26 10:32:01.017][P:8520/T:5060][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-26 10:32:01.502][P:8520/T:5060][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=212660312.]
+[2016-05-26 10:32:01.553][P:8520/T:5060][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-26 10:32:45.990
+[2016-05-26 10:32:45.991][P:12696/T:12324][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=0037F9C8.]
+[2016-05-26 10:32:46.050][P:12696/T:12324][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-26 10:32:46.050][P:12696/T:12324][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-26 10:32:46.050][P:12696/T:12324][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-26 10:32:46.311][P:12696/T:12324][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=213184600.]
+[2016-05-26 10:32:46.311][P:12696/T:12324][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=213184600, pInParam=0037F988, pOutParam=0037F9A4, waittime=1000.]
+[2016-05-26 10:32:46.357][P:12696/T:12324][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-26 10:32:46.905][P:12696/T:12324][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=213184600.]
+[2016-05-26 10:32:46.957][P:12696/T:12324][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-26 10:33:43.982
+[2016-05-26 10:33:43.982][P:19148/T:21092][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=00D4FB40.]
+[2016-05-26 10:33:44.045][P:19148/T:21092][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-26 10:33:44.045][P:19148/T:21092][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-26 10:33:44.045][P:19148/T:21092][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-26 10:33:44.314][P:19148/T:21092][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=223735896.]
+[2016-05-26 10:33:44.314][P:19148/T:21092][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=223735896, pInParam=00D4FB00, pOutParam=00D4FB1C, waittime=1000.]
+[2016-05-26 10:33:44.357][P:19148/T:21092][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-26 10:33:44.898][P:19148/T:21092][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=223735896.]
+[2016-05-26 10:33:44.949][P:19148/T:21092][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-26 10:34:40.837
+[2016-05-26 10:34:40.837][P:10612/T:8664][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=00D2F908.]
+[2016-05-26 10:34:40.909][P:10612/T:8664][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-26 10:34:40.909][P:10612/T:8664][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-26 10:34:40.909][P:10612/T:8664][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-26 10:34:41.170][P:10612/T:8664][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=223998040.]
+[2016-05-26 10:34:41.170][P:10612/T:8664][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=223998040, pInParam=00D2F8C8, pOutParam=00D2F8E4, waittime=1000.]
+[2016-05-26 10:34:41.223][P:10612/T:8664][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-26 10:34:41.811][P:10612/T:8664][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=223998040.]
+[2016-05-26 10:34:41.862][P:10612/T:8664][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-26 10:35:38.702
+[2016-05-26 10:35:38.702][P:17464/T:17044][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=003CFB88.]
+[2016-05-26 10:35:38.763][P:17464/T:17044][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-26 10:35:38.763][P:17464/T:17044][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-26 10:35:38.763][P:17464/T:17044][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-26 10:35:39.046][P:17464/T:17044][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=213512280.]
+[2016-05-26 10:35:39.046][P:17464/T:17044][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=213512280, pInParam=003CFB48, pOutParam=003CFB64, waittime=1000.]
+[2016-05-26 10:35:39.091][P:17464/T:17044][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-26 10:35:39.607][P:17464/T:17044][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=213512280.]
+[2016-05-26 10:35:39.658][P:17464/T:17044][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-26 10:48:45.918
+[2016-05-26 10:48:45.918][P:8940/T:8288][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=00EBF6E8.]
+[2016-05-26 10:48:45.990][P:8940/T:8288][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-26 10:48:45.990][P:8940/T:8288][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-26 10:48:45.990][P:8940/T:8288][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-26 10:48:46.271][P:8940/T:8288][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=214233176.]
+[2016-05-26 10:48:46.271][P:8940/T:8288][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=214233176, pInParam=00EBF610, pOutParam=00EBF62C, waittime=1000.]
+[2016-05-26 10:48:46.315][P:8940/T:8288][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-26 10:48:46.987][P:8940/T:8288][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=214233176.]
+[2016-05-26 10:48:47.038][P:8940/T:8288][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-26 10:50:27.736
+[2016-05-26 10:50:27.736][P:12932/T:13948][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=0041F7B0.]
+[2016-05-26 10:50:27.795][P:12932/T:13948][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-26 10:50:27.795][P:12932/T:13948][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-26 10:50:27.795][P:12932/T:13948][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-26 10:50:28.077][P:12932/T:13948][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=213708888.]
+[2016-05-26 10:50:28.077][P:12932/T:13948][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=213708888, pInParam=0041F780, pOutParam=0041F78C, waittime=1000.]
+[2016-05-26 10:50:28.142][P:12932/T:13948][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-26 10:50:28.738][P:12932/T:13948][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=213708888.]
+[2016-05-26 10:50:28.789][P:12932/T:13948][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-26 10:52:17.209
+[2016-05-26 10:52:17.209][P:12716/T:12332][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=0081F908.]
+[2016-05-26 10:52:17.278][P:12716/T:12332][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-26 10:52:17.278][P:12716/T:12332][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-26 10:52:17.278][P:12716/T:12332][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-26 10:52:17.563][P:12716/T:12332][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=218361944.]
+[2016-05-26 10:52:17.563][P:12716/T:12332][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=218361944, pInParam=0081F8D8, pOutParam=0081F8E4, waittime=1000.]
+[2016-05-26 10:52:17.607][P:12716/T:12332][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-26 10:52:18.112][P:12716/T:12332][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=218361944.]
+[2016-05-26 10:52:18.163][P:12716/T:12332][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-26 10:53:47.840
+[2016-05-26 10:53:47.840][P:10600/T:11544][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=001CFD90.]
+[2016-05-26 10:53:47.904][P:10600/T:11544][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-26 10:53:47.904][P:10600/T:11544][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-26 10:53:47.904][P:10600/T:11544][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-26 10:53:48.188][P:10600/T:11544][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=211677272.]
+[2016-05-26 10:53:48.188][P:10600/T:11544][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=211677272, pInParam=001CFD60, pOutParam=001CFD6C, waittime=1000.]
+[2016-05-26 10:53:48.238][P:10600/T:11544][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-26 10:53:48.734][P:10600/T:11544][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=211677272.]
+[2016-05-26 10:53:48.785][P:10600/T:11544][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-26 10:57:11.832
+[2016-05-26 10:57:11.832][P:16952/T:16520][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=0105FDE8.]
+[2016-05-26 10:57:11.893][P:16952/T:16520][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-26 10:57:11.893][P:16952/T:16520][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-26 10:57:11.893][P:16952/T:16520][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-26 10:57:12.156][P:16952/T:16520][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=227012696.]
+[2016-05-26 10:57:12.156][P:16952/T:16520][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=227012696, pInParam=0105FDA8, pOutParam=0105FDC4, waittime=1000.]
+[2016-05-26 10:57:12.207][P:16952/T:16520][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-26 10:57:12.769][P:16952/T:16520][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=227012696.]
+[2016-05-26 10:57:12.820][P:16952/T:16520][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-26 11:10:01.897
+[2016-05-26 11:10:01.897][P:10516/T:9012][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=00E2F788.]
+[2016-05-26 11:10:01.956][P:10516/T:9012][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-26 11:10:01.956][P:10516/T:9012][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-26 11:10:01.956][P:10516/T:9012][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-26 11:10:02.239][P:10516/T:9012][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=211808344.]
+[2016-05-26 11:10:02.239][P:10516/T:9012][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=211808344, pInParam=00E2F448, pOutParam=00E2F46C, waittime=1000.]
+[2016-05-26 11:10:02.282][P:10516/T:9012][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-26 11:10:02.780][P:10516/T:9012][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=211808344.]
+[2016-05-26 11:10:02.831][P:10516/T:9012][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-26 11:10:36.798
+[2016-05-26 11:10:36.799][P:19464/T:14832][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=0071FAF8.]
+[2016-05-26 11:10:36.857][P:19464/T:14832][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-26 11:10:36.857][P:19464/T:14832][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-26 11:10:36.857][P:19464/T:14832][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-26 11:10:37.109][P:19464/T:14832][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=217706584.]
+[2016-05-26 11:10:37.109][P:19464/T:14832][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=217706584, pInParam=0071F7B8, pOutParam=0071F7DC, waittime=1000.]
+[2016-05-26 11:10:37.154][P:19464/T:14832][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-26 11:10:37.702][P:19464/T:14832][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=217706584.]
+[2016-05-26 11:10:37.753][P:19464/T:14832][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-26 11:11:40.413
+[2016-05-26 11:11:40.413][P:7552/T:10396][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=00F6FA70.]
+[2016-05-26 11:11:40.470][P:7552/T:10396][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-26 11:11:40.470][P:7552/T:10396][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-26 11:11:40.470][P:7552/T:10396][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-26 11:11:40.734][P:7552/T:10396][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=225898584.]
+[2016-05-26 11:11:40.734][P:7552/T:10396][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=225898584, pInParam=00F6F730, pOutParam=00F6F754, waittime=1000.]
+[2016-05-26 11:11:40.779][P:7552/T:10396][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-26 11:11:41.360][P:7552/T:10396][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=225898584.]
+[2016-05-26 11:11:41.411][P:7552/T:10396][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-26 11:13:50.259
+[2016-05-26 11:13:50.259][P:17804/T:1296][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=0047FBF0.]
+[2016-05-26 11:13:50.315][P:17804/T:1296][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-26 11:13:50.315][P:17804/T:1296][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-26 11:13:50.315][P:17804/T:1296][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-26 11:13:50.593][P:17804/T:1296][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=214233176.]
+[2016-05-26 11:13:50.593][P:17804/T:1296][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=214233176, pInParam=0047F8B0, pOutParam=0047F8F0, waittime=1000.]
+[2016-05-26 11:13:50.670][P:17804/T:1296][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-26 11:13:52.581][P:17804/T:1296][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=214233176.]
+[2016-05-26 11:13:52.632][P:17804/T:1296][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-26 11:15:54.600
+[2016-05-26 11:15:54.600][P:12892/T:12632][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=0038FD48.]
+[2016-05-26 11:15:54.658][P:12892/T:12632][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-26 11:15:54.658][P:12892/T:12632][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-26 11:15:54.658][P:12892/T:12632][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-26 11:15:54.922][P:12892/T:12632][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=214888536.]
+[2016-05-26 11:15:54.922][P:12892/T:12632][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=214888536, pInParam=0038FA08, pOutParam=0038FA48, waittime=1000.]
+[2016-05-26 11:15:54.966][P:12892/T:12632][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-26 11:15:56.811][P:12892/T:12632][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=214888536.]
+[2016-05-26 11:15:56.862][P:12892/T:12632][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-26 11:18:11.047
+[2016-05-26 11:18:11.047][P:14420/T:14376][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=002AF7E8.]
+[2016-05-26 11:18:11.107][P:14420/T:14376][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-26 11:18:11.107][P:14420/T:14376][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-26 11:18:11.107][P:14420/T:14376][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-26 11:18:11.390][P:14420/T:14376][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=214036568.]
+[2016-05-26 11:18:11.390][P:14420/T:14376][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=214036568, pInParam=002AF4A8, pOutParam=002AF4CC, waittime=1000.]
+[2016-05-26 11:18:11.487][P:14420/T:14376][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-26 11:18:12.006][P:14420/T:14376][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=214036568.]
+[2016-05-26 11:18:12.057][P:14420/T:14376][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-26 11:18:52.567
+[2016-05-26 11:18:52.567][P:16672/T:8288][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=001AFB70.]
+[2016-05-26 11:18:52.627][P:16672/T:8288][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-26 11:18:52.627][P:16672/T:8288][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-26 11:18:52.627][P:16672/T:8288][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-26 11:18:52.910][P:16672/T:8288][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=212922456.]
+[2016-05-26 11:18:52.910][P:16672/T:8288][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=212922456, pInParam=001AF830, pOutParam=001AF86C, waittime=1000.]
+[2016-05-26 11:18:52.966][P:16672/T:8288][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-26 11:18:53.832][P:16672/T:8288][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=212922456.]
+[2016-05-26 11:18:53.883][P:16672/T:8288][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-26 11:19:52.086
+[2016-05-26 11:19:52.086][P:18292/T:20940][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=00A5F978.]
+[2016-05-26 11:19:52.145][P:18292/T:20940][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-26 11:19:52.145][P:18292/T:20940][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-26 11:19:52.145][P:18292/T:20940][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-26 11:19:52.407][P:18292/T:20940][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=222031960.]
+[2016-05-26 11:19:52.407][P:18292/T:20940][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=222031960, pInParam=00A5F638, pOutParam=00A5F674, waittime=1000.]
+[2016-05-26 11:19:52.505][P:18292/T:20940][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-26 11:19:53.388][P:18292/T:20940][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=222031960.]
+[2016-05-26 11:19:53.439][P:18292/T:20940][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-26 11:23:18.160
+[2016-05-26 11:23:18.160][P:13868/T:17788][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=0058FB70.]
+[2016-05-26 11:23:18.219][P:13868/T:17788][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-26 11:23:18.219][P:13868/T:17788][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-26 11:23:18.219][P:13868/T:17788][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-26 11:23:18.503][P:13868/T:17788][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=217182296.]
+[2016-05-26 11:23:18.503][P:13868/T:17788][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=217182296, pInParam=0058F830, pOutParam=0058F854, waittime=1000.]
+[2016-05-26 11:23:18.546][P:13868/T:17788][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-26 11:23:19.317][P:13868/T:17788][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=217182296.]
+[2016-05-26 11:23:19.368][P:13868/T:17788][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-26 11:23:42.766
+[2016-05-26 11:23:42.766][P:17612/T:18964][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=00E1F798.]
+[2016-05-26 11:23:42.826][P:17612/T:18964][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-26 11:23:42.826][P:17612/T:18964][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-26 11:23:42.826][P:17612/T:18964][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-26 11:23:43.110][P:17612/T:18964][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=213184600.]
+[2016-05-26 11:23:43.110][P:17612/T:18964][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=213184600, pInParam=00E1F458, pOutParam=00E1F47C, waittime=1000.]
+[2016-05-26 11:23:43.154][P:17612/T:18964][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-26 11:23:43.936][P:17612/T:18964][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=213184600.]
+[2016-05-26 11:23:43.987][P:17612/T:18964][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-26 11:24:26.780
+[2016-05-26 11:24:26.780][P:14316/T:8860][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=00FCF7C8.]
+[2016-05-26 11:24:26.841][P:14316/T:8860][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-26 11:24:26.841][P:14316/T:8860][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-26 11:24:26.841][P:14316/T:8860][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-26 11:24:27.123][P:14316/T:8860][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=227536984.]
+[2016-05-26 11:24:27.123][P:14316/T:8860][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=227536984, pInParam=00FCF488, pOutParam=00FCF4AC, waittime=1000.]
+[2016-05-26 11:24:27.176][P:14316/T:8860][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-26 11:24:27.957][P:14316/T:8860][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=227536984.]
+[2016-05-26 11:24:28.008][P:14316/T:8860][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-26 11:24:45.030
+[2016-05-26 11:24:45.030][P:15984/T:19320][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=0034F7D8.]
+[2016-05-26 11:24:45.091][P:15984/T:19320][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-26 11:24:45.091][P:15984/T:19320][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-26 11:24:45.091][P:15984/T:19320][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-26 11:24:45.374][P:15984/T:19320][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=214823000.]
+[2016-05-26 11:24:45.374][P:15984/T:19320][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=214823000, pInParam=0034F498, pOutParam=0034F4BC, waittime=1000.]
+[2016-05-26 11:24:45.427][P:15984/T:19320][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-26 11:24:46.363][P:15984/T:19320][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=214823000.]
+[2016-05-26 11:24:46.414][P:15984/T:19320][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-26 11:25:16.469
+[2016-05-26 11:25:16.469][P:15164/T:12072][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=0086FC50.]
+[2016-05-26 11:25:16.529][P:15164/T:12072][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-26 11:25:16.529][P:15164/T:12072][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-26 11:25:16.529][P:15164/T:12072][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-26 11:25:16.812][P:15164/T:12072][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=213184600.]
+[2016-05-26 11:25:16.812][P:15164/T:12072][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=213184600, pInParam=0086F910, pOutParam=0086F934, waittime=1000.]
+[2016-05-26 11:25:16.857][P:15164/T:12072][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-26 11:25:17.801][P:15164/T:12072][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=213184600.]
+[2016-05-26 11:25:17.852][P:15164/T:12072][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-26 11:26:31.025
+[2016-05-26 11:26:31.025][P:10584/T:3540][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=00B0FD78.]
+[2016-05-26 11:26:31.096][P:10584/T:3540][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-26 11:26:31.096][P:10584/T:3540][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-26 11:26:31.096][P:10584/T:3540][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-26 11:26:31.359][P:10584/T:3540][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=222818392.]
+[2016-05-26 11:26:31.359][P:10584/T:3540][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=222818392, pInParam=00B0FA38, pOutParam=00B0FA5C, waittime=1000.]
+[2016-05-26 11:26:31.404][P:10584/T:3540][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-26 11:26:32.107][P:10584/T:3540][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=222818392.]
+[2016-05-26 11:26:32.158][P:10584/T:3540][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-26 11:27:16.611
+[2016-05-26 11:27:16.611][P:4556/T:13336][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=005AFCF8.]
+[2016-05-26 11:27:16.672][P:4556/T:13336][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-26 11:27:16.672][P:4556/T:13336][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-26 11:27:16.672][P:4556/T:13336][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-26 11:27:16.954][P:4556/T:13336][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=217509976.]
+[2016-05-26 11:27:16.954][P:4556/T:13336][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=217509976, pInParam=005AF9B8, pOutParam=005AF9DC, waittime=1000.]
+[2016-05-26 11:27:16.998][P:4556/T:13336][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-26 11:27:18.109][P:4556/T:13336][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=217509976.]
+[2016-05-26 11:27:18.160][P:4556/T:13336][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-26 11:28:55.867
+[2016-05-26 11:28:55.868][P:8844/T:18820][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=00DCFA78.]
+[2016-05-26 11:28:55.940][P:8844/T:18820][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-26 11:28:55.940][P:8844/T:18820][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-26 11:28:55.940][P:8844/T:18820][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-26 11:28:56.203][P:8844/T:18820][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=225308760.]
+[2016-05-26 11:28:56.203][P:8844/T:18820][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=225308760, pInParam=00DCF738, pOutParam=00DCF75C, waittime=1000.]
+[2016-05-26 11:28:56.254][P:8844/T:18820][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-26 11:28:56.770][P:8844/T:18820][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=225308760.]
+[2016-05-26 11:28:56.821][P:8844/T:18820][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-26 11:30:50.267
+[2016-05-26 11:30:50.267][P:7856/T:20872][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=00FCFB78.]
+[2016-05-26 11:30:50.326][P:7856/T:20872][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-26 11:30:50.326][P:7856/T:20872][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-26 11:30:50.326][P:7856/T:20872][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-26 11:30:50.610][P:7856/T:20872][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=213381208.]
+[2016-05-26 11:30:50.610][P:7856/T:20872][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=213381208, pInParam=00FCF8E0, pOutParam=00FCF8F4, waittime=1000.]
+[2016-05-26 11:30:50.654][P:7856/T:20872][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-26 11:30:51.172][P:7856/T:20872][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=213381208.]
+[2016-05-26 11:30:51.223][P:7856/T:20872][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-26 11:31:10.178
+[2016-05-26 11:31:10.178][P:18616/T:20664][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=00FEFDA0.]
+[2016-05-26 11:31:10.239][P:18616/T:20664][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-26 11:31:10.239][P:18616/T:20664][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-26 11:31:10.239][P:18616/T:20664][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-26 11:31:10.522][P:18616/T:20664][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=228323416.]
+[2016-05-26 11:31:10.522][P:18616/T:20664][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=228323416, pInParam=00FEFB08, pOutParam=00FEFB1C, waittime=1000.]
+[2016-05-26 11:31:10.564][P:18616/T:20664][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-26 11:31:11.359][P:18616/T:20664][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=228323416.]
+[2016-05-26 11:31:11.410][P:18616/T:20664][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-26 11:40:09.579
+[2016-05-26 11:40:09.579][P:16516/T:15440][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=0057FB40.]
+[2016-05-26 11:40:09.638][P:16516/T:15440][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-26 11:40:09.638][P:16516/T:15440][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-26 11:40:09.638][P:16516/T:15440][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-26 11:40:09.911][P:16516/T:15440][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=217182296.]
+[2016-05-26 11:40:09.911][P:16516/T:15440][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=217182296, pInParam=0057F880, pOutParam=0057F8A4, waittime=1000.]
+[2016-05-26 11:40:09.954][P:16516/T:15440][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-26 11:40:10.671][P:16516/T:15440][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=217182296.]
+[2016-05-26 11:40:10.722][P:16516/T:15440][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-26 11:40:28.824
+[2016-05-26 11:40:28.824][P:15104/T:3644][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=0050F908.]
+[2016-05-26 11:40:28.895][P:15104/T:3644][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-26 11:40:28.895][P:15104/T:3644][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-26 11:40:28.895][P:15104/T:3644][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-26 11:40:29.156][P:15104/T:3644][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=216592472.]
+[2016-05-26 11:40:29.156][P:15104/T:3644][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=216592472, pInParam=0050F648, pOutParam=0050F66C, waittime=1000.]
+[2016-05-26 11:40:29.222][P:15104/T:3644][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-26 11:40:29.970][P:15104/T:3644][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=216592472.]
+[2016-05-26 11:40:30.021][P:15104/T:3644][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-26 11:42:45.400
+[2016-05-26 11:42:45.400][P:18324/T:14488][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=0114F8D0.]
+[2016-05-26 11:42:45.456][P:18324/T:14488][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-26 11:42:45.456][P:18324/T:14488][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-26 11:42:45.456][P:18324/T:14488][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-26 11:42:45.720][P:18324/T:14488][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=229240920.]
+[2016-05-26 11:42:45.720][P:18324/T:14488][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=229240920, pInParam=0114F610, pOutParam=0114F634, waittime=1000.]
+[2016-05-26 11:42:45.763][P:18324/T:14488][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-26 11:42:46.424][P:18324/T:14488][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=229240920.]
+[2016-05-26 11:42:46.475][P:18324/T:14488][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-26 11:43:52.301
+[2016-05-26 11:43:52.301][P:6640/T:12160][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=0063FBC0.]
+[2016-05-26 11:43:52.358][P:6640/T:12160][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-26 11:43:52.358][P:6640/T:12160][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-26 11:43:52.358][P:6640/T:12160][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-26 11:43:52.624][P:6640/T:12160][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=218296408.]
+[2016-05-26 11:43:52.624][P:6640/T:12160][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=218296408, pInParam=0063F900, pOutParam=0063F924, waittime=1000.]
+[2016-05-26 11:43:52.676][P:6640/T:12160][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-26 11:43:53.327][P:6640/T:12160][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=218296408.]
+[2016-05-26 11:43:53.378][P:6640/T:12160][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-26 11:44:24.390
+[2016-05-26 11:44:24.390][P:19028/T:17588][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=0080FC10.]
+[2016-05-26 11:44:24.450][P:19028/T:17588][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-26 11:44:24.450][P:19028/T:17588][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-26 11:44:24.450][P:19028/T:17588][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-26 11:44:24.722][P:19028/T:17588][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=219410520.]
+[2016-05-26 11:44:24.722][P:19028/T:17588][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=219410520, pInParam=0080F950, pOutParam=0080F974, waittime=1000.]
+[2016-05-26 11:44:24.765][P:19028/T:17588][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-26 11:44:25.459][P:19028/T:17588][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=219410520.]
+[2016-05-26 11:44:25.510][P:19028/T:17588][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-26 11:54:55.802
+[2016-05-26 11:54:55.803][P:4864/T:18364][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=0050F940.]
+[2016-05-26 11:54:55.863][P:4864/T:18364][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-26 11:54:55.863][P:4864/T:18364][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-26 11:54:55.863][P:4864/T:18364][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-26 11:54:56.145][P:4864/T:18364][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=213250136.]
+[2016-05-26 11:54:56.145][P:4864/T:18364][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=213250136, pInParam=0050F690, pOutParam=0050F6A4, waittime=1000.]
+[2016-05-26 11:54:56.200][P:4864/T:18364][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-26 11:54:57.004][P:4864/T:18364][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=213250136.]
+[2016-05-26 11:54:57.055][P:4864/T:18364][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-26 11:55:27.509
+[2016-05-26 11:55:27.509][P:12424/T:9732][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=008EFB38.]
+[2016-05-26 11:55:27.579][P:12424/T:9732][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-26 11:55:27.579][P:12424/T:9732][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-26 11:55:27.579][P:12424/T:9732][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-26 11:55:27.858][P:12424/T:9732][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=220721240.]
+[2016-05-26 11:55:27.858][P:12424/T:9732][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=220721240, pInParam=008EF878, pOutParam=008EF89C, waittime=1000.]
+[2016-05-26 11:55:27.904][P:12424/T:9732][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-26 11:55:28.739][P:12424/T:9732][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=220721240.]
+[2016-05-26 11:55:28.790][P:12424/T:9732][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-26 11:56:22.804
+[2016-05-26 11:56:22.804][P:17000/T:18344][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=00F3F9A0.]
+[2016-05-26 11:56:22.877][P:17000/T:18344][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-26 11:56:22.877][P:17000/T:18344][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-26 11:56:22.877][P:17000/T:18344][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-26 11:56:23.139][P:17000/T:18344][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=222883928.]
+[2016-05-26 11:56:23.139][P:17000/T:18344][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=222883928, pInParam=00F3F6E0, pOutParam=00F3F704, waittime=1000.]
+[2016-05-26 11:56:23.190][P:17000/T:18344][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-26 11:56:23.940][P:17000/T:18344][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=222883928.]
+[2016-05-26 11:56:23.991][P:17000/T:18344][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-26 11:59:00.650
+[2016-05-26 11:59:00.650][P:20820/T:9076][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=0022F710.]
+[2016-05-26 11:59:00.706][P:20820/T:9076][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-26 11:59:00.706][P:20820/T:9076][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-26 11:59:00.706][P:20820/T:9076][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-26 11:59:00.983][P:20820/T:9076][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=213184600.]
+[2016-05-26 11:59:00.983][P:20820/T:9076][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=213184600, pInParam=0022F450, pOutParam=0022F474, waittime=1000.]
+[2016-05-26 11:59:01.035][P:20820/T:9076][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-26 11:59:01.675][P:20820/T:9076][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=213184600.]
+[2016-05-26 11:59:01.726][P:20820/T:9076][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-26 11:59:42.513
+[2016-05-26 11:59:42.513][P:15096/T:20884][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=00CBF870.]
+[2016-05-26 11:59:42.582][P:15096/T:20884][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-26 11:59:42.582][P:15096/T:20884][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-26 11:59:42.582][P:15096/T:20884][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-26 11:59:42.859][P:15096/T:20884][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=221179992.]
+[2016-05-26 11:59:42.859][P:15096/T:20884][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=221179992, pInParam=00CBF5B0, pOutParam=00CBF5D4, waittime=1000.]
+[2016-05-26 11:59:42.911][P:15096/T:20884][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-26 11:59:43.608][P:15096/T:20884][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=221179992.]
+[2016-05-26 11:59:43.659][P:15096/T:20884][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-26 12:00:14.085
+[2016-05-26 12:00:14.085][P:16572/T:18436][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=0095FAF8.]
+[2016-05-26 12:00:14.146][P:16572/T:18436][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-26 12:00:14.146][P:16572/T:18436][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-26 12:00:14.146][P:16572/T:18436][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-26 12:00:14.408][P:16572/T:18436][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=213446744.]
+[2016-05-26 12:00:14.408][P:16572/T:18436][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=213446744, pInParam=0095F838, pOutParam=0095F85C, waittime=1000.]
+[2016-05-26 12:00:14.451][P:16572/T:18436][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-26 12:00:15.067][P:16572/T:18436][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=213446744.]
+[2016-05-26 12:00:15.118][P:16572/T:18436][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-26 12:00:51.394
+[2016-05-26 12:00:51.394][P:15784/T:14316][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=0088F750.]
+[2016-05-26 12:00:51.452][P:15784/T:14316][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-26 12:00:51.452][P:15784/T:14316][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-26 12:00:51.452][P:15784/T:14316][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-26 12:00:51.718][P:15784/T:14316][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=212922456.]
+[2016-05-26 12:00:51.718][P:15784/T:14316][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=212922456, pInParam=0088F490, pOutParam=0088F4B4, waittime=1000.]
+[2016-05-26 12:00:51.812][P:15784/T:14316][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-26 12:00:52.451][P:15784/T:14316][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=212922456.]
+[2016-05-26 12:00:52.502][P:15784/T:14316][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-26 12:11:39.028
+[2016-05-26 12:11:39.028][P:20448/T:10180][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=005DFD88.]
+[2016-05-26 12:11:39.099][P:20448/T:10180][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-26 12:11:39.099][P:20448/T:10180][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-26 12:11:39.099][P:20448/T:10180][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-26 12:11:39.374][P:20448/T:10180][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=213708888.]
+[2016-05-26 12:11:39.374][P:20448/T:10180][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=213708888, pInParam=005DFAC8, pOutParam=005DFB1C, waittime=1000.]
+[2016-05-26 12:11:39.425][P:20448/T:10180][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-26 12:11:39.968][P:20448/T:10180][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=213708888.]
+[2016-05-26 12:11:40.019][P:20448/T:10180][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-26 12:11:59.995
+[2016-05-26 12:11:59.995][P:16884/T:12232][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=00B2FB00.]
+[2016-05-26 12:12:00.066][P:16884/T:12232][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-26 12:12:00.066][P:16884/T:12232][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-26 12:12:00.066][P:16884/T:12232][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-26 12:12:00.327][P:16884/T:12232][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=222883928.]
+[2016-05-26 12:12:00.327][P:16884/T:12232][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=222883928, pInParam=00B2F840, pOutParam=00B2F894, waittime=1000.]
+[2016-05-26 12:12:00.373][P:16884/T:12232][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-26 12:12:00.914][P:16884/T:12232][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=222883928.]
+[2016-05-26 12:12:00.965][P:16884/T:12232][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-26 12:13:05.212
+[2016-05-26 12:13:05.212][P:19828/T:8520][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=0107FAE0.]
+[2016-05-26 12:13:05.282][P:19828/T:8520][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-26 12:13:05.282][P:19828/T:8520][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-26 12:13:05.282][P:19828/T:8520][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-26 12:13:05.567][P:19828/T:8520][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=213184600.]
+[2016-05-26 12:13:05.567][P:19828/T:8520][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=213184600, pInParam=0107F820, pOutParam=0107F874, waittime=1000.]
+[2016-05-26 12:13:05.610][P:19828/T:8520][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-26 12:13:05.694][P:19828/T:8520][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=213184600.]
+[2016-05-26 12:13:05.745][P:19828/T:8520][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-26 12:13:45.418
+[2016-05-26 12:13:45.418][P:10332/T:12968][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=006EFC70.]
+[2016-05-26 12:13:45.489][P:10332/T:12968][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-26 12:13:45.489][P:10332/T:12968][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-26 12:13:45.489][P:10332/T:12968][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-26 12:13:45.764][P:10332/T:12968][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=218296408.]
+[2016-05-26 12:13:45.764][P:10332/T:12968][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=218296408, pInParam=006EF9B0, pOutParam=006EFA04, waittime=1000.]
+[2016-05-26 12:13:45.815][P:10332/T:12968][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-26 12:13:45.897][P:10332/T:12968][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=218296408.]
+[2016-05-26 12:13:45.948][P:10332/T:12968][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-26 12:14:43.752
+[2016-05-26 12:14:43.752][P:19592/T:17836][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=00EAF758.]
+[2016-05-26 12:14:43.811][P:19592/T:17836][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-26 12:14:43.811][P:19592/T:17836][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-26 12:14:43.811][P:19592/T:17836][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-26 12:14:44.083][P:19592/T:17836][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=213381208.]
+[2016-05-26 12:14:44.083][P:19592/T:17836][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=213381208, pInParam=00EAF498, pOutParam=00EAF4EC, waittime=1000.]
+[2016-05-26 12:14:44.138][P:19592/T:17836][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-26 12:14:44.216][P:19592/T:17836][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=213381208.]
+[2016-05-26 12:14:44.267][P:19592/T:17836][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-26 12:18:23.103
+[2016-05-26 12:18:23.103][P:20708/T:13416][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=006EFE20.]
+[2016-05-26 12:18:23.162][P:20708/T:13416][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-26 12:18:23.162][P:20708/T:13416][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-26 12:18:23.162][P:20708/T:13416][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-26 12:18:23.424][P:20708/T:13416][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=213250136.]
+[2016-05-26 12:18:23.424][P:20708/T:13416][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=213250136, pInParam=006EFB60, pOutParam=006EFBB4, waittime=1000.]
+[2016-05-26 12:18:23.467][P:20708/T:13416][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-26 12:18:23.551][P:20708/T:13416][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=213250136.]
+[2016-05-26 12:18:23.603][P:20708/T:13416][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-26 12:21:47.318
+[2016-05-26 12:21:47.319][P:20244/T:18228][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=0070FB38.]
+[2016-05-26 12:21:47.379][P:20244/T:18228][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-26 12:21:47.379][P:20244/T:18228][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-26 12:21:47.379][P:20244/T:18228][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-26 12:21:47.640][P:20244/T:18228][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=218558552.]
+[2016-05-26 12:21:47.640][P:20244/T:18228][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=218558552, pInParam=0070F878, pOutParam=0070F8CC, waittime=1000.]
+[2016-05-26 12:21:47.685][P:20244/T:18228][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-26 12:21:48.254][P:20244/T:18228][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=218558552.]
+[2016-05-26 12:21:48.305][P:20244/T:18228][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-26 12:28:52.380
+[2016-05-26 12:28:52.380][P:21108/T:9940][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=010DFC70.]
+[2016-05-26 12:28:52.436][P:21108/T:9940][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-26 12:28:52.436][P:21108/T:9940][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-26 12:28:52.436][P:21108/T:9940][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-26 12:28:52.702][P:21108/T:9940][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=213184600.]
+[2016-05-26 12:28:52.702][P:21108/T:9940][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=213184600, pInParam=010DF9B0, pOutParam=010DFA04, waittime=1000.]
+[2016-05-26 12:28:52.754][P:21108/T:9940][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-26 12:28:53.359][P:21108/T:9940][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=213184600.]
+[2016-05-26 12:28:53.410][P:21108/T:9940][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-26 13:18:47.565
+[2016-05-26 13:18:47.565][P:3968/T:16796][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=006AFC48.]
+[2016-05-26 13:18:47.625][P:3968/T:16796][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-26 13:18:47.625][P:3968/T:16796][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-26 13:18:47.625][P:3968/T:16796][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-26 13:18:47.908][P:3968/T:16796][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=215347288.]
+[2016-05-26 13:18:47.908][P:3968/T:16796][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=215347288, pInParam=006AF988, pOutParam=006AF9DC, waittime=1000.]
+[2016-05-26 13:18:47.951][P:3968/T:16796][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-26 13:18:48.535][P:3968/T:16796][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=215347288.]
+[2016-05-26 13:18:48.586][P:3968/T:16796][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-26 13:22:59.185
+[2016-05-26 13:22:59.185][P:14288/T:10328][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=00FFFA08.]
+[2016-05-26 13:22:59.248][P:14288/T:10328][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-26 13:22:59.248][P:14288/T:10328][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-26 13:22:59.248][P:14288/T:10328][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-26 13:22:59.531][P:14288/T:10328][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=227799128.]
+[2016-05-26 13:22:59.531][P:14288/T:10328][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=227799128, pInParam=00FFF748, pOutParam=00FFF79C, waittime=1000.]
+[2016-05-26 13:22:59.583][P:14288/T:10328][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-26 13:23:00.156][P:14288/T:10328][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=227799128.]
+[2016-05-26 13:23:00.207][P:14288/T:10328][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-26 13:23:19.079
+[2016-05-26 13:23:19.079][P:10508/T:4864][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=0098F818.]
+[2016-05-26 13:23:19.139][P:10508/T:4864][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-26 13:23:19.139][P:10508/T:4864][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-26 13:23:19.139][P:10508/T:4864][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-26 13:23:19.412][P:10508/T:4864][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=212987992.]
+[2016-05-26 13:23:19.412][P:10508/T:4864][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=212987992, pInParam=0098F558, pOutParam=0098F5AC, waittime=1000.]
+[2016-05-26 13:23:19.455][P:10508/T:4864][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-26 13:23:20.061][P:10508/T:4864][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=212987992.]
+[2016-05-26 13:23:20.112][P:10508/T:4864][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-26 13:23:36.336
+[2016-05-26 13:23:36.336][P:20992/T:4240][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=0022FCD0.]
+[2016-05-26 13:23:36.409][P:20992/T:4240][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-26 13:23:36.409][P:20992/T:4240][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-26 13:23:36.409][P:20992/T:4240][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-26 13:23:36.670][P:20992/T:4240][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=213577816.]
+[2016-05-26 13:23:36.670][P:20992/T:4240][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=213577816, pInParam=0022FA08, pOutParam=0022FA64, waittime=1000.]
+[2016-05-26 13:23:36.723][P:20992/T:4240][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-26 13:23:37.439][P:20992/T:4240][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=213577816.]
+[2016-05-26 13:23:37.490][P:20992/T:4240][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-26 13:26:32.469
+[2016-05-26 13:26:32.469][P:10844/T:5828][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=00F8FD80.]
+[2016-05-26 13:26:32.529][P:10844/T:5828][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-26 13:26:32.529][P:10844/T:5828][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-26 13:26:32.529][P:10844/T:5828][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-26 13:26:32.811][P:10844/T:5828][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=213315672.]
+[2016-05-26 13:26:32.811][P:10844/T:5828][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=213315672, pInParam=00F8FAC8, pOutParam=00F8FB14, waittime=1000.]
+[2016-05-26 13:26:32.857][P:10844/T:5828][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-26 13:26:33.406][P:10844/T:5828][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=213315672.]
+[2016-05-26 13:26:33.457][P:10844/T:5828][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-26 13:27:12.571
+[2016-05-26 13:27:12.571][P:11152/T:4540][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=00A1FD68.]
+[2016-05-26 13:27:12.643][P:11152/T:4540][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-26 13:27:12.643][P:11152/T:4540][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-26 13:27:12.643][P:11152/T:4540][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-26 13:27:12.924][P:11152/T:4540][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=221573208.]
+[2016-05-26 13:27:12.924][P:11152/T:4540][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=221573208, pInParam=00A1FAA8, pOutParam=00A1FAFC, waittime=1000.]
+[2016-05-26 13:27:12.967][P:11152/T:4540][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-26 13:27:13.498][P:11152/T:4540][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=221573208.]
+[2016-05-26 13:27:13.549][P:11152/T:4540][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-26 13:28:36.826
+[2016-05-26 13:28:36.826][P:9124/T:11296][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=00FAFBA8.]
+[2016-05-26 13:28:36.888][P:9124/T:11296][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-26 13:28:36.888][P:9124/T:11296][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-26 13:28:36.888][P:9124/T:11296][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-26 13:28:37.171][P:9124/T:11296][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=227668056.]
+[2016-05-26 13:28:37.171][P:9124/T:11296][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=227668056, pInParam=00FAF8E8, pOutParam=00FAF93C, waittime=1000.]
+[2016-05-26 13:28:37.223][P:9124/T:11296][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-26 13:28:38.005][P:9124/T:11296][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=227668056.]
+[2016-05-26 13:28:38.056][P:9124/T:11296][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-26 17:06:08.879
+[2016-05-26 17:06:08.889][P:4764/T:20776][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=0056F850.]
+[2016-05-26 17:06:08.969][P:4764/T:20776][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-26 17:06:08.969][P:4764/T:20776][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-26 17:06:08.969][P:4764/T:20776][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-26 17:06:09.233][P:4764/T:20776][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=211611736.]
+[2016-05-26 17:06:09.233][P:4764/T:20776][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=211611736, pInParam=0056F578, pOutParam=0056F5D0, waittime=1000.]
+[2016-05-26 17:06:09.329][P:4764/T:20776][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-26 17:06:10.420][P:4764/T:20776][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=211611736.]
+[2016-05-26 17:06:10.472][P:4764/T:20776][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-26 17:12:20.361
+[2016-05-26 17:12:20.361][P:14944/T:16244][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=010BF900.]
+[2016-05-26 17:12:20.421][P:14944/T:16244][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-26 17:12:20.421][P:14944/T:16244][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-26 17:12:20.421][P:14944/T:16244][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-26 17:12:20.705][P:14944/T:16244][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=211480664.]
+[2016-05-26 17:12:20.705][P:14944/T:16244][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=211480664, pInParam=010BF638, pOutParam=010BF680, waittime=1000.]
+[2016-05-26 17:12:20.770][P:14944/T:16244][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-26 17:12:21.499][P:14944/T:16244][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=211480664.]
+[2016-05-26 17:12:21.550][P:14944/T:16244][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-26 17:14:21.123
+[2016-05-26 17:14:21.123][P:15264/T:8384][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=0099FC38.]
+[2016-05-26 17:14:21.188][P:15264/T:8384][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-26 17:14:21.188][P:15264/T:8384][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-26 17:14:21.188][P:15264/T:8384][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-26 17:14:21.467][P:15264/T:8384][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=219738200.]
+[2016-05-26 17:14:21.467][P:15264/T:8384][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=219738200, pInParam=0099F970, pOutParam=0099F9B8, waittime=1000.]
+[2016-05-26 17:14:21.521][P:15264/T:8384][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-26 17:14:22.490][P:15264/T:8384][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=219738200.]
+[2016-05-26 17:14:22.541][P:15264/T:8384][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-26 17:18:53.226
+[2016-05-26 17:18:53.226][P:17992/T:14612][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=006FFB78.]
+[2016-05-26 17:18:53.295][P:17992/T:14612][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-26 17:18:53.295][P:17992/T:14612][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-26 17:18:53.295][P:17992/T:14612][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-26 17:18:53.580][P:17992/T:14612][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=211808344.]
+[2016-05-26 17:18:53.580][P:17992/T:14612][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=211808344, pInParam=006FF8B0, pOutParam=006FF8F8, waittime=1000.]
+[2016-05-26 17:18:53.645][P:17992/T:14612][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-26 17:18:54.372][P:17992/T:14612][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=211808344.]
+[2016-05-26 17:18:54.423][P:17992/T:14612][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-26 17:20:12.211
+[2016-05-26 17:20:12.212][P:14032/T:17636][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=003AF8E0.]
+[2016-05-26 17:20:12.271][P:14032/T:17636][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-26 17:20:12.271][P:14032/T:17636][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-26 17:20:12.271][P:14032/T:17636][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-26 17:20:12.546][P:14032/T:17636][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=212004952.]
+[2016-05-26 17:20:12.546][P:14032/T:17636][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=212004952, pInParam=003AF618, pOutParam=003AF660, waittime=1000.]
+[2016-05-26 17:20:12.597][P:14032/T:17636][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-26 17:20:13.191][P:14032/T:17636][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=212004952.]
+[2016-05-26 17:20:13.243][P:14032/T:17636][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-26 17:22:01.659
+[2016-05-26 17:22:01.659][P:19256/T:16568][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=0050FCF0.]
+[2016-05-26 17:22:01.718][P:19256/T:16568][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-26 17:22:01.718][P:19256/T:16568][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-26 17:22:01.718][P:19256/T:16568][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-26 17:22:01.983][P:19256/T:16568][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=213184600.]
+[2016-05-26 17:22:01.983][P:19256/T:16568][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=213184600, pInParam=0050FA28, pOutParam=0050FA70, waittime=1000.]
+[2016-05-26 17:22:02.034][P:19256/T:16568][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-26 17:22:02.640][P:19256/T:16568][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=213184600.]
+[2016-05-26 17:22:02.691][P:19256/T:16568][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-26 17:22:53.731
+[2016-05-26 17:22:53.731][P:1700/T:9192][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=0112F7A0.]
+[2016-05-26 17:22:53.794][P:1700/T:9192][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-26 17:22:53.794][P:1700/T:9192][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-26 17:22:53.794][P:1700/T:9192][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-26 17:22:54.076][P:1700/T:9192][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=227668056.]
+[2016-05-26 17:22:54.076][P:1700/T:9192][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=227668056, pInParam=0112F4D8, pOutParam=0112F520, waittime=1000.]
+[2016-05-26 17:22:54.127][P:1700/T:9192][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-26 17:22:54.987][P:1700/T:9192][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=227668056.]
+[2016-05-26 17:22:55.038][P:1700/T:9192][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-27 15:51:11.439
+[2016-05-27 15:51:11.439][P:14036/T:13040][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=00A4FB10.]
+[2016-05-27 15:51:11.498][P:14036/T:13040][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-27 15:51:11.498][P:14036/T:13040][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-27 15:51:11.498][P:14036/T:13040][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-27 15:51:11.783][P:14036/T:13040][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=220459096.]
+[2016-05-27 15:51:11.783][P:14036/T:13040][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=220459096, pInParam=00A4F848, pOutParam=00A4F890, waittime=1000.]
+[2016-05-27 15:51:11.826][P:14036/T:13040][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-27 15:51:12.343][P:14036/T:13040][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=220459096.]
+[2016-05-27 15:51:12.394][P:14036/T:13040][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-27 15:51:20.804
+[2016-05-27 15:51:20.804][P:6832/T:7368][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=00BAF600.]
+[2016-05-27 15:51:20.863][P:6832/T:7368][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-27 15:51:20.863][P:6832/T:7368][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-27 15:51:20.863][P:6832/T:7368][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-27 15:51:21.140][P:6832/T:7368][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=221900888.]
+[2016-05-27 15:51:21.140][P:6832/T:7368][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=221900888, pInParam=00BAF338, pOutParam=00BAF380, waittime=1000.]
+[2016-05-27 15:51:21.191][P:6832/T:7368][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-27 15:51:21.732][P:6832/T:7368][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=221900888.]
+[2016-05-27 15:51:21.783][P:6832/T:7368][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-27 15:52:00.741
+[2016-05-27 15:52:00.741][P:9992/T:14056][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=00BBFAC0.]
+[2016-05-27 15:52:00.801][P:9992/T:14056][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-27 15:52:00.801][P:9992/T:14056][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-27 15:52:00.801][P:9992/T:14056][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-27 15:52:01.062][P:9992/T:14056][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=212398168.]
+[2016-05-27 15:52:01.062][P:9992/T:14056][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=212398168, pInParam=00BBF7F8, pOutParam=00BBF840, waittime=1000.]
+[2016-05-27 15:52:01.115][P:9992/T:14056][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-27 15:52:01.701][P:9992/T:14056][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=212398168.]
+[2016-05-27 15:52:01.752][P:9992/T:14056][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-29 15:41:02.110
+[2016-05-29 15:41:02.110][P:33500/T:21816][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=00BCF728.]
+[2016-05-29 15:41:02.174][P:33500/T:21816][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-29 15:41:02.174][P:33500/T:21816][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-29 15:41:02.174][P:33500/T:21816][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-29 15:41:02.470][P:33500/T:21816][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=222359640.]
+[2016-05-29 15:41:02.470][P:33500/T:21816][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=222359640, pInParam=00BCF6FC, pOutParam=00BCF6EC, waittime=1000.]
+[2016-05-29 15:41:02.514][P:33500/T:21816][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+Begin Time:2016-05-29 15:41:18.182
+[2016-05-29 15:41:18.182][P:28432/T:38880][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=00EAF4C8.]
+[2016-05-29 15:41:18.249][P:28432/T:38880][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-29 15:41:18.249][P:28432/T:38880][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-29 15:41:18.249][P:28432/T:38880][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-29 15:41:18.530][P:28432/T:38880][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=217837656.]
+[2016-05-29 15:41:18.530][P:28432/T:38880][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=217837656, pInParam=00EAF49C, pOutParam=00EAF48C, waittime=1000.]
+[2016-05-29 15:41:18.576][P:28432/T:38880][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-29 15:41:18.897][P:28432/T:38880][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=217837656.]
+[2016-05-29 15:41:18.949][P:28432/T:38880][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-29 15:42:39.780
+[2016-05-29 15:42:39.780][P:36704/T:19268][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=00FAF680.]
+[2016-05-29 15:42:39.846][P:36704/T:19268][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-29 15:42:39.846][P:36704/T:19268][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-29 15:42:39.846][P:36704/T:19268][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-29 15:42:40.124][P:36704/T:19268][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=212594776.]
+[2016-05-29 15:42:40.124][P:36704/T:19268][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=212594776, pInParam=00FAF654, pOutParam=00FAF644, waittime=1000.]
+[2016-05-29 15:42:40.173][P:36704/T:19268][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-29 15:42:40.376][P:36704/T:19268][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=212594776.]
+[2016-05-29 15:42:40.427][P:36704/T:19268][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-29 15:45:31.959
+[2016-05-29 15:45:31.959][P:14924/T:37780][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=0062F5F4.]
+[2016-05-29 15:45:32.016][P:14924/T:37780][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-29 15:45:32.016][P:14924/T:37780][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-29 15:45:32.016][P:14924/T:37780][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-29 15:45:32.296][P:14924/T:37780][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=218165336.]
+[2016-05-29 15:45:32.296][P:14924/T:37780][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=218165336, pInParam=0062F5C8, pOutParam=0062F5B8, waittime=1000.]
+[2016-05-29 15:45:32.347][P:14924/T:37780][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-29 15:45:32.580][P:14924/T:37780][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=218165336.]
+[2016-05-29 15:45:32.631][P:14924/T:37780][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-29 15:45:59.921
+[2016-05-29 15:45:59.921][P:33972/T:5316][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=0104F8A8.]
+[2016-05-29 15:45:59.986][P:33972/T:5316][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-29 15:45:59.986][P:33972/T:5316][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-29 15:45:59.986][P:33972/T:5316][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-29 15:46:00.264][P:33972/T:5316][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=226816088.]
+[2016-05-29 15:46:00.264][P:33972/T:5316][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=226816088, pInParam=0104F87C, pOutParam=0104F86C, waittime=1000.]
+[2016-05-29 15:46:00.311][P:33972/T:5316][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-29 15:46:00.485][P:33972/T:5316][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=226816088.]
+[2016-05-29 15:46:00.536][P:33972/T:5316][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-29 15:46:24.426
+[2016-05-29 15:46:24.426][P:15616/T:10632][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=0069F83C.]
+[2016-05-29 15:46:24.501][P:15616/T:10632][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-29 15:46:24.501][P:15616/T:10632][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-29 15:46:24.501][P:15616/T:10632][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-29 15:46:24.781][P:15616/T:10632][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=217182296.]
+[2016-05-29 15:46:24.781][P:15616/T:10632][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=217182296, pInParam=0069F810, pOutParam=0069F800, waittime=1000.]
+[2016-05-29 15:46:24.844][P:15616/T:10632][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-29 15:46:24.969][P:15616/T:10632][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=217182296.]
+[2016-05-29 15:46:25.020][P:15616/T:10632][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-29 15:46:40.661
+[2016-05-29 15:46:40.661][P:33216/T:36648][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=00CAF558.]
+[2016-05-29 15:46:40.717][P:33216/T:36648][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-29 15:46:40.717][P:33216/T:36648][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-29 15:46:40.717][P:33216/T:36648][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-29 15:46:40.984][P:33216/T:36648][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=225046616.]
+[2016-05-29 15:46:40.984][P:33216/T:36648][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=225046616, pInParam=00CAF52C, pOutParam=00CAF51C, waittime=1000.]
+[2016-05-29 15:46:41.029][P:33216/T:36648][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-29 15:46:41.173][P:33216/T:36648][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=225046616.]
+[2016-05-29 15:46:41.224][P:33216/T:36648][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-29 15:55:39.669
+[2016-05-29 15:55:39.669][P:13676/T:8988][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=0085F734.]
+[2016-05-29 15:55:39.733][P:13676/T:8988][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-29 15:55:39.733][P:13676/T:8988][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-29 15:55:39.733][P:13676/T:8988][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-29 15:55:40.017][P:13676/T:8988][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=219803736.]
+[2016-05-29 15:55:40.017][P:13676/T:8988][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=219803736, pInParam=0085F708, pOutParam=0085F6F8, waittime=1000.]
+[2016-05-29 15:55:40.080][P:13676/T:8988][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-29 15:55:40.270][P:13676/T:8988][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=219803736.]
+[2016-05-29 15:55:40.321][P:13676/T:8988][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-29 15:56:14.665
+[2016-05-29 15:56:14.665][P:14560/T:8468][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=0083FA08.]
+[2016-05-29 15:56:14.723][P:14560/T:8468][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-29 15:56:14.723][P:14560/T:8468][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-29 15:56:14.723][P:14560/T:8468][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-29 15:56:15.002][P:14560/T:8468][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=212267096.]
+[2016-05-29 15:56:15.002][P:14560/T:8468][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=212267096, pInParam=0083F9DC, pOutParam=0083F9CC, waittime=1000.]
+[2016-05-29 15:56:15.045][P:14560/T:8468][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-29 15:56:15.607][P:14560/T:8468][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=212267096.]
+[2016-05-29 15:56:15.658][P:14560/T:8468][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-29 15:57:31.981
+[2016-05-29 15:57:31.981][P:33168/T:37904][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=003CF8A0.]
+[2016-05-29 15:57:32.044][P:33168/T:37904][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-29 15:57:32.044][P:33168/T:37904][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-29 15:57:32.044][P:33168/T:37904][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-29 15:57:32.331][P:33168/T:37904][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=213708888.]
+[2016-05-29 15:57:32.331][P:33168/T:37904][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=213708888, pInParam=003CF874, pOutParam=003CF864, waittime=1000.]
+[2016-05-29 15:57:32.388][P:33168/T:37904][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-29 15:57:33.141][P:33168/T:37904][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=213708888.]
+[2016-05-29 15:57:33.192][P:33168/T:37904][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-29 15:58:47.793
+[2016-05-29 15:58:47.793][P:36336/T:22048][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=0085F758.]
+[2016-05-29 15:58:47.857][P:36336/T:22048][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-29 15:58:47.857][P:36336/T:22048][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-29 15:58:47.857][P:36336/T:22048][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-29 15:58:48.139][P:36336/T:22048][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=218558552.]
+[2016-05-29 15:58:48.139][P:36336/T:22048][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=218558552, pInParam=0085F72C, pOutParam=0085F71C, waittime=1000.]
+[2016-05-29 15:58:48.185][P:36336/T:22048][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-29 15:58:48.868][P:36336/T:22048][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=218558552.]
+[2016-05-29 15:58:48.919][P:36336/T:22048][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-29 15:59:33.606
+[2016-05-29 15:59:33.606][P:19580/T:20856][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=0044F2C4.]
+[2016-05-29 15:59:33.676][P:19580/T:20856][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-29 15:59:33.676][P:19580/T:20856][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-29 15:59:33.676][P:19580/T:20856][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-29 15:59:33.936][P:19580/T:20856][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=214888536.]
+[2016-05-29 15:59:33.936][P:19580/T:20856][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=214888536, pInParam=0044F298, pOutParam=0044F288, waittime=1000.]
+[2016-05-29 15:59:33.985][P:19580/T:20856][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-29 15:59:34.629][P:19580/T:20856][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=214888536.]
+[2016-05-29 15:59:34.680][P:19580/T:20856][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-29 16:01:05.859
+[2016-05-29 16:01:05.859][P:20388/T:10188][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=0105F6DC.]
+[2016-05-29 16:01:05.924][P:20388/T:10188][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-29 16:01:05.924][P:20388/T:10188][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-29 16:01:05.924][P:20388/T:10188][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-29 16:01:06.202][P:20388/T:10188][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=212791384.]
+[2016-05-29 16:01:06.202][P:20388/T:10188][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=212791384, pInParam=0105F6B0, pOutParam=0105F6A0, waittime=1000.]
+[2016-05-29 16:01:06.250][P:20388/T:10188][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-29 16:01:06.984][P:20388/T:10188][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=212791384.]
+[2016-05-29 16:01:07.036][P:20388/T:10188][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-29 16:02:31.593
+[2016-05-29 16:02:31.593][P:29744/T:33332][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=00ACF3A8.]
+[2016-05-29 16:02:31.659][P:29744/T:33332][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-29 16:02:31.659][P:29744/T:33332][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-29 16:02:31.659][P:29744/T:33332][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-29 16:02:31.951][P:29744/T:33332][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=223408216.]
+[2016-05-29 16:02:31.951][P:29744/T:33332][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=223408216, pInParam=00ACF37C, pOutParam=00ACF36C, waittime=1000.]
+[2016-05-29 16:02:32.000][P:29744/T:33332][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-29 16:02:32.190][P:29744/T:33332][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=223408216.]
+[2016-05-29 16:02:32.241][P:29744/T:33332][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-29 16:03:05.245
+[2016-05-29 16:03:05.245][P:14916/T:7276][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=00BBF2CC.]
+[2016-05-29 16:03:05.314][P:14916/T:7276][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-29 16:03:05.314][P:14916/T:7276][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-29 16:03:05.314][P:14916/T:7276][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-29 16:03:05.595][P:14916/T:7276][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=212136024.]
+[2016-05-29 16:03:05.595][P:14916/T:7276][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=212136024, pInParam=00BBF2A0, pOutParam=00BBF290, waittime=1000.]
+[2016-05-29 16:03:05.638][P:14916/T:7276][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-29 16:03:05.833][P:14916/T:7276][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=212136024.]
+[2016-05-29 16:03:05.884][P:14916/T:7276][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-29 16:04:52.786
+[2016-05-29 16:04:52.786][P:12356/T:11324][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=00D5FA68.]
+[2016-05-29 16:04:52.846][P:12356/T:11324][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-29 16:04:52.846][P:12356/T:11324][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-29 16:04:52.846][P:12356/T:11324][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-29 16:04:53.124][P:12356/T:11324][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=213839960.]
+[2016-05-29 16:04:53.124][P:12356/T:11324][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=213839960, pInParam=00D5FA3C, pOutParam=00D5FA2C, waittime=1000.]
+[2016-05-29 16:04:53.170][P:12356/T:11324][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-29 16:04:53.300][P:12356/T:11324][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=213839960.]
+[2016-05-29 16:04:53.352][P:12356/T:11324][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-29 16:18:05.755
+[2016-05-29 16:18:05.755][P:12084/T:32444][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=00D3F784.]
+[2016-05-29 16:18:05.832][P:12084/T:32444][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-29 16:18:05.832][P:12084/T:32444][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-29 16:18:05.832][P:12084/T:32444][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-29 16:18:06.108][P:12084/T:32444][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=223604824.]
+[2016-05-29 16:18:06.108][P:12084/T:32444][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=223604824, pInParam=00D3F758, pOutParam=00D3F748, waittime=1000.]
+[2016-05-29 16:18:06.158][P:12084/T:32444][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-29 16:18:06.328][P:12084/T:32444][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=223604824.]
+[2016-05-29 16:18:06.379][P:12084/T:32444][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-29 16:21:10.810
+[2016-05-29 16:21:10.810][P:5308/T:38868][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=00B7F540.]
+[2016-05-29 16:21:10.876][P:5308/T:38868][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-29 16:21:10.876][P:5308/T:38868][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-29 16:21:10.876][P:5308/T:38868][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-29 16:21:11.156][P:5308/T:38868][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=211677272.]
+[2016-05-29 16:21:11.156][P:5308/T:38868][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=211677272, pInParam=00B7F514, pOutParam=00B7F504, waittime=1000.]
+[2016-05-29 16:21:11.201][P:5308/T:38868][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-29 16:21:11.409][P:5308/T:38868][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=211677272.]
+[2016-05-29 16:21:11.460][P:5308/T:38868][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-29 16:21:47.180
+[2016-05-29 16:21:47.180][P:27708/T:24740][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=0067F31C.]
+[2016-05-29 16:21:47.237][P:27708/T:24740][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-29 16:21:47.237][P:27708/T:24740][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-29 16:21:47.237][P:27708/T:24740][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-29 16:21:47.514][P:27708/T:24740][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=217509976.]
+[2016-05-29 16:21:47.514][P:27708/T:24740][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=217509976, pInParam=0067F2F0, pOutParam=0067F2E0, waittime=1000.]
+[2016-05-29 16:21:47.560][P:27708/T:24740][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-29 16:21:47.752][P:27708/T:24740][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=217509976.]
+[2016-05-29 16:21:47.803][P:27708/T:24740][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-29 16:25:49.994
+[2016-05-29 16:25:49.994][P:29604/T:28804][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=010FF340.]
+[2016-05-29 16:25:50.079][P:29604/T:28804][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-29 16:25:50.079][P:29604/T:28804][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-29 16:25:50.079][P:29604/T:28804][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-29 16:25:50.363][P:29604/T:28804][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=227733592.]
+[2016-05-29 16:25:50.363][P:29604/T:28804][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=227733592, pInParam=010FF314, pOutParam=010FF304, waittime=1000.]
+[2016-05-29 16:25:50.419][P:29604/T:28804][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-29 16:25:50.550][P:29604/T:28804][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=227733592.]
+[2016-05-29 16:25:50.601][P:29604/T:28804][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-29 16:26:00.730
+[2016-05-29 16:26:00.730][P:10100/T:31052][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=0067F790.]
+[2016-05-29 16:26:00.796][P:10100/T:31052][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-29 16:26:00.796][P:10100/T:31052][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-29 16:26:00.796][P:10100/T:31052][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-29 16:26:01.079][P:10100/T:31052][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=218689624.]
+[2016-05-29 16:26:01.079][P:10100/T:31052][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=218689624, pInParam=0067F764, pOutParam=0067F754, waittime=1000.]
+[2016-05-29 16:26:01.123][P:10100/T:31052][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-29 16:26:01.314][P:10100/T:31052][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=218689624.]
+[2016-05-29 16:26:01.365][P:10100/T:31052][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-29 16:26:46.869
+[2016-05-29 16:26:46.869][P:17804/T:56][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=0093F928.]
+[2016-05-29 16:26:46.939][P:17804/T:56][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-29 16:26:46.939][P:17804/T:56][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-29 16:26:46.939][P:17804/T:56][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-29 16:26:47.202][P:17804/T:56][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=212136024.]
+[2016-05-29 16:26:47.202][P:17804/T:56][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=212136024, pInParam=0093F8FC, pOutParam=0093F8EC, waittime=1000.]
+[2016-05-29 16:26:47.251][P:17804/T:56][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-29 16:26:47.392][P:17804/T:56][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=212136024.]
+[2016-05-29 16:26:47.444][P:17804/T:56][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-29 16:27:29.024
+[2016-05-29 16:27:29.024][P:26448/T:37084][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=00F9F5C8.]
+[2016-05-29 16:27:29.094][P:26448/T:37084][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-29 16:27:29.094][P:26448/T:37084][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-29 16:27:29.094][P:26448/T:37084][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-29 16:27:29.362][P:26448/T:37084][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=226619480.]
+[2016-05-29 16:27:29.362][P:26448/T:37084][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=226619480, pInParam=00F9F59C, pOutParam=00F9F58C, waittime=1000.]
+[2016-05-29 16:27:29.420][P:26448/T:37084][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-29 16:27:29.596][P:26448/T:37084][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=226619480.]
+[2016-05-29 16:27:29.647][P:26448/T:37084][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-29 16:28:25.158
+[2016-05-29 16:28:25.158][P:19324/T:13984][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=005FF560.]
+[2016-05-29 16:28:25.216][P:19324/T:13984][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-29 16:28:25.216][P:19324/T:13984][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-29 16:28:25.216][P:19324/T:13984][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-29 16:28:25.488][P:19324/T:13984][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=218230872.]
+[2016-05-29 16:28:25.488][P:19324/T:13984][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=218230872, pInParam=005FF534, pOutParam=005FF524, waittime=1000.]
+[2016-05-29 16:28:25.530][P:19324/T:13984][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-29 16:28:25.674][P:19324/T:13984][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=218230872.]
+[2016-05-29 16:28:25.725][P:19324/T:13984][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-29 16:28:37.430
+[2016-05-29 16:28:37.430][P:17572/T:12252][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=0038F5C4.]
+[2016-05-29 16:28:37.487][P:17572/T:12252][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-29 16:28:37.487][P:17572/T:12252][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-29 16:28:37.487][P:17572/T:12252][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-29 16:28:37.768][P:17572/T:12252][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=212463704.]
+[2016-05-29 16:28:37.768][P:17572/T:12252][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=212463704, pInParam=0038F598, pOutParam=0038F588, waittime=1000.]
+[2016-05-29 16:28:37.826][P:17572/T:12252][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-29 16:28:38.002][P:17572/T:12252][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=212463704.]
+[2016-05-29 16:28:38.053][P:17572/T:12252][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-29 16:33:16.550
+[2016-05-29 16:33:16.550][P:20188/T:17500][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=008AF538.]
+[2016-05-29 16:33:16.608][P:20188/T:17500][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-29 16:33:16.608][P:20188/T:17500][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-29 16:33:16.608][P:20188/T:17500][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-29 16:33:16.874][P:20188/T:17500][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=219082840.]
+[2016-05-29 16:33:16.874][P:20188/T:17500][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=219082840, pInParam=008AF50C, pOutParam=008AF4FC, waittime=1000.]
+[2016-05-29 16:33:16.920][P:20188/T:17500][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+[2016-05-29 16:33:17.157][P:20188/T:17500][dhnetsdk.cpp:590][Info][0] Enter CLIENT_Logout. [lLoginID=219082840.]
+[2016-05-29 16:33:17.209][P:20188/T:17500][dhnetsdk.cpp:600][Info][0] Leave CLIENT_Logout. [ret=1]
+Begin Time:2016-05-30 08:32:04.781
+[2016-05-30 08:32:04.781][P:15584/T:28472][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=0033F888.]
+[2016-05-30 08:32:04.857][P:15584/T:28472][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-30 08:32:04.857][P:15584/T:28472][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-30 08:32:04.857][P:15584/T:28472][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-30 08:32:05.143][P:15584/T:28472][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=215806040.]
+[2016-05-30 08:32:05.143][P:15584/T:28472][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=215806040, pInParam=0033F85C, pOutParam=0033F84C, waittime=1000.]
+[2016-05-30 08:32:05.186][P:15584/T:28472][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+Begin Time:2016-05-30 08:32:21.970
+[2016-05-30 08:32:21.970][P:18200/T:20904][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=003CF8E8.]
+[2016-05-30 08:32:22.050][P:18200/T:20904][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-30 08:32:22.050][P:18200/T:20904][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-30 08:32:22.050][P:18200/T:20904][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-30 08:32:22.329][P:18200/T:20904][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=213774424.]
+[2016-05-30 08:32:22.329][P:18200/T:20904][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=213774424, pInParam=003CF8BC, pOutParam=003CF8AC, waittime=1000.]
+[2016-05-30 08:32:22.373][P:18200/T:20904][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+Begin Time:2016-05-30 08:32:39.295
+[2016-05-30 08:32:39.295][P:23128/T:20288][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=0113F6F0.]
+[2016-05-30 08:32:39.377][P:23128/T:20288][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-30 08:32:39.377][P:23128/T:20288][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-30 08:32:39.377][P:23128/T:20288][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-30 08:32:39.656][P:23128/T:20288][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=230420568.]
+[2016-05-30 08:32:39.656][P:23128/T:20288][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=230420568, pInParam=0113F6C4, pOutParam=0113F6B4, waittime=1000.]
+[2016-05-30 08:32:39.701][P:23128/T:20288][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+Begin Time:2016-05-30 08:32:50.237
+[2016-05-30 08:32:50.237][P:27452/T:16540][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=00B4F660.]
+[2016-05-30 08:32:50.295][P:27452/T:16540][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-30 08:32:50.295][P:27452/T:16540][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-30 08:32:50.295][P:27452/T:16540][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-30 08:32:50.561][P:27452/T:16540][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=220655704.]
+[2016-05-30 08:32:50.561][P:27452/T:16540][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=220655704, pInParam=00B4F634, pOutParam=00B4F624, waittime=1000.]
+[2016-05-30 08:32:50.608][P:27452/T:16540][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]
+Begin Time:2016-05-30 08:37:14.006
+[2016-05-30 08:37:14.006][P:2644/T:18324][dhnetsdk.cpp:400][Info][0] Enter CLIENT_LoginEx2. [IP=192.168.1.69, port=37777, SpeCap=0, lpDeviceInfo=006BF300.]
+[2016-05-30 08:37:14.064][P:2644/T:18324][dhdevprob.cpp:1788][Error][90010002] Third protocol login only
+[2016-05-30 08:37:14.064][P:2644/T:18324][dhdevprob.cpp:2060][Error][90010012] Failed to send login data
+[2016-05-30 08:37:14.064][P:2644/T:18324][Manager.cpp:4702][Error][90010002] Login device failed, errorcode:11!
+[2016-05-30 08:37:14.344][P:2644/T:18324][dhnetsdk.cpp:429][Info][0] Leave CLIENT_LoginEx2. [error=0, login ID=213708888.]
+[2016-05-30 08:37:14.344][P:2644/T:18324][dhnetsdk.cpp:11602][Info][0] Enter CLIENT_FindRecord. [lLoginID=213708888, pInParam=006BF2D4, pOutParam=006BF2C4, waittime=1000.]
+[2016-05-30 08:37:14.389][P:2644/T:18324][dhnetsdk.cpp:11608][Info][0] Leave CLIENT_FindRecord. [ret=1.]

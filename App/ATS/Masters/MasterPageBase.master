@@ -1,0 +1,625 @@
+<%@ Master Language="VB" CodeFile="MasterPageBase.master.vb" Inherits="Masters_MasterPageBase" ClientIDMode="Predictable" %>
+
+<%@ Register Src="../Menus/Controls/ctlSiteMapPath.ascx" TagName="ctlSiteMapPath" TagPrefix="uc4" %>
+<%@ Register Src="../Authenticate/Controls/ctlLoginStatus.ascx" TagName="ctlLoginStatus" TagPrefix="uc3" %>
+<%@ Register Src="../Authenticate/Controls/ctlLogin.ascx" TagName="ctlLogin" TagPrefix="uc2" %>
+<%--<%@ Register Src="~/GeneralControls/LanguageUserControl.ascx" TagPrefix="uc2" TagName="LanguageUserControl" %>--%>
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" style="font-family: Arial; direction: ltr;">
+<head id="Head1" runat="server">
+    <link href="../jquery.calendars.package-2.0.0/flora.calendars.picker.css" rel="stylesheet" />
+    <link href="../jquery.calendars.package-2.0.0/humanity.calendars.picker.css" rel="stylesheet" />
+    <script src="../jquery.calendars.package-2.0.0/jquery.min.js"></script>
+    <script src="../GeneralControls/CompareDatesValidation.js"></script>
+
+
+       <meta content="text/html"; charset="UTF-8" http-equiv="Content-Type" />
+
+    <link href="../Styles.css" rel="stylesheet" type="text/css" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- For all browsers -->
+    <link rel="stylesheet" href="../css/reset.css?v=1">
+    <link rel="stylesheet" href="../css/style.css?v=1">
+    <link rel="stylesheet" href="../css/colors.css?v=1">
+    <link rel="stylesheet" media="print" href="../css/print.css?v=1">
+    <!-- For progressively larger displays -->
+    <%--<link rel="stylesheet" media="only all and (min-width: 480px)" href="../css/480.css?v=1">--%>
+    <link rel="stylesheet" media="only all and (min-width: 768px)" href="../css/768.css?v=1">
+    <%--	<link rel="stylesheet" media="only all and (min-width: 992px)" href="../css/992.css?v=1">
+                                                        <link rel="stylesheet" media="only all and (min-width: 1200px)" href="../css/1200.css?v=1">--%>
+    <!-- For Retina displays -->
+    <link rel="stylesheet" media="only all and (-webkit-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min-device-pixel-ratio: 1.5)" href="../css/2x.css?v=1">
+
+    <!-- Additional styles -->
+    <link rel="stylesheet" href="../css/styles/form.css?v=1">
+    <link rel="stylesheet" href="../css/styles/switches.css?v=1">
+    <link rel="stylesheet" href="../css/styles/table.css?v=1">
+
+    <!-- DataTables -->
+    <link rel="stylesheet" href="../js/libs/DataTables/jquery.dataTables.css?v=1">
+
+    <!-- JavaScript at bottom except for Modernizr ----÷—Ê—Ì ··ﬁ«∆„… -->
+    <script src="../js/libs/modernizr.custom.js"></script>
+
+    <!-- For Modern Browsers -->
+    <link rel="shortcut icon" href="../img/favicons/favicon.png">
+    <!-- For everything else -->
+    <link rel="shortcut icon" href="../img/favicons/favicon.ico">
+    <!-- For retina screens -->
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../img/favicons/apple-touch-icon-retina.png">
+    <!-- For iPad 1-->
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../img/favicons/apple-touch-icon-ipad.png">
+    <!-- For iPhone 3G, iPod Touch and Android -->
+    <link rel="apple-touch-icon-precomposed" href="../img/favicons/apple-touch-icon.png">
+
+    <!-- iOS web-app metas -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <!-- Startup image for web apps -->
+    <link rel="apple-touch-startup-image" href="../img/splash/ipad-landscape.png" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape)">
+    <link rel="apple-touch-startup-image" href="../img/splash/ipad-portrait.png" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait)">
+    <link rel="apple-touch-startup-image" href="../img/splash/iphone.png" media="screen and (max-device-width: 320px)">
+
+    <!-- Microsoft clear type rendering -->
+    <meta http-equiv="cleartype" content="on">
+
+    <style type="text/css">
+        #UpdatePanel1 {
+            width: 200px;
+            height: 100px;
+            border: 1px solid gray;
+        }
+
+        #UpdateProgress1 {
+            width: 200px;
+            background-color: #FFC080;
+            bottom: 0%;
+            left: 0px;
+            position: absolute;
+        }
+    </style>
+
+</head>
+<body class="clearfix with-menu with-shortcuts">
+
+    <form id="Form1" runat="server" defaultbutton="cmdclick" method="post">
+        <header role="banner" id="title-bar2">
+                <h2>
+                    <asp:Image ID="HI" runat="server" ImageAlign="Middle" Height="50px" Width="100px" ImageUrl="~/Uploads/1/Logo/CompanyLogo1.gif" AlternateText="‘⁄«— MASTMS" meta:resourcekey="HIResource1" />
+                </h2>
+            </header>
+        <header role="banner" id="title-bar">
+                <h2></h2>
+            </header>
+        <!-- Button to open/hide menu -->
+        <div id="open-menu5" style="display: none">
+
+            <table>
+                <tr>
+                    <td style="font-size: 16px; display: none">
+                        <uc4:ctlSiteMapPath ID="ctlSiteMapPath1" runat="server" />
+                    </td>
+                    <td>&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;
+                    </td>
+                    <td>
+                        <%--<uc2:LanguageUserControl runat="server" ID="LanguageUserControl" />--%>
+                    </td>
+                </tr>
+            </table>
+
+
+
+        </div>
+
+        <%If ATS.BO.BOPagePermission.IsPageHasPermissionOf(15, 1) Then%>
+        <a href="../AccountAdmin/AdminMain.aspx" id="open-menu4" style="display: none">
+            <span>
+                <asp:Label ID="lbladmin" runat="server" ForeColor="White" Font-Size="12px" Text="≈⁄œ«œ«  «·‰Ÿ«„" meta:resourcekey="lbladminResource1"></asp:Label>
+            </span>
+        </a>
+        <%End If%>
+
+<%--        <%If Session("AccountRoleId") = "1" Or ATS.BO.BOPagePermission.IsPageHasPermissionOf(15, 1) Then%>
+        <a href="../Employee/EmployeeProfile.aspx" id="open-menu22" style="display: none">
+            <span>
+                <asp:Label ID="nametop" runat="server" dir="rtl" ForeColor="White" Font-Size="Smaller"> <%= Resources.MulResource.nametopResource1 + If(ATS.BO.UIUtilities.GetCurrentLanguage()="en",Session("AccountEmployeeFullName"),Session("AccountEmployeeFullNameAr"))  + " (" + If(ATS.BO.UIUtilities.GetCurrentLanguage()="en",Session("Role"),Session("RoleAr")) + ")"  %>  </asp:Label>
+               <uc3:ctlLoginStatus ID="CtlLoginStatus4" runat="server"/>
+            </span>
+        </a>
+        <%Else%>
+        <a href="../Employee/EmployeeProfile.aspx" id="open-menu2"  style="display: none">
+            <span>
+                                <asp:Label ID="nametop2" runat="server" ForeColor="White" Font-Size="Small" Text=" „  ”ÃÌ· «·œŒÊ· ﬂ:" meta:resourcekey="nametop2Resource1"></asp:Label>
+                <asp:Label ID="Label1" runat="server" dir="rtl" ForeColor="White" Font-Size="Smaller"> <%= Resources.MulResource.nametopResource1 + If(ATS.BO.UIUtilities.GetCurrentLanguage()="en",Session("AccountEmployeeFullName"),Session("AccountEmployeeFullNameAr"))  + " (" + If(ATS.BO.UIUtilities.GetCurrentLanguage()="en",Session("Role"),Session("RoleAr")) + ")" %>  </asp:Label>
+                <uc3:ctlLoginStatus ID="CtlLoginStatus1" runat="server"/>
+            </span>
+        </a>
+        <%End If%>--%>
+        
+
+        <a href="#" id="open-menu" style="font-size: 12px; display: none">
+            <span>
+                <asp:Literal ID="Literal1" runat="server" Text="ﬁ«∆„…" meta:resourcekey="Literal1Resource1"></asp:Literal>
+            </span>
+        </a>
+        <%--<uc4:ctlSiteMapPath ID="ctlSiteMapPath1" runat="server" />--%>
+        <a href="#" id="open-menu3">
+            <span></span>
+        </a>
+        <!-- Button to open/hide shortcuts -->
+        <a href="#" id="open-shortcuts">
+            <span class="icon-thumbs"></span>
+        </a>
+
+        <!-- Side tabs shortcuts -->
+
+
+        <ul id="shortcuts" role="complementary" class="children-tooltip tooltip-right" dir="ltr" style="display: none">
+
+            <%If ATS.BO.BOPagePermission.IsPageHasPermissionOf(135, 1) Then%>
+            <%If Me.Page.Request.Url.ToString.Contains("Default") Then%>
+            <li class="current">
+                <a runat="server" href="../Attendance/MyChart.aspx" class="shortcut-dashboard" title="" id="link1" meta:resourcekey="link1Resource1"></a>
+            </li>
+            <%Else%>
+            <li>
+
+            </li>
+            <%End If%>
+            <%End If%>
+            <%If ATS.BO.BOPagePermission.IsPageHasPermissionOf(166, 1) Then%>
+            <%If Me.Page.Request.Url.ToString.Contains("Exception") Then%>
+            <li class="current">
+                <a runat="server" href="../Attendance/WorkException.aspx" class="shortcut-projects" title="≈” À‰«¡«  «·œÊ«„" id="link3" meta:resourcekey="link2Resource1"></a>
+            </li>
+            <%Else%>
+            <li>
+                <a runat="server" href="../Attendance/WorkException.aspx" class="shortcut-projects" title="≈” À‰«¡«  «·œÊ«„" id="link4" meta:resourcekey="link2Resource1"></a>
+            </li>
+            <%End If%>
+            <%End If%>
+            <%If ATS.BO.BOPagePermission.IsPageHasPermissionOf(163, 1) Then%>
+            <%If Me.Page.Request.Url.ToString.Contains("Vacation") Then%>
+            <li class="current">
+                <a runat="server" href="../Attendance/Vacation.aspx" class="shortcut-contacts" title="≈Ã«“« Ì" id="link5" meta:resourcekey="link3Resource1"></a>
+            </li>
+            <%Else%>
+            <li>
+                <a runat="server" href="../Attendance/Vacation.aspx" class="shortcut-contacts" title="≈Ã«“« Ì" id="link6" meta:resourcekey="link3Resource1"></a>
+            </li>
+            <%End If%>
+            <%End If%>
+            <%If ATS.BO.BOPagePermission.IsPageHasPermissionOf(80, 1) Or ATS.BO.BOPagePermission.IsPageHasPermissionOf(19, 1) Then%>
+            <%If Me.Page.Request.Url.ToString.Contains("Daily") Then%>
+            <li class="current">
+                <a runat="server" id="link7" href="../Attendance/AccountEmployeeAttendance.aspx" class="shortcut-stats" title="«·Õ÷Ê— Ê«·«‰’—«›" meta:resourcekey="link4Resource1"></a>
+            </li>
+            <%Else%>
+            <li>
+                <a runat="server" id="link8" href="../Attendance/AccountEmployeeAttendance.aspx" class="shortcut-stats" title="«·Õ÷Ê— Ê«·«‰’—«›" meta:resourcekey="link4Resource1"></a>
+            </li>
+            <%End If%>
+            <%End If%>
+            <%If ATS.BO.BOPagePermission.IsPageHasPermissionOf(135, 1) Then%>
+            <%--<%If Me.Page.Request.Url.ToString.Contains("Expense") Then%>
+                <li class="current">
+                    <a href="../Employee/AccountExpenseEntry.aspx" class="shortcut-agenda" title="My Expense Sheets">My Expense Sheets</a>
+                </li>
+                <%Else%>
+                <li>
+                    <a href="../Employee/AccountExpenseEntry.aspx" class="shortcut-agenda" title="My Expense Sheets">My Expense Sheets</a>
+                </li>
+                <%End If %>--%>
+            <%End If%>
+            <%If ATS.BO.BOPagePermission.IsPageHasPermissionOf(161, 1) Then%>
+            <%If Me.Page.Request.Url.ToString.Contains("TimeOff") Then%>
+            <li class="current">
+                <a runat="server" href="../Attendance/Gatepasseslist.aspx" class="shortcut-settings" title="≈” ∆–«‰Ì" id="link9" meta:resourcekey="link5Resource1">≈” ∆–«‰Ì</a>
+            </li>
+            <%Else%>
+            <li>
+                <a runat="server" href="../Attendance/Gatepasseslist.aspx" class="shortcut-settings" title="≈” ∆–«‰Ì" id="link10" meta:resourcekey="link5Resource1">≈” ∆–«‰Ì</a>
+            </li>
+            <%End If%>
+            <%End If%>
+            <%--<%If ATS.BO.BOPagePermission.IsPageHasPermissionOf(120, 1) Then%>--%>
+            <%If Me.Page.Request.Url.ToString.Contains("Report") Then%>
+            <li class="current">
+                <a runat="server" href="../Reports/MyReports.aspx" class="shortcut-medias" title="«· ﬁ«—Ì—" id="link11" meta:resourcekey="link6Resource1">«· ﬁ«—Ì—</a>
+            </li>
+            <%Else%>
+            <li>
+                <a runat="server" href="../Reports/MyReports.aspx" class="shortcut-medias" title="«· ﬁ«—Ì—" id="link12" meta:resourcekey="link6Resource1">«· ﬁ«—Ì—</a>
+            </li>
+            <%End If%>
+            <%-- <%End If %>--%>
+            <%If ATS.BO.BOPagePermission.IsPageHasPermissionOf(180, 1) Then%>
+            <%If Me.Page.Request.Url.ToString.Contains("Approval") Then%>
+            <li class="current">
+                <a runat="server" href="../Employee/ManageApproval.aspx" class="shortcut-messages" title="≈œ«—… «·„Ê«›ﬁ« " id="link13" meta:resourcekey="link7Resource1">≈œ«—… «·„Ê«›ﬁ« </a>
+                <div style="position: relative; width: 20px; height: 20px; font-size: x-large;">
+                    <div class="noti_bubble">
+                        <label id="lblAllNotifications"></label>
+                    </div>
+                </div>
+            </li>
+            <%Else%>
+            <li>
+                <a runat="server" href="../Employee/ManageApproval.aspx" class="shortcut-messages" title="≈œ«—… «·„Ê«›ﬁ« " id="link14" meta:resourcekey="link7Resource1">≈œ«—… «·„Ê«›ﬁ« </a>
+
+                <div style="position: relative; width: 20px; height: 20px; font-size: x-large;">
+                    <div class="noti_bubble">
+                        <label id="lblAllNotifications"></label>
+                    </div>
+                </div>
+
+            </li>
+            <%End If%>
+            <%End If%>
+        </ul>
+
+
+        <section id="menu" role="complementary">
+                <div id="menu-content">
+                    <header style="">
+                        <table  width="100%" cellpadding=0 cellspacing=0>
+                            <tr>
+                                <td align="left" valign="middle">
+                                    <a href="../Employee/EmployeeProfile.aspx" >
+                                    <asp:Label ID="Label2" runat="server" dir="rtl" ForeColor="Black" Font-Size="Smaller"> <%= Resources.MulResource.nametopResource1 + If(ATS.BO.UIUtilities.GetCurrentLanguage()="en",Session("AccountEmployeeFullName"),Session("AccountEmployeeFullName"))  + " (" + If(ATS.BO.UIUtilities.GetCurrentLanguage()="en",Session("Role"),Session("Role")) + ")" %>  </asp:Label>
+                                   </a>
+                                        <uc3:ctlLoginStatus ID="CtlLoginStatus5" runat="server"/>
+                                    <%--<asp:Label Font-Underline="True" ForeColor="#9B945F" ID="RoleLabel" runat="server" meta:resourcekey="RoleLabelResource1" ></asp:Label>--%>
+                                </td>
+                                <% If Session("AccountRoleId") = "2" Then%>
+                                <td align="right" valign="middle">
+                                   <%-- <asp:HyperLink ID="H2" CssClass="help" runat="server" NavigateUrl= "~\user.pdf" Target="_blank">
+                                        <asp:Image ID="Image2" runat="server" ImageUrl="~/Images/HelpMain.png" ToolTip="„”«⁄œ…" Width="27px" style="vertical-align:middle" />
+                                    </asp:HyperLink>--%>
+                                  <%--  <uc3:ctlLoginStatus ID="CtlLoginStatus2" runat="server"/>--%>
+                                </td>
+                                <% Else%>
+                                <td align="right" valign="middle">
+                                    <%--<asp:HyperLink ID="H3" CssClass="help" runat="server" NavigateUrl="~\Administrator.pdf" Target="_blank">
+                                        <asp:Image ID="Image3" runat="server" ImageUrl="~/Images/HelpMain.png" ToolTip="„”«⁄œ…" Width="27px" style="vertical-align:middle" />
+                                    </asp:HyperLink>--%>
+                                   <%-- <uc3:ctlLoginStatus ID="CtlLoginStatus3" runat="server"/>--%>
+                                </td>
+                                <% End If%>
+                            </tr>
+                        </table>
+                    </header>
+                    <div id="profile">
+                        <asp:HyperLink ID="L" runat="server" NavigateUrl="~/Employee/EmployeeProfile.aspx" meta:resourcekey="LResource1">
+                            <asp:Image ID="I" runat="server" AlternateText="Profile" ImageUrl="~/Img/User.png" ToolTip="Profile" Width="64" Height="64" meta:resourcekey="IResource2" />
+                        
+</asp:HyperLink>
+                        <%--<asp:image id="imguser" ImageUrl="~/Images/Profile.gif" width="1000" height="1000" CssClass="user-icon"/>--%>
+                        <span class="name" style="display:none" >
+                            <asp:Label ID="name" ForeColor="#0F0F0F" runat="server" Text="<%$ Resources:TimeLive.Web, LoggedIn As: %>" meta:resourcekey="nameResource1" ></asp:Label>
+                        </span>
+                    <%--<uc3:ctlLoginStatus ID="CtlLoginStatus1" runat="server"/>--%>
+                    </div>
+                    <section class="navigable">
+                        <ul class="big-menu">
+ <%--                           <li>
+                                
+                                  <asp:HyperLink runat="server" ID="H1" NavigateUrl="~/Attendance/MyChart.aspx">
+                                        <asp:Literal ID="L1" runat="server" Text="«·„Œÿÿ «·»Ì«‰Ì " />
+                                    </asp:HyperLink>
+  
+                               
+                            </li>--%>
+                            <asp:Repeater runat="server" ID="R" DataSourceID="SiteMapDataSource1" EnableViewState="False">
+                                <ItemTemplate>
+                                    <asp:Panel ID="Panel1" runat="server" Visible='<%# IsMenuPage(Eval("Key")) %>' >
+                                     
+                                        <li class="big-menu">
+                                            <asp:HyperLink ID="H2" runat="server" CssClass="menuLinks" NavigateUrl='<%# Eval("Url") %>' ><%# If(ATS.BO.UIUtilities.GetCurrentLanguage()="en",Eval("Title"),Eval("description"))%></asp:HyperLink>
+                                        </li>
+                                    </asp:Panel>
+                                </ItemTemplate>
+                            </asp:Repeater>
+                        </ul>
+                        <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" ShowStartingNode="False" />
+                    </section>
+                </div>
+            </section>
+
+        <section role="main" id="main" runat="server" dir='<%$ Resources:MulResource, PageDirection %>' style="display: none">
+                <asp:ContentPlaceHolder ID="C" runat="server">
+                </asp:ContentPlaceHolder>
+            </section>
+        <!-- JavaScript at the bottom for fast page loading -->
+
+
+
+
+        <!-- Scripts -->
+        <%--            <script src="../js/libs/jquery-1.7.2.min.js"></script>--%>
+        <script type="text/javascript" src="../js/setup.js"></script>
+
+        <!-- Template functions -->
+        <script type="text/javascript" src="../js/developr.input.js"></script>
+        <script type="text/javascript" src="../js/developr.navigable.js"></script>
+        <script type="text/javascript" src="../js/developr.notify.js"></script>
+        <script type="text/javascript" src="../js/developr.scroll.js"></script>
+        <script type="text/javascript" src="../js/developr.tooltip.js"></script>
+        <script type="text/javascript" src="../js/developr.table.js"></script>
+
+        <!-- Plugins -->
+        <script type="text/javascript" src="../js/libs/jquery.tablesorter.min.js"></script>
+        <script type="text/javascript" src="../js/libs/DataTables/jquery.dataTables.min.js"></script>
+
+        <script type="text/javascript">
+
+            // Call template init (optional, but faster if called manually)
+            $.template.init();
+
+            // Table sort - DataTables
+            var table = $('#sorting-advanced'),
+            tableStyled = false;
+
+            table.dataTable({
+                'aoColumnDefs': [
+                    { 'bSortable': false, 'aTargets': [0, 5] }
+                ],
+                'sPaginationType': 'full_numbers',
+                'sDom': '<"dataTables_header"lfr>t<"dataTables_footer"ip>',
+                'fnDrawCallback': function (oSettings) {
+                    // Only run once
+                    if (!tableStyled) {
+                        table.closest('.dataTables_wrapper').find('.dataTables_length select').addClass('select White-gradient glossy').styleSelect();
+                        tableStyled = true;
+                    }
+                }
+            });
+
+            // Table sort - styled
+            $('#sorting-example1').tablesorter({
+                headers: {
+                    0: { sorter: false },
+                    5: { sorter: false }
+                }
+            }).on('click', 'tbody td', function (event) {
+                // Do not process if something else has been clicked
+                if (event.target !== this) {
+                    return;
+                }
+
+                var tr = $(this).parent(),
+                row = tr.next('.row-drop'),
+                rows;
+
+                // If click on a special row
+                if (tr.hasClass('row-drop')) {
+                    return;
+                }
+
+                // If there is already a special row
+                if (row.length > 0) {
+                    // Un-style row
+                    tr.children().removeClass('anthracite-gradient glossy');
+
+                    // Remove row
+                    row.remove();
+
+                    return;
+                }
+
+                // Remove existing special rows
+                rows = tr.siblings('.row-drop');
+                if (rows.length > 0) {
+                    // Un-style previous rows
+                    rows.prev().children().removeClass('anthracite-gradient glossy');
+
+                    // Remove rows
+                    rows.remove();
+                }
+
+                // Style row
+                tr.children().addClass('anthracite-gradient glossy');
+
+                // Add fake row
+                $('<tr class="row-drop">' +
+                  '<td colspan="' + tr.children().length + '">' +
+                  '<div class="float-right">' +
+                  '<button type="submit" class="button glossy mid-margin-right">' +
+                  '<span class="button-icon"><span class="icon-mail"></span></span>' +
+                  'Send mail' +
+                  '</button>' +
+                  '<button type="submit" class="button glossy">' +
+                  '<span class="button-icon red-gradient"><span class="icon-cross"></span></span>' +
+                  'Remove' +
+                  '</button>' +
+                  '</div>' +
+                  '<strong>Name:</strong> John Doe<br>' +
+                  '<strong>Account:</strong> admin<br>' +
+                  '<strong>Last connect:</strong> 05-07-2011<br>' +
+                  '<strong>Email:</strong> john@doe.com' +
+                  '</td>' +
+                  '</tr>').insertAfter(tr);
+            }).on('sortStart', function () {
+                var rows = $(this).find('.row-drop');
+                if (rows.length > 0) {
+                    // Un-style previous rows
+                    rows.prev().children().removeClass('anthracite-gradient glossy');
+
+                    // Remove rows
+                    rows.remove();
+                }
+            });
+
+            // Table sort - simple
+            $('#sorting-example2').tablesorter({
+                headers: {
+                    5: { sorter: false }
+                }
+            });
+        </script>
+
+
+
+        <script type="text/javascript">
+
+            function getCookie(name) {
+                var re = new RegExp(name + "=([^;]+)");
+                var value = re.exec(document.cookie);
+                return (value != null) ? unescape(value[1]) : null;
+            }
+            try {
+                var EmployeeId = "<%=Session("AccountEmployeeId").ToString()%>"
+                $(document).ready(function () {
+                    AlignContent()
+                    $("#shortcuts").show();
+                    $("#main").show();
+                    //   $("#title-bar2").show();
+                    updateProgress.style.display = "none";
+
+
+                    //  AlignContent()
+
+                    /*
+                             var lang = getCookie("CurrentLanguage");
+                             //alert(lang.indexOf("en"));
+                             if (lang.indexOf("en") > -1) {
+                                 document.getElementById("main").dir = "ltr";
+                                 $("#shortcuts").css("right", "");
+                                 $("#shortcuts").css("left", "0");
+                                 $("#shortcuts").css("display", "block");
+
+                                 $("#main").css("margin-left", "68px");
+                                 $("#main").css("margin-right", "0px");
+                             }
+                             else {
+                                 $("#shortcuts").css("right", "0");
+                                 $("#shortcuts").css("left", "");
+                                 $("#shortcuts").css("display", "block");
+
+                                 $("#main").css("margin-left", "0px");
+                                 $("#main").css("margin-right", "68px");
+                             }
+
+                   */
+
+
+
+
+                    $.ajax({
+                        type: "POST",
+                        url: "../PendingApprovalsRequestCount.aspx/GetCountOfAllPendingRequest",
+                        data: '{EmployeeId: ' + EmployeeId + '}',
+                        contentType: "application/json; charset=utf-8",
+                        dataType: "json",
+                        success: function (response) {
+                            if (response.d > 0 && response.d <= 9)
+                                document.getElementById('lblAllNotifications').innerHTML = response.d;
+                            else if (response.d > 0 && response.d > 9)
+                                document.getElementById('lblAllNotifications').innerHTML = 9;
+                            else
+                                document.getElementById('lblAllNotifications').innerHTML = "";
+                        },
+                        failure: function (response) {
+                            alert(response.d);
+                        }
+                    });
+
+
+                    setInterval(function () {
+                        
+                        $.ajax({
+                            type: "POST",
+                            url: "../PendingApprovalsRequestCount.aspx/GetCountOfAllPendingRequest",
+                            data: '{EmployeeId: ' + EmployeeId + '}',
+                            contentType: "application/json; charset=utf-8",
+                            dataType: "json",
+                            success: function (response) {
+                                if (response.d > 0 && response.d <= 9)
+                                    document.getElementById('lblAllNotifications').innerHTML = response.d;
+                                else if (response.d > 0 && response.d > 9)
+                                    document.getElementById('lblAllNotifications').innerHTML = 9;
+                                else
+                                    document.getElementById('lblAllNotifications').innerHTML = "";
+                            },
+                            failure: function (response) {
+                                alert(response.d);
+                            }
+                        });
+
+                    }, 30000);
+
+
+
+                    $(".rtsUL").css("width", "100%")
+                    $(".rtsLI").css("width", "50%")
+
+                });
+            }
+            catch (ex) {
+                alert(ex.message)
+            }
+
+
+        </script>
+
+
+
+        <div style="display: none">
+            <asp:Button ID="cmdclick" runat="server" meta:resourcekey="cmdclickResource1" />
+        </div>
+        <script type="text/javascript">
+
+            function pageLoad() {
+
+                setTimeout(function () {
+                    updateProgress.style.display = "none";
+
+                }, 800);
+
+                var updateProgress = $get('<%= updateProgress.ClientID%>');
+                var dynamicLayout = '<%= updateProgress.DynamicLayout.ToString().ToLower()%>';
+
+
+                if (dynamicLayout) {
+                    updateProgress.style.display = "block";
+                }
+                else {
+                    updateProgress.style.visibility = "visible";
+                }
+            }
+
+        </script>
+
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $("a[title='Excel']").parent().hide();  // Remove from export dropdown.
+                $("a[title='Word']").parent().hide();  // Remove from export dropdown.
+                //$("a[title='MHTML (web archive)']").parent().hide();
+                //$("a[title='TIFF file']").parent().hide();
+            });
+</script>
+        <div>
+            <asp:UpdateProgress ID="updateProgress" runat="server">
+                <ProgressTemplate>
+                    <div style="position: fixed; text-align: center; height: 100%; width: 100%; top: 0; right: 0; left: 0; z-index: 9999999; background-color: white; opacity: 0.8;">
+                        <asp:Image ID="imgUpdateProgress" runat="server" ImageUrl="~/images/ajax-loader.gif" AlternateText="Loading ..." ToolTip="Loading ..." Style="padding: 10px; position: fixed; top: 45%; left: 50%;" meta:resourcekey="imgUpdateProgressResource1" />
+                    </div>
+                </ProgressTemplate>
+            </asp:UpdateProgress>
+
+        </div>
+    </form>
+
+</body>
+</html>

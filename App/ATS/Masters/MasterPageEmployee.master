@@ -1,0 +1,59 @@
+<%@ Master Language="VB" CodeFile="MasterPageEmployee.master.vb" Inherits="MasterPageEmployee" MasterPageFile="~/Masters/MasterPageEmployeeBase.master" %>
+<%@ Register Src="../Menus/Controls/ctlAccountAdminSiteMenu.ascx" TagName="ctlAccountAdminSiteMenu" TagPrefix="uc1" %>
+<%@ Register Src="../Authenticate/Controls/ctlLoginStatus.ascx" TagName="ctlLoginStatus" TagPrefix="uc3" %>
+<%@ Register Src="../Menus/Controls/ctlSiteMapPath.ascx" TagName="ctlSiteMapPath" TagPrefix="uc4" %>
+<asp:Content ID="C" ContentPlaceHolderID="C" runat="Server">
+
+    <asp:UpdateProgress DisplayAfter="0" ID="PG" runat="server">
+        <ProgressTemplate>
+            <div id="overlay">
+                <div id="modalprogress">
+                    <div id="theprogress">
+                        <asp:Image ID="Im" runat="server" ImageUrl="~/Images/ajax-loader.gif" />
+                    </div>
+                </div>
+            </div>
+        </ProgressTemplate>
+    </asp:UpdateProgress>
+    <tr>
+        <td valign="top" width="5%" bgcolor="#ffffff" style="height: 100%;">
+            <table border="0" cellpadding="0" cellspacing="0">
+                <tr height="3px">
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>&nbsp;&nbsp;
+                    </td>
+                </tr>
+            </table>
+        </td>
+        <td valign="top" class="text">
+            <table border="0" cellpadding="0" cellspacing="0" height="100%" style="width: 100%">
+                <tr valign="top">
+                    <td style="height: 223px" width="2%"></td>
+                    <td style="height: 223px" valign="top" width="98%">
+                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                            <tr>
+                                <td></td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <asp:ScriptManager ID="ScriptManager2" ScriptMode="Release" runat="server">
+                                    </asp:ScriptManager>
+                                    <asp:ContentPlaceHolder ID="C" runat="server">
+                                    </asp:ContentPlaceHolder>
+                                </td>
+                            </tr>
+                        </table>
+                        &nbsp;
+                    </td>
+                </tr>
+            </table>
+            &nbsp;
+        </td>
+        <td bgcolor="#999999" style="width: 31px">&nbsp;</td>
+    </tr>
+</asp:Content>
+

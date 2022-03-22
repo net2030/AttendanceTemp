@@ -1,0 +1,135 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+ATS.BO
+</name>
+</assembly>
+<members>
+<member name="M:ATS.BO.UIUtilities.ChangeConnectionStringAndAppSettingForWebConfigFile">
+	<summary>
+ Get and change connection string web.config file
+ </summary>
+	<remarks></remarks>
+</member><member name="M:ATS.BO.UIUtilities.InserthttpModulesWebConfigFile">
+	<summary>
+ Get and change connection string web.config file
+ </summary>
+	<remarks></remarks>
+</member><member name="M:ATS.BO.UIUtilities.Inserthttphandlers">
+	<summary>
+ Get and change connection string web.config file
+ </summary>
+	<remarks></remarks>
+</member><member name="M:ATS.BO.UIUtilities.IsDotNetFrameWork4WebConfig">
+	<summary>
+ check dot net frame work
+ </summary>
+	<remarks></remarks>
+</member><member name="M:ATS.BO.UIUtilities.IsCheckWebConfigFramework4">
+	<summary>
+ check dot net frame work
+ </summary>
+	<remarks></remarks>
+</member><member name="M:ATS.BO.UIUtilities.ChangeAssemblySettingForWebConfig">
+	<summary>
+ change web.config file assembly setting 2010
+ </summary>
+	<remarks></remarks>
+</member><member name="M:ATS.BO.UIUtilities.ChangeConfigSettingForWebConfig">
+	<summary>
+ change config setting web.config file
+ </summary>
+	<remarks></remarks>
+</member><member name="M:ATS.BO.Framework.BOEUserAccount.GetCapabilityAccess(System.Int32,ATS.BO.Framework.BORoles)">
+	<summary>
+ The capabilities are least restrictive.  If a user is in more then one role 
+ and one has edit and the other is read only then edit is returned.
+ </summary>
+	<param name="capabilityId"></param>
+	<param name="rolesWithCapabilities"></param>
+	<returns></returns>
+</member><member name="T:ATS.BO.Framework.ValidationError">
+	<summary>
+ This class contains the error message when a validation rule is broken
+ A validation error object should be created when validating input from the user and 
+ we want to display a message back to the user.
+ </summary>
+</member><member name="T:ATS.BO.Framework.ValidationErrors">
+	<summary>
+ This class contains a list of validation errors.  This allows you to report back multiple errors.
+ </summary>
+</member><member name="T:ATS.BO.Framework.BOERoleCapability">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:ATS.BO.Framework.BORoleCapabilities.GetByMenuItemId(System.Int32)">
+	<summary>
+ Returns all the Role\Capabilitis for the specificed menuItemId.
+ </summary>
+	<param name="menuItemId"></param>
+	<returns></returns>
+</member><member name="M:ATS.BO.Framework.BORoleCapabilities.GetByCapabilityID(System.Int32)">
+	<summary>
+ Get from this instance the object with the specified capability.
+ </summary>
+	<param name="capabilityId"></param>
+	<returns></returns>
+</member><member name="T:ATS.BO.Framework.BOERoleUserAccount">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:ATS.BO.Framework.BORoleUserAccounts.GetByUserAccountId(System.Int32)">
+	<summary>
+ Return the object from this instance with the specified userAccountId
+ </summary>
+	<param name="userAccountId"></param>
+	<returns></returns>
+</member><member name="P:ATS.BO.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:ATS.BO.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:ATS.BO.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="M:ATS.BO.Framework.BOBase.MapEntityToProperties(ATS.DA.Framework.ICommonAttributes)">
+	<summary>
+ This method will load all the properties of the object from the entity.
+ </summary>
+</member><member name="P:ATS.BO.Framework.BOECapability.AccessType">
+	<summary>
+ what types of access should be allowed for this capability
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:ATS.BO.Framework.BOCapabilities.GetByName(System.String)">
+	<summary>
+ Returns a Capability with the matching name.  If it is not found then null is returned.
+ </summary>
+	<param name="capabilityName"></param>
+	<returns></returns>
+</member><member name="M:ATS.BO.Framework.BOMenuItems.Load">
+	<summary>
+ This will load up the object with the correct parent\child relationships 
+ within the menu structure. Any parent menu item will have its 
+ child menu items loaded in it's ChildMenuItems property.
+ </summary>
+</member><member name="M:ATS.BO.Framework.BOMenuItems.MenuExists(System.Int32)">
+	<summary>
+ Checks if the menu item exists.  This will look at the child object of the menu also.
+ </summary>
+</member><member name="M:ATS.BO.Framework.BOMenuItems.GetByMenuItemId(System.Int32)">
+	<summary>
+ Returns the menu item for the specified id.  
+ This will search through all child items in the list.
+ </summary>
+</member>
+</members>
+</doc>

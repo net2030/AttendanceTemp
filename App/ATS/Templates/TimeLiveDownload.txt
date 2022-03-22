@@ -1,0 +1,46 @@
+Dear [firstname] [lastname]:
+
+Thank you for downloading web based TimeLive collaboration suite, the latest upgrade of our timesheet and project management application. 
+
+Download link
+
+TimeLive (Required pre-installed .Net framework 2)
+http://www.livetecs.com/Release/TimeLiveWebSetup.exe
+
+Below are step-by-step instructions to help you deploy the TimeLive immediately. 
+ 
+Step-by-Step Instructions:
+------------------------------------------------
+1. INSTALL THE APPLICATION
+------------------------------------------------
+1.	Click the download link for TimeLive lite edition.
+2.	You will be asked to "run" the application or "save" the application. 
+3.	If you choose "run", the installation process will automatically launch upon download completion. 
+4.	If you choose "save", select your desktop as your designated location. When the download is complete, double-click the TimeLiveWebSetup icon on your desktop to launch installation.  
+ 
+------------------------------------------------
+2. LOG IN TO WEB TIMESHEET
+------------------------------------------------
+Upon successful installation of the TimeLive, you will automatically be directed to the NEW ACCOUNT window. At there you can create new account of TimeLive on your local system 
+
+Note: If you accidentally close the window or the window disappears, here is the URL to return to the log in Web page: 
+http://localhost/TimeLiveWeb
+
+
+------------------------------------------------
+3. USE WEB TIMESHEET
+------------------------------------------------
+You are now ready to use TimeLive Web TimeSheet. You can launch TimeLive help from
+http://www.livetecs.com/TimeLiveHelp.
+
+Sincerely,
+The TimeLive team.
+http://www.livetecs.com
+
+Microsoft .Net Framework 2 download path 
+http://www.microsoft.com/downloads/details.aspx?familyid=0856eacb-4362-4b0d-8edd-aab15c5e04f5&displaylang=en
+
+Microsoft SQL Server 2005 Express download path
+http://www.microsoft.com/downloads/details.aspx?FamilyID=220549B5-0B07-4448-8848-DCC397514B41&displaylang=en
+
+

@@ -1,0 +1,9 @@
+[employeename]'s expense for [expensesheetdate] has been rejected.
+
+The information follows below:
+
+    Rejected By: [rejectedby]
+    Description: [expensesheetdescription]
+         Amount: [currencyamount]
+         Status: [status]
+       Comments: [comments]

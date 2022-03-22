@@ -1,0 +1,50 @@
+<%@ Control Language="VB" AutoEventWireup="false" CodeFile="ctlLogin.ascx.vb" Inherits="Auth_Controls_ctlLogin" %>
+<asp:Login ID="Login1" runat="server" DestinationPageUrl="~/Employee/Default.aspx" Width="220px">
+    <LayoutTemplate>
+        <table border="0" cellpadding="1" cellspacing="0" style="border-collapse: collapse; width: 220px; border-right: 1px solid; border-top: 1px solid; border-left: 1px solid; border-bottom: 1px solid;" height="100%" id="TABLE1">
+            <tr>
+                <td style="width: 200px; height: 100%;">
+                    <table border="0" cellpadding="0" style="width: 200px" class="formviewtable">
+                        <tr>
+                            <td align="center" colspan="2" class="LoginHeading">
+                                Log In</td>
+                        </tr>
+                        <tr>
+                            <td align="right" class="FormViewLabelCell" style="width: 65px; height: 24px;">
+                                Customer Id:
+                            </td>
+                            <td style="width: 100px; height: 24px;">
+                                <asp:TextBox ID="AccountId" runat="server">99</asp:TextBox><asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="AccountId"
+                                    ErrorMessage="Account Login is required." ToolTip="Customer Id is required." ValidationGroup="ctl00$Login1" CssClass="ErrorMessage">*</asp:RequiredFieldValidator></td>
+                        </tr>
+                        <tr>
+                            <td align="right" class="FormViewLabelCell" style="width: 65px; height: 24px">
+                                <asp:Label ID="UserNameLabel" runat="server" AssociatedControlID="UserName">User Name:</asp:Label></td>
+                            <td style="width: 100px; height: 24px">
+                                <asp:TextBox ID="UserName" runat="server">shahzadgodil</asp:TextBox><asp:RequiredFieldValidator ID="UserNameRequired" runat="server" ControlToValidate="UserName"
+                                    ErrorMessage="User Name is required." ToolTip="User Name is required." ValidationGroup="ctl00$Login1" CssClass="ErrorMessage">*</asp:RequiredFieldValidator>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="right" class="FormViewLabelCell" style="width: 65px">
+                                <asp:Label ID="PasswordLabel" runat="server" AssociatedControlID="Password">Password:</asp:Label></td>
+                            <td style="width: 100px">
+                                <asp:TextBox ID="Password" runat="server">password</asp:TextBox><asp:RequiredFieldValidator ID="PasswordRequired" runat="server" ControlToValidate="Password"
+                                    ErrorMessage="Password is required." ToolTip="Password is required." ValidationGroup="ctl00$Login1" CssClass="ErrorMessage">*</asp:RequiredFieldValidator></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" style="height: 20px" align="right" class="FormViewLabelCell">
+                                <asp:CheckBox ID="RememberMe" runat="server" Text="Remember me next time." />
+                                <asp:Button ID="LoginButton" runat="server" CommandName="Login" Text="Log In" ValidationGroup="ctl00$Login1" OnClick="LoginButton_Click2" /></td>
+                        </tr>
+                        <tr>
+                            <td align="center" colspan="2" style="color: red; height: 19px;">
+                                <asp:Literal ID="FailureText" runat="server" EnableViewState="False"></asp:Literal>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </LayoutTemplate>
+</asp:Login>

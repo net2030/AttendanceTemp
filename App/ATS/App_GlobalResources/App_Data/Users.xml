@@ -1,0 +1,32 @@
+﻿<Users>
+	<User>
+		<UserName>Jeff</UserName>
+		<Password>imbatman!</Password>
+		<EMail>jeffpro@wintellect.com</EMail>
+		<Roles>Members</Roles>
+	</User>
+	<User>
+		<UserName>Brian</UserName>
+		<Password>imbatman!</Password>
+		<EMail>bgold@microsoft.com</EMail>
+		<Roles>Members</Roles>
+	</User>
+	<User>
+		<UserName>Bill</UserName>
+		<Password>imbatman!</Password>
+		<EMail>billg@microsoft.com</EMail>
+		<Roles>Members,Administrators</Roles>
+	</User>
+	<User>
+		<UserName>Bob</UserName>
+		<Password>contoso!</Password>
+		<EMail>bob@contoso.com</EMail>
+		<Roles>Members</Roles>
+	</User>
+	<User>
+		<UserName>Alice</UserName>
+		<Password>contoso!</Password>
+		<EMail>alice@contoso.com</EMail>
+		<Roles>Members,Administrators</Roles>
+	</User>
+</Users>

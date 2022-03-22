@@ -1,0 +1,327 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>C1.Web.C1WebSplitter.2</name>
+    </assembly>
+    <members>
+        <member name="M:C1.Win.AboutForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:C1.Win.LicensingForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:C1.Util.Localization.C1DescriptionAttribute">
+            <summary>
+            ------------------------------------------------------------------------
+            C1DescriptionAttribute replaces the DescriptionAttribute
+            and uses the C1Localizer class to return the localized Attribute string
+            </summary>
+        </member>
+        <member name="T:C1.Util.Localization.C1CategoryAttribute">
+            <summary>
+            ------------------------------------------------------------------------
+            C1CategoryAttribute replaces the CategoryAttribute
+            and uses the C1Localizer class to return the localized Attribute string
+            </summary>
+        </member>
+        <member name="T:C1.Util.Localization.C1Localizer">
+            <summary>
+            ------------------------------------------------------------------------
+            C1Localizer contains static methods to load and look up resources
+            </summary>
+        </member>
+        <member name="T:C1.Web.C1WebSplitter.ResizeMode">
+            <summary>
+            Determines the resize mode while dragging the splitter bar.
+            </summary>
+        </member>
+        <member name="F:C1.Web.C1WebSplitter.ResizeMode.Default">
+            <summary>
+            Resizes the panels size only when release the mouse button of dragging action.
+            </summary>
+        </member>
+        <member name="F:C1.Web.C1WebSplitter.ResizeMode.Continuous">
+            <summary>
+            Resizes the panels size instantly while dragging the splitter bar.
+            </summary>
+        </member>
+        <member name="F:C1.Web.C1WebSplitter.ResizeMode.Incremental">
+            <summary>
+            Resizes the panels size in particular span.
+            </summary>
+        </member>
+        <member name="T:C1.Web.C1WebSplitter.C1WebSplitter">
+            <summary>
+            C1WebSlitter is a container control that consists a movable bar that divides a container's display area into two resizable panels.
+            </summary>
+        </member>
+        <member name="M:C1.Web.C1WebSplitter.C1WebSplitter.GetCallingAssembly">
+            <summary>
+            For internal use only.
+            </summary>
+            <returns>A reference to the calling <see cref="T:System.Reflection.Assembly"/>.</returns>
+        </member>
+        <member name="M:C1.Web.C1WebSplitter.C1WebSplitter.#ctor">
+            <summary>
+            Creates a new instance of the <see cref="T:C1.Web.C1WebSplitter.C1WebSplitter"/> class.
+            </summary>
+        </member>
+        <member name="M:C1.Web.C1WebSplitter.C1WebSplitter.OnLoad(System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="oArgs"></param>
+        </member>
+        <member name="M:C1.Web.C1WebSplitter.C1WebSplitter.OnPreRender(System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:C1.Web.C1WebSplitter.C1WebSplitter.Render(System.Web.UI.HtmlTextWriter)">
+            <summary>
+            
+            </summary>
+            <param name="writer"></param>
+        </member>
+        <member name="M:C1.Web.C1WebSplitter.C1WebSplitter.LoadViewState(System.Object)">
+            <summary>
+            
+            </summary>
+            <param name="state"></param>
+        </member>
+        <member name="M:C1.Web.C1WebSplitter.C1WebSplitter.SaveViewState">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:C1.Web.C1WebSplitter.C1WebSplitter.TrackViewState">
+            <summary>
+            This member overrides Control.TrackViewState.
+            </summary>
+        </member>
+        <member name="P:C1.Web.C1WebSplitter.C1WebSplitter.Bar">
+            <summary>
+            Gets a SplitterBar object that defines the information for splitter bar.
+            </summary>
+        </member>
+        <member name="P:C1.Web.C1WebSplitter.C1WebSplitter.Panel1">
+            <summary>
+            Gets the SplitterPanel object that defines the information for top or left panel of splitter.
+            </summary>
+        </member>
+        <member name="P:C1.Web.C1WebSplitter.C1WebSplitter.Panel2">
+            <summary>
+            Gets the SplitterPanel object that defines the information for bottom or right panel of splitter.
+            </summary>
+        </member>
+        <member name="P:C1.Web.C1WebSplitter.C1WebSplitter.AutoResize">
+            <summary>
+            Gets or sets a value that determines whether to resize the panels automatically while the container's size change.
+            </summary>
+        </member>
+        <member name="P:C1.Web.C1WebSplitter.C1WebSplitter.ResizeMode">
+            <summary>
+            Gets or sets the resize mode while dragging the splitter bar. 
+            </summary>
+        </member>
+        <member name="P:C1.Web.C1WebSplitter.C1WebSplitter.Increment">
+            <summary>
+            Gets or sets the movement span of incremental resizing. 
+            </summary>
+        </member>
+        <member name="P:C1.Web.C1WebSplitter.C1WebSplitter.SplitterDistance">
+            <summary>
+            Gets or sets the location of the splitter, in pixels, from the left or top edge of the C1WebSplitter. 
+            </summary>
+        </member>
+        <member name="P:C1.Web.C1WebSplitter.C1WebSplitter.Orientation">
+            <summary>
+            Gets or sets a value indicating the horizontal or vertical orientation of the C1WebSplitter panels. 
+            </summary>
+        </member>
+        <member name="P:C1.Web.C1WebSplitter.C1WebSplitter.OnClientSize">
+            <summary>
+            Gets or sets the javascript function name that would be called at client side when start dragging the splitter.
+            </summary>
+        </member>
+        <member name="P:C1.Web.C1WebSplitter.C1WebSplitter.OnClientSized">
+            <summary>
+            Gets or sets the javascript function name that would be called at client side when finish dragging the splitter.
+            </summary>
+        </member>
+        <member name="P:C1.Web.C1WebSplitter.C1WebSplitter.OnClientSizing">
+            <summary>
+            Gets or sets the javascript function name that would be called at client side when dragging the splitter.
+            </summary>
+        </member>
+        <member name="P:C1.Web.C1WebSplitter.C1WebSplitter.OnClientCollapse">
+            <summary>
+            Gets or sets the javascript function name that would be called before panel1 is collapsed.
+            </summary>
+        </member>
+        <member name="P:C1.Web.C1WebSplitter.C1WebSplitter.OnClientCollapsed">
+            <summary>
+            Gets or sets the javascript function name that would be called when panel1 is collapsed by clicking the collapse/expand image.
+            </summary>
+        </member>
+        <member name="P:C1.Web.C1WebSplitter.C1WebSplitter.OnClientExpand">
+            <summary>
+            Gets or sets the javascript function name that would be called before panel1 is expanded out.
+            </summary>
+        </member>
+        <member name="P:C1.Web.C1WebSplitter.C1WebSplitter.OnClientExpanded">
+            <summary>
+            Gets or sets the javascript function name that would be called when panel1 is expanded out by clicking the collapse/expand image.
+            </summary>
+        </member>
+        <member name="P:C1.Web.C1WebSplitter.C1WebSplitter.Controls">
+            <summary>
+            Gets a System.Web.UI.ControlCollection that contains a collection of child controls in a data listing control.
+            </summary>
+        </member>
+        <member name="T:C1.Web.C1WebSplitter.C1WebPanel">
+            <summary>
+            Represents a panel hosted in splitter.
+            </summary>
+        </member>
+        <member name="T:C1.Util.Localization.StringTables">
+            <summary>
+            StringTables
+            this class contains a single static method InitTables that populates the
+            tables used by the Localizer class.
+            </summary>
+        </member>
+        <member name="T:C1.Web.C1WebSplitter.SplitterBar">
+            <summary>
+            Class that represents the appearance and behaviors information of splitter bar.
+            </summary>
+        </member>
+        <member name="M:C1.Web.C1WebSplitter.SplitterBar.LoadViewState(System.Object)">
+            <summary>
+            Loads view state in the splitter panel object.
+            </summary>
+            <param name="state">View state to load.</param>
+        </member>
+        <member name="M:C1.Web.C1WebSplitter.SplitterBar.SaveViewState">
+            <summary>
+            Saves the view state and returns it as an object.
+            </summary>
+            <returns>Saved view state.</returns>
+        </member>
+        <member name="M:C1.Web.C1WebSplitter.SplitterBar.TrackViewState">
+            <summary>
+            Tracks the view state.
+            </summary>
+        </member>
+        <member name="P:C1.Web.C1WebSplitter.SplitterBar.Width">
+            <summary>
+            Gets or sets the width of the splitter bar in pixels. 
+            </summary>
+        </member>
+        <member name="P:C1.Web.C1WebSplitter.SplitterBar.CssClass">
+            <summary>
+            Gets or sets the css class name for rendering the splitter bar.
+            </summary>
+        </member>
+        <member name="P:C1.Web.C1WebSplitter.SplitterBar.HoverCssClass">
+            <summary>
+            Gets or sets the css class name for rendering the splitter bar while mouse is over it.
+            </summary>
+        </member>
+        <member name="P:C1.Web.C1WebSplitter.SplitterBar.CollapsedCssClass">
+            <summary>
+            Gets or sets the css class name for rendering the splitter bar while it is collapsed.
+            </summary>
+        </member>
+        <member name="P:C1.Web.C1WebSplitter.SplitterBar.DragCssClass">
+            <summary>
+            Gets or sets the css class name for rendering the splitter bar while it is beeing dragged.
+            </summary>
+        </member>
+        <member name="P:C1.Web.C1WebSplitter.SplitterBar.CollapseImageUrl">
+            <summary>
+            Gets or sets the url of image that will be displayed on spliiter bar when it is collapsed.
+            </summary>
+        </member>
+        <member name="P:C1.Web.C1WebSplitter.SplitterBar.ExpandImageUrl">
+            <summary>
+            Gets or sets the url of image that will be displayed on spliiter bar when it is expanded.
+            </summary>
+        </member>
+        <member name="P:C1.Web.C1WebSplitter.SplitterBar.CollapseHoverImageUrl">
+            <summary>
+            Gets or sets the url of image that will be displayed on spliiter bard when it is collapsed and mouse is over it.
+            </summary>
+        </member>
+        <member name="P:C1.Web.C1WebSplitter.SplitterBar.ExpandHoverImageUrl">
+            <summary>
+            Gets or sets the url of image that will be displayed on spliiter bar when it is expanded and mouse is over it.
+            </summary>
+        </member>
+        <member name="P:C1.Web.C1WebSplitter.SplitterBar.ToolTip">
+            <summary>
+            Gets or sets the tooltip when mouse is over the splitter bar.
+            </summary>
+        </member>
+        <member name="T:C1.Web.C1WebSplitter.SplitterPanel">
+            <summary>
+            Class that represents the appearance and behaviors information of splitter panel.
+            </summary>
+        </member>
+        <member name="M:C1.Web.C1WebSplitter.SplitterPanel.LoadViewState(System.Object)">
+            <summary>
+            Loads view state in the splitter panel object.
+            </summary>
+            <param name="state">View state to load.</param>
+        </member>
+        <member name="M:C1.Web.C1WebSplitter.SplitterPanel.SaveViewState">
+            <summary>
+            Saves the view state and returns it as an object.
+            </summary>
+            <returns>Saved view state.</returns>
+        </member>
+        <member name="M:C1.Web.C1WebSplitter.SplitterPanel.TrackViewState">
+            <summary>
+            Tracks the view state.
+            </summary>
+        </member>
+        <member name="P:C1.Web.C1WebSplitter.SplitterPanel.MinSize">
+            <summary>
+            Gets or sets the minimum distance in pixels when resizing the splitter. 
+            </summary>
+        </member>
+        <member name="P:C1.Web.C1WebSplitter.SplitterPanel.ScrollBars">
+            <summary>
+            Gets or sets the type of scroll bars to display for splitter panel.
+            </summary>
+        </member>
+        <member name="P:C1.Web.C1WebSplitter.SplitterPanel.BackColor">
+            <summary>
+            Gets or sets the background color for splitter panel.
+            </summary>
+        </member>
+        <member name="P:C1.Web.C1WebSplitter.SplitterPanel.BackImageUrl">
+            <summary>
+            Gets or sets the background image url for splitter panel.
+            </summary>
+        </member>
+        <member name="P:C1.Web.C1WebSplitter.SplitterPanel.Collapsed">
+            <summary>
+            Gets or sets a value determining whether splitter panel is collapsed or expanded. 
+            </summary>
+        </member>
+        <member name="P:C1.Web.C1WebSplitter.SplitterPanel.CssClass">
+            <summary>
+            Gets or sets the css class name for splitter panel.
+            </summary>
+        </member>
+    </members>
+</doc>

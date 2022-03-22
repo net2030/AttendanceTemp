@@ -1,0 +1,68 @@
+<%@ Control Language="VB" AutoEventWireup="false" CodeFile="ctlSystemSetting.ascx.vb" Inherits="Home_Controls_ctlSystemSetting" %>
+<br />
+<table class="formviewtablesummary" width="740">
+    <tr>
+        <td class="formviewheader" colspan="2">
+            System Setting Information</td>
+    </tr>
+    <tr>
+        <td class="formviewsubheader" colspan="2">
+            System Settings</td>
+    </tr>
+    <tr>
+        <td align="right" class="formviewlabelcell" style="width: 25%">
+            SMTP Server :
+        </td>
+        <td align="left" style="width: 75%">
+            <asp:TextBox ID="txtSMTPServer" runat="server" Width="610px"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ControlToValidate="txtSMTPServer"
+                Display="Dynamic" ErrorMessage="*" Width="1px"></asp:RequiredFieldValidator></td>
+    </tr>
+    <tr>
+        <td align="right" class="formviewlabelcell" style="width: 25%">
+            SMTP Username :
+        </td>
+        <td align="left" style="width: 75%">
+            <asp:TextBox ID="txtSMTPUsername" runat="server" Width="610px"></asp:TextBox></td>
+    </tr>
+    <tr>
+        <td align="right" class="formviewlabelcell" style="width: 25%">
+            SMTP Password :
+        </td>
+        <td align="left" style="width: 75%">
+            <asp:TextBox ID="txtSMTPPassword" runat="server" Width="610px"></asp:TextBox></td>
+    </tr>
+    <tr>
+        <td align="right" class="formviewlabelcell" style="width: 25%">
+            SMTP Port Number :
+        </td>
+        <td align="left" style="width: 75%">
+            <asp:TextBox ID="txtSMTPPortNumber" runat="server" Width="610px"></asp:TextBox></td>
+    </tr>
+    <tr>
+        <td align="right" class="formviewlabelcell" style="width: 25%">
+            Application URL :
+        </td>
+        <td align="left" style="width: 75%">
+            <asp:TextBox ID="txtApplicationURL" runat="server" Width="610px"></asp:TextBox></td>
+    </tr>
+    <tr>
+        <td align="right" class="formviewlabelcell" style="width: 25%" valign="top">
+            Connection String :
+        </td>
+        <td align="left" style="width: 75%">
+            <asp:TextBox ID="txtConnectionString" runat="server" Height="22px"
+                Width="610px"></asp:TextBox></td>
+    </tr>
+    <tr>
+        <td class="formviewlabelcell" style="width: 25%">
+        </td>
+        <td align="left" style="width: 75%">
+            <asp:Button ID="btnUpdate" runat="server" Text="Update" /></td>
+    </tr>
+</table>
+<br />
+<br />
+&nbsp;<br />
+<br />
+<br />

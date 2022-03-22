@@ -1,0 +1,10 @@
+[employeename]'s time off for [startdate] - [enddate] has been rejected.
+
+The information follows below:
+
+       Rejected By: [rejectedby]
+     Time Off Type: [timeofftype]
+          Days Off: [daysoff]
+         Hours Off: [hoursoff]
+            Status: [status]
+          Comments: [comments]

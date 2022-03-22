@@ -1,0 +1,18 @@
+<html>
+<head>
+This tracker item is published at:
+<br/>
+[url]
+<br/>
+<br/>
+Approvals are due for the following expenses:
+</head>
+<br/>
+<br/>
+<body>
+<table border=1>
+<b>[strheader]</b>
+[strbody]
+</table>
+</body>
+</html>

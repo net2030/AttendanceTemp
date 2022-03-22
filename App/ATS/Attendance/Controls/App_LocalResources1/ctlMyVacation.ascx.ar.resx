@@ -1,0 +1,834 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AlternativeEmployeeRequiredFieldValidatorResource1.ErrorMessage" xml:space="preserve">
+    <value>إختر الموظف البديل</value>
+  </data>
+  <data name="AlternativeEmployeeRequiredFieldValidatorResource1.Text" xml:space="preserve">
+    <value>*</value>
+  </data>
+  <data name="AlternativeEmployeeRequiredFieldValidatorResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="AlternativeEmployeeRequiredFieldValidatorResource2.ErrorMessage" xml:space="preserve">
+    <value>إختر الموظف البديل</value>
+  </data>
+  <data name="AlternativeEmployeeRequiredFieldValidatorResource2.Text" xml:space="preserve">
+    <value>*</value>
+  </data>
+  <data name="AlternativeEmployeeRequiredFieldValidatorResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BoundFieldResource1.AccessibleHeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BoundFieldResource1.FooterText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BoundFieldResource1.HeaderText" xml:space="preserve">
+    <value>مسلسل</value>
+  </data>
+  <data name="BoundFieldResource10.AccessibleHeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BoundFieldResource10.FooterText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BoundFieldResource10.HeaderText" xml:space="preserve">
+    <value>الدور</value>
+  </data>
+  <data name="BoundFieldResource11.AccessibleHeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BoundFieldResource11.FooterText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BoundFieldResource11.HeaderText" xml:space="preserve">
+    <value>تمت بواسطة</value>
+  </data>
+  <data name="BoundFieldResource12.AccessibleHeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BoundFieldResource12.FooterText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BoundFieldResource12.HeaderText" xml:space="preserve">
+    <value>حالة الموافقة</value>
+  </data>
+  <data name="BoundFieldResource13.AccessibleHeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BoundFieldResource13.FooterText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BoundFieldResource13.HeaderText" xml:space="preserve">
+    <value>تاريخ الموافقة</value>
+  </data>
+  <data name="BoundFieldResource2.AccessibleHeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BoundFieldResource2.FooterText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BoundFieldResource2.HeaderText" xml:space="preserve">
+    <value>إسم الموظف</value>
+  </data>
+  <data name="BoundFieldResource3.AccessibleHeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BoundFieldResource3.FooterText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BoundFieldResource3.HeaderText" xml:space="preserve">
+    <value>نوع الإجازة</value>
+  </data>
+  <data name="BoundFieldResource4.AccessibleHeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BoundFieldResource4.FooterText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BoundFieldResource4.HeaderText" xml:space="preserve">
+    <value>تاريخ البداية</value>
+  </data>
+  <data name="BoundFieldResource5.AccessibleHeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BoundFieldResource5.FooterText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BoundFieldResource5.HeaderText" xml:space="preserve">
+    <value>تاريخ النهاية</value>
+  </data>
+  <data name="BoundFieldResource6.AccessibleHeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BoundFieldResource6.FooterText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BoundFieldResource6.HeaderText" xml:space="preserve">
+    <value>الموظف البديل</value>
+  </data>
+  <data name="BoundFieldResource7.AccessibleHeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BoundFieldResource7.FooterText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BoundFieldResource7.HeaderText" xml:space="preserve">
+    <value>حالة الطلب</value>
+  </data>
+  <data name="BoundFieldResource8.AccessibleHeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BoundFieldResource8.FooterText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BoundFieldResource8.HeaderText" xml:space="preserve">
+    <value>ملاحظات</value>
+  </data>
+  <data name="BoundFieldResource9.AccessibleHeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BoundFieldResource9.FooterText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BoundFieldResource9.HeaderText" xml:space="preserve">
+    <value>سياسة الموافقة</value>
+  </data>
+  <data name="btnAddVacationResource1.Text" xml:space="preserve">
+    <value>إضافة جديد</value>
+  </data>
+  <data name="btnAddVacationResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnPrintResource1.Text" xml:space="preserve">
+    <value>طباعة</value>
+  </data>
+  <data name="btnPrintResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Button1Resource1.Text" xml:space="preserve">
+    <value>تحديث الإجازة</value>
+  </data>
+  <data name="Button1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Button1Resource2.Text" xml:space="preserve">
+    <value>حفظ الإجازة</value>
+  </data>
+  <data name="Button1Resource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Button2Resource1.Text" xml:space="preserve">
+    <value>إلغاء الأمر</value>
+  </data>
+  <data name="Button2Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Button2Resource2.Text" xml:space="preserve">
+    <value>إلغاء الأمر</value>
+  </data>
+  <data name="Button2Resource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Button3Resource1.Text" xml:space="preserve">
+    <value>بحث</value>
+  </data>
+  <data name="Button3Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Button3Resource2.Text" xml:space="preserve">
+    <value>بحث</value>
+  </data>
+  <data name="Button3Resource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ChckbalanceValidatorResource1.ErrorMessage" xml:space="preserve">
+    <value>لا يوجد رصيد كافي</value>
+  </data>
+  <data name="ChckbalanceValidatorResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ChckbalanceValidatorResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ChckbalanceValidatorResource2.ErrorMessage" xml:space="preserve">
+    <value>لا يوجد رصيد كافي</value>
+  </data>
+  <data name="ChckbalanceValidatorResource2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ChckbalanceValidatorResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CustomValidator2Resource1.ErrorMessage" xml:space="preserve">
+    <value>End date must be greater or equa !</value>
+  </data>
+  <data name="CustomValidator2Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CustomValidator2Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CustomValidator2Resource2.ErrorMessage" xml:space="preserve">
+    <value>End date must be greater or equa !</value>
+  </data>
+  <data name="CustomValidator2Resource2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CustomValidator2Resource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlAltEmployeeIdResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlAltEmployeeIdResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlVacationTypeIdResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlVacationTypeIdResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="DeleteLinkButtonResource1.Text" xml:space="preserve">
+    <value>حذف</value>
+  </data>
+  <data name="DeleteLinkButtonResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="EditLinkButtonResource1.Text" xml:space="preserve">
+    <value>تعديل</value>
+  </data>
+  <data name="EditLinkButtonResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="grdViewApprovalLogResource1.Caption" xml:space="preserve">
+    <value />
+  </data>
+  <data name="grdViewApprovalLogResource1.EmptyDataText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="grdViewApprovalLogResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridView2Resource1.Caption" xml:space="preserve">
+    <value>قائمة بإجازاتي</value>
+  </data>
+  <data name="GridView2Resource1.EmptyDataText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridView2Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="id10Resource1.Text" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="id10Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="id1Resource1.Text" xml:space="preserve">
+    <value> 1</value>
+  </data>
+  <data name="id1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="id2Resource1.Text" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="id2Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="id3Resource1.Text" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="id3Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="id4Resource1.Text" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="id4Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="id5Resource1.Text" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="id5Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="id6Resource1.Text" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="id6Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="id7Resource1.Text" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="id7Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="id8Resource1.Text" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="id8Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="id9Resource1.Text" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="id9Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label2Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label2Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label2Resource2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label2Resource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblAddedByResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblAddedByResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblAddedDateResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblAddedDateResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblAddessResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblAddessResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblAltEmpResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblAltEmpResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblApproveStatusResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblApproveStatusResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblContactResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblContactResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblDateResource1.Text" xml:space="preserve">
+    <value>1437/01/01 هـ</value>
+  </data>
+  <data name="lblDateResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblDepartmentResource1.Text" xml:space="preserve">
+    <value>الموارد البشرية</value>
+  </data>
+  <data name="lblDepartmentResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblEffectivedateResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblEffectivedateResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblEmployeeNameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblEmployeeNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblEmployeeNoResource1.Text" xml:space="preserve">
+    <value>1254888</value>
+  </data>
+  <data name="lblEmployeeNoResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblExpireDateResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblExpireDateResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblNoResource1.Text" xml:space="preserve">
+    <value>1234</value>
+  </data>
+  <data name="lblNoResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblNoteResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblNoteResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblTypeResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblTypeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ListItemResource1.Text" xml:space="preserve">
+    <value>....إختر....</value>
+  </data>
+  <data name="ListItemResource1.Value" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="ListItemResource2.Text" xml:space="preserve">
+    <value>....إختر....</value>
+  </data>
+  <data name="ListItemResource2.Value" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="Literal10Resource1.Text" xml:space="preserve">
+    <value>تحديث بيانات إجازة</value>
+  </data>
+  <data name="Literal10Resource2.Text" xml:space="preserve">
+    <value>تسجيل إجازة</value>
+  </data>
+  <data name="Literal11Resource1.Text" xml:space="preserve">
+    <value>رقم البصمة للبديل:</value>
+  </data>
+  <data name="Literal11Resource2.Text" xml:space="preserve">
+    <value>رقم البصمة للبديل:</value>
+  </data>
+  <data name="Literal12Resource1.Text" xml:space="preserve">
+    <value> وسيلة الإتصال:</value>
+  </data>
+  <data name="Literal12Resource2.Text" xml:space="preserve">
+    <value> وسيلة الإتصال:</value>
+  </data>
+  <data name="Literal1Resource1.Text" xml:space="preserve">
+    <value> رقم الحاسب:</value>
+  </data>
+  <data name="Literal1Resource2.Text" xml:space="preserve">
+    <value> رقم الحاسب:</value>
+  </data>
+  <data name="Literal25Resource1.Text" xml:space="preserve">
+    <value>الموظف البديل:</value>
+  </data>
+  <data name="Literal25Resource2.Text" xml:space="preserve">
+    <value>الموظف البديل:</value>
+  </data>
+  <data name="Literal2Resource1.Text" xml:space="preserve">
+    <value>   العنوان اثناء الإجازة :</value>
+  </data>
+  <data name="Literal2Resource2.Text" xml:space="preserve">
+    <value>   العنوان اثناء الإجازة :</value>
+  </data>
+  <data name="Literal3Resource1.Text" xml:space="preserve">
+    <value>  إسم الموظف :</value>
+  </data>
+  <data name="Literal3Resource2.Text" xml:space="preserve">
+    <value>  إسم الموظف :</value>
+  </data>
+  <data name="Literal4Resource1.Text" xml:space="preserve">
+    <value>  نوع الإجازة :</value>
+  </data>
+  <data name="Literal4Resource2.Text" xml:space="preserve">
+    <value>  نوع الإجازة :</value>
+  </data>
+  <data name="Literal5Resource1.Text" xml:space="preserve">
+    <value>  تبدأ في :</value>
+  </data>
+  <data name="Literal5Resource2.Text" xml:space="preserve">
+    <value>  تبدأ في :</value>
+  </data>
+  <data name="Literal6Resource1.Text" xml:space="preserve">
+    <value>  تنتهي في :</value>
+  </data>
+  <data name="Literal6Resource2.Text" xml:space="preserve">
+    <value>  تنتهي في :</value>
+  </data>
+  <data name="Literal7Resource1.Text" xml:space="preserve">
+    <value>  تاريخ المباشرة :</value>
+  </data>
+  <data name="Literal7Resource2.Text" xml:space="preserve">
+    <value>  تاريخ المباشرة :</value>
+  </data>
+  <data name="Literal8Resource1.Text" xml:space="preserve">
+    <value>   ملاحظات :</value>
+  </data>
+  <data name="Literal8Resource2.Text" xml:space="preserve">
+    <value>   ملاحظات :</value>
+  </data>
+  <data name="Literal9Resource1.Text" xml:space="preserve">
+    <value>بيانات إجازة موظف</value>
+  </data>
+  <data name="Literal9Resource2.Text" xml:space="preserve">
+    <value>بيانات إجازة موظف</value>
+  </data>
+  <data name="MyVacationFormViewResource1.Caption" xml:space="preserve">
+    <value />
+  </data>
+  <data name="MyVacationFormViewResource1.EmptyDataText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="MyVacationFormViewResource1.FooterText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="MyVacationFormViewResource1.HeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="MyVacationFormViewResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PrintButtonResource1.Text" xml:space="preserve">
+    <value>طباعة الطلب</value>
+  </data>
+  <data name="PrintButtonResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TemplateFieldResource1.AccessibleHeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TemplateFieldResource1.FooterText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TemplateFieldResource1.HeaderText" xml:space="preserve">
+    <value>تعديل</value>
+  </data>
+  <data name="TemplateFieldResource2.AccessibleHeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TemplateFieldResource2.FooterText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TemplateFieldResource2.HeaderText" xml:space="preserve">
+    <value>حذف</value>
+  </data>
+  <data name="TemplateFieldResource3.AccessibleHeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TemplateFieldResource3.FooterText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TemplateFieldResource3.HeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAddressResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAddressResource2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtAddressResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtContactResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtContactResource2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtContactResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtEmployeeCodeResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtEmployeeCodeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtEmployeeCodeResource2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtEmployeeCodeResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtEmployeeNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtEmployeeNameResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtNotesResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtNotesResource2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtNotesResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtVacationIdResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtVacationIdResource2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtVacationIdResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="VacationTypeRequiredFieldValidatorResource1.ErrorMessage" xml:space="preserve">
+    <value>إختر نوع الاجازة !</value>
+  </data>
+  <data name="VacationTypeRequiredFieldValidatorResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="VacationTypeRequiredFieldValidatorResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="VacationTypeRequiredFieldValidatorResource2.ErrorMessage" xml:space="preserve">
+    <value>إختر نوع الاجازة !</value>
+  </data>
+  <data name="VacationTypeRequiredFieldValidatorResource2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="VacationTypeRequiredFieldValidatorResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Literal13Resource1.Text" xml:space="preserve">
+    <value>Days</value>
+  </data>
+  <data name="BoundFieldResource22.HeaderText" xml:space="preserve">
+    <value>الدور</value>
+  </data>
+  <data name="btnPrintResource1.Text1" xml:space="preserve">
+    <value>طباعة</value>
+  </data>
+  <data name="Literal18Resource1.Text" xml:space="preserve">
+    <value> سجل الموافقات</value>
+  </data>
+  <data name="Literal19Resource1.Text" xml:space="preserve">
+    <value> الموظف البديل:</value>
+  </data>
+  <data name="Literal20Resource1.Text" xml:space="preserve">
+    <value>العنوان اثناء الإجازة :</value>
+  </data>
+  <data name="Literal21Resource1.Text" xml:space="preserve">
+    <value> وسيلة الإتصال اثناء الإجازة:</value>
+  </data>
+  <data name="Literal22Resource1.Text" xml:space="preserve">
+    <value> وصف الطلب:</value>
+  </data>
+  <data name="Literal23Resource1.Text" xml:space="preserve">
+    <value>تاريخ تقديم الطلب :</value>
+  </data>
+  <data name="Literal24Resource1.Text" xml:space="preserve">
+    <value> مقدم الطلب</value>
+  </data>
+  <data name="Literal26Resource1.Text" xml:space="preserve">
+    <value> حالة الطلب</value>
+  </data>
+  <data name="Literal27Resource1.Text" xml:space="preserve">
+    <value>تنتهي في</value>
+  </data>
+  <data name="Literal28Resource1.Text" xml:space="preserve">
+    <value> تبدأ في</value>
+  </data>
+  <data name="Literal29Resource1.Text" xml:space="preserve">
+    <value>نوع الإجازة</value>
+  </data>
+  <data name="Literal30Resource1.Text" xml:space="preserve">
+    <value>الإســــــــــم</value>
+  </data>
+  <data name="Literal31Resource1.Text" xml:space="preserve">
+    <value>القسم</value>
+  </data>
+  <data name="Literal32Resource1.Text" xml:space="preserve">
+    <value> الرقم الوظيفي:</value>
+  </data>
+  <data name="Literal33Resource1.Text" xml:space="preserve">
+    <value> نموذج تقديم إجازة</value>
+  </data>
+  <data name="Literal34Resource1.Text" xml:space="preserve">
+    <value>المرفقات</value>
+  </data>
+  <data name="Literal35Resource1.Text" xml:space="preserve">
+    <value>التاريخ:</value>
+  </data>
+  <data name="Literal36Resource1.Text" xml:space="preserve">
+    <value>الرقم:</value>
+  </data>
+  <data name="Literal37Resource1.Text" xml:space="preserve">
+    <value>بســم الله الرحمن الرحيم</value>
+  </data>
+  <data name="Literal38Resource1.Text" xml:space="preserve">
+    <value>الموارد البشرية</value>
+  </data>
+  <data name="Literal39Resource1.Text" xml:space="preserve">
+    <value>الإدارة العامة للمشاريع</value>
+  </data>
+  <data name="Literal40Resource1.Text" xml:space="preserve">
+    <value>جامعة القصيم</value>
+  </data>
+  <data name="Literal41Resource1.Text" xml:space="preserve">
+    <value>المملكة العربية السعودية</value>
+  </data>
+  <data name="lblGovIdResource1.Text" xml:space="preserve">
+    <value>رقم الحاسب الآلي:</value>
+  </data>
+</root>

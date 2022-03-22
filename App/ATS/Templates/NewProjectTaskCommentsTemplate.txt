@@ -1,0 +1,10 @@
+[createdby] has added a comment to tracker item #[accountprojecttaskid] in the [projectname] project, assigned to 
+[assignee]
+
+This tracker item is published at:
+[url]
+
+The comment follows below:
+
+Subject : [projecttitle]
+[commentsdescription]

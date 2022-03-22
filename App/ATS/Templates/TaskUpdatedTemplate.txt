@@ -1,0 +1,22 @@
+
+[modifiedemployeename] has modified tracker item #[projecttaskid] in the [projectname], assigned to [assignedto].
+
+This tracker item is published at:
+[url]
+
+Tracker item information is below:
+   [tasknamecolumn]: [taskname] [oldtaskname]
+ 	         Status: [taskstatus] [oldtaskstatus]
+		Completed: [completed] [oldcompleted]
+		Is ReOpen: [isreopen] [oldisreopen]
+   [tasktypecolumn]: [tasktype]	[oldtasktype]
+ 	      Milestone: [milestonedescription] [oldmilestonedescription]
+ 	       Priority: [priority] [oldpriority]
+         Project Code: [projectcode] 
+         Project Name: [projectname] 
+	       Duration: [duration] [durationunit] [oldduration] [olddurationunit]
+	    Completed %: [completedpercent]% [oldcompletedpercent]
+	       Deadline: [deadline] [olddeadline]
+             Reporter: [reporter]
+           Created On: [createdon]
+          Description: [taskdescription] [oldtaskdescription]

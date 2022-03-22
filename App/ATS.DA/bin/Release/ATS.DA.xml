@@ -1,0 +1,372 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+ATS.DA
+</name>
+</assembly>
+<members>
+<member name="M:ATS.DA.Framework.DANationality.Add(System.String,System.Int32)">
+	<summary>
+	</summary>
+	<param name="NationalityName"></param>
+	<param name="AddedUserAccountId"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:ATS.DA.Framework.DANationality">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:ATS.DA.Framework.DAJobTitle.Add(System.String,System.Int32)">
+	<summary>
+	</summary>
+	<param name="JobTitleName"></param>
+	<param name="AddedUserAccountId"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:ATS.DA.Framework.DAJobTitle">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:ATS.DA.Framework.DAMenuItem.Add(System.String,System.String,System.String,System.Int32,System.Int32,System.Boolean,System.Int32)">
+	<summary>
+	</summary>
+	<param name="MenuItemName"></param>
+	<param name="Description"></param>
+	<param name="Url"></param>
+	<param name="ParentMenuItemId"></param>
+	<param name="DisplaySequence"></param>
+	<param name="IsAlwaysEnabled"></param>
+	<param name="AddedUserAccountId"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:ATS.DA.Framework.DAMenuItem.Update(System.Int32,System.String,System.String,System.String,System.Int32,System.Int32,System.Boolean,System.Int32,System.Byte[])">
+	<summary>
+	</summary>
+	<param name="MenuItemId"></param>
+	<param name="MenuItemName"></param>
+	<param name="Description"></param>
+	<param name="Url"></param>
+	<param name="ParentMenuItemId"></param>
+	<param name="DisplaySequence"></param>
+	<param name="IsAlwaysEnabled"></param>
+	<param name="UpdatedUserAccountId"></param>
+	<param name="version"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:ATS.DA.Framework.DAMenuItem">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="T:ATS.DA.Framework.RoleUserAccount">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:ATS.DA.Framework.DACapability.Add(System.String,System.Int32,System.Int32,System.Int32)">
+	<summary>
+	</summary>
+	<param name="CapabilityName"></param>
+	<param name="MenuItemId"></param>
+	<param name="AccessType"></param>
+	<param name="AddedUserAccountId"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:ATS.DA.Framework.DACapability">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:ATS.DA.Framework.DARole.Add(System.String,System.Int32,System.Int32)">
+	<summary>
+	</summary>
+	<param name="RoleName"></param>
+	<param name="AddedUserAccountId"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:ATS.DA.Framework.DARole">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="T:ATS.DA.Framework.Nationality">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="M:ATS.DA.Framework.DataHelper.FieldToint16(System.Data.SqlClient.SqlDataReader,System.Int32)">
+	<summary>
+	</summary>
+	<param name="anyReader"></param>
+	<param name="intIndx"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:ATS.DA.Framework.DataHelper.FieldToint32(System.Data.SqlClient.SqlDataReader,System.Int32)">
+	<summary>
+	</summary>
+	<param name="anyReader"></param>
+	<param name="intIndx"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:ATS.DA.Framework.DataHelper.FieldToint64(System.Data.SqlClient.SqlDataReader,System.Int32)">
+	<summary>
+	</summary>
+	<param name="anyReader"></param>
+	<param name="intIndx"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:ATS.DA.Framework.DataHelper.FieldToLong(System.Data.SqlClient.SqlDataReader,System.Int32)">
+	<summary>
+	</summary>
+	<param name="anyReader"></param>
+	<param name="intIndx"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:ATS.DA.Framework.DataHelper.FieldToint32(System.Int32)">
+	<summary>
+	</summary>
+	<param name="intValue"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:ATS.DA.Framework.DataHelper.Str2Field(System.String)">
+	<summary>
+ To return a sting value between a single quotes 
+ </summary>
+	<param name="strValue">a String Value</param>
+</member><member name="M:ATS.DA.Framework.DataHelper.StringToField(System.String)">
+	<summary>
+ To Clean up, Massage a string value to be send to a Database column
+ </summary>
+	<param name="strValue">a String Value</param>
+</member><member name="M:ATS.DA.Framework.DataHelper.FieldToString(System.Data.SqlClient.SqlDataReader,System.Int32)">
+	<summary>
+ To Clean up, Massage a string value coming from a Database column
+ </summary>
+	<param name="anyReader">an SqlDataReader Object</param>
+	<param name="Index">an Integer Value</param>
+</member><member name="M:ATS.DA.Framework.DataHelper.FieldToString(System.String)">
+	<summary>
+ To Clean up, Massage a string value 
+ </summary>
+	<param name="strValue">a String Value</param>
+</member><member name="M:ATS.DA.Framework.DataHelper.QuoteConvert(System.String)">
+	<summary>
+	</summary>
+	<param name="strValue"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:ATS.DA.Framework.DataHelper.FieldToDateTime(System.Data.SqlClient.SqlDataReader,System.Int32)">
+	<summary>
+	</summary>
+	<param name="anyReader"></param>
+	<param name="intIndx"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:ATS.DA.Framework.DataHelper.FieldToDate(System.Data.SqlClient.SqlDataReader,System.Int32)">
+	<summary>
+	</summary>
+	<param name="anyReader"></param>
+	<param name="intIndx"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:ATS.DA.Framework.DataHelper.FieldToByte(System.Data.SqlClient.SqlDataReader,System.Int32)">
+	<summary>
+	</summary>
+	<param name="anyReader"></param>
+	<param name="intIndx"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:ATS.DA.Framework.DataHelper">
+	<summary>
+ Data Helper Class
+ </summary>
+	<remarks></remarks>
+</member><member name="T:ATS.DA.Framework.Role">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="P:ATS.DA.Framework.PagePermession.SystemPermissionId">
+	<summary>
+ what types of access should be allowed for this capability
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:ATS.DA.Framework.PagePermession">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="P:ATS.DA.Framework.RoleCapability.CapabilityId">
+	<summary>
+	</summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:ATS.DA.Framework.RoleCapability.AccessFlag">
+	<summary>
+ The AccessFlag field specifies the type of access 
+ the user has for this capability        
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:ATS.DA.Framework.RoleCapability">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="T:ATS.DA.Framework.DAUserAccount">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="P:ATS.DA.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:ATS.DA.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:ATS.DA.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="T:ATS.DA.Framework.Position">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="T:ATS.DA.Framework.Role1">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="T:ATS.DA.Framework.DAPosition">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="T:ATS.DA.Framework.MenuItem">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="T:ATS.DA.Framework.ICommonAttributes">
+	<summary>
+ Common Data Entity Common Attrbutes Interface
+ </summary>
+	<remarks></remarks>
+</member><member name="T:ATS.DA.Framework.Location">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="P:ATS.DA.Framework.DataAccessBase`1.ConnectionString">
+	<summary>
+ a database connection string
+ </summary>
+</member><member name="P:ATS.DA.Framework.DataAccessBase`1.Identity">
+	<summary>
+ the new inserted identiy value
+ </summary>
+</member><member name="P:ATS.DA.Framework.DataAccessBase`1.FieldInError">
+	<summary>
+ Application Identification Code 
+ </summary>
+</member><member name="P:ATS.DA.Framework.DataAccessBase`1.UserAccountId">
+	<summary>
+ User Account Identification Code
+ </summary>
+</member><member name="P:ATS.DA.Framework.DataAccessBase`1.Dataset">
+	<summary>
+ Result Dataset Object
+ </summary>
+</member><member name="P:ATS.DA.Framework.DataAccessBase`1.RowsEffected">
+	<summary>
+ Data Rows Effected 
+ </summary>
+</member><member name="P:ATS.DA.Framework.DataAccessBase`1.InfoMessage">
+	<summary>
+ Custom Message
+ </summary>
+</member><member name="P:ATS.DA.Framework.DataAccessBase`1.IfnoMessageId">
+	<summary>
+ Custom Message Id
+ </summary>
+</member><member name="P:ATS.DA.Framework.DataAccessBase`1.PageTotal">
+	<summary>
+ Total of Data Pages
+ </summary>
+</member><member name="M:ATS.DA.Framework.DataAccessBase`1.Load(`0,System.Int32,System.Int32)">
+	<summary>
+ To return a list Entity objects
+ </summary>
+	<returns name="Returns">A list of entity objects</returns>
+</member><member name="M:ATS.DA.Framework.DataAccessBase`1.Find(System.Int32)">
+	<summary>
+ To retrieve a single record  
+ </summary>
+	<param name="Id">An integer value represents a key value</param>
+	<returns name="Returns">a data entity object</returns>
+</member><member name="M:ATS.DA.Framework.DataAccessBase`1.Delete(System.Int32)">
+	<summary>
+ To Delete an existing record
+ </summary>
+	<param name="Id">An integer value represents a key value</param>
+	<returns name="Returns">a True/False To indicate the success of the execution</returns>
+</member><member name="M:ATS.DA.Framework.DataAccessBase`1.GetDataset(`0,System.Int32,System.Int32)">
+	<summary>
+ Return a result as Dataset  
+ </summary>
+	<returns name="Returns">Return a result as a Dataset</returns>
+</member><member name="M:ATS.DA.Framework.DataAccessBase`1.SqlSelect(`0)">
+	<summary>
+ Generate a SQL Select Statment
+ </summary>
+	<param name="Entity"></param>
+	<returns>String</returns>
+	<remarks></remarks>
+</member><member name="M:ATS.DA.Framework.DataAccessBase`1.SqlWhere(`0)">
+	<summary>
+ Generate a SQL Where Statment 
+ </summary>
+	<param name="Entity"></param>
+	<returns>String</returns>
+	<remarks></remarks>
+</member><member name="M:ATS.DA.Framework.DataAccessBase`1.SqlOrderBy(`0)">
+	<summary>
+ Generate a SQL Order By Statment 
+ </summary>
+	<param name="Entity"></param>
+	<returns>String</returns>
+	<remarks></remarks>
+</member><member name="T:ATS.DA.Framework.DataAccessBase`1">
+	<summary>
+ Data Access Layer Base Class
+ </summary>
+	<typeparam name="DataEntityBase"></typeparam>
+	<remarks></remarks>
+</member><member name="M:ATS.DA.Framework.DALocation.Add(System.String,System.Int32)">
+	<summary>
+	</summary>
+	<param name="LocationName"></param>
+	<param name="AddedUserAccountId"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:ATS.DA.Framework.DALocation">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="T:ATS.DA.Framework.JobTitle">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="P:ATS.DA.Framework.Capability.AccessType">
+	<summary>
+ what types of access should be allowed for this capability
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:ATS.DA.Framework.Capability">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member><member name="T:ATS.DA.Framework.UserAccount">
+	<summary>
+	</summary>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

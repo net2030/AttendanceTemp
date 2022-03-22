@@ -1,0 +1,9 @@
+[employeename]'s expense for [expensesheetdate] has been approved.
+
+The information follows below:
+
+   Approved By: [approvedby]
+   Description: [expensesheetdescription]
+        Amount: [currencyamount]
+        Status: [status]
+      Comments: [comments]

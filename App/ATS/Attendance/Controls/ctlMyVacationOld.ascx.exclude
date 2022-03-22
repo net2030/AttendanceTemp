@@ -1,0 +1,455 @@
+<%@ Control Language="VB" AutoEventWireup="false" CodeFile="ctlMyVacation.ascx.vb" Inherits="Attendance_Controls_ctlMyVacation" %>
+<%@ Register assembly="Telerik.Web.UI" namespace="Telerik.Web.UI" tagprefix="telerik" %>
+<%@ Register Assembly="eWorld.UI" Namespace="eWorld.UI" TagPrefix="ew" %>
+<%@ Register Src="~/GeneralControls/MyDate.ascx" TagPrefix="uc1" TagName="MyDate" %>
+<%@ Register Src="~/Attendance/Controls/ctlEmployeesLeaveBalance.ascx" TagPrefix="uc1" TagName="ctlEmployeesLeaveBalance" %>
+<script type="text/javascript">
+
+    function disable_AltEmployeeValidator(ddlId) {
+        try {
+
+        var ControlName = document.getElementById(ddlId.id);
+        var id = document.getElementById('<%= hdnAltEmployeeRequiredValidator.ClientID%>').value;
+       if(ControlName.value !=1)
+           ValidatorEnable(document.getElementById(id), false);
+       else
+           ValidatorEnable(document.getElementById(id), true);
+
+        }
+        catch (err) {
+
+        }
+    }
+   
+    $(document).ready(function () {
+        try {
+
+        var validatorid = document.getElementById('<%= hdnAltEmployeeRequiredValidator.ClientID%>').value;
+        var ddlAltEmployeeId = document.getElementById('<%= hdnddlVacationtype.ClientID%>').value;
+        if (document.getElementById(ddlAltEmployeeId).value != 1)
+            ValidatorEnable(document.getElementById(validatorid), false);
+
+
+        var sdat = document.getElementById(startdatefromsession).value;
+        var edat = document.getElementById(enddatefromsession).value;
+        var StartDate = new Date(convertToGreg(sdat));
+        var EndDate = new Date(convertToGreg(edat));
+        document.getElementById("txtvacationperiod").value = ((EndDate.getTime() - StartDate.getTime()) / 1000 / 60 / 60 / 24) + 1;
+
+          }
+        catch (err) {
+          
+        }
+
+      
+    });
+
+   
+</script>
+
+<asp:hiddenfield id="hdnAltEmployeeRequiredValidator" runat="server" />
+<asp:hiddenfield id="hdnddlVacationtype" runat="server" />
+
+<x:GridView ID="GridView2" runat="server" AutoGenerateColumns="False" 
+            DataKeyNames="VacationId" Caption="ﬁ«∆„… »≈Ã«“« Ì" 
+            SkinID="xgridviewSkinEmployee" Width="98%"  style="font-size:large;text-align:right;direction:rtl;" ShowHeaderWhenEmpty="True" OnRowEditing="gvEG_RowEditing" DataSourceID="dsVacations">
+    <Columns>
+
+        <asp:BoundField DataField="VacationId" HeaderText="„”·”·" ReadOnly="True"  />
+
+        <asp:BoundField DataField="EmployeeName" HeaderText="≈”„ «·„ÊŸ›" />
+
+
+        <asp:BoundField DataField="TypeName" HeaderText="‰Ê⁄ «·≈Ã«“…" />
+
+        <asp:BoundField DataField="EffectiveDate" HeaderText=" «—ÌŒ «·»œ«Ì…" />
+
+        <asp:BoundField DataField="DateExpire" HeaderText=" «—ÌŒ «·‰Â«Ì…" />
+
+         <asp:BoundField DataField="AltEmployeename" HeaderText="«·„ÊŸ› «·»œÌ·" /> 
+
+       <%-- <asp:BoundField DataField="DateOfReturn" HeaderText=" «—ÌŒ «·„»«‘—…" />--%>
+
+        <asp:BoundField DataField="AprovalStatus" HeaderText="Õ«·… «·ÿ·»" /> 
+ 
+        <asp:BoundField DataField="ApprovalNotes" HeaderText="„·«ÕŸ« " />
+
+        <asp:TemplateField HeaderText=" ⁄œÌ·" ShowHeader="False">
+            <ItemTemplate>
+                <asp:LinkButton id="EditLinkButton" runat="server" Text="" CommandName="Edit"  CausesValidation="false"
+                                Visible='<%# If(Eval("IsApproved").ToString().Equals("True"), False, True)%>'  >
+                </asp:LinkButton>
+            </ItemTemplate>
+            <ItemStyle Width="1%" cssclass="edit_button" HorizontalAlign="Center" />
+        </asp:TemplateField>
+
+        <asp:TemplateField HeaderText="Õ–›" ShowHeader="False">
+            <ItemTemplate>
+                <asp:LinkButton id="DeleteLinkButton" runat="server" Text="" CommandName="DataDelete"  CommandArgument="<%# CType(Container,GridViewRow).RowIndex %>"
+                                Visible='<%# If(Eval("IsApproved").ToString().Equals("True"), False, True)%>'  OnClientClick="<%# ResourceHelper.GetDeleteMessageJavascript() %>" CausesValidation="False">
+                </asp:LinkButton>
+            </ItemTemplate>
+            <ItemStyle Width="1%" cssclass="delete_button" HorizontalAlign="Center" />
+        </asp:TemplateField>
+
+    </Columns>
+</x:GridView>
+<asp:Button ID="btnAddVacation" runat="server" 
+            Text="≈÷«›… ÃœÌœ" 
+            UseSubmitBehavior="False" CausesValidation = "false" />
+<asp:ObjectDataSource ID="ObjectDataSource1" runat="server" TypeName="LookUp" OldValuesParameterFormatString="original_{0}" SelectMethod="GetDepartmentsList">
+</asp:ObjectDataSource>
+<%-- <asp:BoundField DataField="DateOfReturn" HeaderText=" «—ÌŒ «·„»«‘—…" />--%>
+
+        <asp:FormView ID="MyVacationFormView" runat="server"
+                      SkinID="formviewskinemployee"
+                      DefaultMode="Insert" Width="98%" BorderStyle="Solid" style="font-family:Arial;font-size:14px;" >
+            <InsertItemTemplate>
+                <table width="100%" class="xformview">
+                    <tr>
+                        <th colspan="5" class="caption" style="text-align:center;font-size:14px;">
+                            <asp:Literal ID="Literal9" runat="server" Text="»Ì«‰«  ≈Ã«“… „ÊŸ›"/>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th colspan="5" class="FormViewSubHeader" style="text-align:center;font-size:14px;">
+                            <asp:Literal ID="Literal10" runat="server" Text=" ”ÃÌ· ≈Ã«“…" />
+                        </th>
+                    </tr>
+                    <tr>
+                         <td colspan="4">
+                            <asp:Label ID="Label2" runat="server" Text="" ForeColor="Red" Font-Size="Large"  />
+                        </td>
+                        <td rowspan="6">
+                            <uc1:ctlEmployeesLeaveBalance runat="server" ID="ctlEmployeesLeaveBalance" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <asp:Literal ID="Literal1" runat="server" Text=" —ﬁ„ «·Õ«”»:"/>
+
+                        </td>
+                        <td>
+                            <asp:TextBox ID="txtVacationId" runat="server" ReadOnly="true" ></asp:TextBox>
+                        </td>
+                    </tr>
+                  
+                    <tr>
+                        <td >
+                            <asp:Literal ID="Literal3" runat="server" Text="  ≈”„ «·„ÊŸ› :"/>
+
+                        </td>
+                        <td  >
+                              <asp:TextBox ID="txtEmployeeName" runat="server" ReadOnly="true" Text='<%# Session("EmployeeNameWithCode")%>'></asp:TextBox>
+                     
+                        </td>
+                    </tr>
+                    <tr>
+                        <td >
+                            <asp:Literal ID="Literal4" runat="server" Text="  ‰Ê⁄ «·≈Ã«“… :"/>
+                        </td>
+                        <td  >
+                            <asp:DropDownList ID="ddlVacationTypeId" runat="server" style="margin-right: 0px"
+                                              DataSourceID="dsVacationTypes" 
+                                              DataTextField="TypeName" 
+                                              DataValueField="TypeId" 
+                                              onchange="disable_AltEmployeeValidator(this)">
+                                             
+                            </asp:DropDownList>
+                            <asp:RequiredFieldValidator Font-Size="Small" runat="server" ID="VacationTypeRequiredFieldValidator" ControlToValidate="ddlVacationTypeId"
+                                                        ErrorMessage="≈Œ — ‰Ê⁄ «·«Ã«“… !">
+
+                            </asp:RequiredFieldValidator>
+                        </td>
+                    </tr>
+             <tr>
+               <td >
+                  <asp:Literal 
+                     ID="Literal25" runat="server"  Text="«·„ÊŸ› «·»œÌ·:" />
+               </td>
+               <td colspan="3">
+                  <asp:DropDownList ID="ddlAltEmployeeId" runat="server" style="margin-right: 0px"  
+                     DataTextField="EmployeeName" 
+                     DataValueField="EmployeeId" >
+                     <asp:ListItem Value="0">....≈Œ —....</asp:ListItem>
+                  </asp:DropDownList>
+                   <asp:RequiredFieldValidator Font-Size="Small" InitialValue="0" 
+                     ID="AlternativeEmployeeRequiredFieldValidator" Display="Dynamic" 
+                     ControlToValidate="ddlAltEmployeeId"
+                     runat="server"  Text="*" 
+                     ErrorMessage="≈Œ — «·„ÊŸ› «·»œÌ·"
+                     ForeColor="Red">
+                  </asp:RequiredFieldValidator>
+                   <asp:Literal ID="Literal11" runat="server" Text="—ﬁ„ «·»’„… ··»œÌ·:"/>
+                  <asp:TextBox ID="txtEmployeeCode" runat="server" Width="70px"  />
+                  <asp:Button ID="Button3" runat="server" Text="»ÕÀ" CausesValidation="false" OnClick="FindAltEmployeeByEmployeeCode" />
+                </td>
+            </tr>
+                    <tr>
+                        <td >
+                            <asp:Literal ID="Literal5" runat="server" Text="   »œ√ ›Ì :"/>
+                        </td>
+                        <td>
+                          <uc1:MyDate runat="server" id="datEffectiveDate"  SelectedDate="<%# Now.Date%>" />
+                        </td>
+
+                        <td>
+                            <asp:Literal ID="Literal6" runat="server" Text="   ‰ ÂÌ ›Ì :"/>
+                        </td>
+                        <td  >
+                          <uc1:MyDate runat="server" id="datDateExpire" SelectedDate="<%# Now.Date%>" />
+                           <asp:CustomValidator id="CustomValidator2" runat="server" 
+                                                 ControlToValidate = "datDateExpire$TextBox1"
+                                                 ErrorMessage = "End date must be greater or equa !"
+                                                 ClientValidationFunction="CompareDatelocal" >
+                            </asp:CustomValidator>
+                            <asp:CustomValidator id="ChckbalanceValidator" runat="server" 
+                                                 ControlToValidate = "datDateExpire$TextBox1"
+                                                 ErrorMessage = "·« ÌÊÃœ —’Ìœ ﬂ«›Ì"
+                                                 ClientValidationFunction="checkBalance" >
+                            </asp:CustomValidator>
+                        </td>
+                    </tr>
+             
+                    <tr>
+                        <td>
+                            «·„œ… »«·ÌÊ„:
+                        </td>
+                        <td>
+                            <input id="txtvacationperiod" style="width:50px" readonly="true" value="1"/>
+                        </td>
+                    </tr>
+                    <tr style="display:none">
+                        <td >
+                            <asp:Literal ID="Literal7" runat="server" Text="   «—ÌŒ «·„»«‘—… :" />
+                        </td>
+                        <td  >
+                          <uc1:MyDate runat="server" id="datDateOfReturn" SelectedDate="<%# DateAdd(DateInterval.Day, 1, Now.Date)%>" />
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td >
+                            <asp:Literal ID="Literal2" runat="server" Text="   «·⁄‰Ê«‰ «À‰«¡ «·≈Ã«“… :"/>
+                        </td>
+                        <td >
+                            <asp:TextBox ID="txtAddress" runat="server" TextMode="MultiLine" Width="200px" Height="40px" ></asp:TextBox>
+                        </td>
+                        <td >
+                            <asp:Literal ID="Literal12" runat="server" Text=" Ê”Ì·… «·≈ ’«·:"/>
+                        </td>
+                        <td colspan="2">
+                            <asp:TextBox ID="txtContact" runat="server" TextMode="MultiLine" Width="200px" Height="40px" ></asp:TextBox>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td >
+                            <asp:Literal ID="Literal8" runat="server" Text="   „·«ÕŸ«  :"/>
+                        </td>
+                        <td colspan="2">
+                            <asp:TextBox ID="txtNotes" runat="server" TextMode="MultiLine" Width="200px" Height="70px" ></asp:TextBox>
+                        </td>
+                    </tr>
+                    <br />
+                    <tr>
+                        <td>
+                            &nbsp
+                        </td>
+                        <td colspan="2">
+                            <asp:Button ID="Button1" runat="server" OnClick="DataAdd" 
+                                        Text="Õ›Ÿ «·≈Ã«“…" />
+                       
+                            <asp:Button ID="Button2" runat="server"  OnClientClick="ReloadSamepage(); return false;" CausesValidation="false"
+                                        Text="≈·€«¡ «·√„—" />
+                        </td>
+                    </tr>
+                </table>
+            </InsertItemTemplate>
+
+            <EditItemTemplate>
+                <table width="100%" class="xformview">
+                    <tr>
+                        <th colspan="5" class="caption" style="text-align:center;font-size:14px;">
+                            <asp:Literal ID="Literal9" runat="server" Text="»Ì«‰«  ≈Ã«“… „ÊŸ›"/>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th colspan="5" class="FormViewSubHeader" style="text-align:center;font-size:14px;">
+                            <asp:Literal ID="Literal10" runat="server" Text=" ÕœÌÀ »Ì«‰«  ≈Ã«“…" />
+                        </th>
+                    </tr>
+                    <tr>
+                         <td colspan="4">
+                            <asp:Label ID="Label2" runat="server" Text="" ForeColor="Red" Font-Size="Large"  />
+                        </td>
+                         <td rowspan="6">
+                            <uc1:ctlEmployeesLeaveBalance runat="server" ID="ctlEmployeesLeaveBalance" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <asp:Literal ID="Literal1" runat="server" Text=" —ﬁ„ «·Õ«”»:"/>
+
+                        </td>
+                        <td>
+                            <asp:TextBox ID="txtVacationId" runat="server" ReadOnly="true" Text='<%# Bind("VacationId")%>'></asp:TextBox>
+                        </td>
+                       
+                    </tr>
+                 
+
+                    <tr>
+                        <td >
+                            <asp:Literal ID="Literal3" runat="server" Text="  ≈”„ «·„ÊŸ› :"/>
+
+                        </td>
+                        <td  >
+                            <asp:TextBox ID="txtEmployeeName" runat="server" ReadOnly="true" Text='<%# Session("EmployeeNameWithCode")%>'></asp:TextBox>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td >
+                            <asp:Literal ID="Literal4" runat="server" Text="  ‰Ê⁄ «·≈Ã«“… :"/>
+                        </td>
+                        <td  >
+                            <asp:DropDownList ID="ddlVacationTypeId" runat="server" style="margin-right: 0px" 
+                                              DataSourceID="dsVacationTypes" 
+                                              DataTextField="TypeName" 
+                                              DataValueField="TypeId" 
+                                              onchange="disable_AltEmployeeValidator(this)"
+                                              SelectedValue='<%# Bind("TypeId")%> '>
+                            </asp:DropDownList>
+                             <asp:RequiredFieldValidator Font-Size="Small" runat="server" ID="VacationTypeRequiredFieldValidator" ControlToValidate="ddlVacationTypeId"
+                                                        ErrorMessage="≈Œ — ‰Ê⁄ «·«Ã«“… !">
+
+                            </asp:RequiredFieldValidator>
+                        </td>
+                    </tr>
+              <tr>
+               <td >
+                  <asp:Literal 
+                     ID="Literal25" runat="server"  Text="«·„ÊŸ› «·»œÌ·:" />
+               </td>
+               <td colspan="3">
+                  <asp:DropDownList ID="ddlAltEmployeeId" runat="server" style="margin-right: 0px"  
+                     DataTextField="EmployeeName" 
+                     DataValueField="EmployeeId" >
+                     <asp:ListItem Value="0">....≈Œ —....</asp:ListItem>
+                  </asp:DropDownList>
+                   <asp:RequiredFieldValidator Font-Size="Small" InitialValue="0" 
+                     ID="AlternativeEmployeeRequiredFieldValidator" Display="Dynamic" 
+                     ControlToValidate="ddlAltEmployeeId"
+                     runat="server"  Text="*" 
+                     ErrorMessage="≈Œ — «·„ÊŸ› «·»œÌ·"
+                     ForeColor="Red">
+                  </asp:RequiredFieldValidator>
+                   <asp:Literal ID="Literal11" runat="server" Text="—ﬁ„ «·»’„… ··»œÌ·:"/>
+                  <asp:TextBox ID="txtEmployeeCode" runat="server" Width="70px"  />
+                  <asp:Button ID="Button3" runat="server" Text="»ÕÀ" CausesValidation="false" OnClick="FindAltEmployeeByEmployeeCode" />
+                </td>
+            </tr>
+                    <tr>
+                        <td >
+                            <asp:Literal ID="Literal5" runat="server" Text="   »œ√ ›Ì :"/>
+                        </td>
+                        <td>
+                          <uc1:MyDate runat="server" id="datEffectiveDate" selecteddate='<%# Bind("EffectiveDate")%>'/>
+                        </td>
+
+                        <td>
+                            <asp:Literal ID="Literal6" runat="server" Text="   ‰ ÂÌ ›Ì :"/>
+                        </td>
+                        <td  >
+                          <uc1:MyDate runat="server" id="datDateExpire" selecteddate='<%# Bind("DateExpire")%>'/>
+                           <asp:CustomValidator id="CustomValidator2" runat="server" 
+                                                 ControlToValidate = "datDateExpire$TextBox1"
+                                                 ErrorMessage = "End date must be greater or equa !"
+                                                 ClientValidationFunction="CompareDatelocal" >
+                            </asp:CustomValidator>
+                             <asp:CustomValidator id="ChckbalanceValidator" runat="server" 
+                                                 ControlToValidate = "datDateExpire$TextBox1"
+                                                 ErrorMessage = "·« ÌÊÃœ —’Ìœ ﬂ«›Ì"
+                                                 ClientValidationFunction="checkBalance" >
+                            </asp:CustomValidator>
+                        </td>
+                    </tr>
+                     <tr>
+                        <td>
+                            «·„œ… »«·ÌÊ„:
+                         </td>
+                         <td>
+                            <input id="txtvacationperiod" style="width:50px" readonly="true" value="1"/>
+                        </td>
+                    </tr>
+                      <tr style="display:none">
+                        <td >
+                            <asp:Literal ID="Literal7" runat="server" Text="   «—ÌŒ «·„»«‘—… :"/>
+                        </td>
+                        <td  >
+                          <uc1:MyDate runat="server" id="datDateOfReturn" selecteddate='<%# Bind("DateOfReturn")%>'/> 
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td >
+                            <asp:Literal ID="Literal2" runat="server" Text="   «·⁄‰Ê«‰ «À‰«¡ «·≈Ã«“… :"/>
+                        </td>
+                        <td >
+                            <asp:TextBox ID="txtAddress" runat="server" TextMode="MultiLine" Width="200px" Height="40px" Text='<%# Bind("Address")%>' ></asp:TextBox>
+                        </td>
+                        <td >
+                            <asp:Literal ID="Literal12" runat="server" Text=" Ê”Ì·… «·≈ ’«·:"/>
+                        </td>
+                        <td colspan="2">
+                            <asp:TextBox ID="txtContact" runat="server" TextMode="MultiLine" Width="200px" Height="40px" Text='<%# Bind("Contact")%>'></asp:TextBox>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td >
+                            <asp:Literal ID="Literal8" runat="server" Text="   „·«ÕŸ«  :"/>
+                        </td>
+                        <td colspan="2">
+                            <asp:TextBox ID="txtNotes" runat="server" TextMode="MultiLine" Width="200px" Height="70px" Text='<%# Bind("Note")%>'></asp:TextBox>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            &nbsp
+                        </td>
+                        <td colspan="2">
+                            <asp:Button ID="Button1" runat="server" OnClick="DataUpdate" 
+                                        Text=" ÕœÌÀ «·≈Ã«“…" />
+                        
+                            <asp:Button ID="Button2" runat="server"  OnClientClick="ReloadSamepage(); return false;" 
+                                        Text="≈·€«¡ «·√„—" />
+                        </td>
+                    </tr>
+                </table>
+            </EditItemTemplate>
+
+        </asp:FormView>
+
+
+
+<%--<asp:UpdatePanel ID="UpdatePanel2" runat="server">
+    <ContentTemplate>--%>
+
+
+<asp:ObjectDataSource ID="dsVacationTypes" runat="server" OldValuesParameterFormatString="original_{0}" SelectMethod="GetVacationTypesList" TypeName="ATS.BO.Framework.BOVacation"></asp:ObjectDataSource>
+
+
+<asp:ObjectDataSource ID="dsVacations" runat="server" OldValuesParameterFormatString="original_{0}" SelectMethod="GetVacationsByEmployeeIdDataset" TypeName="ATS.BO.Framework.BOVacation">
+    <SelectParameters>
+        <asp:SessionParameter Name="UserAccountId" SessionField="AccountEmployeeId" Type="Int32" />
+        <asp:SessionParameter Name="EmployeeId" SessionField="AccountEmployeeId" Type="Int32" />
+        <asp:Parameter Name="PageNo" Type="Int32" DefaultValue="1" />
+        <asp:Parameter DefaultValue="50" Name="PageSize" Type="Int32" />
+    </SelectParameters>
+</asp:ObjectDataSource>
+
+
+
+
+

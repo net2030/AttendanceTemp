@@ -1,0 +1,7 @@
+Hi [recievername]
+
+This is a Generic Mail.
+[body]
+
+Regards,
+[sendername]

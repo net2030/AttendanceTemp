@@ -1,0 +1,936 @@
+﻿
+Imports System.Collections.Generic
+Imports System.ComponentModel
+Imports System.Configuration
+Imports System.Data
+Imports System.Data.SqlClient
+Imports System.Drawing
+Imports System.Net
+Imports System.Runtime.InteropServices
+Imports System.Text
+Imports System.Windows.Forms
+
+Namespace BioStarCSharp
+    Partial Public Class Main
+        Inherits Form
+
+        Public Const MAX_DEVICE As Integer = 128
+
+        Private m_Handle As Integer = -1
+
+        Private m_NumOfDevice As Integer = 0
+        Private m_DeviceID As UInteger()
+        Private m_DeviceType As Integer()
+        Private m_DeviceAddr As UInteger()
+
+        Private m_NumOfConnectedDevice As Integer = 0
+        Private m_ConnectedDeviceHandle As Integer()
+        Private m_ConnectedDeviceID As UInteger()
+        Private m_ConnectedDeviceType As Integer()
+        Private m_ConnectedDeviceAddr As UInteger()
+
+        Private m_DeviceLastLog As Integer()
+
+
+        ' Connect Variables
+
+
+
+
+
+        'BSSDK.BESysInfoData m_SysInfoBEPlus;
+        'BSSDK.BEConfigData m_ConfigBEPlus;
+
+        'BSSDK.BESysInfoDataBLN m_SysInfoBLN;
+        'BSSDK.BEConfigDataBLN m_ConfigBLN;
+
+        'BSSDK.BSSysInfoConfig m_SysInfoBST;
+        'BSSDK.BSIPConfig m_ConfigBST;   
+
+
+        Public Sub New()
+            InitializeComponent()
+            m_DeviceID = New UInteger(MAX_DEVICE - 1) {}
+            m_DeviceType = New Integer(MAX_DEVICE - 1) {}
+            m_DeviceAddr = New UInteger(MAX_DEVICE - 1) {}
+
+            m_ConnectedDeviceHandle = New Integer(MAX_DEVICE - 1) {}
+            m_ConnectedDeviceID = New UInteger(MAX_DEVICE - 1) {}
+            m_ConnectedDeviceType = New Integer(MAX_DEVICE - 1) {}
+            m_ConnectedDeviceAddr = New UInteger(MAX_DEVICE - 1) {}
+
+            m_DeviceLastLog = New Integer(MAX_DEVICE - 1) {}
+        End Sub
+
+        Private Sub Main_Load(sender As Object, e As EventArgs)
+
+            Dim ExpireDate As New DateTime(2016, 1, 23, 0, 0, 0)
+            Dim TodayDate As New DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day, 0, 0, 0)
+            Dim days As Double = (TodayDate - ExpireDate).TotalDays
+
+            If days > 0 Then
+                MessageBox.Show("Trail ExpireDate")
+                System.Windows.Forms.Application.[Exit]()
+            End If
+            dateTimePicker1.Value = DateTime.Now.[Date]
+            Try
+                Dim result As Integer = BSSDK.BS_InitSDK()
+
+                If result <> BSSDK.BS_SUCCESS Then
+                    MessageBox.Show("Cannot initialize the SDK", "Error")
+                    Return
+                End If
+
+                result = BSSDK.BS_OpenInternalUDP(m_Handle)
+
+                If result <> BSSDK.BS_SUCCESS Then
+                    MessageBox.Show("Cannot open internal UDP socket", "Error")
+                    Return
+                End If
+
+                timer1.Start()
+            Catch ex As Exception
+                MessageBox.Show("Cannot initialize the SDK", "Error")
+            End Try
+        End Sub
+
+        Private Sub Main_Closing(sender As Object, e As System.ComponentModel.CancelEventArgs)
+
+            If logList.Items.Count > 0 Then
+
+                If MessageBox.Show("The import process will be stopped,Do you want to close?", "MAS Importer", MessageBoxButtons.YesNo) = DialogResult.No Then
+                    ' Cancel the Closing event from closing the form.
+
+                    e.Cancel = True
+                End If
+            End If
+        End Sub
+
+#Region "Get Devices"
+        Private Sub searchButton_Click(sender As Object, e As EventArgs)
+            deviceList.Items.Clear()
+
+            Cursor.Current = Cursors.WaitCursor
+            'getDevicesBySearchLAN();
+            'return;
+            Dim dt As New DataTable()
+            dt = getDevicesFromDB()
+            If dt.Rows.Count > 0 Then
+                m_NumOfDevice = dt.Rows.Count
+                For i As Integer = 0 To m_NumOfDevice - 1
+                    m_DeviceID(i) = Convert.ToUInt32(dt.Rows(i)("MachineName"))
+                    m_DeviceType(i) = 0
+
+                    m_DeviceAddr(i) = BitConverter.ToUInt32(IPAddress.Parse(dt.Rows(i)("IPAddress").ToString()).GetAddressBytes(), 0)
+                    Dim device As String = ""
+                    device += "BioStation "
+                    device += dt.Rows(i)("IPAddress").ToString()
+                    device += "(" + dt.Rows(i)("MachineName").ToString() + ")"
+
+                    deviceList.Items.Add(device)
+                Next
+            End If
+
+
+        End Sub
+
+        Private Sub getDevicesBySearchLAN()
+            Dim result As Integer
+
+            Try
+                result = BSSDK.BS_SearchDeviceInLAN(m_Handle, m_NumOfDevice, m_DeviceID, m_DeviceType, m_DeviceAddr)
+            Finally
+                Cursor.Current = Cursors.[Default]
+            End Try
+
+            If result <> BSSDK.BS_SUCCESS Then
+                MessageBox.Show("Cannot find any device", "Error")
+                Return
+            End If
+
+            For i As Integer = 0 To m_NumOfDevice - 1
+                Dim device As String = ""
+
+                If m_DeviceType(i) = BSSDK.BS_DEVICE_BIOSTATION Then
+                    device += "BioStation "
+                ElseIf m_DeviceType(i) = BSSDK.BS_DEVICE_DSTATION Then
+                    device += "D-Station "
+                ElseIf m_DeviceType(i) = BSSDK.BS_DEVICE_XSTATION Then
+                    device += "X-Station "
+                ElseIf m_DeviceType(i) = BSSDK.BS_DEVICE_BIOSTATION2 Then
+                    device += "BioStation T2 "
+                ElseIf m_DeviceType(i) = BSSDK.BS_DEVICE_FSTATION Then
+                    device += "FaceStation "
+                ElseIf m_DeviceType(i) = BSSDK.BS_DEVICE_BIOENTRY_PLUS Then
+                    device += "BioEntry Plus "
+                ElseIf m_DeviceType(i) = BSSDK.BS_DEVICE_BIOENTRY_W Then
+                    device += "BioEntry W "
+                ElseIf m_DeviceType(i) = BSSDK.BS_DEVICE_BIOLITE Then
+                    device += "BioLite Net "
+                ElseIf m_DeviceType(i) = BSSDK.BS_DEVICE_XPASS Then
+                    device += "Xpass "
+                ElseIf m_DeviceType(i) = BSSDK.BS_DEVICE_XPASS_SLIM Then
+                    device += "Xpass Slim"
+                Else
+                    device += "Unknown "
+                End If
+
+                device += (m_DeviceAddr(i) And &HFF) + "."
+                device += ((m_DeviceAddr(i) >> 8) And &HFF) + "."
+                device += ((m_DeviceAddr(i) >> 16) And &HFF) + "."
+                device += ((m_DeviceAddr(i) >> 24) And &HFF)
+
+                device += "(" + m_DeviceID(i) + ")"
+
+                deviceList.Items.Add(device)
+            Next
+
+
+        End Sub
+
+
+        Private Conn As SqlConnection
+        Private Sub CreateConnection()
+            Dim ConnStr As String = ConfigurationManager.ConnectionStrings("AttendanceConnectionString").ConnectionString
+            Conn = New SqlConnection(ConnStr)
+        End Sub
+        Public Function getDevicesFromDB() As DataTable
+            CreateConnection()
+            Dim SqlString As String = "SELECT * FROM Logs.Machine"
+            Dim sda As New SqlDataAdapter(SqlString, Conn)
+            Dim dt As New DataTable()
+            Try
+                Conn.Open()
+                sda.Fill(dt)
+
+            Catch se As SqlException
+            Finally
+                Conn.Close()
+            End Try
+            Return dt
+        End Function
+
+
+#End Region
+
+#Region "Connect To the Devices"
+        Private Sub networkConfigButton_Click(sender As Object, e As EventArgs)
+            If deviceList.Items.Count <= 0 Then
+                MessageBox.Show("Please Search for The Devices First", "Error")
+                Return
+            End If
+
+            connect()
+
+            Dim TodayDate As New DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day, 0, 0, 0)
+            Dim SDate As New DateTime(1970, 1, 1, 0, 0, 0)
+            Dim StartTime As Integer = Convert.ToInt32((TodayDate - SDate).TotalSeconds)
+
+            For i As Integer = 0 To connectedDeviceList.Items.Count - 1
+                m_DeviceLastLog(i) = StartTime
+            Next
+        End Sub
+
+        Private Sub connect()
+            For i As Integer = 0 To m_NumOfDevice - 1
+                Dim addr As New IPAddress(m_DeviceAddr(i))
+
+                Dim handle As Integer = 0
+
+                Cursor.Current = Cursors.WaitCursor
+
+                Dim result As Integer = BSSDK.BS_OpenSocket(addr.ToString(), 1480, handle)
+                '   int result1 = BSSDK.BS_CloseSocket(handle);
+                Cursor.Current = Cursors.[Default]
+
+                If result <> BSSDK.BS_SUCCESS Then
+                    'MessageBox.Show("Cannot connect to the device", "Error");
+                    Continue For
+                End If
+
+                AddConnectedDevice(m_DeviceID(i), 0, m_DeviceAddr(i), handle)
+            Next
+
+        End Sub
+
+        Public Sub AddConnectedDevice(deviceID As UInteger, deviceType As Integer, deviceAddr As UInteger, deviceHandle As Integer)
+            Dim device As String = ""
+
+
+            device += "BioStation "
+         
+
+            device += (deviceAddr And &HFF) + "."
+            device += ((deviceAddr >> 8) And &HFF) + "."
+            device += ((deviceAddr >> 16) And &HFF) + "."
+            device += ((deviceAddr >> 24) And &HFF)
+            device += "(" + deviceID + ")"
+
+            For i As Integer = 0 To m_NumOfConnectedDevice - 1
+                If m_ConnectedDeviceID(i) = deviceID Then
+                    m_ConnectedDeviceType(i) = deviceType
+                    m_ConnectedDeviceAddr(i) = deviceAddr
+                    m_ConnectedDeviceHandle(i) = deviceHandle
+
+                    connectedDeviceList.Items.RemoveAt(i)
+                    connectedDeviceList.Items.Insert(i, device)
+
+                    Return
+                End If
+            Next
+
+            m_ConnectedDeviceID(m_NumOfConnectedDevice) = deviceID
+            m_ConnectedDeviceType(m_NumOfConnectedDevice) = deviceType
+            m_ConnectedDeviceAddr(m_NumOfConnectedDevice) = deviceAddr
+            m_ConnectedDeviceHandle(System.Math.Max(System.Threading.Interlocked.Increment(m_NumOfConnectedDevice), m_NumOfConnectedDevice - 1)) = deviceHandle
+
+            connectedDeviceList.Items.Add(device)
+        End Sub
+
+#End Region
+
+
+#Region "Read Logs"
+
+        Private m_NumOfLog As Integer = 0
+
+
+        Private Sub readButton_Click(sender As Object, e As EventArgs)
+            If connectedDeviceList.Items.Count <= 0 Then
+                MessageBox.Show("Please Connect To The Devices First", "Error")
+                Return
+            End If
+
+
+            logList.Items.Clear()
+            Read(2)
+        End Sub
+
+        Private Sub Read(op As Integer)
+
+            For i As Integer = 0 To m_NumOfConnectedDevice - 1
+
+                Cursor.Current = Cursors.WaitCursor
+
+                Dim result As Integer = BSSDK.BS_GetLogCount(m_ConnectedDeviceHandle(i), m_NumOfLog)
+
+                Cursor.Current = Cursors.[Default]
+
+                If result <> BSSDK.BS_SUCCESS Then
+                    'MessageBox.Show("Cannot read log count", "Error");
+                    Continue For
+                End If
+
+
+                BSSDK.BS_SetDeviceID(m_ConnectedDeviceHandle(i), m_ConnectedDeviceID(i), 1)
+
+
+                If op = 1 Then
+                    ReadLog(i, Convert.ToInt32(m_ConnectedDeviceHandle(i)), Convert.ToInt32(m_ConnectedDeviceID(i)))
+                Else
+                    ReadLog1(i, Convert.ToInt32(m_ConnectedDeviceHandle(i)), Convert.ToInt32(m_ConnectedDeviceID(i)))
+
+                End If
+            Next
+            Cursor.Current = Cursors.[Default]
+        End Sub
+
+        Private Sub ReadLog(index As Integer, handle As Integer, DeviceId As Integer)
+
+            Dim logRecord As IntPtr = Marshal.AllocHGlobal(m_NumOfLog * Marshal.SizeOf(GetType(BSSDK.BSLogRecord)))
+
+            Dim logTotalCount As Integer = 0
+            Dim logCount As Integer = 0
+
+            Dim nMaxLogPerTrial As Integer = 0
+
+            nMaxLogPerTrial = 32768
+
+
+            Do
+                Cursor.Current = Cursors.WaitCursor
+
+                Dim result As Integer = 0
+                Dim SDate As New DateTime(1970, 1, 1, 0, 0, 0)
+
+                Dim TodayDate As New DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day, 0, 0, 0)
+
+
+
+                Dim StartTime As Double = (TodayDate - SDate).TotalSeconds
+                Dim EndTime As Double = (DateTime.Now - SDate).TotalSeconds
+
+
+
+                Dim buf As New IntPtr(logRecord.ToInt32() + logTotalCount * Marshal.SizeOf(GetType(BSSDK.BSLogRecord)))
+
+                If logTotalCount = 0 Then
+                    ' result = BSSDK.BS_ReadLog(handle, Convert.ToInt32(StartTime), Convert.ToInt32(EndTime), ref logCount, buf);
+                    result = BSSDK.BS_ReadLog(handle, m_DeviceLastLog(index) + 1, Convert.ToInt32(EndTime), logCount, buf)
+                Else
+                    result = BSSDK.BS_ReadNextLog(handle, 0, 0, logCount, buf)
+                End If
+
+                If result <> BSSDK.BS_SUCCESS Then
+                    Marshal.FreeHGlobal(logRecord)
+
+                    'MessageBox.Show("Cannot read log records", "Error");
+
+                    Cursor.Current = Cursors.WaitCursor
+                    Continue Do
+                End If
+
+
+                logTotalCount += logCount
+            Loop While logCount = nMaxLogPerTrial
+
+            Cursor.Current = Cursors.WaitCursor
+
+
+
+
+            For i As Integer = 0 To logTotalCount - 1
+
+
+
+
+                Dim record As BSSDK.BSLogRecord = DirectCast(Marshal.PtrToStructure(New IntPtr(logRecord.ToInt32() + i * Marshal.SizeOf(GetType(BSSDK.BSLogRecord))), GetType(BSSDK.BSLogRecord)), BSSDK.BSLogRecord)
+
+                If record.eventTime > m_DeviceLastLog(index) Then
+                    m_DeviceLastLog(index) = record.eventTime
+                End If
+
+                Dim eventTime As DateTime = New DateTime(1970, 1, 1).AddSeconds(record.eventTime)
+                If record.userID <> 0 AndAlso record.eventType <> BSSDK.BE_EVENT_VERIFY_FAIL AndAlso record.eventType <> BSSDK.BE_EVENT_VERIFY_CANCELED AndAlso record.eventType <> BSSDK.BE_EVENT_ENROLL_SUCCESS AndAlso record.eventType <> BSSDK.BE_EVENT_EXPIRED_USER AndAlso record.eventType <> BSSDK.BE_EVENT_DELETE_SUCCESS AndAlso record.eventType <> BSSDK.BE_EVENT_DELETE_FAIL Then
+
+
+                    Dim item As ListViewItem = logList.Items.Add(eventTime.ToString())
+                    item.SubItems.Add(record.tnaEvent.ToString())
+                    item.SubItems.Add(record.userID.ToString())
+
+                    item.SubItems.Add(GetEventStr(record.eventType))
+                    item.SubItems.Add(GetTNAStr(record.tnaEvent))
+                    item.SubItems.Add(DeviceId.ToString())
+                    item.SubItems.Add(record.eventType.ToString())
+                    item.SubItems.Add(record.eventTime.ToString())
+
+                    SaveLog(record.eventTime, Convert.ToInt32(record.userID), DeviceId)
+                End If
+            Next
+
+            txtnumOfLog.Text = logList.Items.Count.ToString()
+
+            Marshal.FreeHGlobal(logRecord)
+        End Sub
+
+        Private Sub ReadLog1(index As Integer, handle As Integer, DeviceId As Integer)
+
+            Dim logRecord As IntPtr = Marshal.AllocHGlobal(m_NumOfLog * Marshal.SizeOf(GetType(BSSDK.BSLogRecord)))
+
+            Dim logTotalCount As Integer = 0
+            Dim logCount As Integer = 0
+
+            Dim nMaxLogPerTrial As Integer = 0
+
+            nMaxLogPerTrial = 32768
+
+
+            Do
+                Cursor.Current = Cursors.WaitCursor
+
+                Dim result As Integer = 0
+                Dim InitalDate As New DateTime(1970, 1, 1, 0, 0, 0)
+
+                Dim SDate As New DateTime(dateTimePicker1.Value.Year, dateTimePicker1.Value.Month, dateTimePicker1.Value.Day, 0, 0, 0)
+                Dim EDate As New DateTime(dateTimePicker1.Value.Year, dateTimePicker1.Value.Month, dateTimePicker1.Value.Day, 23, 59, 0)
+
+                Dim StartTime As Double = (SDate - InitalDate).TotalSeconds
+                Dim EndTime As Double = (EDate - InitalDate).TotalSeconds
+
+
+
+                Dim buf As New IntPtr(logRecord.ToInt32() + logTotalCount * Marshal.SizeOf(GetType(BSSDK.BSLogRecord)))
+
+                If logTotalCount = 0 Then
+                    result = BSSDK.BS_ReadLog(handle, Convert.ToInt32(StartTime), Convert.ToInt32(EndTime), logCount, buf)
+                Else
+                    result = BSSDK.BS_ReadNextLog(handle, 0, 0, logCount, buf)
+                End If
+
+                If result <> BSSDK.BS_SUCCESS Then
+                    Marshal.FreeHGlobal(logRecord)
+
+                    MessageBox.Show("Cannot read log records", "Error")
+
+                    Cursor.Current = Cursors.WaitCursor
+                    Continue Do
+                End If
+
+
+                logTotalCount += logCount
+            Loop While logCount = nMaxLogPerTrial
+
+            Cursor.Current = Cursors.WaitCursor
+
+
+
+
+            For i As Integer = 0 To logTotalCount - 1
+
+
+
+
+                Dim record As BSSDK.BSLogRecord = DirectCast(Marshal.PtrToStructure(New IntPtr(logRecord.ToInt32() + i * Marshal.SizeOf(GetType(BSSDK.BSLogRecord))), GetType(BSSDK.BSLogRecord)), BSSDK.BSLogRecord)
+
+
+
+                Dim eventTime As DateTime = New DateTime(1970, 1, 1).AddSeconds(record.eventTime)
+                If record.userID <> 0 AndAlso record.eventType <> BSSDK.BE_EVENT_VERIFY_FAIL AndAlso record.eventType <> BSSDK.BE_EVENT_VERIFY_CANCELED AndAlso record.eventType <> BSSDK.BE_EVENT_ENROLL_SUCCESS AndAlso record.eventType <> BSSDK.BE_EVENT_EXPIRED_USER AndAlso record.eventType <> BSSDK.BE_EVENT_DELETE_SUCCESS AndAlso record.eventType <> BSSDK.BE_EVENT_DELETE_FAIL Then
+
+                    Dim item As ListViewItem = logList.Items.Add(eventTime.ToString())
+                    item.SubItems.Add(record.tnaEvent.ToString())
+                    item.SubItems.Add(record.userID.ToString())
+
+                    item.SubItems.Add(GetEventStr(record.eventType))
+                    item.SubItems.Add(GetTNAStr(record.tnaEvent))
+                    item.SubItems.Add(DeviceId.ToString())
+                    item.SubItems.Add(record.eventType.ToString())
+                    item.SubItems.Add(record.eventTime.ToString())
+
+                    SaveLog(record.eventTime, Convert.ToInt32(record.userID), DeviceId)
+                End If
+            Next
+
+            txtnumOfLog.Text = logList.Items.Count.ToString()
+
+            Marshal.FreeHGlobal(logRecord)
+        End Sub
+
+        Private Function GetEventStr(eventType As Byte) As [String]
+            Select Case eventType
+                Case BSSDK.BE_EVENT_SCAN_SUCCESS
+                    Return "Scan Success"
+
+                Case BSSDK.BE_EVENT_ENROLL_BAD_FINGER
+                    Return "Enroll Bad Finger"
+
+                Case BSSDK.BE_EVENT_ENROLL_SUCCESS
+                    Return "Enroll Success"
+
+                Case BSSDK.BE_EVENT_ENROLL_FAIL
+                    Return "Enroll Fail"
+
+                Case BSSDK.BE_EVENT_ENROLL_CANCELED
+                    Return "Enroll Canceled"
+
+                Case BSSDK.BE_EVENT_VERIFY_BAD_FINGER
+                    Return "Verify Bad Finger"
+
+                Case BSSDK.BE_EVENT_VERIFY_SUCCESS
+                    Return "Verify Success"
+
+                Case BSSDK.BE_EVENT_VERIFY_FAIL
+                    Return "Verify Fail"
+
+                Case BSSDK.BE_EVENT_VERIFY_CANCELED
+                    Return "Verify Canceled"
+
+                Case BSSDK.BE_EVENT_VERIFY_NO_FINGER
+                    Return "Verify No Finger"
+
+                Case BSSDK.BE_EVENT_IDENTIFY_BAD_FINGER
+                    Return "Identify Bad Finger"
+
+                Case BSSDK.BE_EVENT_IDENTIFY_SUCCESS
+                    Return "Identify Success"
+
+                Case BSSDK.BE_EVENT_IDENTIFY_FAIL
+                    Return "Identify Fail"
+
+                Case BSSDK.BE_EVENT_IDENTIFY_CANCELED
+                    Return "Identify Canceled"
+
+                Case BSSDK.BE_EVENT_IDENTIFY_FINGER
+                    Return "Identify Success(Finger Only)"
+
+                Case BSSDK.BE_EVENT_IDENTIFY_FINGER_PIN
+                    Return "Identify Success(Finger and PIN)"
+
+                Case BSSDK.BE_EVENT_DELETE_BAD_FINGER
+                    Return "Delete Bad Finger"
+
+                Case BSSDK.BE_EVENT_DELETE_SUCCESS
+                    Return "Delete Success"
+
+                Case BSSDK.BE_EVENT_DELETE_FAIL
+                    Return "Delete Fail"
+
+                Case BSSDK.BE_EVENT_DELETE_ALL_SUCCESS
+                    Return "Delete All"
+
+                Case BSSDK.BE_EVENT_VERIFY_DURESS
+                    Return "Verify Duress"
+
+                Case BSSDK.BE_EVENT_IDENTIFY_DURESS
+                    Return "Identify Duress"
+
+                Case BSSDK.BE_EVENT_TAMPER_SWITCH_ON
+                    Return "Tamper On"
+
+                Case BSSDK.BE_EVENT_TAMPER_SWITCH_OFF
+                    Return "Tamper Off"
+
+                Case BSSDK.BE_EVENT_SYS_STARTED
+                    Return "System Started"
+
+                Case BSSDK.BE_EVENT_IDENTIFY_NOT_GRANTED
+                    Return "Identify Not Granted"
+
+                Case BSSDK.BE_EVENT_VERIFY_NOT_GRANTED
+                    Return "Verify Not Granted"
+
+                Case BSSDK.BE_EVENT_IDENTIFY_LIMIT_COUNT
+                    Return "Identify Limit Count"
+
+                Case BSSDK.BE_EVENT_IDENTIFY_LIMIT_TIME
+                    Return "Identify Limit Time"
+
+                Case BSSDK.BE_EVENT_IDENTIFY_DISABLED
+                    Return "Identify Disabled"
+
+                Case BSSDK.BE_EVENT_IDENTIFY_EXPIRED
+                    Return "Identify Expired"
+
+                Case BSSDK.BE_EVENT_APB_FAIL
+                    Return "Anti-passback Failed"
+
+                Case BSSDK.BE_EVENT_COUNT_LIMIT
+                    Return "Entrance Limit Count"
+
+                Case BSSDK.BE_EVENT_TIME_INTERVAL_LIMIT
+                    Return "Entrance Time Interval"
+
+                Case BSSDK.BE_EVENT_INVALID_AUTH_MODE
+                    Return "Invalid Auth Mode"
+
+                Case BSSDK.BE_EVENT_EXPIRED_USER
+                    Return "Expired User"
+
+                Case BSSDK.BE_EVENT_NOT_GRANTED
+                    Return "Access Not Granted"
+
+                Case BSSDK.BE_EVENT_DOOR0_OPEN
+                    Return "Door 0 Open"
+
+                Case BSSDK.BE_EVENT_DOOR0_CLOSED
+                    Return "Door 0 Closed"
+
+                Case BSSDK.BE_EVENT_DOOR1_OPEN
+                    Return "Door 1 Open"
+
+                Case BSSDK.BE_EVENT_DOOR1_CLOSED
+                    Return "Door 1 Closed"
+
+                Case BSSDK.BE_EVENT_DOOR0_FORCED_OPEN
+                    Return "Door 0 Forced Open"
+
+                Case BSSDK.BE_EVENT_DOOR1_FORCED_OPEN
+                    Return "Door 1 Forced Open"
+
+                Case BSSDK.BE_EVENT_DOOR0_HELD_OPEN
+                    Return "Door 0 Held Open"
+
+                Case BSSDK.BE_EVENT_DOOR1_HELD_OPEN
+                    Return "Door 1 Held Open"
+
+                Case BSSDK.BE_EVENT_DOOR0_RELAY_ON
+                    Return "Door 0 Relay On"
+
+                Case BSSDK.BE_EVENT_DOOR1_RELAY_ON
+                    Return "Door 1 Relay On"
+
+                Case BSSDK.BE_EVENT_TIMEOUT
+                    Return "Timeout"
+
+                    ' IO event
+                Case BSSDK.BE_EVENT_INTERNAL_INPUT0
+                    Return "Detect Internal Input 0"
+
+                Case BSSDK.BE_EVENT_INTERNAL_INPUT1
+                    Return "Detect Internal Input 1"
+
+                Case BSSDK.BE_EVENT_SECONDARY_INPUT0
+                    Return "Detect Secondary Input 0"
+
+                Case BSSDK.BE_EVENT_SECONDARY_INPUT1
+                    Return "Detect Secondary Input 1"
+
+                Case BSSDK.BE_EVENT_SIO0_INPUT0
+                    Return "Detect SIO 0 Input 0"
+
+                Case BSSDK.BE_EVENT_SIO0_INPUT1
+                    Return "Detect SIO 0 Input 1"
+
+                Case BSSDK.BE_EVENT_SIO0_INPUT2
+                    Return "Detect SIO 0 Input 2"
+
+                Case BSSDK.BE_EVENT_SIO0_INPUT3
+                    Return "Detect SIO 0 Input 3"
+
+                Case BSSDK.BE_EVENT_SIO1_INPUT0
+                    Return "Detect SIO 1 Input 0"
+
+                Case BSSDK.BE_EVENT_SIO1_INPUT1
+                    Return "Detect SIO 1 Input 1"
+
+                Case BSSDK.BE_EVENT_SIO1_INPUT2
+                    Return "Detect SIO 1 Input 2"
+
+                Case BSSDK.BE_EVENT_SIO1_INPUT3
+                    Return "Detect SIO 1 Input 3"
+
+                Case BSSDK.BE_EVENT_SIO2_INPUT0
+                    Return "Detect SIO 2 Input 0"
+
+                Case BSSDK.BE_EVENT_SIO2_INPUT1
+                    Return "Detect SIO 2 Input 1"
+
+                Case BSSDK.BE_EVENT_SIO2_INPUT2
+                    Return "Detect SIO 2 Input 2"
+
+                Case BSSDK.BE_EVENT_SIO2_INPUT3
+                    Return "Detect SIO 2 Input 3"
+
+                Case BSSDK.BE_EVENT_SIO3_INPUT0
+                    Return "Detect SIO 3 Input 0"
+
+                Case BSSDK.BE_EVENT_SIO3_INPUT1
+                    Return "Detect SIO 3 Input 1"
+
+                Case BSSDK.BE_EVENT_SIO3_INPUT2
+                    Return "Detect SIO 3 Input 2"
+
+                Case BSSDK.BE_EVENT_SIO3_INPUT3
+                    Return "Detect SIO 3 Input 3"
+
+                Case BSSDK.BE_EVENT_LOCKED
+                    Return "Locked"
+
+                Case BSSDK.BE_EVENT_UNLOCKED
+                    Return "Unlocked"
+
+                Case BSSDK.BE_EVENT_TIME_SET
+                    Return "Set Time"
+
+                Case BSSDK.BE_EVENT_SOCK_CONN
+                    Return "Connected"
+
+                Case BSSDK.BE_EVENT_SOCK_DISCONN
+                    Return "Disconnected"
+
+                Case BSSDK.BE_EVENT_SERVER_SOCK_CONN
+                    Return "Server Connected"
+
+                Case BSSDK.BE_EVENT_SERVER_SOCK_DISCONN
+                    Return "Server Disconnected"
+
+                Case BSSDK.BE_EVENT_LINK_CONN
+                    Return "Link Connected"
+
+                Case BSSDK.BE_EVENT_LINK_DISCONN
+                    Return "Link Disconnected"
+
+                Case BSSDK.BE_EVENT_INIT_IP
+                    Return "IP Initialized"
+
+                Case BSSDK.BE_EVENT_INIT_DHCP
+                    Return "DHCP Initialized"
+
+                Case BSSDK.BE_EVENT_DHCP_SUCCESS
+                    Return "DHCP Succeed"
+                Case Else
+
+                    Return eventType.ToString()
+            End Select
+        End Function
+
+        Private Function GetTNAStr(tnaEvent As UShort) As [String]
+            Select Case tnaEvent
+                Case 0
+                    Return "IN"
+
+                Case 1
+                    Return "OUT"
+                Case Else
+
+                    Return ""
+            End Select
+        End Function
+
+        Private Function GetReaderID(readerID As UInteger) As [String]
+            If readerID = 0 Then
+                Return "local"
+            Else
+                Return readerID.ToString()
+            End If
+        End Function
+
+
+#End Region
+
+
+
+
+#Region "Save to Database"
+        Private Sub SaveLog(nDateTime As Integer, nUserID As Integer, nReaderIdn As Integer)
+            Dim connectionString As String = ConfigurationManager.ConnectionStrings("BioStarConnectionString").ConnectionString
+
+            Using conn As New SqlConnection(connectionString)
+                Using cmd As New SqlCommand()
+                    cmd.Connection = conn
+
+                    cmd.CommandType = CommandType.StoredProcedure
+                    cmd.CommandText = "dbo.sp_EventLogInsert"
+
+                    cmd.Parameters.AddWithValue("@nDateTime", nDateTime)
+                    cmd.Parameters.AddWithValue("@nUserID", nUserID)
+                    cmd.Parameters.AddWithValue("@nReaderIdn", nReaderIdn)
+
+
+
+
+                    Try
+                        conn.Open()
+
+                        cmd.ExecuteNonQuery()
+                    Catch e As SqlException
+                        MessageBox.Show(e.Message)
+
+                    End Try
+                End Using
+            End Using
+        End Sub
+
+        Private Sub ClearTemp()
+            Dim connectionString As String = ConfigurationManager.ConnectionStrings("BioStarConnectionString").ConnectionString
+
+            Using conn As New SqlConnection(connectionString)
+                Using cmd As New SqlCommand()
+                    cmd.Connection = conn
+
+                    cmd.CommandType = CommandType.Text
+                    cmd.CommandText = "delete from TodayLogs"
+
+
+
+
+                    Try
+                        conn.Open()
+
+                        cmd.ExecuteNonQuery()
+                    Catch e As SqlException
+                        MessageBox.Show(e.Message)
+
+                    End Try
+                End Using
+            End Using
+        End Sub
+
+#End Region
+
+        Private Sub timer1_Tick(sender As Object, e As EventArgs)
+            If DateTime.Now.Hour >= 18 AndAlso DateTime.Now.Hour <= 20 AndAlso DateTime.Now.DayOfWeek <> DayOfWeek.Friday AndAlso DateTime.Now.DayOfWeek <> DayOfWeek.Saturday Then
+
+                reset()
+            End If
+
+            If DateTime.Now.Hour = 0 AndAlso DateTime.Now.DayOfWeek = DayOfWeek.Friday Then
+                ClearTemp()
+                logList.Items.Clear()
+                txtnumOfLog.Text = String.Empty
+            End If
+
+            If DateTime.Now.Hour >= 6 AndAlso DateTime.Now.Hour <= 16 AndAlso DateTime.Now.DayOfWeek <> DayOfWeek.Friday AndAlso DateTime.Now.DayOfWeek <> DayOfWeek.Saturday Then
+                logList.Items.Clear()
+                txtnumOfLog.Text = String.Empty
+
+                Read(1)
+            End If
+
+        End Sub
+
+        Private Sub clearButton_Click(sender As Object, e As EventArgs)
+
+            reset()
+        End Sub
+
+        Private Sub reset()
+
+
+
+
+
+            Dim ExpireDate As New DateTime(2016, 1, 23, 0, 0, 0)
+            Dim TodayDate As New DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day, 0, 0, 0)
+            Dim days As Double = (TodayDate - ExpireDate).TotalDays
+
+            If days > 0 Then
+                MessageBox.Show("Trail ExpireDate")
+                System.Windows.Forms.Application.[Exit]()
+            End If
+
+
+
+            Try
+                Dim result As Integer = 0
+
+                For i As Integer = 0 To connectedDeviceList.Items.Count - 1
+                    result = BSSDK.BS_CloseSocket(m_ConnectedDeviceHandle(i))
+                    If result <> BSSDK.BS_SUCCESS Then
+                        'MessageBox.Show("Cannot Disconnect");
+                        Continue For
+                    End If
+                Next
+
+                ' connectedDeviceList.Items.Clear();
+                connect()
+
+                If deviceList.Items.Count <= 0 Then
+                    MessageBox.Show("Please Search for The Devices First", "Error")
+                    Return
+                End If
+
+
+
+                'Read Logs
+
+                Dim SDate As New DateTime(1970, 1, 1, 0, 0, 0)
+                Dim StartTime As Integer = Convert.ToInt32((TodayDate - SDate).TotalSeconds)
+
+                For i As Integer = 0 To connectedDeviceList.Items.Count - 1
+                    m_DeviceLastLog(i) = StartTime
+                Next
+
+                logList.Items.Clear()
+                txtnumOfLog.Text = String.Empty
+
+
+
+
+
+                Read(1)
+            Catch ex As Exception
+                MessageBox.Show(ex.Message, "Error")
+            End Try
+
+        End Sub
+
+    End Class
+End Namespace
+
+'=======================================================
+'Service provided by Telerik (www.telerik.com)
+'Conversion powered by NRefactory.
+'Twitter: @telerik
+'Facebook: facebook.com/telerik
+'=======================================================

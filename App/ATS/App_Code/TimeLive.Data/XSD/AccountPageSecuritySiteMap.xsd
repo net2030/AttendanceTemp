@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="AccountPageSecuritySiteMap" targetNamespace="http://tempuri.org/AccountPageSecuritySiteMap.xsd" xmlns:mstns="http://tempuri.org/AccountPageSecuritySiteMap.xsd" xmlns="http://tempuri.org/AccountPageSecuritySiteMap.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="LiveConnectionString" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="LiveConnectionString (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.LiveConnectionString.ConnectionString" Provider="System.Data.SqlClient">
+          </Connection>
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="vueAccountPageSecuritySiteMapTableAdapter" Name="vueAccountPageSecuritySiteMap">
+            <MainSource>
+              <DbSource ConnectionRef="LiveConnectionString (Web.config)" DbObjectName="TimeLive.dbo.vueAccountPageSecuritySiteMap" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="False" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="False">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="True">
+                    <CommandText>SELECT     Roles, AccountId, SystemSecurityCategoryPageId, SequenceNumber, Folder, SystemCategoryPage, SystemCategoryPageDescription, 
+                      ParentSystemSecurityCateogoryPageId, IsSiteMapPage, IsCustomizeable, IsAllowAdd, IsAllowEdit, IsAllowDelete, IsAllowList, IsShowDataOptions, 
+                      IsShowTillOptions, IsSystemPage, ControlLevelPermission, NotShowInPermission, SystemSecurityCategoryId, SystemSecurityCategory, ParentFolder, 
+                      ParentSystemCategoryPage, ParentSystemCategoryPageDescription, ParentIsSiteMapPage
+FROM         vueAccountPageSecuritySiteMap</CommandText>
+                    <Parameters>
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Roles" DataSetColumn="Roles" />
+              <Mapping SourceColumn="AccountId" DataSetColumn="AccountId" />
+              <Mapping SourceColumn="SystemSecurityCategoryPageId" DataSetColumn="SystemSecurityCategoryPageId" />
+              <Mapping SourceColumn="SequenceNumber" DataSetColumn="SequenceNumber" />
+              <Mapping SourceColumn="Folder" DataSetColumn="Folder" />
+              <Mapping SourceColumn="SystemCategoryPage" DataSetColumn="SystemCategoryPage" />
+              <Mapping SourceColumn="SystemCategoryPageDescription" DataSetColumn="SystemCategoryPageDescription" />
+              <Mapping SourceColumn="ParentSystemSecurityCateogoryPageId" DataSetColumn="ParentSystemSecurityCateogoryPageId" />
+              <Mapping SourceColumn="IsSiteMapPage" DataSetColumn="IsSiteMapPage" />
+              <Mapping SourceColumn="IsCustomizeable" DataSetColumn="IsCustomizeable" />
+              <Mapping SourceColumn="IsAllowAdd" DataSetColumn="IsAllowAdd" />
+              <Mapping SourceColumn="IsAllowEdit" DataSetColumn="IsAllowEdit" />
+              <Mapping SourceColumn="IsAllowDelete" DataSetColumn="IsAllowDelete" />
+              <Mapping SourceColumn="IsAllowList" DataSetColumn="IsAllowList" />
+              <Mapping SourceColumn="IsShowDataOptions" DataSetColumn="IsShowDataOptions" />
+              <Mapping SourceColumn="IsShowTillOptions" DataSetColumn="IsShowTillOptions" />
+              <Mapping SourceColumn="IsSystemPage" DataSetColumn="IsSystemPage" />
+              <Mapping SourceColumn="ControlLevelPermission" DataSetColumn="ControlLevelPermission" />
+              <Mapping SourceColumn="NotShowInPermission" DataSetColumn="NotShowInPermission" />
+              <Mapping SourceColumn="SystemSecurityCategoryId" DataSetColumn="SystemSecurityCategoryId" />
+              <Mapping SourceColumn="SystemSecurityCategory" DataSetColumn="SystemSecurityCategory" />
+              <Mapping SourceColumn="ParentFolder" DataSetColumn="ParentFolder" />
+              <Mapping SourceColumn="ParentSystemCategoryPage" DataSetColumn="ParentSystemCategoryPage" />
+              <Mapping SourceColumn="ParentSystemCategoryPageDescription" DataSetColumn="ParentSystemCategoryPageDescription" />
+              <Mapping SourceColumn="ParentIsSiteMapPage" DataSetColumn="ParentIsSiteMapPage" />
+            </Mappings>
+            <Sources>
+            </Sources>
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="SystemSecurityCategoryPageTableAdapter" Name="SystemSecurityCategoryPage">
+            <MainSource>
+              <DbSource ConnectionRef="LiveConnectionString (Web.config)" DbObjectName="TLhosted20012011.dbo.SystemSecurityCategoryPage" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="False" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="False">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="True">
+                    <CommandText>SELECT     SystemSecurityCategoryPage.SequenceNumber, SystemSecurityCategoryPage.Folder, SystemSecurityCategoryPage.SystemCategoryPage, 
+                      SystemSecurityCategoryPage.SystemCategoryPageDescription, SystemSecurityCategoryPage.ParentSystemSecurityCateogoryPageId, 
+                      SystemSecurityCategoryPage.IsSiteMapPage, SystemSecurityCategoryPage.IsCustomizeable, SystemSecurityCategoryPage.IsAllowAdd, 
+                      SystemSecurityCategoryPage.IsAllowEdit, SystemSecurityCategoryPage.IsAllowDelete, SystemSecurityCategoryPage.IsAllowList, 
+                      SystemSecurityCategoryPage.IsShowDataOptions, SystemSecurityCategoryPage.IsShowTillOptions, SystemSecurityCategoryPage.IsSystemPage, 
+                      SystemSecurityCategoryPage.ControlLevelPermission, SystemSecurityCategoryPage.NotShowInPermission, 
+                      SystemSecurityCategoryPage.SystemSecurityCategoryId, SystemSecurityCategoryPage_1.Folder AS ParentFolder, 
+                      SystemSecurityCategoryPage_1.SystemCategoryPage AS ParentSystemCategoryPage, 
+                      SystemSecurityCategoryPage_1.SystemCategoryPageDescription AS ParentSystemCategoryPageDescription, 
+                      SystemSecurityCategoryPage_1.IsSiteMapPage AS ParentIsSiteMapPage, SystemSecurityCategoryPage.SystemFeatureId, 
+                      SystemSecurityCategoryPage.SystemSecurityCategoryPageId
+FROM         SystemSecurityCategoryPage LEFT OUTER JOIN
+                      SystemSecurityCategoryPage AS SystemSecurityCategoryPage_1 ON 
+                      SystemSecurityCategoryPage.ParentSystemSecurityCateogoryPageId = SystemSecurityCategoryPage_1.SystemSecurityCategoryPageId
+WHERE     (SystemSecurityCategoryPage.IsSiteMapPage = 1) OR
+                      (SystemSecurityCategoryPage.ControlLevelPermission = 1)
+ORDER BY SystemSecurityCategoryPage.SequenceNumber</CommandText>
+                    <Parameters>
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="SystemSecurityCategoryPageId" DataSetColumn="SystemSecurityCategoryPageId" />
+              <Mapping SourceColumn="SystemSecurityCategoryId" DataSetColumn="SystemSecurityCategoryId" />
+              <Mapping SourceColumn="SequenceNumber" DataSetColumn="SequenceNumber" />
+              <Mapping SourceColumn="Folder" DataSetColumn="Folder" />
+              <Mapping SourceColumn="SystemCategoryPage" DataSetColumn="SystemCategoryPage" />
+              <Mapping SourceColumn="SystemCategoryPageDescription" DataSetColumn="SystemCategoryPageDescription" />
+              <Mapping SourceColumn="ParentSystemSecurityCateogoryPageId" DataSetColumn="ParentSystemSecurityCateogoryPageId" />
+              <Mapping SourceColumn="IsSiteMapPage" DataSetColumn="IsSiteMapPage" />
+              <Mapping SourceColumn="IsCustomizeable" DataSetColumn="IsCustomizeable" />
+              <Mapping SourceColumn="IsAllowAdd" DataSetColumn="IsAllowAdd" />
+              <Mapping SourceColumn="IsAllowEdit" DataSetColumn="IsAllowEdit" />
+              <Mapping SourceColumn="IsAllowDelete" DataSetColumn="IsAllowDelete" />
+              <Mapping SourceColumn="IsAllowList" DataSetColumn="IsAllowList" />
+              <Mapping SourceColumn="IsShowDataOptions" DataSetColumn="IsShowDataOptions" />
+              <Mapping SourceColumn="IsShowTillOptions" DataSetColumn="IsShowTillOptions" />
+              <Mapping SourceColumn="IsSystemPage" DataSetColumn="IsSystemPage" />
+              <Mapping SourceColumn="ControlLevelPermission" DataSetColumn="ControlLevelPermission" />
+              <Mapping SourceColumn="NotShowInPermission" DataSetColumn="NotShowInPermission" />
+              <Mapping SourceColumn="SystemFeatureId" DataSetColumn="SystemFeatureId" />
+              <Mapping SourceColumn="ParentFolder" DataSetColumn="ParentFolder" />
+              <Mapping SourceColumn="ParentSystemCategoryPage" DataSetColumn="ParentSystemCategoryPage" />
+              <Mapping SourceColumn="ParentSystemCategoryPageDescription" DataSetColumn="ParentSystemCategoryPageDescription" />
+              <Mapping SourceColumn="ParentIsSiteMapPage" DataSetColumn="ParentIsSiteMapPage" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="LiveConnectionString (Web.config)" DbObjectName="TLH08022011.dbo.SystemSecurityCategoryPage" DbObjectType="Table" GenerateMethods="Get" GenerateShortCommands="True" GetMethodModifier="Public" GetMethodName="GetDataBySystemSecurityCategoryPageId" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="True">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="True">
+                    <CommandText>SELECT SystemSecurityCategoryPage_1.ControlLevelPermission, SystemSecurityCategoryPage_1.Folder AS ParentFolder, SystemSecurityCategoryPage_1.IsAllowAdd, SystemSecurityCategoryPage_1.IsAllowDelete, SystemSecurityCategoryPage_1.IsAllowEdit, SystemSecurityCategoryPage_1.IsAllowList, SystemSecurityCategoryPage_1.IsCustomizeable, SystemSecurityCategoryPage_1.IsShowDataOptions, SystemSecurityCategoryPage_1.IsShowTillOptions, SystemSecurityCategoryPage_1.IsSiteMapPage AS ParentIsSiteMapPage, SystemSecurityCategoryPage_1.IsSystemPage, SystemSecurityCategoryPage_1.NotShowInPermission, SystemSecurityCategoryPage_1.ParentSystemSecurityCateogoryPageId, SystemSecurityCategoryPage_1.SequenceNumber, SystemSecurityCategoryPage_1.SystemCategoryPage AS ParentSystemCategoryPage, SystemSecurityCategoryPage_1.SystemCategoryPageDescription AS ParentSystemCategoryPageDescription, SystemSecurityCategoryPage_1.SystemFeatureId, SystemSecurityCategoryPage_1.SystemSecurityCategoryId, SystemSecurityCategoryPage_1.SystemSecurityCategoryPageId, SystemSecurityCategoryPage.Folder, SystemSecurityCategoryPage.IsSiteMapPage, SystemSecurityCategoryPage.SystemCategoryPage, SystemSecurityCategoryPage.SystemCategoryPageDescription FROM SystemSecurityCategoryPage LEFT OUTER JOIN SystemSecurityCategoryPage AS SystemSecurityCategoryPage_1 ON SystemSecurityCategoryPage.SystemSecurityCategoryPageId = SystemSecurityCategoryPage_1.SystemSecurityCategoryPageId WHERE (SystemSecurityCategoryPage.SystemSecurityCategoryPageId = @SystemSecurityCategoryPageId)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="False" AutogeneratedName="SystemSecurityCategoryPageId" ColumnName="SystemSecurityCategoryPageId" DataSourceName="TLH08022011.dbo.SystemSecurityCategoryPage" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@SystemSecurityCategoryPageId" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="Expr15" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="AccountPageSecuritySiteMap" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="vueAccountPageSecuritySiteMap">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Roles" msdata:ReadOnly="true" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AccountId" type="xs:int" />
+              <xs:element name="SystemSecurityCategoryPageId" type="xs:int" />
+              <xs:element name="SequenceNumber" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Folder">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SystemCategoryPage" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="400" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SystemCategoryPageDescription" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="400" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ParentSystemSecurityCateogoryPageId" type="xs:int" minOccurs="0" />
+              <xs:element name="IsSiteMapPage" type="xs:boolean" minOccurs="0" />
+              <xs:element name="IsCustomizeable" type="xs:boolean" minOccurs="0" />
+              <xs:element name="IsAllowAdd" type="xs:boolean" minOccurs="0" />
+              <xs:element name="IsAllowEdit" type="xs:boolean" minOccurs="0" />
+              <xs:element name="IsAllowDelete" type="xs:boolean" minOccurs="0" />
+              <xs:element name="IsAllowList" type="xs:boolean" minOccurs="0" />
+              <xs:element name="IsShowDataOptions" type="xs:boolean" minOccurs="0" />
+              <xs:element name="IsShowTillOptions" type="xs:boolean" minOccurs="0" />
+              <xs:element name="IsSystemPage" type="xs:boolean" minOccurs="0" />
+              <xs:element name="ControlLevelPermission" type="xs:boolean" minOccurs="0" />
+              <xs:element name="NotShowInPermission" type="xs:boolean" minOccurs="0" />
+              <xs:element name="SystemSecurityCategoryId" type="xs:int" />
+              <xs:element name="SystemSecurityCategory">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ParentFolder" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ParentSystemCategoryPage" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="400" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ParentSystemCategoryPageDescription" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="400" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ParentIsSiteMapPage" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SystemSecurityCategoryPage">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SystemSecurityCategoryPageId" type="xs:int" />
+              <xs:element name="SystemSecurityCategoryId" type="xs:int" />
+              <xs:element name="SequenceNumber" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Folder">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SystemCategoryPage" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SystemCategoryPageDescription" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ParentSystemSecurityCateogoryPageId" type="xs:int" minOccurs="0" />
+              <xs:element name="IsSiteMapPage" type="xs:boolean" minOccurs="0" />
+              <xs:element name="IsCustomizeable" type="xs:boolean" minOccurs="0" />
+              <xs:element name="IsAllowAdd" type="xs:boolean" minOccurs="0" />
+              <xs:element name="IsAllowEdit" type="xs:boolean" minOccurs="0" />
+              <xs:element name="IsAllowDelete" type="xs:boolean" minOccurs="0" />
+              <xs:element name="IsAllowList" type="xs:boolean" minOccurs="0" />
+              <xs:element name="IsShowDataOptions" type="xs:boolean" minOccurs="0" />
+              <xs:element name="IsShowTillOptions" type="xs:boolean" minOccurs="0" />
+              <xs:element name="IsSystemPage" type="xs:boolean" minOccurs="0" />
+              <xs:element name="ControlLevelPermission" type="xs:boolean" minOccurs="0" />
+              <xs:element name="NotShowInPermission" type="xs:boolean" minOccurs="0" />
+              <xs:element name="SystemFeatureId" msdata:DataType="System.Guid, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:string" minOccurs="0" />
+              <xs:element name="ParentFolder" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ParentSystemCategoryPage" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ParentSystemCategoryPageDescription" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ParentIsSiteMapPage" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1">
+      <xs:selector xpath=".//mstns:SystemSecurityCategoryPage" />
+      <xs:field xpath="mstns:SystemSecurityCategoryPageId" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

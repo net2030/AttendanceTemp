@@ -1,0 +1,9 @@
+<%@ Page Language="VB" MasterPageFile="~/Masters/MasterPageMobileEmployee.master" AutoEventWireup="false" CodeFile="TaskForm.aspx.vb" Inherits="Mobile_TaskForm" title="Period View" %>
+
+<%@ Register Src="Controls/ctlTaskForm.ascx" TagName="ctlTaskForm"
+    TagPrefix="uc1" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+    <uc1:ctlTaskForm ID="ctlTaskForm1"
+        runat="server" />
+</asp:Content>
+

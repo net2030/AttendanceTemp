@@ -1,0 +1,41 @@
+﻿Welcome to TrakLive!
+
+Your new OnDemand TrakLive account has been created. 
+
+TrakLive Login Information
+----------------------
+
+Login EMail    : [emailaddress]
+Password       : [password]
+Login URL      : [url]
+
+What to do next?
+----------------
+1. TrakLive is a Bug Tracking system with support of managing
+   a. Projects
+   b. Bugs
+   c. Employees
+
+2. Login to Your Account by using the login link.
+   Your login data is given above.
+
+3. With TrakLive, keep your issues organized with an easy to used interface.
+
+4. TrakLive also offers customization of work flow  to send bugs.
+
+5. TrakLive offers automatic notification and alerts.
+   
+6. Want to be informed without login on TrakLive. Just subscribe yourself for different 
+   scheduled reports which will be send to your email address automatically.
+
+We wish You a lot of success with Your new TrakLive account.
+If You have any remarks or questions feel free to contact us via e-mail anytime.
+
+Best regards,
+TrakLive Support team
+
+e-mail support@traklive.com
+
+Let's work together !
+______________________________________________________________________
+TrakLive is a service of LiveTecs.com (www.LiveTecs.com)

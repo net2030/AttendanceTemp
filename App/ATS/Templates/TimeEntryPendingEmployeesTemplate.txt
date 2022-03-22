@@ -1,0 +1,15 @@
+<html>
+<head>
+This is the current employee timesheet report for [pendingemailtype]:
+<br/>
+<br/>
+Report from [timeentrystartdate] to [timeentryenddate]
+</head>
+<br/>
+<br/>
+<body>
+[strtable]
+<br/>
+Employee reminders can be turned on or off in the [My Preferences] area. By default, the reminders system is activated when you created your TimeLive account.
+</body>
+</html>

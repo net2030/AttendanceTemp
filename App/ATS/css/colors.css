@@ -1,0 +1,22 @@
+/* Black */
+#title-bar, #access {
+	background: #A39161 url(../img/old-browsers/colors/bg_tr_highlight_glossy_th.png) repeat-x;
+	-webkit-background-size: 100% 100%;
+	-moz-background-size: 100% 100%;
+	-o-background-size: 100% 100%;
+	background-size: 100% 100%;
+	background: #008755;
+	
+}
+#title-bar2{
+	background: White repeat-x;
+}
+
+
+
+	.blue-gradient.glossy,
+	.blue-gradient.glossy > .select-value, .blue-gradient.glossy > .select-arrow {
+		
+		background: #008755;
+		color:white;
+		}

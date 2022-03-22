@@ -1,0 +1,10 @@
+[employeename]'s time off request for [startdate] - [enddate] has been approved.
+
+The information follows below:
+
+       Approved By: [approvedby]
+     Time Off Type: [timeofftype]
+          Days Off: [daysoff]
+         Hours Off: [hoursoff]
+            Status: [status]
+          Comments: [comments]

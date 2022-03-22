@@ -1,0 +1,40 @@
+Dear [firstname] [lastname]:
+
+Thank you for your interest in the TimeLive Software. We hope that our suite of web-enabled enterprise applications is a perfect fit for the needs of your organization.
+
+How to run the pre-populated TimeLive demo from our website
+-------------------------------------------------------------
+   Visit: http://www.livetecs.com
+
+   For (administrator) login, use the following:
+      UserId: demoadmin@livetecs.com 
+    Password: demo
+    
+       For (project manager) login, use the following:
+      UserId: bobbingham@livetecs.com
+    Password: bobbingham
+
+   For (simple user) login, use the following: 
+      UserId: bryanbarton@livetecs.com
+    Password: bryanbarton
+
+*** Please Note the following ***
+1. Do not enter any  personal or company-related information into this account (i.e., phone numbers, email addresses). Information that is entered will be seen by everyone that uses the demo.
+
+2. Do not enter any offensive information into this demo; please see the TimeLive "Terms of Use" document on our website.
+
+3. All information in the demo group will be removed and refreshed periodically.
+
+
+How to download TimeLive to run on your server
+------------------------------------------------
+   Visit: http://www.livetecs.com/Download.aspx
+
+
+At any time you may purchase TimeLive or use it online. Please visit our website for details.
+
+Enjoy the demo. If you have any questions or would like any additional information on the product, please contact us at 
+sales@livetecs.com.
+
+Kind Regards,
+LiveTecs Sales

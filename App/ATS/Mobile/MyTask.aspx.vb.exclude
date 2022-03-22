@@ -1,0 +1,5 @@
+
+Partial Class Mobile_MyTask
+    Inherits System.Web.UI.Page
+
+End Class

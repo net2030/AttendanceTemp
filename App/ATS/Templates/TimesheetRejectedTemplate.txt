@@ -1,0 +1,10 @@
+[employeename]'s timesheet for [timeentrydate] has been rejected.
+
+The information follows below:
+
+ Rejected By: [rejectedby]
+Project Name: [projectname]
+   Task Name: [taskname]
+  Total Time: [totaltime]
+      Status: [status]
+    Comments: [comments]

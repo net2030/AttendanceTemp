@@ -1,0 +1,45 @@
+﻿Imports System.Drawing
+Imports Telerik.Web.UI
+Imports System.Web.UI.DataVisualization.Charting
+
+Partial Class Mobile_ResponsiveRadHtmlChart
+    Inherits System.Web.UI.Page
+
+    Protected Sub form1_Load(sender As Object, e As EventArgs) Handles form1.Load
+
+        If Not IsPostBack Then
+
+          
+
+            'Chart1.Legends("Legend1").Position.Auto = False
+            'Chart1.Legends("Legend1").Position = New ElementPosition(30, 5, 100, 20)
+            Dim SDate, EDate As Date
+            Dim id As Integer
+            Try
+                SDate = DateAdd(DateInterval.Month, -1, Now.Date)
+                EDate = Now.Date
+                id = 3
+
+                SetColor()
+
+                'Chart1.DataSource = AttendanceDAL.GetAttendanceChartData(id, SDate, EDate)
+                'Chart1.DataBind()
+
+
+
+            Catch ex As Exception
+            End Try
+
+
+        End If
+
+
+    End Sub
+    Public Sub SetColor()
+
+        Dim myPalette As Color() = New Color(6) {Color.MediumSeaGreen, Color.Green, Color.Blue, Color.Yellow, Color.OrangeRed, Color.Red, Color.Orange}
+        Me.Chart1.Palette = ChartColorPalette.None
+        Me.Chart1.PaletteCustomColors = myPalette
+
+    End Sub
+End Class

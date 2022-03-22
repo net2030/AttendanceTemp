@@ -1,0 +1,13 @@
+<html>
+<head>
+Approvals are due for the following timeoff:
+</head>
+<br/>
+<br/>
+<body>
+<table border=1>
+<b>[strheader]</b>
+[strbody]
+</table>
+</body>
+</html>

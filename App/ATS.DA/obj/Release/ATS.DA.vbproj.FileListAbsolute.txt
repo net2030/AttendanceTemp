@@ -1,0 +1,56 @@
+C:\Projects\ATSQassimUniversity\MASTAM\ATS\ATS.DA\bin\Release\ATS.DA.dll
+C:\Projects\ATSQassimUniversity\MASTAM\ATS\ATS.DA\bin\Release\ATS.DA.pdb
+C:\Projects\ATSQassimUniversity\MASTAM\ATS\ATS.DA\bin\Release\ATS.DA.xml
+C:\Projects\ATSQassimUniversity\MASTAM\ATS\ATS.DA\obj\Release\ATS.DA.Resources.resources
+C:\Projects\ATSQassimUniversity\MASTAM\ATS\ATS.DA\obj\Release\ATS.DA.vbproj.GenerateResource.Cache
+C:\Projects\ATSQassimUniversity\MASTAM\ATS\ATS.DA\obj\Release\ATS.DA.dll
+C:\Projects\ATSQassimUniversity\MASTAM\ATS\ATS.DA\obj\Release\ATS.DA.xml
+C:\Projects\ATSQassimUniversity\MASTAM\ATS\ATS.DA\obj\Release\ATS.DA.pdb
+C:\Projects\Deployment\Al-Nahda\MASTAM\ATS\ATS.DA\bin\Release\ATS.DA.dll
+C:\Projects\Deployment\Al-Nahda\MASTAM\ATS\ATS.DA\bin\Release\ATS.DA.pdb
+C:\Projects\Deployment\Al-Nahda\MASTAM\ATS\ATS.DA\bin\Release\ATS.DA.xml
+C:\Projects\Deployment\Al-Nahda\MASTAM\ATS\ATS.DA\obj\Release\ATS.DA.Resources.resources
+C:\Projects\Deployment\Al-Nahda\MASTAM\ATS\ATS.DA\obj\Release\ATS.DA.vbproj.GenerateResource.Cache
+C:\Projects\Deployment\Al-Nahda\MASTAM\ATS\ATS.DA\obj\Release\ATS.DA.dll
+C:\Projects\Deployment\Al-Nahda\MASTAM\ATS\ATS.DA\obj\Release\ATS.DA.xml
+C:\Projects\Deployment\Al-Nahda\MASTAM\ATS\ATS.DA\obj\Release\ATS.DA.pdb
+C:\Projects\Attendance\ATS\ATS.DA\bin\Release\ATS.DA.dll
+C:\Projects\Attendance\ATS\ATS.DA\bin\Release\ATS.DA.pdb
+C:\Projects\Attendance\ATS\ATS.DA\bin\Release\ATS.DA.xml
+C:\Projects\Attendance\ATS\ATS.DA\obj\Release\ATS.DA.Resources.resources
+C:\Projects\Attendance\ATS\ATS.DA\obj\Release\ATS.DA.vbproj.GenerateResource.Cache
+C:\Projects\Attendance\ATS\ATS.DA\obj\Release\ATS.DA.dll
+C:\Projects\Attendance\ATS\ATS.DA\obj\Release\ATS.DA.xml
+C:\Projects\Attendance\ATS\ATS.DA\obj\Release\ATS.DA.pdb
+C:\Projects\Attendance -MOH  FULL\ATS\ATS.DA\bin\Release\ATS.DA.dll
+C:\Projects\Attendance -MOH  FULL\ATS\ATS.DA\bin\Release\ATS.DA.pdb
+C:\Projects\Attendance -MOH  FULL\ATS\ATS.DA\bin\Release\ATS.DA.xml
+C:\Projects\Attendance -MOH  FULL\ATS\ATS.DA\obj\Release\ATS.DA.Resources.resources
+C:\Projects\Attendance -MOH  FULL\ATS\ATS.DA\obj\Release\ATS.DA.vbproj.GenerateResource.Cache
+C:\Projects\Attendance -MOH  FULL\ATS\ATS.DA\obj\Release\ATS.DA.dll
+C:\Projects\Attendance -MOH  FULL\ATS\ATS.DA\obj\Release\ATS.DA.xml
+C:\Projects\Attendance -MOH  FULL\ATS\ATS.DA\obj\Release\ATS.DA.pdb
+C:\Projects\Attendance MOH FULL Multi-Lang\MASTAM\ATS\ATS.DA\bin\Release\ATS.DA.dll
+C:\Projects\Attendance MOH FULL Multi-Lang\MASTAM\ATS\ATS.DA\bin\Release\ATS.DA.pdb
+C:\Projects\Attendance MOH FULL Multi-Lang\MASTAM\ATS\ATS.DA\bin\Release\ATS.DA.xml
+C:\Projects\Attendance MOH FULL Multi-Lang\MASTAM\ATS\ATS.DA\obj\Release\ATS.DA.Resources.resources
+C:\Projects\Attendance MOH FULL Multi-Lang\MASTAM\ATS\ATS.DA\obj\Release\ATS.DA.vbproj.GenerateResource.Cache
+C:\Projects\Attendance MOH FULL Multi-Lang\MASTAM\ATS\ATS.DA\obj\Release\ATS.DA.dll
+C:\Projects\Attendance MOH FULL Multi-Lang\MASTAM\ATS\ATS.DA\obj\Release\ATS.DA.xml
+C:\Projects\Attendance MOH FULL Multi-Lang\MASTAM\ATS\ATS.DA\obj\Release\ATS.DA.pdb
+C:\Projects\Attendance MOH Tender Copy\MASTAM\ATS\ATS.DA\bin\Release\ATS.DA.dll
+C:\Projects\Attendance MOH Tender Copy\MASTAM\ATS\ATS.DA\bin\Release\ATS.DA.pdb
+C:\Projects\Attendance MOH Tender Copy\MASTAM\ATS\ATS.DA\bin\Release\ATS.DA.xml
+C:\Projects\Attendance MOH Tender Copy\MASTAM\ATS\ATS.DA\obj\Release\ATS.DA.Resources.resources
+C:\Projects\Attendance MOH Tender Copy\MASTAM\ATS\ATS.DA\obj\Release\ATS.DA.vbproj.GenerateResource.Cache
+C:\Projects\Attendance MOH Tender Copy\MASTAM\ATS\ATS.DA\obj\Release\ATS.DA.dll
+C:\Projects\Attendance MOH Tender Copy\MASTAM\ATS\ATS.DA\obj\Release\ATS.DA.xml
+C:\Projects\Attendance MOH Tender Copy\MASTAM\ATS\ATS.DA\obj\Release\ATS.DA.pdb
+C:\Projects\Attendance MOH FULL Copy\MASTAM\ATS\ATS.DA\bin\Release\ATS.DA.dll
+C:\Projects\Attendance MOH FULL Copy\MASTAM\ATS\ATS.DA\bin\Release\ATS.DA.pdb
+C:\Projects\Attendance MOH FULL Copy\MASTAM\ATS\ATS.DA\bin\Release\ATS.DA.xml
+C:\Projects\Attendance MOH FULL Copy\MASTAM\ATS\ATS.DA\obj\Release\ATS.DA.Resources.resources
+C:\Projects\Attendance MOH FULL Copy\MASTAM\ATS\ATS.DA\obj\Release\ATS.DA.vbproj.GenerateResource.Cache
+C:\Projects\Attendance MOH FULL Copy\MASTAM\ATS\ATS.DA\obj\Release\ATS.DA.dll
+C:\Projects\Attendance MOH FULL Copy\MASTAM\ATS\ATS.DA\obj\Release\ATS.DA.xml
+C:\Projects\Attendance MOH FULL Copy\MASTAM\ATS\ATS.DA\obj\Release\ATS.DA.pdb

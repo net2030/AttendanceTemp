@@ -1,0 +1,33 @@
+<html>
+<head>
+This is the current employee timesheet report:
+<br/>
+<br/>
+Report from [timeentrystartdate] to [timeentryenddate]
+</head>
+<br/>
+<br/>
+<body>
+<table border=1 width=100%>
+<tr>
+<td>
+</td>
+<b>[strworkingday]</b>
+<td width=200px align="center" style="background:#EFEFEF">
+<b>Total</b>
+</td>
+</tr>
+<tr>
+<td>
+<b>[employeename]</b>
+</td>
+[strtotalminutes]
+<td width=200px align="center" style="background:#EFEFEF">
+<b>[strtotal]</b>
+</td>
+</tr>
+</table>
+<br/>
+Employee reminders can be turned on or off in the [My Preferences] area. By default, the reminders system is activated when you created your TimeLive account.
+</body>
+</html>

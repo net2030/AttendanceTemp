@@ -1,0 +1,1660 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>C1.Web.C1Input.2</name>
+    </assembly>
+    <members>
+        <member name="T:C1.Web.C1Input.C1WebDateEdit">
+            <summary>
+            Web control specialized for editing the date and time. 
+            C1WebDateEdit control renders a date editor.
+            </summary>
+        </member>
+        <member name="T:C1.Web.C1Input.C1WebMaskEdit">
+            <summary>
+            The main Web control used for entering and editing information 
+            of any data type in a text form. Supports data formatting, 
+            edit mask, data validation and other features. 
+            Supports formatted and masked editing of all data types, 
+            including additional functionality. 
+            Apart from being the main data editor control, 
+            C1WebMaskEdit also serves as the base class for specialized 
+            controls such as C1WebDateEdit and C1WebNumericEdit.
+            </summary>    
+        </member>
+        <member name="T:C1.Web.C1Input.Common.C1WebInputBase">
+            <summary>
+            Base abstract class for all C1WebInput controls
+            </summary>
+        </member>
+        <member name="M:C1.Web.C1Input.Common.C1WebInputBase.#ctor">
+            <summary>
+            Creates an instance of C1WebInputBase class
+            </summary>
+        </member>
+        <member name="M:C1.Web.C1Input.Common.C1WebInputBase.OnInit(System.EventArgs)">
+            <summary>
+            Occurs when the server control is initialized, which is the 
+            first step in its lifecycle.
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:C1.Web.C1Input.Common.C1WebInputBase.OnPreRender(System.EventArgs)">
+            <summary>
+             Raises when the server control is about to be rendered on its containing page
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:C1.Web.C1Input.Common.C1WebInputBase.GetCallingAssembly">
+            <summary>
+            For internal use only.
+            </summary>
+            <returns>A reference to the calling <see cref="T:System.Reflection.Assembly"/>.</returns>
+        </member>
+        <member name="M:C1.Web.C1Input.Common.C1WebInputBase.GetCultureInfoScriptBlockText">
+            <summary>
+            Returns client script text for client Culture initialization
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:C1.Web.C1Input.Common.C1WebInputBase.ResolveResourceClientUrl(System.String)">
+            <summary>
+            Resolve Resource Client Url for using in browser
+            </summary>
+            <param name="url"></param>
+            <returns></returns>
+        </member>
+        <member name="M:C1.Web.C1Input.Common.C1WebInputBase.LoadViewState(System.Object)">
+            <summary>
+            LoadViewState
+            </summary>
+            <param name="state"></param>
+        </member>
+        <member name="M:C1.Web.C1Input.Common.C1WebInputBase.SaveViewState">
+            <summary>
+            This member overrides Control.SaveViewState.
+            </summary>
+        </member>
+        <member name="M:C1.Web.C1Input.Common.C1WebInputBase.TrackViewState">
+            <summary>
+            This member overrides Control.TrackViewState.
+            </summary>
+        </member>
+        <member name="M:C1.Web.C1Input.Common.C1WebInputBase.OnPropertyChanging(System.String,System.Object)">
+            <summary>
+            Occurs when property begin changing. 
+            Property changing can be aborted by returning false
+            </summary>
+            <param name="propName"></param>
+            <param name="oldValue"></param>
+            <returns>if true changing of property will be aborted without any prompts</returns>
+        </member>
+        <member name="M:C1.Web.C1Input.Common.C1WebInputBase.OnPropertyChanged(System.String,System.Object)">
+            <summary>
+            Occurs when the property has changed.
+            </summary>
+            <param name="propName"></param>
+            <param name="newValue"></param>
+        </member>
+        <member name="E:C1.Web.C1Input.Common.C1WebInputBase.TextChanged">
+            <summary>
+            TextChanged event. Fired when the text was changed.
+            </summary>
+        </member>
+        <member name="P:C1.Web.C1Input.Common.C1WebInputBase.ViewStateFieldID">
+            <summary>
+            Gets ID of field used to store postback data
+            </summary>
+        </member>
+        <member name="P:C1.Web.C1Input.Common.C1WebInputBase.ClientObjectID">
+            <summary>
+            Gets ID of the client side object associated with the control.
+            </summary>
+            <remarks>
+            Example of accessing client object from javascript: 
+            window[\"C1WebMaskEdit1Obj\"].get_Text();
+            <para>
+            <b>Note</b> ClientObjectID that equals ClientID can cause error 
+            when control is working in Atlas UpdatePanel 
+            </para>
+            </remarks>
+        </member>
+        <member name="P:C1.Web.C1Input.Common.C1WebInputBase.ID">
+            <summary>
+            Gets or sets the programmatic identifier assigned to the server control.
+            </summary>
+        </member>
+        <member name="P:C1.Web.C1Input.Common.C1WebInputBase.ClientID">
+            <summary>
+            Server control identifier generated by ASP.NET.
+            </summary>
+        </member>
+        <member name="P:C1.Web.C1Input.Common.C1WebInputBase.Text">
+            <summary>
+            Text property.
+            </summary>
+        </member>
+        <member name="P:C1.Web.C1Input.Common.C1WebInputBase.TextAlign">
+            <summary>
+            Alignment of text in the input box.
+            </summary>
+        </member>
+        <member name="P:C1.Web.C1Input.Common.C1WebInputBase.CellSpacing">
+            <summary>
+            Spacing between the border and buttons. 
+            </summary>
+        </member>
+        <member name="P:C1.Web.C1Input.Common.C1WebInputBase.Culture">
+            <summary>
+            CultureInfo object. Each culture has different conventions 
+            for displaying dates, time, numbers, currency, and other 
+            information. Neutrals cultures are not supported.
+            </summary>
+        </member>
+        <member name="P:C1.Web.C1Input.Common.C1WebInputBase.HideEnter">
+            <summary>
+            If true then disable browser response on the ENTER key.
+            </summary>
+        </member>
+        <member name="P:C1.Web.C1Input.Common.C1WebInputBase.CustomButtonAlign">
+            <summary>
+            Visibility and display position of the custom button.
+            </summary>
+        </member>
+        <member name="P:C1.Web.C1Input.Common.C1WebInputBase.UpDownAlign">
+            <summary>
+            Visibility and display position of the Up/Down buttons.
+            </summary>
+        </member>
+        <member name="P:C1.Web.C1Input.Common.C1WebInputBase.UpDownStyle">
+            <summary>
+            Style for the Up/Down buttons.
+            </summary>
+        </member>
+        <member name="P:C1.Web.C1Input.Common.C1WebInputBase.CustomButtonStyle">
+            <summary>
+            Style for the custom button.
+            </summary>
+        </member>
+        <member name="P:C1.Web.C1Input.Common.C1WebInputBase.OnClientBlur">
+            <summary>
+            Fires when the control loses the input focus.
+            </summary>
+        </member>
+        <member name="P:C1.Web.C1Input.Common.C1WebInputBase.OnClientFocus">
+            <summary>
+            Fires when the control receives focus.
+            </summary>
+        </member>
+        <member name="P:C1.Web.C1Input.Common.C1WebInputBase.OnClientInit">
+            <summary>
+            Fires when the control is initialized.
+            </summary>
+        </member>
+        <member name="P:C1.Web.C1Input.Common.C1WebInputBase.OnClientInvalidInput">
+            <summary>
+            Invalid input event.
+            </summary>
+        </member>
+        <member name="P:C1.Web.C1Input.Common.C1WebInputBase.OnClientTextChanged">
+            <summary>
+            Text changed event.
+            </summary>
+        </member>
+        <member name="P:C1.Web.C1Input.Common.C1WebInputBase.OnClientKeyDown">
+            <summary>
+            Fires when the user presses a key.
+            </summary>
+        </member>
+        <member name="P:C1.Web.C1Input.Common.C1WebInputBase.OnClientKeyPress">
+            <summary>
+            Fires when the user presses an alphanumeric key.
+            </summary>
+        </member>
+        <member name="P:C1.Web.C1Input.Common.C1WebInputBase.OnClientKeyUp">
+            <summary>
+            Fires when the user releases a key.
+            </summary>
+        </member>
+        <member name="P:C1.Web.C1Input.Common.C1WebInputBase.OnClientMouseDown">
+            <summary>
+            Fires when the user clicks the control with either mouse button. 
+            </summary>
+        </member>
+        <member name="P:C1.Web.C1Input.Common.C1WebInputBase.OnClientMouseUp">
+            <summary>
+            Fires when the user releases a mouse button while the mouse is over the control.
+            </summary>
+        </member>
+        <member name="P:C1.Web.C1Input.Common.C1WebInputBase.OnClientMouseOver">
+            <summary>
+            Fires when the user moves the mouse pointer into the control.
+            </summary>
+        </member>
+        <member name="P:C1.Web.C1Input.Common.C1WebInputBase.OnClientMouseOut">
+            <summary>
+            Fires when the user moves the mouse pointer outside the boundaries of the control. 
+            </summary>
+        </member>
+        <member name="P:C1.Web.C1Input.Common.C1WebInputBase.OnClientCustomButtonClick">
+            <summary>
+            Fires when the user clicks the custom button.
+            </summary>
+        </member>
+        <member name="M:C1.Web.C1Input.C1WebMaskEdit.#ctor">
+            <summary>
+            C1WebMaskEdit constructor
+            </summary>
+        </member>
+        <member name="M:C1.Web.C1Input.C1WebMaskEdit.updateMaskedTextProvider">
+            <summary>
+            Update Masked Text provider with current control's properties
+            </summary>
+        </member>
+        <member name="M:C1.Web.C1Input.C1WebMaskEdit.OnInit(System.EventArgs)">
+            <summary>
+            Occurs when the server control is initialized
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:C1.Web.C1Input.C1WebMaskEdit.LoadControlState(System.Object)">
+            <summary>
+            LoadControlState
+            </summary>
+            <param name="savedState"></param>
+        </member>
+        <member name="M:C1.Web.C1Input.C1WebMaskEdit.SaveControlState">
+            <summary>
+            SaveControlState
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:C1.Web.C1Input.C1WebMaskEdit.GetControlState">
+            <summary>
+            Creates an object that contains properties saved in control state
+            </summary>
+            <returns>Object representing persisted control state</returns>
+        </member>
+        <member name="M:C1.Web.C1Input.C1WebMaskEdit.SetControlState(System.Object)">
+            <summary>
+            Loads the control properties saved in control state
+            </summary>
+            <param name="savedState">object containing persisted control state</param>
+        </member>
+        <member name="M:C1.Web.C1Input.C1WebMaskEdit.GetControlStyleString">
+            <summary>
+            Returns string for use in style="...." 
+            This style string includes the width and height of the control. 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:C1.Web.C1Input.C1WebMaskEdit.GetStyleForInputTag">
+            <summary>
+            Get style string for input tag what locates in table container
+            including calculated Width, BackColor, Font
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:C1.Web.C1Input.C1WebMaskEdit.Render(System.Web.UI.HtmlTextWriter)">
+            <summary>
+            Render the control.
+            </summary>
+            <param name="writer"></param>
+        </member>
+        <member name="M:C1.Web.C1Input.C1WebMaskEdit.OnPreRender(System.EventArgs)">
+            <summary>
+            OnPreRender. 
+            Register client script.
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="P:C1.Web.C1Input.C1WebMaskEdit.AllowPromptAsInput">
+             <summary>
+              Gets or sets a value indicating whether PromptChar
+              can be entered as valid data by the user.
+             </summary>
+            <remarks>
+             Even when <b>AllowPromptAsInput</b> is true, the prompt character 
+             must be valid for the current location in the mask in order 
+             to be accepted. For example, if PromptChar is "*", and the 
+             current location in the mask demands the user enter a digit, 
+             entering an asterisk (*) will fail. 
+            </remarks>
+        </member>
+        <member name="P:C1.Web.C1Input.C1WebMaskEdit.Mask">
+            <summary>
+            Gets or sets the input mask to use at run time. Mask must be a 
+            string composed of one or more of the masking elements, 
+            enumeration parts, or numeric ranges.
+            </summary>
+        </member>
+        <member name="P:C1.Web.C1Input.C1WebMaskEdit.HidePromptOnLeave">
+            <summary>
+            Gets or sets a value indicating whether the prompt characters 
+            in the input mask are hidden when the C1WebMaskEdit 
+            loses focus. 
+            </summary>
+        </member>
+        <member name="P:C1.Web.C1Input.C1WebMaskEdit.PasswordChar">
+            <summary>
+            Gets or sets the character to be substituted for the actual input characters.
+            </summary>
+            <remarks>Mask property must be non-empty for the PasswordChar property 
+            to take effect. Another option is to set UseSystemPasswordChar, 
+            which will show all displayable characters as password chars.</remarks>
+        </member>
+        <member name="P:C1.Web.C1Input.C1WebMaskEdit.UseSystemPasswordChar">
+            <summary>
+            Indicates if the displayable text in the control should appear as the 
+            default password character.
+            </summary>
+        </member>
+        <member name="P:C1.Web.C1Input.C1WebMaskEdit.PromptChar">
+            <summary>
+            Gets or sets the character used to represent the absence of 
+            user input in the control.
+            </summary>
+        </member>
+        <member name="P:C1.Web.C1Input.C1WebMaskEdit.ResetOnPrompt">
+            <summary>
+            Gets or sets a value that determines how an input character that matches the prompt character should be handled.
+            </summary>
+            <remarks>
+            Returns true if the prompt character entered as input causes the current editable
+            position in the mask to be reset; otherwise, false to indicate that the prompt
+            character is to be processed as a normal input character. The default is
+            true.
+            </remarks>
+        </member>
+        <member name="P:C1.Web.C1Input.C1WebMaskEdit.ResetOnSpace">
+            
+             <summary>
+             Gets or sets a value that determines how a space input 
+             character should be handled.
+             </summary>
+             <remarks> 
+             Returns true if the space input character causes the current editable position in
+                 the mask to be reset; otherwise, false to indicate that it is to be processed
+                 as a normal input character. The default is true.
+             </remarks>
+        </member>
+        <member name="P:C1.Web.C1Input.C1WebMaskEdit.ShowHintForEnumParts">
+            <summary>
+            Specifies whether to show hint with list of available 
+            enumeration values for enumeration parts in mask. 
+            </summary>
+        </member>
+        <member name="P:C1.Web.C1Input.C1WebMaskEdit.SkipLiterals">
+            <summary>
+            Gets or sets a value indicating whether the user is allowed to reenter literal
+            values.
+            </summary>
+            <remarks>
+            Returns true to allow literals to be reentered; otherwise, 
+            false to prevent the user from overwriting literal characters. 
+            The default is true.
+            </remarks>        
+        </member>
+        <member name="P:C1.Web.C1Input.C1WebMaskEdit.Text">
+            <summary>
+            Gets or sets the text as it is currently displayed to the user.
+            </summary>
+            <remarks>Returns text without any prompts and literals.</remarks>
+        </member>
+        <member name="P:C1.Web.C1Input.C1WebMaskEdit.TextWithPrompts">
+            <summary>
+            Gets the text input by the user as well as any instances of 
+            the prompt character.
+            </summary>
+        </member>
+        <member name="P:C1.Web.C1Input.C1WebMaskEdit.TextWithPromptAndLiterals">
+            <summary>
+            Gets the text input by the user as well as any literal 
+            characters defined in the mask and any instances of the 
+            prompt character.
+            </summary>
+        </member>
+        <member name="P:C1.Web.C1Input.C1WebMaskEdit.TextWithLiterals">
+            <summary>
+            Gets the text input by the user as well as any literal 
+            characters defined in the mask.
+            </summary>        
+        </member>
+        <member name="P:C1.Web.C1Input.C1WebMaskEdit.InvalidInputColor">
+            <summary>
+            Gets or sets the color used to identify invalid input. 
+            </summary>
+            <remarks>Property omitted if Color is Empty. 
+            Default value is Empty.</remarks>
+        </member>
+        <member name="M:C1.Web.C1Input.C1WebDateEdit.#ctor">
+            <summary>
+            Constructor of C1DateEdit
+            </summary>
+        </member>
+        <member name="M:C1.Web.C1Input.C1WebDateEdit.OnPreRender(System.EventArgs)">
+            <summary>
+            Register client scripts before render
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="E:C1.Web.C1Input.C1WebDateEdit.DateChanged">
+            <summary>
+            DateChanged event. Fired when the Date was changed. 
+            </summary>
+        </member>
+        <member name="P:C1.Web.C1Input.C1WebDateEdit.DateFormat">
+            <summary>
+            Date format pattern.
+            </summary>
+        </member>
+        <member name="P:C1.Web.C1Input.C1WebDateEdit.DateFormatResultPattern">
+            <summary>
+            Resulting Date format pattern.
+            </summary>
+        </member>
+        <member name="P:C1.Web.C1Input.C1WebDateEdit.Date">
+            <summary>
+            Gets or sets the DateTime value.
+            </summary>
+        </member>
+        <member name="P:C1.Web.C1Input.C1WebDateEdit.Text">
+            <summary>
+            Text representation of date value
+            </summary>
+        </member>
+        <member name="P:C1.Web.C1Input.C1WebDateEdit.UpDownAlign">
+            <summary>
+            Alignment of UpDown buttons
+            </summary>
+            <remarks>Default alignment for date editors is Right</remarks>
+        </member>
+        <member name="P:C1.Web.C1Input.C1WebDateEdit.Mask">
+            <summary>
+            Overridden. This property is hidden in date editors.
+            </summary>
+        </member>
+        <member name="P:C1.Web.C1Input.C1WebDateEdit.AllowPromptAsInput">
+            <summary>
+            Overridden. This property is hidden in date editors. 
+            </summary>
+        </member>
+        <member name="P:C1.Web.C1Input.C1WebDateEdit.HidePromptOnLeave">
+            <summary>
+            Overridden. This property is hidden in date editors.
+            </summary>
+        </member>
+        <member name="P:C1.Web.C1Input.C1WebDateEdit.PasswordChar">
+            <summary>
+            Overridden. This property is hidden in date editors.
+            </summary>
+        </member>
+        <member name="P:C1.Web.C1Input.C1WebDateEdit.PromptChar">
+            <summary>
+            Overridden. This property is hidden in date editors.
+            </summary>
+        </member>
+        <member name="P:C1.Web.C1Input.C1WebDateEdit.ResetOnPrompt">
+            <summary>
+            Overridden. This property is hidden in date editors.
+            </summary>
+        </member>
+        <member name="P:C1.Web.C1Input.C1WebDateEdit.ResetOnSpace">
+            <summary>
+            Overridden. This property is hidden in date editors.
+            </summary>
+        </member>
+        <member name="P:C1.Web.C1Input.C1WebDateEdit.ShowHintForEnumParts">
+            <summary>
+            Overridden. This property is hidden in date editors.
+            </summary>
+        </member>
+        <member name="P:C1.Web.C1Input.C1WebDateEdit.SkipLiterals">
+            <summary>
+            Overridden. This property is hidden in date editors.
+            </summary>
+        </member>
+        <member name="T:C1.Web.C1Input.ButtonsDisplayPosition">
+            <summary>
+            Buttons Display Position.
+            </summary>
+        </member>
+        <member name="F:C1.Web.C1Input.ButtonsDisplayPosition.None">
+            <summary>
+            Indicates what buttons are not visible
+            </summary>
+        </member>
+        <member name="F:C1.Web.C1Input.ButtonsDisplayPosition.Right">
+            <summary>
+            Show buttons at right
+            </summary>
+        </member>
+        <member name="F:C1.Web.C1Input.ButtonsDisplayPosition.Left">
+            <summary>
+            Show buttons at left
+            </summary>
+        </member>
+        <member name="T:C1.Web.C1Input.ClientSideEventArgumentsAttribute">
+            <summary>
+            ClientSideEventArgumentsAttribute
+            </summary>
+        </member>
+        <member name="M:C1.Web.C1Input.ClientSideEventArgumentsAttribute.#ctor(System.String)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="args"></param>
+        </member>
+        <member name="P:C1.Web.C1Input.ClientSideEventArgumentsAttribute.Arguments">
+            <summary>
+            Event Arguments
+            </summary>
+        </member>
+        <member name="P:C1.Web.C1Input.Common.Constants.Buttons_BackColor_Default">
+            <summary>
+            Buttons_BackColor_Default
+            </summary>
+        </member>
+        <member name="P:C1.Web.C1Input.Common.Constants.Buttons_BackColor_Hover_Default">
+            <summary>
+            Buttons_BackColor_Hover_Default
+            </summary>
+        </member>
+        <member name="P:C1.Web.C1Input.Common.Constants.Buttons_BorderColor_Default">
+            <summary>
+            Buttons_BorderColor_Default
+            </summary>
+        </member>
+        <member name="T:C1.Web.C1Input.Common.DesignerWorker">
+            <summary>
+            DesignerWorker class.
+            Contains methods to work with IDE
+            </summary>
+        </member>
+        <member name="M:C1.Web.C1Input.Common.DesignerWorker.#ctor(C1.Web.C1Input.Design.C1WebInputDesigner)">
+            <summary>
+            constructor
+            </summary>
+            <param name="designer"></param>
+        </member>
+        <member name="M:C1.Web.C1Input.Common.DesignerWorker.AddScriptBlockToDocument(System.String)">
+            <summary>
+            AddScriptBlockToDocument
+            </summary>
+            <param name="block"></param>
+        </member>
+        <member name="M:C1.Web.C1Input.Common.DesignerWorker.GetActiveDocumentPath(System.IServiceProvider)">
+            <summary>
+            Returns path of active document
+            </summary>
+            <param name="provider"></param>
+            <returns></returns>
+        </member>
+        <member name="M:C1.Web.C1Input.Common.DesignerWorker.GetDesignerWorker(C1.Web.C1Input.Design.C1WebInputDesigner,System.Web.UI.Design.WebFormsReferenceManager)">
+            <summary>
+            Get DesignerWorker
+            </summary>
+            <param name="designer"></param>
+            <param name="manager"></param>
+            <returns></returns>
+        </member>
+        <member name="M:C1.Web.C1Input.Common.DesignerWorker.GetScriptNodes">
+            <summary>
+            GetScriptNodes
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:C1.Web.C1Input.Common.DesignerWorker.SwitchToHtmlViewAndSelectFunction(System.IServiceProvider,System.String,System.String)">
+            <summary>
+            SwitchToHtmlViewAndSelectFunction
+            </summary>
+            <param name="provider"></param>
+            <param name="function"></param>
+            <param name="comment"></param>
+        </member>
+        <member name="T:C1.Web.C1Input.Design.ClientEventPropertyEditor">
+            <summary>
+            Property editor for client events.
+            </summary>
+        </member>
+        <member name="M:C1.Web.C1Input.Design.ClientEventPropertyEditor.#ctor">
+            <summary>
+            Construcror.
+            </summary>
+        </member>
+        <member name="M:C1.Web.C1Input.Design.ClientEventPropertyEditor.EditValue(System.ComponentModel.ITypeDescriptorContext,System.IServiceProvider,System.Object)">
+            <summary>
+            EditValue
+            </summary>
+            <param name="context"></param>
+            <param name="provider"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:C1.Web.C1Input.Design.ClientEventPropertyEditor.FindInCComment(System.String,System.Int32)">
+            <summary>
+            Find text in C style comment starting index
+            </summary>
+            <param name="text"></param>
+            <param name="index"></param>
+            <returns></returns>
+        </member>
+        <member name="M:C1.Web.C1Input.Design.ClientEventPropertyEditor.FindInNestedFunction(System.String,System.Int32)">
+            <summary>
+            Find text in nested function
+            </summary>
+            <param name="text"></param>
+            <param name="index"></param>
+            <returns></returns>
+        </member>
+        <member name="M:C1.Web.C1Input.Design.ClientEventPropertyEditor.FindInQuotes(System.String,System.Int32)">
+            <summary>
+            Find text in quotes
+            </summary>
+            <param name="text"></param>
+            <param name="index"></param>
+            <returns></returns>
+        </member>
+        <member name="M:C1.Web.C1Input.Design.ClientEventPropertyEditor.FindInSlashComment(System.String,System.Int32)">
+            <summary>
+            Find text in slash comment
+            </summary>
+            <param name="text"></param>
+            <param name="index"></param>
+            <returns></returns>
+        </member>
+        <member name="M:C1.Web.C1Input.Design.ClientEventPropertyEditor.GetDesigner(System.ComponentModel.ITypeDescriptorContext,System.ComponentModel.Design.IDesignerHost)">
+            <summary>
+            Get designer
+            </summary>
+            <param name="context"></param>
+            <param name="host"></param>
+            <returns></returns>
+        </member>
+        <member name="M:C1.Web.C1Input.Design.ClientEventPropertyEditor.GetEditStyle(System.ComponentModel.ITypeDescriptorContext)">
+            <summary>
+            GetEditStyle
+            </summary>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:C1.Web.C1Input.Design.ClientEventPropertyEditor.ListBox_Click(System.Object,System.EventArgs)">
+            <summary>
+            ListBox_Click
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:C1.Web.C1Input.Design.ClientEventPropertyEditor.ListBox_MouseMove(System.Object,System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            ListBox_MouseMove
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:C1.Web.C1Input.Design.ClientEventPropertyEditor.SwitchToHtmlView">
+            <summary>
+            SwitchToHtmlView
+            </summary>
+        </member>
+        <member name="T:C1.Web.C1Input.EnumPartType">
+            <summary>
+            Type of enum part
+            </summary>
+        </member>
+        <member name="T:C1.Web.C1Input.C1MaskedTextProvider">
+            <summary>
+            C1MaskedTextProvider. Custom wraper for MaskedTextProvider.
+            </summary>
+        </member>
+        <member name="M:C1.Web.C1Input.C1MaskedTextProvider.GetResultingMaskForStandardMaskedTextBox(System.String,System.Globalization.CultureInfo)">
+            <summary>
+            Returns mask without custom parts(such as enumeration parts)
+            </summary>
+            <param name="aMask"></param>
+            <param name="aCultureInfo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:C1.Web.C1Input.C1MaskedTextProvider.ApplyFormatToEnumValue(System.String,System.Int32,C1.Web.C1Input.EnumPartType)">
+            <summary>
+            ApplyFormatToEnumValue
+            </summary>
+            <param name="sEnumValue"></param>
+            <param name="aMaxLen"></param>
+            <param name="aEnumType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:C1.Web.C1Input.C1MaskedTextProvider.GetDefaultValueForEnumArray(System.String[],C1.Web.C1Input.EnumPartType)">
+            <summary>
+            Get and returns formated default value for enumeration part
+            </summary>
+            <param name="arr"></param>
+            <param name="aEnumType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:C1.Web.C1Input.C1MaskedTextProvider.ParseEnumerationParts(System.String)">
+            <summary>
+            Preparse mask for enumeration parts:
+            </summary>
+            <param name="mask"></param>
+            <returns></returns>
+        </member>
+        <member name="T:C1.Web.C1Input.Design.PredefinedStylesEnum">
+            <summary>
+            Predefined styles enumeration used in AutoFormat.
+            </summary>
+        </member>
+        <member name="F:C1.Web.C1Input.Design.PredefinedStylesEnum.Default">
+            <summary>
+            Default style.
+            </summary>
+        </member>
+        <member name="F:C1.Web.C1Input.Design.PredefinedStylesEnum.WindowsXPBlue">
+            <summary>
+            Windows XP Blue style.
+            </summary>
+        </member>
+        <member name="F:C1.Web.C1Input.Design.PredefinedStylesEnum.WindowsXPOlive">
+            <summary>
+            Windows XP Olive style.
+            </summary>
+        </member>
+        <member name="F:C1.Web.C1Input.Design.PredefinedStylesEnum.WindowsXPSilver">
+            <summary>
+            Windows XP Silver style.
+            </summary>
+        </member>
+        <member name="F:C1.Web.C1Input.Design.PredefinedStylesEnum.Windows2000">
+            <summary>
+            Windows 2000 style.
+            </summary>
+        </member>
+        <member name="F:C1.Web.C1Input.Design.PredefinedStylesEnum.Office2003Blue">
+            <summary>
+            Office 2003 Blue style.
+            </summary>
+        </member>
+        <member name="F:C1.Web.C1Input.Design.PredefinedStylesEnum.Office2003Olive">
+            <summary>
+            Office 2003 Olive style
+            </summary>
+        </member>
+        <member name="F:C1.Web.C1Input.Design.PredefinedStylesEnum.Office2003Silver">
+            <summary>
+            Office 2003 Silver style.
+            </summary>
+        </member>
+        <member name="F:C1.Design.C1InputMaskPicker.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:C1.Design.C1InputMaskPicker.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:C1.Design.C1InputMaskPicker.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:C1.Design.C1InputMaskPickerForm.c1InputMaskPicker1_Load(System.Object,System.EventArgs)">
+            <summary>
+            Gets or sets a value indicating whether the underlying datasource should be updated with the literals in the mask.
+            </summary>
+        </member>
+        <member name="F:C1.Design.C1InputMaskPickerForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:C1.Design.C1InputMaskPickerForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:C1.Design.C1InputMaskPickerForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="P:C1.Design.C1InputMaskPickerForm.EditMask">
+            <summary>
+            Gets or sets the mask
+            </summary>
+        </member>
+        <member name="T:C1.Design.C1InputMaskUITypeEditor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:C1.Design.C1InputMaskUITypeEditor.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:C1.Design.C1InputMaskUITypeEditor.GetEditStyle(System.ComponentModel.ITypeDescriptorContext)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:C1.Design.C1InputMaskUITypeEditor.EditValue(System.ComponentModel.ITypeDescriptorContext,System.IServiceProvider,System.Object)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+            <param name="provider"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:C1.Web.C1Input.Design.DesignerForm.SetInspectedComponent(System.ComponentModel.IComponent,System.Web.UI.Design.ControlDesigner)">
+            <summary>
+            Set inspected component for designer
+            </summary>
+            <param name="Component"></param>
+            <param name="aControlDesigner"></param>
+        </member>
+        <member name="F:C1.Web.C1Input.Design.DesignerForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:C1.Web.C1Input.Design.DesignerForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:C1.Web.C1Input.Design.DesignerForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="P:C1.Web.C1Input.Design.DesignerForm.EditMask">
+            <summary>
+            Gets or sets the mask
+            </summary>
+        </member>
+        <member name="T:C1.Web.C1Input.Design.C1WebInputDesigner">
+            <summary>
+            Designer for C1WebInput controls
+            </summary>
+        </member>
+        <member name="M:C1.Web.C1Input.Design.C1WebInputDesigner.GetDesignTimeHtml">
+            <summary>
+            Returns HTML what used in Visual Studio IDE
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:C1.Web.C1Input.Design.C1WebInputDesigner.ActionLists">
+            <summary>
+            Returns DesignerActionListCollection collection with smart tags.
+            </summary>
+        </member>
+        <member name="P:C1.Web.C1Input.Design.C1WebInputDesigner.AutoFormats">
+            <summary>
+            AutoFormats.
+            </summary>
+        </member>
+        <member name="T:C1.Web.C1Input.Design.DesignerSmartTags">
+            <summary>
+            Designer smart tags for Masked Edit control
+            </summary>
+        </member>
+        <member name="M:C1.Web.C1Input.Design.DesignerSmartTags.#ctor(System.ComponentModel.IComponent,System.Web.UI.Design.ControlDesigner)">
+            <summary>
+            constructor
+            </summary>
+            <param name="Component"></param>
+            <param name="aControlDesigner"></param>
+        </member>
+        <member name="M:C1.Web.C1Input.Design.DesignerSmartTags.GetSortedActionItems">
+            <summary>
+            Returns collection of smart tags actions
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:C1.Web.C1Input.Design.TextPropertyEditor">
+            <summary>
+            Text Property editor
+            </summary>
+        </member>
+        <member name="M:C1.Web.C1Input.Design.TextPropertyEditor.EditValue(System.ComponentModel.ITypeDescriptorContext,System.IServiceProvider,System.Object)">
+            <summary>
+            Edits the value of the specified object using the editor.
+            </summary>
+            <param name="context"></param>
+            <param name="provider"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:C1.Web.C1Input.Common.ResourcesWorker.GetClientResourceFullName(System.String)">
+            <summary>
+            GetClientResourceFullName
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:C1.Web.C1Input.Common.ResourcesWorker.findResourceName(System.String)">
+            <summary>
+            Find full path to resource by short name
+            </summary>
+            <param name="aResourceShortName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:C1.Web.C1Input.Common.ResourcesWorker.getJSIncludesTextForComponent(System.Object)">
+            <summary>
+            Get javascript includes text by control type
+            </summary>
+            <param name="Component"></param>
+            <returns></returns>
+        </member>
+        <member name="M:C1.Web.C1Input.Common.ResourcesWorker.getResourceTextData(System.String)">
+            <summary>
+            Get Resource Text value
+            </summary>
+            <param name="sResourceName">Full path to resource in assembly</param>
+            <returns></returns>
+        </member>
+        <member name="T:C1.Web.C1Input.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:C1.Web.C1Input.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:C1.Web.C1Input.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="T:C1.Util.DLL2XSD.IntellisenseAttribute">
+            <summary>
+            Specifies whether the IntellisenseGenerator should generate intellisense symbols for a type or member.
+            </summary>
+        </member>
+        <member name="F:C1.Util.DLL2XSD.IntellisenseAttribute.Yes">
+            <summary>
+            Specifies that intellisense symbols should be generated for the type or property to which
+            this attribute is applied.
+            </summary>
+        </member>
+        <member name="F:C1.Util.DLL2XSD.IntellisenseAttribute.No">
+            <summary>
+            Specifies that intellisense symbols should <b>not</b> be generated for the type or property to which
+            this attribute is applied.
+            </summary>
+        </member>
+        <member name="M:C1.Util.DLL2XSD.IntellisenseAttribute.#ctor">
+            <summary>
+            Initializes a new instance of this attribute with
+            fields set to their default values.
+            </summary>
+        </member>
+        <member name="M:C1.Util.DLL2XSD.IntellisenseAttribute.#ctor(System.Boolean)">
+            <summary>
+            Initializes a new instance of this attribute.
+            </summary>
+            <param name="needsIntellisense">
+            Indicates whether intellisense symbols should be d for the type
+            or property to which this attribute is applied.
+            </param>
+        </member>
+        <member name="M:C1.Util.DLL2XSD.IntellisenseAttribute.#ctor(C1.Util.DLL2XSD.IntellisenseAttribute)">
+            <summary>
+            Initializes a new instance of this attribute with a static
+            instance of the attribute.
+            </summary>
+            <param name="intellisense">
+            An <b>IntellisenseAttribute</b> whose fields should be used to instantiante
+            a new <b>IntellisenseAttribute</b>.
+            </param>
+        </member>
+        <member name="M:C1.Util.DLL2XSD.IntellisenseAttribute.IsDefaultAttribute">
+            <summary>
+            Returns a value indicating whether this attribute is an instance
+            that is set to the default value.
+            </summary>
+            <returns><b>true</b> if <b>NeedsIntellisense</b> returns false. <b>false</b> otherwise.</returns>
+        </member>
+        <member name="M:C1.Util.DLL2XSD.IntellisenseAttribute.Match(System.Object)">
+            <summary>
+            Returns a value indicating whether this attribute is equivalent to another one.
+            </summary>
+            <remarks>
+            This attribute determines equivalency by comparing the <code>NeedsIntellisense</code> properties
+            of both attributes. If the properties are equal, this method returns true.
+            If <code>obj</code> is null, this method returns false.
+            </remarks>
+            <param name="obj">An <b>Object</b> instance to compare with this <b>IntellisenseAttribute</b></param>
+            <returns><b>true</b> if this attribute's instance equals <code>obj</code>. <b>false</b> otherwise.</returns>
+        </member>
+        <member name="P:C1.Util.DLL2XSD.IntellisenseAttribute.NeedsIntelliense">
+            <summary>
+            Gets a value indicating whether intellisense symbols should be
+            generated for the type or property to which this attribute is applied.
+            </summary>
+        </member>
+        <member name="P:C1.Util.DLL2XSD.IntellisenseAttribute.TopLevel">
+            <summary>
+            Gets or sets a value indicating whether a type should be persisted as
+            a top-level element in the intellisense schema.
+            </summary>
+        </member>
+        <member name="P:C1.Util.DLL2XSD.IntellisenseAttribute.TypeId">
+            <summary>
+            Returns a unique identifier for this attribute via <b>GetHashCode()</b>.
+            </summary>
+        </member>
+        <member name="M:C1.Win.AboutForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:C1.Win.LicensingForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:C1.Util.Localization.C1DescriptionAttribute">
+            <summary>
+            ------------------------------------------------------------------------
+            C1DescriptionAttribute replaces the DescriptionAttribute
+            and uses the C1Localizer class to return the localized Attribute string
+            </summary>
+        </member>
+        <member name="T:C1.Util.Localization.C1CategoryAttribute">
+            <summary>
+            ------------------------------------------------------------------------
+            C1CategoryAttribute replaces the CategoryAttribute
+            and uses the C1Localizer class to return the localized Attribute string
+            </summary>
+        </member>
+        <member name="T:C1.Util.Localization.C1Localizer">
+            <summary>
+            ------------------------------------------------------------------------
+            C1Localizer contains static methods to load and look up resources
+            </summary>
+        </member>
+        <member name="T:C1.Web.C1Input.C1WebCurrencyEdit">
+            <summary>
+            Web control specialized for editing currency values. 
+            Using the numeric editor, you can specify input without 
+            writing any custom validation logic in your application
+            </summary>
+        </member>
+        <member name="T:C1.Web.C1Input.C1WebNumericEdit">
+            <summary>
+            Web control specialized for editing numeric values. 
+            Using the numeric editor, you can specify input without 
+            writing any custom validation logic in your application.
+            </summary>
+        </member>
+        <member name="M:C1.Web.C1Input.C1WebNumericEdit.#ctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="M:C1.Web.C1Input.C1WebNumericEdit.OnPreRender(System.EventArgs)">
+            <summary>
+            Register client scripts before render.
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="E:C1.Web.C1Input.C1WebNumericEdit.ValueChanged">
+            <summary>
+            ValueChanged event. Fired when the value was changed.
+            </summary>
+        </member>
+        <member name="P:C1.Web.C1Input.C1WebNumericEdit.MinValue">
+            <summary>
+            Minimum value that can be entered.
+            </summary>
+        </member>
+        <member name="P:C1.Web.C1Input.C1WebNumericEdit.MaxValue">
+            <summary>
+            Maximum value that can be entered.
+            </summary>
+        </member>
+        <member name="P:C1.Web.C1Input.C1WebNumericEdit.Text">
+            <summary>
+            Text representation of numeric value
+            </summary>
+        </member>
+        <member name="P:C1.Web.C1Input.C1WebNumericEdit.Value">
+            <summary>
+            Numeric Value.
+            </summary>
+        </member>
+        <member name="P:C1.Web.C1Input.C1WebNumericEdit.DecimalPlaces">
+            <summary>
+            Indicates the number of decimal places to display
+            </summary>
+        </member>
+        <member name="P:C1.Web.C1Input.C1WebNumericEdit.ThousandsSeparator">
+            <summary>
+            Indicates whether the thousands group separator will be 
+            inserted between every three decimal digits 
+            (number of digits in thousands group depends on the 
+            selected Culture).
+            </summary>
+        </member>
+        <member name="P:C1.Web.C1Input.C1WebNumericEdit.TextAlign">
+            <summary>
+            Alignment of Text
+            </summary>
+        </member>
+        <member name="P:C1.Web.C1Input.C1WebNumericEdit.UpDownAlign">
+            <summary>
+            Alignment of UpDown button
+            </summary>
+        </member>
+        <member name="P:C1.Web.C1Input.C1WebNumericEdit.Mask">
+            <summary>
+            This property not used in numeric controls
+            </summary>
+        </member>
+        <member name="P:C1.Web.C1Input.C1WebNumericEdit.AllowPromptAsInput">
+            <summary>
+            This property not used in numeric controls
+            </summary>
+        </member>
+        <member name="P:C1.Web.C1Input.C1WebNumericEdit.HidePromptOnLeave">
+            <summary>
+            This property not used in numeric controls
+            </summary>
+        </member>
+        <member name="P:C1.Web.C1Input.C1WebNumericEdit.PasswordChar">
+            <summary>
+            This property not used in numeric controls
+            </summary>
+        </member>
+        <member name="P:C1.Web.C1Input.C1WebNumericEdit.PromptChar">
+            <summary>
+            This property not used in numeric controls
+            </summary>
+        </member>
+        <member name="P:C1.Web.C1Input.C1WebNumericEdit.ResetOnPrompt">
+            <summary>
+            This property not used in numeric controls
+            </summary>
+        </member>
+        <member name="P:C1.Web.C1Input.C1WebNumericEdit.ResetOnSpace">
+            <summary>
+            This property not used in numeric controls
+            </summary>
+        </member>
+        <member name="P:C1.Web.C1Input.C1WebNumericEdit.ShowHintForEnumParts">
+            <summary>
+            This property not used in numeric controls
+            </summary>
+        </member>
+        <member name="P:C1.Web.C1Input.C1WebNumericEdit.SkipLiterals">
+            <summary>
+            This property not used in numeric controls
+            </summary>
+        </member>
+        <member name="M:C1.Web.C1Input.C1WebCurrencyEdit.#ctor">
+            <summary>
+            C1WebCurrencyEdit constructor
+            </summary>
+        </member>
+        <member name="M:C1.Web.C1Input.C1NumericToStringFormat.formatDegits(System.Double,System.String,System.String,System.Int32,System.Int32[])">
+            <summary>
+            Format degits, add groups separators, decimal separator, decimals
+            </summary>
+            <param name="value"></param>
+            <param name="aGroupSeparator"></param>
+            <param name="aDecimalSeparator"></param>
+            <param name="aDecimalDegitsCount">-1 means autosize</param>
+            <param name="aGroupSizes"></param>
+            <returns></returns>
+        </member>
+        <member name="T:C1.Web.C1Input.C1NumericControlType">
+            <summary>
+            Type of object that is used to get and set the <tt>Value</tt> 
+            property by C1WebNumericEdit control.
+            </summary>
+        </member>
+        <member name="T:C1.Web.C1Input.C1WebPercentEdit">
+            <summary>
+            Web control derived from C1WebNumericEdit specialized for 
+            editing percent values. 
+            Using the numeric editor, you can specify input without 
+            writing any custom validation logic in your application.
+            </summary>
+        </member>
+        <member name="M:C1.Web.C1Input.C1WebPercentEdit.#ctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="T:C1.Web.C1Input.Common.BorderStyleConverter">
+            <summary>
+            Provides a unified way of converting string to System.Web.UI.WebControls.BorderStyle type
+            </summary>
+        </member>
+        <member name="M:C1.Web.C1Input.Common.BorderStyleConverter.CanConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Type)">
+            <summary>
+            Can Convert convert from type.
+            </summary>
+            <param name="context"></param>
+            <param name="sourceType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:C1.Web.C1Input.Common.BorderStyleConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)">
+            <summary>
+            Convert string to BorderStyle.
+            </summary>
+            <param name="context"></param>
+            <param name="culture"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="T:C1.Web.C1Input.Common.C1CustomButtonStyle">
+            <summary>
+            Style for the custom button.
+            </summary>
+        </member>
+        <member name="M:C1.Web.C1Input.Common.C1CustomButtonStyle.#ctor">
+            <summary>
+            Constructor. Initializes a new instance of the C1CutomButtonStyle class.
+            </summary>
+        </member>
+        <member name="M:C1.Web.C1Input.Common.C1CustomButtonStyle.#ctor(System.Object)">
+            <summary>
+            Constructor. Initializes a new instance of the C1CutomButtonStyle class
+            </summary>
+            <param name="owner">The object to which the C1CutomButtonStyle object belongs.</param>
+        </member>
+        <member name="M:C1.Web.C1Input.Common.C1CustomButtonStyle.#ctor(System.Web.UI.WebControls.WebControl)">
+            <summary>
+            C1CustomButtonStyle Constructor
+            </summary>
+            <param name="owner"></param>
+        </member>
+        <member name="M:C1.Web.C1Input.Common.C1CustomButtonStyle.ToString">
+            <summary>
+            ToString
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:C1.Web.C1Input.Common.C1CustomButtonStyle.ButtonWidth">
+            <summary>
+            Button width.
+            </summary>
+        </member>
+        <member name="P:C1.Web.C1Input.Common.C1CustomButtonStyle.ButtonStyle">
+            <summary>
+            Style of the custom button.
+            </summary>
+        </member>
+        <member name="P:C1.Web.C1Input.Common.C1CustomButtonStyle.ButtonStyleHover">
+            <summary>
+            Hover style of the custom button.
+            </summary>
+        </member>
+        <member name="P:C1.Web.C1Input.Common.C1CustomButtonStyle.ButtonStylePressed">
+            <summary>
+            Style of the pressed custom button.
+            </summary>
+        </member>
+        <member name="P:C1.Web.C1Input.Common.C1CustomButtonStyle.ViewState">
+            <summary>
+            ViewState
+            </summary>
+        </member>
+        <member name="T:C1.Web.C1Input.Common.C1SpinButtonsStyle">
+            <summary>
+            Style for UpDown buttons.
+            </summary>
+        </member>
+        <member name="M:C1.Web.C1Input.Common.C1SpinButtonsStyle.#ctor">
+            <summary>
+            Constructor. Initializes a new instance of the C1SpinButtonsStyle class.
+            </summary>
+        </member>
+        <member name="M:C1.Web.C1Input.Common.C1SpinButtonsStyle.#ctor(System.Object)">
+            <summary>
+            Constructor. Initializes a new instance of the C1SpinButtonsStyle class
+            </summary>
+            <param name="owner">The object to which the C1SpinButtonsStyle object belongs.</param>
+        </member>
+        <member name="M:C1.Web.C1Input.Common.C1SpinButtonsStyle.#ctor(System.Web.UI.WebControls.WebControl)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="owner"></param>
+        </member>
+        <member name="M:C1.Web.C1Input.Common.C1SpinButtonsStyle.ToString">
+            <summary>
+            ToString
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:C1.Web.C1Input.Common.C1SpinButtonsStyle.ButtonWidth">
+            <summary>
+            Button width.
+            </summary>
+        </member>
+        <member name="P:C1.Web.C1Input.Common.C1SpinButtonsStyle.ButtonStyleUp">
+            <summary>
+            Style of the Up button.
+            </summary>
+        </member>
+        <member name="P:C1.Web.C1Input.Common.C1SpinButtonsStyle.ButtonStyleUpHover">
+            <summary>
+            Hover style of the Up button.
+            </summary>
+        </member>
+        <member name="P:C1.Web.C1Input.Common.C1SpinButtonsStyle.ButtonStyleUpPressed">
+            <summary>
+            Pressed style of the Up button.
+            </summary>
+        </member>
+        <member name="P:C1.Web.C1Input.Common.C1SpinButtonsStyle.ButtonStyleDown">
+            <summary>
+            Style of the Down button.
+            </summary>
+        </member>
+        <member name="P:C1.Web.C1Input.Common.C1SpinButtonsStyle.ButtonStyleDownHover">
+            <summary>
+            Hover style of the Down button.
+            </summary>
+        </member>
+        <member name="P:C1.Web.C1Input.Common.C1SpinButtonsStyle.ButtonStyleDownPressed">
+            <summary>
+            Pressed style of the Down button.
+            </summary>
+        </member>
+        <member name="P:C1.Web.C1Input.Common.C1SpinButtonsStyle.ViewState">
+            <summary>
+            ViewState
+            </summary>
+        </member>
+        <member name="T:C1.Web.C1Input.Common.C1TextAlign">
+            <summary>
+            Text Alignment
+            </summary>
+        </member>
+        <member name="F:C1.Web.C1Input.Common.C1TextAlign.NotSet">
+            <summary>
+            Not set
+            </summary>
+        </member>
+        <member name="F:C1.Web.C1Input.Common.C1TextAlign.Left">
+            <summary>
+            Align to Left
+            </summary>
+        </member>
+        <member name="F:C1.Web.C1Input.Common.C1TextAlign.Center">
+            <summary>
+            Align to Center
+            </summary>
+        </member>
+        <member name="F:C1.Web.C1Input.Common.C1TextAlign.Right">
+            <summary>
+            Align to Right
+            </summary>
+        </member>
+        <member name="F:C1.Web.C1Input.Common.C1TextAlign.Justify">
+            <summary>
+            Justify Alignment
+            </summary>
+        </member>
+        <member name="T:C1.Web.C1Input.Common.C1TextAlignConverter">
+            <summary>
+            Provides a unified way of converting string to C1TextAlign type.
+            </summary>
+        </member>
+        <member name="M:C1.Web.C1Input.Common.C1TextAlignConverter.CanConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Type)">
+            <summary>
+            Can convert convert from type.
+            </summary>
+            <param name="context"></param>
+            <param name="sourceType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:C1.Web.C1Input.Common.C1TextAlignConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)">
+            <summary>
+            Convert string to C1TextAlign type.
+            </summary>
+            <param name="context"></param>
+            <param name="culture"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="T:C1.Web.C1Input.Common.C1VisualStyleInformation">
+            <summary>Provides information about the current visual style of the operating system.</summary>
+        </member>
+        <member name="P:C1.Web.C1Input.Common.C1VisualStyleInformation.IsEnabledByUser">
+            <summary>Gets a value indicating whether the user has enabled visual styles in the operating system.</summary>
+            <returns>true if the user has enabled visual styles in an operating system that supports them; otherwise, false.</returns>
+        </member>
+        <member name="P:C1.Web.C1Input.Common.C1VisualStyleInformation.IsSupportedByOS">
+            <summary>Gets a value indicating whether the operating system supports visual styles.</summary>
+            <returns>true if the operating system supports visual styles; otherwise, false.</returns>
+        </member>
+        <member name="P:C1.Web.C1Input.Common.C1VisualStyleInformation.TextControlBackColor">
+            <summary>
+            TextControlBackColor. Tested
+            </summary>
+        </member>
+        <member name="P:C1.Web.C1Input.Common.C1VisualStyleInformation.TextControlBorderColor">
+            <summary>
+            TextControlBorderColor. Tested
+            </summary>
+        </member>
+        <member name="P:C1.Web.C1Input.Common.C1VisualStyleInformation.TextControlButtonsBackColor">
+            <summary>
+            TextControlButtonsBackColor. Tested.
+            </summary>
+        </member>
+        <member name="P:C1.Web.C1Input.Common.C1VisualStyleInformation.TextControlButtonsHoverColor">
+            <summary>
+            TextControlButtonsHoverColor. Tested
+            </summary>
+        </member>
+        <member name="P:C1.Web.C1Input.Common.C1VisualStyleInformation.TextControlButtonsPressedColor">
+            <summary>
+            TextControlButtonsPressedColor. Tested
+            </summary>
+        </member>
+        <member name="P:C1.Web.C1Input.Common.C1VisualStyleInformation.TextControlButtonsBorderColor">
+            <summary>
+            TextControlButtonsBorderColor. Tested.
+            </summary>
+        </member>
+        <member name="T:C1.Web.C1Input.Common.C1TextChangedEventHandler">
+            <summary>
+            TextChanged Event Handler
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="T:C1.Web.C1Input.Common.C1DateChangedEventHandler">
+            <summary>
+            DateChanged Event Handler
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="T:C1.Web.C1Input.Common.C1ValueChangedEventHandler">
+            <summary>
+            Value Changed Event Handler
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="T:C1.Web.C1Input.Common.C1ButtonStyle">
+            <summary>
+            Button style.
+            </summary>
+        </member>
+        <member name="M:C1.Web.C1Input.Common.C1ButtonStyle.#ctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="M:C1.Web.C1Input.Common.C1ButtonStyle.#ctor(System.Object)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="owner"></param>
+        </member>
+        <member name="M:C1.Web.C1Input.Common.C1ButtonStyle.GetStyleStringForTdTag(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="aButtonState">0 - normal, 1 - hover, 2 - pressed</param>
+            <returns></returns>
+        </member>
+        <member name="M:C1.Web.C1Input.Common.C1ButtonStyle.ToString">
+            <summary>
+            ToString
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:C1.Web.C1Input.Common.C1ButtonStyle.CreateBackup">
+            <summary>
+            Create Backup of properties
+            </summary>
+        </member>
+        <member name="P:C1.Web.C1Input.Common.C1ButtonStyle.ImageUrl">
+            <summary>
+            URL to image.
+            </summary>
+        </member>
+        <member name="P:C1.Web.C1Input.Common.C1ButtonStyle.BackColor">
+            <summary>
+            Background color.
+            </summary>
+        </member>
+        <member name="P:C1.Web.C1Input.Common.C1ButtonStyle.BorderColor">
+            <summary>
+            Border color.
+            </summary>
+        </member>
+        <member name="P:C1.Web.C1Input.Common.C1ButtonStyle.BorderStyle">
+            <summary>
+            Border style.
+            </summary>
+        </member>
+        <member name="P:C1.Web.C1Input.Common.C1ButtonStyle.BorderWidth">
+            <summary>
+            Border width.
+            </summary>
+        </member>
+        <member name="P:C1.Web.C1Input.Common.C1ButtonStyle.ViewState">
+            <summary>
+            ViewState
+            </summary>
+        </member>
+        <member name="F:C1.Web.C1Input.Design.Editors.C1AutoFormatEditor.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:C1.Web.C1Input.Design.Editors.C1AutoFormatEditor.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:C1.Web.C1Input.Design.Editors.C1AutoFormatEditor.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:C1.Web.C1Input.Design.Editors.C1Designer.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:C1.Web.C1Input.Design.Editors.C1Designer.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:C1.Web.C1Input.Design.Editors.C1Designer.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:C1.Web.C1Input.Design.Editors.C1PreviewerPanel.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:C1.Web.C1Input.Design.Editors.C1PreviewerPanel.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:C1.Web.C1Input.Design.Editors.C1PreviewerPanel.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:C1.Web.C1Input.Design.Editors.C1PropertiesEditor.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:C1.Web.C1Input.Design.Editors.C1PropertiesEditor.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:C1.Web.C1Input.Design.Editors.C1PropertiesEditor.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:C1.Web.C1Input.Design.Editors.C1DateFormatPresetsEditor.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:C1.Web.C1Input.Design.Editors.C1DateFormatPresetsEditor.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:C1.Web.C1Input.Design.Editors.C1DateFormatPresetsEditor.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:C1.Util.Localization.StringTables">
+            <summary>
+            StringTables
+            this class contains a single static method InitTables that populates the
+            tables used by the Localizer class.
+            </summary>
+        </member>
+    </members>
+</doc>

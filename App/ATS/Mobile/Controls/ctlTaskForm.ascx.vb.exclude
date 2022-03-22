@@ -1,0 +1,160 @@
+Imports Telerik.Web.UI
+Imports System.Web.UI.WebControls
+Imports System
+
+Partial Class Task_Controls_ctlTaskForm
+    Inherits System.Web.UI.UserControl
+    Public WithEvents oListBox As RadListBox
+    Public ListControlValues As Hashtable
+    Protected Sub Page_Load(sender As Object, e As EventArgs) Handles Me.Load
+
+        If Not Me.IsPostBack Then
+            BindTask()
+
+
+        End If
+
+    End Sub
+
+    
+    Public Sub BindTask()
+
+        listAssignedTo.DataSource = dsEmployees
+        Me.listAssignedTo.DataBind()
+
+        Dim TaskId As Integer
+        Dim ProjectId As Integer
+        If Not Me.Request.QueryString("TaskId") Then
+            TaskId = Me.Request.QueryString("TaskId")
+        End If
+
+        If Not Me.Request.QueryString("ProjectId") Then
+            ProjectId = Me.Request.QueryString("ProjectId")
+            ddlparents.DataSource = TaskDAL.GetTasksList(ProjectId)
+        End If
+
+        Dim dt As DataTable = TaskDAL.GetTaskById(TaskId)
+
+        If Not IsNothing(dt) AndAlso dt.Rows.Count > 0 Then
+            btnAdd.Text = "Update"
+
+            Dim dr As DataRow = dt.Rows(0)
+
+            If Not IsDBNull(dr.Item("TaskId")) Then
+                Me.TaskId.Text = dr("TaskId")
+            End If
+
+           
+
+            If Not IsDBNull(dr.Item("ProjectId")) Then
+
+                Me.ddlProjects.SelectedValue = dr("ProjectId")
+            End If
+
+            If Not IsDBNull(dr.Item("IsParentTask")) Then
+                Me.CheckBox1.Checked = dr("IsParentTask")
+            End If
+
+            If Not IsDBNull(dr.Item("ParentTask")) Then
+                'ddlparents.DataSource = TaskDAL.GetTasksList(dr.Item("ProjectId"))
+                'ddlparents.DataBind()
+                Me.ddlparents.SelectedValue = dr("ParentTask")
+            End If
+
+            If Not IsDBNull(dr.Item("Descr")) Then
+                Me.Description.Text = dr("Descr")
+            End If
+
+
+            Dim dt1 As DataTable = TaskDAL.GetEmployeesByTask(dr.Item("TaskId"))
+            ListControlValues = New Hashtable
+            For Each row As DataRow In dt1.Rows
+                For Each item1 As RadListBoxItem In listAssignedTo.Items
+
+                    If row("AccountEmployeeId") = item1.Value Then
+                        item1.Selected = True
+                        ListControlValues.Add(CStr(row("AccountEmployeeId")), row("AccountEmployeeId"))
+                    End If
+
+                Next
+            Next
+
+
+
+
+
+            If Not IsDBNull(dr.Item("DueDate")) Then
+                Me.DueDate.SelectedDate = dr("DueDate")
+            End If
+
+            If Not IsDBNull(dr.Item("StatusId")) Then
+                Me.ddlStatus.SelectedValue = dr("StatusId")
+            End If
+
+            If Not IsDBNull(dr.Item("CompletedPercentage")) Then
+                Me.CompletedPercentage.Text = dr("CompletedPercentage")
+            End If
+        Else
+            listAssignedTo.DataSource = dsEmployees
+            Me.listAssignedTo.DataBind()
+            Exit Sub
+        End If
+        Me.ViewState.Add("ListViewControl", ListControlValues)
+    End Sub
+
+
+
+
+
+
+  
+
+    Protected Sub btnSave_Click(sender As Object, e As EventArgs) Handles btnAdd.Click
+        Dim obj As Task = New Task
+
+        Me.ListControlValues = Me.ViewState("ListViewControl")
+
+        obj.ProjectId = ddlProjects.SelectedValue
+        
+        obj.Descr = Description.Text
+        obj.IsParentTask = CheckBox1.Checked
+        obj.DueDate = DueDate.SelectedDate
+        obj.StatusId = ddlStatus.SelectedValue
+        obj.CompletedPercentage = CompletedPercentage.Value
+        obj.AssignedBy = Session("AccountEmployeeId")
+        obj.UserId = Session("AccountEmployeeId")
+
+        If ddlparents.SelectedValue <> "" Then
+            obj.ParentTask = ddlparents.SelectedValue
+        End If
+        If btnAdd.Text = "Save" Then
+            Dim Id As Integer = TaskDAL.AddTask(obj)
+            If Id <> 0 Then
+
+                For Each s As RadListBoxItem In Me.listAssignedTo.Items
+                    If s.Selected Then
+                        TaskDAL.AddTaskEmployee(Id, s.Value)
+                    End If
+                Next
+            End If
+        Else
+            obj.TaskId = TaskId.Text
+            TaskDAL.UpdateTask(obj)
+            Dim l As RadListBox = Me.listAssignedTo
+            For Each s As RadListBoxItem In l.Items
+                If s.Selected And Not ListControlValues.ContainsKey(s.Value) Then
+                    TaskDAL.AddTaskEmployee(TaskId.Text, s.Value)
+                ElseIf s.Selected = False And ListControlValues.ContainsKey(s.Value) Then
+                    TaskDAL.DeleteTaskEmployee(TaskId.Text, s.Value)
+                End If
+            Next
+        End If
+        Response.Redirect("mytask.aspx")
+
+    End Sub
+
+    Protected Sub ddlProjects_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ddlProjects.SelectedIndexChanged
+        ddlparents.DataSource = TaskDAL.GetTasksList(ddlProjects.SelectedValue)
+        ddlparents.DataBind()
+    End Sub
+End Class

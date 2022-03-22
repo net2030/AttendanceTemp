@@ -1,0 +1,130 @@
+<%--
+Default skin template. The following skins are provided as examples only.
+
+1. Named control skin. The SkinId should be uniquely defined because
+   duplicate SkinId's per control type are not allowed in the same theme.
+
+<asp:GridView runat="server" SkinId="gridviewSkin" BackColor="White" >
+   <AlternatingRowStyle BackColor="Blue" />
+</asp:GridView>
+
+2. Default skin. The SkinId is not defined. Only one default 
+   control skin per control type is allowed in the same theme.
+
+<asp:Image runat="server" ImageUrl="~/images/image1.jpg" />
+--%>
+
+<%@ Register Assembly="eWorld.UI, Version=2.0.6.2393, Culture=neutral, PublicKeyToken=24D65337282035F2"
+    Namespace="eWorld.UI" TagPrefix="ew" %>
+<%@ Register Assembly="eWorld.UI"
+    Namespace="eWorld.UI" TagPrefix="ew" %>
+
+<%@ Register Namespace="ControlExtenders" TagPrefix="x"  %>
+<%@ Register Namespace="ControlExtenders" TagPrefix="t"  %>
+
+<asp:GridView runat="server" SkinId="gridviewSkinEmployee"   AllowSorting=true  BackColor="White" BorderColor="White" BorderStyle="None" BorderWidth="1px" CellPadding="4" GridLines="Vertical"  Font-Italic="False" Font-Names="tahoma" Font-Size="11px" ForeColor="#505050" Font-Bold="False"  CssClass="TableView">
+    <FooterStyle BackColor="#CCCCCC" />
+    <RowStyle BackColor="#efeff1" height="30px" />
+    <SelectedRowStyle BackColor="#CE5D5A"  ForeColor="White" />
+    <PagerStyle BackColor="#F7F7DE" ForeColor="Black" HorizontalAlign="Right" />
+    <HeaderStyle BackColor="#fff0c6" Font-Bold="True" ForeColor="#505050" BorderColor="Black" BorderStyle="Solid" BorderWidth="1px" HorizontalAlign="Center" VerticalAlign="Middle" />
+    <AlternatingRowStyle BackColor="White" />
+</asp:GridView>
+
+<x:GridView runat="server" CellPadding="0" CellSpacing="0" AllowPaging=true  SkinId="xgridviewSkinEmployee" AllowSorting=true GridLines="Vertical" CssClass="xGridView">
+    <FooterStyle BackColor="#efeff1" />
+    <RowStyle  CssClass="row" Height="0px" />
+    <SelectedRowStyle BackColor="#d6dadf"  ForeColor="White" />
+    <PagerStyle  HorizontalAlign="Right" />
+    <HeaderStyle />
+    <AlternatingRowStyle CssClass="altrow" Height="0px" />
+</x:GridView>
+
+<x:GridView runat="server" CellPadding="0" CellSpacing="0" SkinId="xgridviewSkinTimesheet"   AllowSorting=true  GridLines="Vertical"   CssClass="xGridView">
+    <FooterStyle BackColor="#efeff1" />
+    <RowStyle  CssClass="row" Height="18px"  />
+    <SelectedRowStyle BackColor="#d6dadf"  ForeColor="White" />
+    <PagerStyle  HorizontalAlign="Right" />
+    <HeaderStyle />
+    <AlternatingRowStyle CssClass="altrow" Height="18px" />
+</x:GridView>
+
+<asp:GridView runat="server" CellPadding="0"  AllowPaging=true  SkinId="tgridviewSkinEmployee"   AllowSorting=true  GridLines="Vertical"   CssClass="GridViewTS">
+    <FooterStyle BackColor="#efeff1" />
+    <RowStyle  CssClass="row" Height="18px" />
+    <SelectedRowStyle BackColor="#d6dadf"  ForeColor="White" />
+    <PagerStyle  HorizontalAlign="Right" />
+    <HeaderStyle />
+    <AlternatingRowStyle CssClass="altrow" Height="18px" />
+</asp:GridView>
+
+<asp:GridView runat="server" CellPadding="0" CellSpacing="0" SkinId="tgridviewSkinTimesheet"   AllowSorting=true  GridLines="Vertical"   CssClass="GridViewTS">
+    <FooterStyle BackColor="#efeff1" />
+    <RowStyle  CssClass="row" Height="18px"  />
+    <SelectedRowStyle BackColor="#d6dadf"  ForeColor="White" />
+    <PagerStyle  HorizontalAlign="Right" />
+    <HeaderStyle />
+    <AlternatingRowStyle CssClass="altrow" Height="18px" />
+</asp:GridView>
+
+<asp:ImageButton runat="server" SkinID="GridEditButton" 
+	AlternateText="Edit" 
+	ImageUrl="~/images/edit.gif"/>
+<asp:ImageButton runat="server" SkinID="GridDeleteButton" 
+	AlternateText="Delete" 
+	ImageUrl="~/images/btn_delete.gif" />
+
+
+<asp:GridView runat="server" SkinId="gridviewSkinEmployeeSummary"   BackColor="White" BorderColor="White" BorderStyle="None" BorderWidth="1px" CellPadding="4" GridLines="Vertical"  Font-Italic="False" Font-Names="tahoma" Font-Size="11px" ForeColor="#505050" Font-Bold="False"  CssClass="tableViewSummary">
+    <FooterStyle BackColor="#CCCC99" />
+    <RowStyle BackColor="#efeff1" />
+    <SelectedRowStyle BackColor="#CE5D5A"  ForeColor="White" />
+    <PagerStyle BackColor="#F7F7DE" ForeColor="Black" HorizontalAlign="Right" />
+    <HeaderStyle BackColor="#fff0c6" Font-Bold="True" ForeColor="#505050" BorderColor="Black" BorderStyle="Solid" BorderWidth="1px" />
+    <AlternatingRowStyle BackColor="White" />
+</asp:GridView>
+
+<asp:GridView runat="server" SkinId="gridviewSkinEmployeeTemplateTable"    BorderColor="Black" BorderStyle="Solid" BorderWidth="1px" CellPadding="4" GridLines="Vertical"  Font-Italic="False" Font-Names="tahoma" Font-Size="11px"   Font-Bold="False" CssClass="TableView">
+    <FooterStyle BackColor="#CCCC99" />
+    <PagerStyle BackColor="#F7F7DE" ForeColor="Black" HorizontalAlign="Right" />
+    <HeaderStyle BackColor="#fff0c6" Font-Bold="True" ForeColor="#505050" BorderColor="Black" BorderStyle="Solid" BorderWidth="1px" />
+</asp:GridView>
+
+
+<asp:FormView SkinId="formviewSkinEmployee" cssclass="xFormView" runat="server">
+</asp:FormView>
+<asp:DropDownList runat="server" cssclass="selectdrop">
+</asp:DropDownList>
+<asp:RangeValidator SkinId="ValidatorMessageSkin" runat="server">
+
+</asp:RangeValidator>
+
+<asp:GridView runat="server" SkinId="gridviewSkinEmployeeAttendance"   BackColor="White" BorderColor="Black" BorderStyle="None" BorderWidth="1px" CellPadding="4" GridLines="Vertical"  Font-Italic="False" Font-Names="tahoma" Font-Size="11px" ForeColor="#505050" Font-Bold="False"  CssClass="TableViewAttendance">
+    <FooterStyle BackColor="#CCCC99" />
+    <RowStyle BackColor="#efeff1" />
+    <SelectedRowStyle BackColor="#CE5D5A"  ForeColor="White" />
+    <PagerStyle BackColor="#F7F7DE" ForeColor="Black" HorizontalAlign="Right" />
+    <HeaderStyle BackColor="#fff0c6" Font-Bold="True" ForeColor="#505050" BorderColor="Black" BorderStyle="Solid" BorderWidth="1px" />
+    <AlternatingRowStyle BackColor="White" />
+</asp:GridView>
+<asp:TextBox runat="server" CssClass="textboxnew">
+</asp:TextBox>
+<asp:Button runat="server" CssClass="button blue-gradient glossy" >
+</asp:Button>
+
+<ew:CalendarPopup runat="server" SkinId="DatePicker" DisableTextBoxEntry="False" >
+</ew:CalendarPopup>
+
+<asp:RegularExpressionValidator SkinId="PasswordValidator"  runat="server"
+    ErrorMessage=" Must have at least 1 number, 1 special character, and must be at least 8 characters.">
+    Must have at least 1 number, 1 special character, and must be at least 8 characters.
+    </asp:RegularExpressionValidator>
+
+<x:GridView runat="server" CellPadding="0" CellSpacing="0" AllowPaging=true  SkinId="xgridviewSkinEmployeeInside" AllowSorting=true GridLines="Vertical" CssClass="xGridViewInside">
+<FooterStyle BackColor="#efeff1" />
+<RowStyle  CssClass="row" Height="0px" />
+<SelectedRowStyle BackColor="#d6dadf"  ForeColor="White" />
+<PagerStyle  HorizontalAlign="Right" />
+<HeaderStyle />
+<AlternatingRowStyle CssClass="altrow" Height="0px" />
+</x:GridView>

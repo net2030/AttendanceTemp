@@ -1,0 +1,8 @@
+﻿<%@ Page Title="" Language="VB" MasterPageFile="~/Masters/MasterPageEmployee.master" AutoEventWireup="false" CodeFile="PoliciesList.aspx.vb" Inherits="AccountAdmin_WorkSchedule" %>
+<%@ Register assembly="Telerik.Web.UI" namespace="Telerik.Web.UI" tagprefix="telerik" %>
+
+    <%@ Register Src="Controls/ctlPoliciesList.ascx" TagName="ctlPoliciesList"
+    TagPrefix="uc1" %>
+<asp:Content ContentID="C" ContentPlaceHolderID="C" Runat="Server">
+    <uc1:ctlPoliciesList ID="ctlPoliciesList1" runat="server" />
+</asp:Content>

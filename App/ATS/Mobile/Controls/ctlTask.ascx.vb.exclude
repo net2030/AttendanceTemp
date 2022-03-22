@@ -1,0 +1,15 @@
+Imports Telerik.Web.UI
+Imports System.Web.UI.WebControls
+Imports System
+
+Partial Class Task_Controls_ctlTask
+    Inherits System.Web.UI.UserControl
+
+    Protected Sub Page_Load(sender As Object, e As EventArgs) Handles Me.Load
+
+    End Sub
+
+    Protected Sub btnAdd_Click(sender As Object, e As EventArgs) Handles btnAdd.Click
+        Response.Redirect("TaskForm.aspx")
+    End Sub
+End Class

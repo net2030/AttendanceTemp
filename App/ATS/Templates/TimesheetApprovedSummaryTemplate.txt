@@ -1,0 +1,8 @@
+[employeename]'s timesheet for [timeentrystartdate] to [timeentryenddate] has been approved.
+
+The information follows below:
+
+ Approved By: [approvedby]
+  Total Time: [totaltime]
+      Status: [status]
+    Comments: [comments]

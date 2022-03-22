@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="MASTMSDataSet" targetNamespace="http://tempuri.org/MASTMSDataSet.xsd" xmlns:mstns="http://tempuri.org/MASTMSDataSet.xsd" xmlns="http://tempuri.org/MASTMSDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="1" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="LiveConnectionString" IsAppSettingsProperty="true" Modifier="Assembly" Name="LiveConnectionString (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.LiveConnectionString.ConnectionString" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="ATSConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ATSConnectionString (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.ATSConnectionString.ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="vwAttendanceLogTableAdapter" GeneratorDataComponentClassName="vwAttendanceLogTableAdapter" Name="vwAttendanceLog" UserDataComponentName="vwAttendanceLogTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ATSConnectionString (Web.config)" DbObjectName="Attendance.Logs.vwAttendanceLog" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT LogDate, StatusId, EmployeeId, InLogId, InTime, OutLogId, OutTime, IsInPunchManual, IsOutPunchManual, WorkingMinutes, InLateMinutes, OutLateMinutes, 
+                  LateMinutes, OvertimeMinutes, InExtraMinutes, OutExtraMinutes, ExtraTimeMinutes, ActualWorkMinutes, WorkScheduleId, WorkStartTime, WorkEndTime, 
+                  PolicyId, LateInMinutes, LateOutMinutes, EarlyInMinutes, EarlyOutMinutes, MarkObsentDuration, IsProcessCompleted, IsManualUpdated, IsReapplyPolicy, 
+                  ActionId, UpdateVersion, AddedUserAccountId, UpdatedUserAccountId, AddedDate, UpdatedDate, VersionNo, StatusName, FirstName, InPunchManual, 
+                  OutPunchManual, ProcessCompleted, ReapplyPolicy, DepartmentId, BadgeNo, LogId, EmployeeName
+FROM     Logs.vwAttendanceLog</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="StatusId" DataSetColumn="StatusId" />
+              <Mapping SourceColumn="EmployeeId" DataSetColumn="EmployeeId" />
+              <Mapping SourceColumn="InLogId" DataSetColumn="InLogId" />
+              <Mapping SourceColumn="InTime" DataSetColumn="InTime" />
+              <Mapping SourceColumn="OutLogId" DataSetColumn="OutLogId" />
+              <Mapping SourceColumn="OutTime" DataSetColumn="OutTime" />
+              <Mapping SourceColumn="IsInPunchManual" DataSetColumn="IsInPunchManual" />
+              <Mapping SourceColumn="IsOutPunchManual" DataSetColumn="IsOutPunchManual" />
+              <Mapping SourceColumn="WorkingMinutes" DataSetColumn="WorkingMinutes" />
+              <Mapping SourceColumn="InLateMinutes" DataSetColumn="InLateMinutes" />
+              <Mapping SourceColumn="OutLateMinutes" DataSetColumn="OutLateMinutes" />
+              <Mapping SourceColumn="LateMinutes" DataSetColumn="LateMinutes" />
+              <Mapping SourceColumn="OvertimeMinutes" DataSetColumn="OvertimeMinutes" />
+              <Mapping SourceColumn="InExtraMinutes" DataSetColumn="InExtraMinutes" />
+              <Mapping SourceColumn="OutExtraMinutes" DataSetColumn="OutExtraMinutes" />
+              <Mapping SourceColumn="ExtraTimeMinutes" DataSetColumn="ExtraTimeMinutes" />
+              <Mapping SourceColumn="ActualWorkMinutes" DataSetColumn="ActualWorkMinutes" />
+              <Mapping SourceColumn="WorkScheduleId" DataSetColumn="WorkScheduleId" />
+              <Mapping SourceColumn="WorkStartTime" DataSetColumn="WorkStartTime" />
+              <Mapping SourceColumn="WorkEndTime" DataSetColumn="WorkEndTime" />
+              <Mapping SourceColumn="PolicyId" DataSetColumn="PolicyId" />
+              <Mapping SourceColumn="LateInMinutes" DataSetColumn="LateInMinutes" />
+              <Mapping SourceColumn="LateOutMinutes" DataSetColumn="LateOutMinutes" />
+              <Mapping SourceColumn="EarlyInMinutes" DataSetColumn="EarlyInMinutes" />
+              <Mapping SourceColumn="EarlyOutMinutes" DataSetColumn="EarlyOutMinutes" />
+              <Mapping SourceColumn="MarkObsentDuration" DataSetColumn="MarkObsentDuration" />
+              <Mapping SourceColumn="IsProcessCompleted" DataSetColumn="IsProcessCompleted" />
+              <Mapping SourceColumn="IsManualUpdated" DataSetColumn="IsManualUpdated" />
+              <Mapping SourceColumn="IsReapplyPolicy" DataSetColumn="IsReapplyPolicy" />
+              <Mapping SourceColumn="ActionId" DataSetColumn="ActionId" />
+              <Mapping SourceColumn="UpdateVersion" DataSetColumn="UpdateVersion" />
+              <Mapping SourceColumn="AddedUserAccountId" DataSetColumn="AddedUserAccountId" />
+              <Mapping SourceColumn="UpdatedUserAccountId" DataSetColumn="UpdatedUserAccountId" />
+              <Mapping SourceColumn="AddedDate" DataSetColumn="AddedDate" />
+              <Mapping SourceColumn="UpdatedDate" DataSetColumn="UpdatedDate" />
+              <Mapping SourceColumn="VersionNo" DataSetColumn="VersionNo" />
+              <Mapping SourceColumn="StatusName" DataSetColumn="StatusName" />
+              <Mapping SourceColumn="FirstName" DataSetColumn="FirstName" />
+              <Mapping SourceColumn="InPunchManual" DataSetColumn="InPunchManual" />
+              <Mapping SourceColumn="OutPunchManual" DataSetColumn="OutPunchManual" />
+              <Mapping SourceColumn="ProcessCompleted" DataSetColumn="ProcessCompleted" />
+              <Mapping SourceColumn="ReapplyPolicy" DataSetColumn="ReapplyPolicy" />
+              <Mapping SourceColumn="DepartmentId" DataSetColumn="DepartmentId" />
+              <Mapping SourceColumn="LogDate" DataSetColumn="LogDate" />
+              <Mapping SourceColumn="BadgeNo" DataSetColumn="BadgeNo" />
+              <Mapping SourceColumn="LogId" DataSetColumn="LogId" />
+              <Mapping SourceColumn="EmployeeName" DataSetColumn="EmployeeName" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="MASTMSDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="MASTMSDataSet" msprop:Generator_UserDSName="MASTMSDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="vwAttendanceLog" msprop:Generator_TableClassName="vwAttendanceLogDataTable" msprop:Generator_TableVarName="tablevwAttendanceLog" msprop:Generator_RowChangedName="vwAttendanceLogRowChanged" msprop:Generator_TablePropName="vwAttendanceLog" msprop:Generator_RowDeletingName="vwAttendanceLogRowDeleting" msprop:Generator_RowChangingName="vwAttendanceLogRowChanging" msprop:Generator_RowEvHandlerName="vwAttendanceLogRowChangeEventHandler" msprop:Generator_RowDeletedName="vwAttendanceLogRowDeleted" msprop:Generator_RowClassName="vwAttendanceLogRow" msprop:Generator_UserTableName="vwAttendanceLog" msprop:Generator_RowEvArgName="vwAttendanceLogRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="StatusId" msprop:Generator_ColumnVarNameInTable="columnStatusId" msprop:Generator_ColumnPropNameInRow="StatusId" msprop:Generator_ColumnPropNameInTable="StatusIdColumn" msprop:Generator_UserColumnName="StatusId" type="xs:int" />
+              <xs:element name="EmployeeId" msprop:Generator_ColumnVarNameInTable="columnEmployeeId" msprop:Generator_ColumnPropNameInRow="EmployeeId" msprop:Generator_ColumnPropNameInTable="EmployeeIdColumn" msprop:Generator_UserColumnName="EmployeeId" type="xs:int" />
+              <xs:element name="InLogId" msprop:Generator_ColumnVarNameInTable="columnInLogId" msprop:Generator_ColumnPropNameInRow="InLogId" msprop:Generator_ColumnPropNameInTable="InLogIdColumn" msprop:Generator_UserColumnName="InLogId" type="xs:int" minOccurs="0" />
+              <xs:element name="InTime" msprop:Generator_ColumnVarNameInTable="columnInTime" msprop:Generator_ColumnPropNameInRow="InTime" msprop:Generator_ColumnPropNameInTable="InTimeColumn" msprop:Generator_UserColumnName="InTime" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="OutLogId" msprop:Generator_ColumnVarNameInTable="columnOutLogId" msprop:Generator_ColumnPropNameInRow="OutLogId" msprop:Generator_ColumnPropNameInTable="OutLogIdColumn" msprop:Generator_UserColumnName="OutLogId" type="xs:int" minOccurs="0" />
+              <xs:element name="OutTime" msprop:Generator_ColumnVarNameInTable="columnOutTime" msprop:Generator_ColumnPropNameInRow="OutTime" msprop:Generator_ColumnPropNameInTable="OutTimeColumn" msprop:Generator_UserColumnName="OutTime" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="IsInPunchManual" msprop:Generator_ColumnVarNameInTable="columnIsInPunchManual" msprop:Generator_ColumnPropNameInRow="IsInPunchManual" msprop:Generator_ColumnPropNameInTable="IsInPunchManualColumn" msprop:Generator_UserColumnName="IsInPunchManual" type="xs:boolean" />
+              <xs:element name="IsOutPunchManual" msprop:Generator_ColumnVarNameInTable="columnIsOutPunchManual" msprop:Generator_ColumnPropNameInRow="IsOutPunchManual" msprop:Generator_ColumnPropNameInTable="IsOutPunchManualColumn" msprop:Generator_UserColumnName="IsOutPunchManual" type="xs:boolean" />
+              <xs:element name="WorkingMinutes" msprop:Generator_ColumnVarNameInTable="columnWorkingMinutes" msprop:Generator_ColumnPropNameInRow="WorkingMinutes" msprop:Generator_ColumnPropNameInTable="WorkingMinutesColumn" msprop:Generator_UserColumnName="WorkingMinutes" type="xs:int" />
+              <xs:element name="InLateMinutes" msprop:Generator_ColumnVarNameInTable="columnInLateMinutes" msprop:Generator_ColumnPropNameInRow="InLateMinutes" msprop:Generator_ColumnPropNameInTable="InLateMinutesColumn" msprop:Generator_UserColumnName="InLateMinutes" type="xs:int" />
+              <xs:element name="OutLateMinutes" msprop:Generator_ColumnVarNameInTable="columnOutLateMinutes" msprop:Generator_ColumnPropNameInRow="OutLateMinutes" msprop:Generator_ColumnPropNameInTable="OutLateMinutesColumn" msprop:Generator_UserColumnName="OutLateMinutes" type="xs:int" />
+              <xs:element name="LateMinutes" msprop:Generator_ColumnVarNameInTable="columnLateMinutes" msprop:Generator_ColumnPropNameInRow="LateMinutes" msprop:Generator_ColumnPropNameInTable="LateMinutesColumn" msprop:Generator_UserColumnName="LateMinutes" type="xs:int" />
+              <xs:element name="OvertimeMinutes" msprop:Generator_ColumnVarNameInTable="columnOvertimeMinutes" msprop:Generator_ColumnPropNameInRow="OvertimeMinutes" msprop:Generator_ColumnPropNameInTable="OvertimeMinutesColumn" msprop:Generator_UserColumnName="OvertimeMinutes" type="xs:int" />
+              <xs:element name="InExtraMinutes" msprop:Generator_ColumnVarNameInTable="columnInExtraMinutes" msprop:Generator_ColumnPropNameInRow="InExtraMinutes" msprop:Generator_ColumnPropNameInTable="InExtraMinutesColumn" msprop:Generator_UserColumnName="InExtraMinutes" type="xs:int" />
+              <xs:element name="OutExtraMinutes" msprop:Generator_ColumnVarNameInTable="columnOutExtraMinutes" msprop:Generator_ColumnPropNameInRow="OutExtraMinutes" msprop:Generator_ColumnPropNameInTable="OutExtraMinutesColumn" msprop:Generator_UserColumnName="OutExtraMinutes" type="xs:int" />
+              <xs:element name="ExtraTimeMinutes" msprop:Generator_ColumnVarNameInTable="columnExtraTimeMinutes" msprop:Generator_ColumnPropNameInRow="ExtraTimeMinutes" msprop:Generator_ColumnPropNameInTable="ExtraTimeMinutesColumn" msprop:Generator_UserColumnName="ExtraTimeMinutes" type="xs:int" />
+              <xs:element name="ActualWorkMinutes" msprop:Generator_ColumnVarNameInTable="columnActualWorkMinutes" msprop:Generator_ColumnPropNameInRow="ActualWorkMinutes" msprop:Generator_ColumnPropNameInTable="ActualWorkMinutesColumn" msprop:Generator_UserColumnName="ActualWorkMinutes" type="xs:int" minOccurs="0" />
+              <xs:element name="WorkScheduleId" msprop:Generator_ColumnVarNameInTable="columnWorkScheduleId" msprop:Generator_ColumnPropNameInRow="WorkScheduleId" msprop:Generator_ColumnPropNameInTable="WorkScheduleIdColumn" msprop:Generator_UserColumnName="WorkScheduleId" type="xs:int" minOccurs="0" />
+              <xs:element name="WorkStartTime" msprop:Generator_ColumnVarNameInTable="columnWorkStartTime" msprop:Generator_ColumnPropNameInRow="WorkStartTime" msprop:Generator_ColumnPropNameInTable="WorkStartTimeColumn" msprop:Generator_UserColumnName="WorkStartTime" type="xs:dateTime" />
+              <xs:element name="WorkEndTime" msprop:Generator_ColumnVarNameInTable="columnWorkEndTime" msprop:Generator_ColumnPropNameInRow="WorkEndTime" msprop:Generator_ColumnPropNameInTable="WorkEndTimeColumn" msprop:Generator_UserColumnName="WorkEndTime" type="xs:dateTime" />
+              <xs:element name="PolicyId" msprop:Generator_ColumnVarNameInTable="columnPolicyId" msprop:Generator_ColumnPropNameInRow="PolicyId" msprop:Generator_ColumnPropNameInTable="PolicyIdColumn" msprop:Generator_UserColumnName="PolicyId" type="xs:int" minOccurs="0" />
+              <xs:element name="LateInMinutes" msprop:Generator_ColumnVarNameInTable="columnLateInMinutes" msprop:Generator_ColumnPropNameInRow="LateInMinutes" msprop:Generator_ColumnPropNameInTable="LateInMinutesColumn" msprop:Generator_UserColumnName="LateInMinutes" type="xs:int" />
+              <xs:element name="LateOutMinutes" msprop:Generator_ColumnVarNameInTable="columnLateOutMinutes" msprop:Generator_ColumnPropNameInRow="LateOutMinutes" msprop:Generator_ColumnPropNameInTable="LateOutMinutesColumn" msprop:Generator_UserColumnName="LateOutMinutes" type="xs:int" />
+              <xs:element name="EarlyInMinutes" msprop:Generator_ColumnVarNameInTable="columnEarlyInMinutes" msprop:Generator_ColumnPropNameInRow="EarlyInMinutes" msprop:Generator_ColumnPropNameInTable="EarlyInMinutesColumn" msprop:Generator_UserColumnName="EarlyInMinutes" type="xs:int" />
+              <xs:element name="EarlyOutMinutes" msprop:Generator_ColumnVarNameInTable="columnEarlyOutMinutes" msprop:Generator_ColumnPropNameInRow="EarlyOutMinutes" msprop:Generator_ColumnPropNameInTable="EarlyOutMinutesColumn" msprop:Generator_UserColumnName="EarlyOutMinutes" type="xs:int" />
+              <xs:element name="MarkObsentDuration" msprop:Generator_ColumnVarNameInTable="columnMarkObsentDuration" msprop:Generator_ColumnPropNameInRow="MarkObsentDuration" msprop:Generator_ColumnPropNameInTable="MarkObsentDurationColumn" msprop:Generator_UserColumnName="MarkObsentDuration" type="xs:int" />
+              <xs:element name="IsProcessCompleted" msprop:Generator_ColumnVarNameInTable="columnIsProcessCompleted" msprop:Generator_ColumnPropNameInRow="IsProcessCompleted" msprop:Generator_ColumnPropNameInTable="IsProcessCompletedColumn" msprop:Generator_UserColumnName="IsProcessCompleted" type="xs:boolean" />
+              <xs:element name="IsManualUpdated" msprop:Generator_ColumnVarNameInTable="columnIsManualUpdated" msprop:Generator_ColumnPropNameInRow="IsManualUpdated" msprop:Generator_ColumnPropNameInTable="IsManualUpdatedColumn" msprop:Generator_UserColumnName="IsManualUpdated" type="xs:boolean" />
+              <xs:element name="IsReapplyPolicy" msprop:Generator_ColumnVarNameInTable="columnIsReapplyPolicy" msprop:Generator_ColumnPropNameInRow="IsReapplyPolicy" msprop:Generator_ColumnPropNameInTable="IsReapplyPolicyColumn" msprop:Generator_UserColumnName="IsReapplyPolicy" type="xs:boolean" />
+              <xs:element name="ActionId" msprop:Generator_ColumnVarNameInTable="columnActionId" msprop:Generator_ColumnPropNameInRow="ActionId" msprop:Generator_ColumnPropNameInTable="ActionIdColumn" msprop:Generator_UserColumnName="ActionId" type="xs:int" />
+              <xs:element name="UpdateVersion" msprop:Generator_ColumnVarNameInTable="columnUpdateVersion" msprop:Generator_ColumnPropNameInRow="UpdateVersion" msprop:Generator_ColumnPropNameInTable="UpdateVersionColumn" msprop:Generator_UserColumnName="UpdateVersion" type="xs:int" />
+              <xs:element name="AddedUserAccountId" msprop:Generator_ColumnVarNameInTable="columnAddedUserAccountId" msprop:Generator_ColumnPropNameInRow="AddedUserAccountId" msprop:Generator_ColumnPropNameInTable="AddedUserAccountIdColumn" msprop:Generator_UserColumnName="AddedUserAccountId" type="xs:int" />
+              <xs:element name="UpdatedUserAccountId" msprop:Generator_ColumnVarNameInTable="columnUpdatedUserAccountId" msprop:Generator_ColumnPropNameInRow="UpdatedUserAccountId" msprop:Generator_ColumnPropNameInTable="UpdatedUserAccountIdColumn" msprop:Generator_UserColumnName="UpdatedUserAccountId" type="xs:int" />
+              <xs:element name="AddedDate" msprop:Generator_ColumnVarNameInTable="columnAddedDate" msprop:Generator_ColumnPropNameInRow="AddedDate" msprop:Generator_ColumnPropNameInTable="AddedDateColumn" msprop:Generator_UserColumnName="AddedDate" type="xs:dateTime" />
+              <xs:element name="UpdatedDate" msprop:Generator_ColumnVarNameInTable="columnUpdatedDate" msprop:Generator_ColumnPropNameInRow="UpdatedDate" msprop:Generator_ColumnPropNameInTable="UpdatedDateColumn" msprop:Generator_UserColumnName="UpdatedDate" type="xs:dateTime" />
+              <xs:element name="VersionNo" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnVersionNo" msprop:Generator_ColumnPropNameInRow="VersionNo" msprop:Generator_ColumnPropNameInTable="VersionNoColumn" msprop:Generator_UserColumnName="VersionNo" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="StatusName" msprop:Generator_ColumnVarNameInTable="columnStatusName" msprop:Generator_ColumnPropNameInRow="StatusName" msprop:Generator_ColumnPropNameInTable="StatusNameColumn" msprop:Generator_UserColumnName="StatusName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FirstName" msprop:Generator_ColumnVarNameInTable="columnFirstName" msprop:Generator_ColumnPropNameInRow="FirstName" msprop:Generator_ColumnPropNameInTable="FirstNameColumn" msprop:Generator_UserColumnName="FirstName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="InPunchManual" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnInPunchManual" msprop:Generator_ColumnPropNameInRow="InPunchManual" msprop:Generator_ColumnPropNameInTable="InPunchManualColumn" msprop:Generator_UserColumnName="InPunchManual" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="OutPunchManual" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnOutPunchManual" msprop:Generator_ColumnPropNameInRow="OutPunchManual" msprop:Generator_ColumnPropNameInTable="OutPunchManualColumn" msprop:Generator_UserColumnName="OutPunchManual" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ProcessCompleted" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnProcessCompleted" msprop:Generator_ColumnPropNameInRow="ProcessCompleted" msprop:Generator_ColumnPropNameInTable="ProcessCompletedColumn" msprop:Generator_UserColumnName="ProcessCompleted" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ReapplyPolicy" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnReapplyPolicy" msprop:Generator_ColumnPropNameInRow="ReapplyPolicy" msprop:Generator_ColumnPropNameInTable="ReapplyPolicyColumn" msprop:Generator_UserColumnName="ReapplyPolicy" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DepartmentId" type="xs:int" />
+              <xs:element name="RowSerailID" type="xs:string" minOccurs="0" />
+              <xs:element name="LogDate" type="xs:dateTime" />
+              <xs:element name="BadgeNo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LogId" type="xs:int" />
+              <xs:element name="EmployeeName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
